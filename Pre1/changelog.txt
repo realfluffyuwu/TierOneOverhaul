@@ -1,0 +1,501 @@
+2/1/21
+-added mk18 suppressed + lp rounds for it
+-tweaked mk18 values(lower dmg, faster engagements in cqb, slower engagements at range)
+-gave black ops all assault weapons (except SCARs)
+-fixed black ops not having pistols
+-added SMG tier1 shooting
+
+2/2/21
+-fixed remove all button not appearing in deploy menu
+
+2/2/21 part 2
+-added m110a1 suppressed
+-lowered muzzle flash of suppressed weapons
+
+2/3/21
+-beefed up hk416sd sound
+-nerfed mk17 and mk17 cqb (added heavy carbine shooting)
+
+3/24/21
+-ironsights_pistol error fixed
+
+3/27/21 v0.2.0 GLOCK UPDATE
+-reworked all attacktypes (pretty much slowed everything down a bit to be more realistic and encourage more careful planning)
+-added g19x suppressed
+-added g22 suppressed
+
+4/7/21 v0.2.1
+-compatibility with (RE)play update
+
+4/11/21 v0.2.2 GLOCK 3D MODELS
+-g19x sd and g22 sd models and textures provided by Marco1624 (HUGE THANKS)
+
+5/6/21 v0.2.3 MCX UPDATE
+new weapon: MCX LVAW in .300 Blackout w/ custom icon and sounds (thanks to **Marco** and **Botclone** for helping me in creating the icon)
+-added .300 BLK Subsonic ammo  w/ custom icon (VERY quiet,VERY effective at close range, ineffective from medium to long ranges)
+-added .300 BLK Supersonic ammo  w/ custom icon (much louder than subsonic, good effectiveness at all ranges)
+
+5/7/21 v0.3.0 SMG UPDATE
+new weapon: MP7A1 SMG + MP7A1 SMG SD w/ custom icon and sounds
+new weapon: KRISS VECTOR GEN II + KRISS VECTOR GEN II SD w/ custom icon and sounds
+-added 4.6x30mm 31gr Action SX
+-added 4.6x30mm 40gr FMJ SX
+-added custom vector attacktypes
+-added custom vector muzzle flashes
+-lowered volume of M110A1 SD firing sound
+-small edit to SMG attacktype for more full auto in close range
+-nerfed MCX subsonic ammunition(lower crit chance, larger sound radius)
+-black ops portraits added to human_identities.xml (you can select the portrait in-game now)
+
+**if anybody who knows how to 3D model would like to volunteer, please DM me! credit will be given as always**
+
+
+5/10/21 v0.3.5 BIG BOOMS UPDATE
+
+NEW PRIMARY WEAPONS:
+-Milkor M32 MGL w/ custom icon(3 variants):Milkor M32 MGL HE, CS gas, or Concussion rounds
+-FN40GL Mk2 w/ custom icon(2 variants):FN40GL CS Gas(Assault, Grenadier, Operator) and FN40GL HEDP (Grenadier, Operator)
+-Mk-18 Mod 1 Mjölnir w/ custom icon, particle effects, and sounds(Marksman)
+
+NEW SECONDARY WEAPON:
+-APC9K w/ custom icon and sounds(Support, Marksman)
+
+-added custom reload sounds for MGL, FN40GL, and Mjölnir
+-added 40mm M441 HE
+-added 40mm M651 CS Gas w/ custom particle effects
+-added 40mm XM655 Concussion(fictional stun round) w/ custom particle effects
+-added 40mm M433 HEDP w/ custom particle effects (can breach small holes in walls, extremely useful in the right hands)
+-added .338 LM 250gr Lapua Scenar
+-added custom Mjölnir attacktypes
+-added custom Mjölnir muzzle flash
+-buffed MP7 Action SX damage (25 -> 31)
+-buffed MP7 FMJ SX crit chance
+-slightly reworked DMR attacktypes(re-added mounted attacktypes)
+-buffs to LMG and GPMG attacktypes(faster target acquisition for their effective ranges)
+-buffed MK318LP damage for mk18sd and hk416sd
+-nerfed MCX fire rate at range
+-nerfed heavy carbine attacktypes at long range
+-updated prices for all modded weapons
+
+note:
+-the HE and CS variants of the MGL can only be fired via command. However, the Grenadier can engage freely with the Concussion variant(you can still manually command).
+
+**if anybody who knows how to 3D model would like to volunteer, please DM me! credit will be given as always**
+
+5/20/21 v0.4.0 3D MODELS & RUSSIAN STUFF
+
+**PLEASE VALIDATE YOUR GAME FILES BEFORE INSTALLING TierOneOverhaul v0.4.0**
+
+-added compatibility for v0.16 update
+
+-APC9K 3D MODEL BY **wPasca**
+
+-changed most primary weapons from back sling to front sling (thanks **Ryuk**!)
+-changed all front sling weapons changein/out times + ready times (thanks again **Ryuk**!)
+
+NEW PRIMARY WEAPONS(BLACK OPS EXCLUSIVE):
+-AS Val
+-AK-105
+
+-added custom attacktypes for AS Val
+-added 9x39mm SP-5
+-added 9x39mm SP-6
+-added 5.45x39mm 7N6
+-increased firing speed and lowered crit chance of rifle shooting at close range
+-nerfed APC9K damage
+-reduced MGL HE explosion radius
+-removed optics from APC9K(couldn't select them)
+-lowered crit chances for pistols
+-various small changes(can't remember them all)
+
+5/28/21 v0.4.1 small changes
+-dropped accuracy of mk18
+-increased accuracy of 416 and 416sd
+-increased fire rate and max shot count of closest rifle attacktype
+-added optional sound/fx files
+
+6/10/21 v0.4.2 v0.17 compatibility update
+-added compatibility for update v0.17
+
+6/10/21 v0.4.2.1 SOUND ERROR PATCH
+-fixed sound error (thanks Apevio)
+
+6/11/21 v0.4.2.2 BUGFIX
+-fixed standard ranger vest being unavailable for black ops
+-fixed breacher shotgun vest being unavailable for black ops
+-added blastfx(optional) compatibility for latest door kickers update
+thanks scaryshark for finding the bugs
+
+6/21/21 v0.4.5 OUTFITS AND AIRSTRIKES
+NEW COMMUNITY OPERATOR OUTFITS:
+1. blue flannel shirt by (m.a.n.g.o)
+2. green shirt + grey pants by Christoph_t
+-files are located in OPTIONAL folder, installation instructions in OUTFITS README.TXT
+
+NEW EQUIPMENT:
+-Strike Marker:
+that's right. there's been some complaints about the mod being unbalanced or making the game too easy, so here's an airstrike marker with a kill radius half the size of kamil pasha.
+comes with custom icons, sounds, and particle systems. black ops exclusive, best used on those huge community workshop maps(see Sinful Paradise by panguino). enjoy.
+
+note: can be buggy sometimes due to how the game works. works well majority of the time.
+
+other changes:
+-increased accuracy of mk18/sd and lowered critical chance at range (thanks murphy#8608)
+-decreased crit chance of fmj sx
+-increased long range damage of 300 blk subs
+-removed GL40 HEDP from grenadier making it a black ops exclusive (i thought it was just too overpowered to be available for 6 units, let me know what you think)
+-fixed some typos in BlastFX readme
+
+6/21/21 v0.4.8 MO' NADES
+NEW EQUIPMENT:
+-Decoy Grenade 115dB
+-Decoy Grenade 75dB
+-CS Gas Grenade
+-CS Gas Grenade Kit
+
+-custom particle system for CS Gas grenades
+-reworked MGL CS stunning effect(lowered stun time, added suppression factor)
+-strike marker now costs 20 stars to unlock
+
+6/22/21 v0.4.8.1 suppression patch
+-fixed operators suppression recovery
+
+6/25/21 v0.4.9 reworked 416s and fixes
+-reworked hk416 icons (legacy icons are in models/weapons folder)
+-alternate icon w/ Magpul RVG in optionals folder
+-renamed HK416 10.4" -> HK416A5 10.4"
+-renamed HK416 10.4" SD -> HK416A5 11" SD
+-increased volume of 416 shot sound
+-fixed optional operator outfits suppression recovery and vision circle radius
+-added red flannel shirt (literally the blue flannel that i changed the color of)
+
+7/11/21 v0.5 mo' suppressors part 1
+-longer smoke effect from suppressed muzzle flash
+-larger suppressed flash from machine guns
+-suppressed M4A1
+-suppressed M16A4
+-suppressed Mk17 STD
+-suppressed Mk17 CQC
+-suppressed M249
+-suppressed XM338
+-all weapons (except mjolnir) are now compatible with in game directional sound
+
+7/18/21 v0.5.5 old school, new school
+NEW WEAPONS:
+-FN P90 by jacob-
+-HK G3KA4
+-URG-I 14.5"
+-MCX Spear
+
+other changes:
+-m16 now quieter m4 louder -mich
+-added sound radius for descriptions -apevio
+-adjusted prices for all modded shit -apevio
+-dynamic hammer is faster at breaching
+-breaching shotgun is faster too
+
+optional:
+4 man black ops now available in optionals folder
+
+9/30/2021 v0.6 BETA
+-CIA update (v0.19) compatibility
+-Added compatibility with mods folder
+
+-All GLs are now in equipment slots
+-Lockpick machine added to black ops(rangers)
+-Decoy and CS grenades given to CIA units
+-CIA black ops have access to all weapons from black ops(rangers)
+-suppressed pistols for all CIA units
+-(NEW) FN40GL HE given to ranger assaulters, grenadiers, black ops(rangers), black ops(CIA)
+-Grenadiers have access to FN40GL HEDP once again
+-Small ammo icons added for all T1 guns
+
+thanks to KHG devs for the awesome update
+
+10/5/2021 v0.6.1
+
+-new weapon: B&T VP9
+
+-added 3d models for mk18sd, vector/vectorsd, mp7a1sd, as val (haven't added textures so some textures may look very funny)
+
+-updated BlastFX to 0.0.8 & ReSound to 0.0.4(check respective changelog.txts for more info)
+
+-URGI & URGI-SD added to CIA black ops
+-tier1 attacktypes added to CIA pistols
+-g19 custom added to rangers
+-increased accuracy of all MGLs
+-increased mjolnir close range accuracy
+-slightly increased bass for 416sd firing sound
+-buffed mp7 and p90 crit chances
+
+10/11/2021 v0.6.2
+-updated Grenadier arsenal (suggested by dps524)
+-fixed lvl 4 full esapi plates being unavailable (thanks 선이고양이#5003)
+-fixed m18 unavailable for ranger black ops
+-added rmr sight to m17/m18 for rangers
+-increased crit range for vp9(welrod)
+-lowered fire rate of pistols at extra long ranges
+
+note: some grenadier weapons w/o m203 will show an m203 on the 3d model. this will be fixed in the next update.
+
+BlastFX BETA v0.0.9
+-removed vapor trails from bullets(excluding sniper)
+
+ReSound BETA v0.0.5
+-added new pistol reload sounds
+-added g19x and g19 custom sounds
+
+11/24/2021 v0.7.0 suppressor compatibility
+-all t1 weapons have been updated to use the new suppressor attachment system
+-weapon clutter has been significantly reduced thanks to the system
+-added magazine drop on reload for t1 weapons
+
+-added custom suppressor icons
+-added custom suppressor mini icons
+
+-slightly nerfed close quarters attacktype rpm for rifles
+-nerfed aim speeds for heavy carbines
+-mk18sd now uses rc2
+
+-added version numbers to mods' names in order to distinguish from older/ newer versions of the mod
+
+12/25/2021 v0.7.5 nvg compatibility
+-added compatibility to nvg update
+
+-added ak105 sd
+-fixed m110a1 sd not working for cia black ops
+-added suppressor icons for some guns
+
+12/26/2021 v0.7.5a hotfix
+-fixed p90/p90sd laser going sideways
+-fixed mp7a1 laser going sideways
+
+-fixed optional uniforms missing helmets
+-updated readme instructions to be slightly clearer
+
+12/31/2021 v0.8 3d models
+-added textures to kriss vector 3d model
+-added 3d model for mcx spear
+-added 3d model for hk416 (model provided by nachomacho)
+-added 3d model for mcx lvaw
+
+-300blk subsonic armor penetration, crit chance, initial and final damage reduced
+-increased point-blank crit chance for heavy rifles
+
+2/2/2021 v0.8.5
+-added 3d model for urg-i
+-added pvs31 alternate position in daytime(model by KHG)
+-cia kriss vector texture fixed
+-fixed muzzle flash on mcx spear
+-grenade launchers now sling on back (suggested by Ryuk)
+-mgl now uses mk14_fire sounds
+-gl40 now uses m320_fire sounds
+-fixed cia m4 disappearing when unequipping a suppressor
+
+-added frag grenade 8m shrapnel radius(original blast radii unchanged)
+
+-moved suppressor icon up to avoid the icon blocking the weapon ui
+
+-changed all weapon icons to DXT5 compression format just for consistency
+
+
+
+
+4/30/2022 v0.9 "TIER ONE" UPDATE
+
+Currently the largest update this mod has received so far.
+
+Special thanks to jacob-, dps524, Ryuk, Sly, nachomacho, and Apevio for their contributions that made this update possible.
+
+Very special thanks to KillHouse Games for the amazing update and for allowing me the privilege to test the update prior to release.
+
+**DOWNLOAD LINK**:
+
+>>> NEW UNIT: NSW Development Group
+    -x4 Assaulter
+    -x2 Support
+    -x2 Marksman
+    -x1 Undercover
+    -x1 Black Ops
+
+NEW WEAPONS:
+    -HK MP7A2
+    -MCX Rattler
+    -Noveske Gen III 10.5"
+    -HK416D 10.4"
+    -Mk17 Custom
+    -Mk46 Mod 1
+    -Mk11 Mod 1
+    -Mk12 Mod 1
+    -Mk13 Mod 5
+    -M320 GLM(HE/HEDP/CS/Smoke)
+    -Milkor M32 MGL(Smoke)
+    -FN40GL Mk2(Smoke)
+
+-Weapon descriptions provided by dps524
+-3D model for M320 provided by nachomacho
+-Smoke GLs suggested by Ryuk
+
+NEW EQUIPMENT:
+    -GPNVG-18(White Phosphor) by jacob-
+    -Suicide Bomb(NWS Militia)
+
+COSMETICS:
+    -Custom Helmets(AOR1/MC) by jacob-
+    -Custom Uniforms(AOR1/MC)
+
+BALANCE:
+    -Reduced weight for all machine guns
+    -Removed M995
+    -Removed LP rounds from suppressed 5.56 rifles(suggested by Ryuk)
+    -Added subsonic ammunition and full power ammunition for all suppressed 5.56 rifles(suggested by Ryuk)
+    -Deploy supply for Black Ops(Rangers) increased to 200(2x)
+    -Kriss Vector and P90 are now Black Ops exclusive(suggested by Ryuk)
+    -FN40GL moved to Nowheraki Swat
+    -Increased MGL accuracy
+    -Increased M320 accuracy
+    -Increased all GL costs
+
+FIXED:
+    -Strike marker will now kill enemies behind walls
+
+MISC:
+    -Added compatibility for DK2 v0.30
+    -Added 3D models for G3KA4, FN40GL, and MK-18 MJOLNIR (Models provided by nachomacho)
+    -Added custom attacktypes for NSWDG operators
+    -Added custom ranks for NSWDG operators
+    -Added icon for B&T Rotex II (MP7)
+    -MCX Spear renamed to XM5
+    -Updated description for XM5(provided by dps)
+    -Secondary APC9K renamed to APC9K PRO-G
+    -Various optimizations to code(thanks to Ryuk)
+    -Re-added suppressors to Grenadier UBGL rifles(suggested by Ryuk)
+
+NOTE: Due to the sheer amount of changes made to the mod in this update, there may be some bugs or missing features. I have done my best to minimize the amount of mistakes made. If you spot any issues or need assistance, please DM me or ping me in #dk2_mod_discussion. Thank you for your patience.
+
+5/4/2022 v0.9.1 HOTFIX
+
+FIXED:
+-Fixed CIA Black Ops having 2 M4s(found by AnthonyNonStop)
+-Fixed DEVGRU MK18 using Ranger attacktypes(found by Ryuk)
+-Fixed DEVGRU MK18 having slower readyTime than other DEVGRU rifles(found by Ryuk)
+-Fixed DEVGRU Undercover having equipment they shouldn't be having(found by steam fixed you)
+-Fixed CIA MP7 inconsistent with other MP7s(found by aaaccc130)
+
+CHANGES:
+-Gave NWS Militia the ability to unequip their primary weapon
+-Added suppressing after effect to airstrike and S-Vest
+-Increased Decoy Grenades to 3 grenades per slot
+-Added 1x CS Gas Grenade for Undercover
+-Removed 2x and 3x CS Gas Grenades for Undercover
+-Modified titles of modded grenades to show amount carried
+-Reverted mod folder icon back to default due to confusion
+
+5/4/2022 v0.9.2 HOTFIX 2
+
+CHANGES:
+-Removed the ability for NWS Militia to unequip primary weapon(binding conflict with Not So Suspicious)
+
+5/4/2022 v0.9.3 HOTFIX 3
+
+FIXED:
+-Fixed CIA G3KA4 using incorrect model(found by M100 GREM)
+-Fixed DEVGRU MK17 CQC switching to wrong gun when attaching a suppressor(found by G.LMBV)
+
+5/24/2022 v0.9.4 REBALANCE PATCH 1
+
+Rebalanced attacktypes so that difficulty is more in line with vanilla.
+
+BALANCE:
+-Reworked DEVGRU XP requirements(by Ryuk)
+
+-Increased time to aim for all close range attacktypes
+-Tweaked GPMG mounted attacktypes(lower accuracy, shorter bursts, longer time to aim)
+
+-GPNVG price reduced(25->20)
+
+MISC:
+-HK416A5 10.4" renamed to HK416A5 11" with appropriate icon changes
+
+5/25/2022 v0.9.5 REBALANCE PATCH 2
+
+FIXED:
+-M203 model not appearing for rifles with UBGL attachments(found by PHILXIQUSI and AnthonyNonStop)
+
+BALANCE:
+-Tweaked MK12 attacktypes, ammo, and range values to make it more effective in medium-long range situations
+
+5/26/2022 v0.9.6 REBALANCE PATCH 3(SUPPRESSOR REWORK)
+
+CHANGES:
+-MP7A1 now has accurate suppressor icon
+-MK48 now has suppressor icon when suppressed
+-Updated DEVGRU MK48 icon to match weapon roster theme
+-Updated DEVGRU MK18 icon to match weapon roster theme
+-Updated DEVGRU MK17 CQC icon to match weapon roster theme
+-Enabled suppressed versions of MK17LB and MK20SSR
+
+FIXED:
+-Updated outdated descriptions for suppressed weapons
+-Updated suppressed weapon descriptions for DEVGRU to show sound travel ranges
+-Fixed DEVGRU MK18 Suppressed missing subsonic ammo
+-Fixed sound travel radii for unsuppressed ammo types
+-Fixed Undercover not being able to throw 1x CS Gas Grenades(found by alvarovini904)
+-Fixed DEVGRU MK17 CQC switching to wrong suppressed version when equipping a suppressor
+-Fixed MG338 Suppressed not having a suppressor on the in-game model
+
+BALANCE:
+-Increased sound signature for suppressed weapons(XM338, M110, M110A1, XM5, MK17, MK17CQC, AK-105, G3KA4, M16, M4, URG-I, HK416, MCX Rattler, P90, MP7)
+-Slightly increased sound signature for suppressed weapons()
+-Lowered sound signature of MK17LB suppressed and MK20SSR suppressed to match T1 balancing
+-Subsonic JHP for Kriss Vector will now reduce fire rate
+
+5/26/2022 v0.9.7 HOTFIX 4
+
+BALANCE:
+-HEDP destruction radius reduced from 1m to 0.8m
+-.300 BLK supersonic suppressed sound radius increased(LVAW->24, RATTLER->25)
+
+FIXED:
+-Fixed Mk17LB and Mk20SSR suppressed being unavailable for DEVGRU(found by PHILXIQUSI)
+-Fixed DEVGRU Mk17 and Mk17CQC not having quicker readytimes(found by Eyyy)
+-Fixed Noveske having flipped reload times(found by Eyyy)
+
+CHANGES:
+-M203 EffectRanges are now up to date(found by Eyyy)
+-MCX LVAW mag size increased to 35
+
+6/25/2022 v0.9.8 HOTFIX 5
+
+NEW WEAPONS:
+XM250 \\DELAYED
+M320 Pike(suggested by dps524) \\DELAYED
+
+FIXED:
+-Fixed NVG UI backgrounds being white
+
+CHANGES:
+-Lowered URG-I texture resolution
+-S-Vest UI changed to actual s-vest(found by AnthonyNonStop)
+
+BALANCE:
+-MGL and M320 HEDP removed from DEV Assaulter and Marksman (can only be used by Support or Black Ops)
+
+5/14/2023 v0.9.8
+
+FIXED:
+-Added compatibility for DK2 v0.35
+
+MISC:
+-Added mod image
+
+6/12/2023 v0.9.9
+
+CHANGES:
+-Removed conflicting ranger_grenadier.khm file, this prevents animation issues with the newer DK2 armature. This should resolve any issues with other mods using the same file.
+
+9/13/2023 v0.9.91
+
+CHANGES:
+-Updated squad and customization XML to reflect addition of Doctrine system. Doctrine is not fully implemented yet but KHG has enabled the GUI elements for it, do not use points on it, it will not have any impact on gameplay. 
+-Updated unit XMLs for adding doctrine tree and Battlehonor points to be used in the future

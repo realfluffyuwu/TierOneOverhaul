@@ -1,0 +1,158 @@
+<GUIItems>
+
+<!--
+	This EventActionBatch is here to trigger an OnOpen event on the 'BABY SEALS' item, to make it call its OnOpen action, which will add it at startup to deploy.xml
+
+	When adding a new unit, do the same with yours:
+	<EventActionBatch name="GAME_GUI_LOADTIME_ACTIONS">
+		<Action type="Show" target="YOUR NEW UNIT NAME"/>
+	</EventActionBatch>
+-->
+<EventActionBatch name="GAME_GUI_LOADTIME_ACTIONS">
+	<Action type="Show" target="NSWDG"/>
+</EventActionBatch>
+
+<Item name="NSWDG" origin="0 -172" hidden="true" align="rt" sizeX="380">
+	<OnOpen>
+		<Action type="AddMeToParent" target="#unit_header"/>
+	</OnOpen>
+
+	<StaticImage name="DEVAssault" origin="0 -74">
+		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="148" color="211e1dcc"/>
+
+		<StaticImage name="#ClassHeader" origin="0 0" align="t">
+			<!-- color will be changed with the one set in unit.xml -->
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="46" color="cb893e"/>
+		</StaticImage>
+		<StaticImage origin="0 0" align="lt">
+			<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" color="0c0b0b33"/>
+		</StaticImage>
+		<StaticImage origin="-16 0" align="lt">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="148" color="f97b0380"/>
+		</StaticImage>
+
+		<StaticText  name="#ClassName" origin="-6 50" text="" align="r" font="header_4" textColor="211e1d"/>
+		<StaticImage name="#ClassIcon" origin="8 50" align="l">
+			<RenderObject2D texture="data/textures/gui/deploy/class_name_icon_assaulter.dds"/>
+		</StaticImage>
+
+		<Item origin="-136 -24">
+			<StaticImage name="#slot0" origin="0 0">
+				<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
+				</StaticImage>
+			<StaticImage name="#slot1" origin="90 0">
+				<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
+			</StaticImage>
+			<StaticImage name="#slot2" origin="180 0">
+				<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
+			</StaticImage>
+			<StaticImage name="#slot3" origin="270 0">
+				<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
+			</StaticImage>
+		</Item>
+
+	</StaticImage>
+
+	<StaticImage name="DEVSupport" origin="-98 -158" align="t" sizeY="148">
+		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="184" sizeY="148" color="211e1dcc"/>
+
+		<StaticImage name="#ClassHeader" origin="0 0" align="t">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="184" sizeY="46" color="cb893e"/>
+		</StaticImage>
+		<StaticImage origin="0 0" align="lt">
+			<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" color="0c0b0b33"/>
+		</StaticImage>
+		<StaticImage origin="-16 0" align="lt">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="148" color="f97b0380"/>
+		</StaticImage>
+		<StaticText  name="#ClassName" origin="-6 50" text="" align="r" font="header_4" textColor="211e1d"/>
+		<StaticImage name="#ClassIcon" origin="8 50" align="l">
+			<RenderObject2D texture="data/textures/gui/deploy/class_name_icon_support.dds"/>
+		</StaticImage>
+
+		<Item origin="-136 -24">
+			<StaticImage name="#slot4" origin="91 0">
+				<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
+			</StaticImage>
+
+			<StaticImage name="#slot5" origin="181 0">
+				<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
+			</StaticImage>
+		</Item>
+
+	</StaticImage>
+
+	<StaticImage name="DEVMarksman" origin="98 -158" align="t" sizeY="148">
+		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="184" sizeY="148" color="211e1dcc"/>
+
+		<StaticImage name="#ClassHeader" origin="0 0" align="t">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="184" sizeY="46" color="cb893e"/>
+		</StaticImage>
+		<StaticImage origin="0 0" align="lt">
+			<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" color="0c0b0b33"/>
+		</StaticImage>
+		<StaticText  name="#ClassName" origin="-6 50" text="" align="r" font="header_4" textColor="211e1d"/>
+		<StaticImage name="#ClassIcon" origin="8 50" align="l">
+			<RenderObject2D texture="data/textures/gui/deploy/class_name_icon_marksman.dds"/>
+		</StaticImage>
+
+		<Item origin="-136 -24">
+			<StaticImage name="#slot6" origin="91 0">
+				<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
+			</StaticImage>
+
+			<StaticImage name="#slot7" origin="181 0">
+				<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
+			</StaticImage>
+		</Item>
+	</StaticImage>
+
+	<StaticImage name="DEVUndercover" origin="-98 -317" align="t" sizeY="148">
+		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="184" sizeY="148" color="211e1dcc"/>
+
+		<StaticImage origin="0 0" align="t">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="185" sizeY="46" color="7a7a7a"/>
+		</StaticImage>
+		<StaticImage origin="0 0" align="lt">
+			<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" color="0c0b0b33"/>
+		</StaticImage>
+		<StaticImage origin="-16 0" align="lt">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="148" color="f97b0380"/>
+		</StaticImage>
+		<StaticText  name="#ClassName" origin="-6 50" text="" align="r" font="header_4" textColor="211e1d"/>
+		<StaticImage name="#ClassIcon" origin="8 50" align="l">
+			<RenderObject2D texture="data/textures/gui/deploy/class_name_icon_undercover.dds"/>
+		</StaticImage>
+
+		<Item origin="-136 -24">
+			<StaticImage name="#slot8" origin="136 0">
+				<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
+			</StaticImage>
+		</Item>
+
+	</StaticImage>
+
+	<StaticImage name="DEVBlackOps" origin="98 -317" align="t" sizeY="148">
+		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="184" sizeY="148" color="211e1dcc"/>
+
+		<StaticImage origin="0 0" align="t">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="185" sizeY="46" color="7a7a7a"/>
+		</StaticImage>
+		<StaticImage origin="0 0" align="lt">
+			<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" color="0c0b0b33"/>
+		</StaticImage>
+		<StaticText  name="#ClassName" origin="-6 50" text="" align="r" font="header_4" textColor="211e1d"/>
+		<StaticImage name="#ClassIcon" origin="8 50" align="l">
+			<RenderObject2D texture="data/textures/gui/deploy/class_name_icon_blackops.dds"/>
+		</StaticImage>
+
+		<Item origin="-136 -24">
+			<StaticImage name="#slot9" origin="136 0">
+				<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
+			</StaticImage>
+		</Item>
+	</StaticImage>
+
+</Item>
+
+</GUIItems>

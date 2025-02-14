@@ -1,0 +1,8 @@
+<Entities>
+
+	<Entity name="LaserProjectile" type="Projectile" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+			<RenderObject3D model="data/models/fx/grenade_preview_hotspot.khm" diffuseTex="" skipCastShadows="true" skipSSAO="true" skipGOSSAO="true" disableLighting="true" blendMode="multiply"/>
+	</Entity>
+	
+</Entities>

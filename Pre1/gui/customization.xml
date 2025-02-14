@@ -1,0 +1,2185 @@
+<GUIItems>
+
+<EventActionBatch name="GUI_CUSTOMIZE_UNCHECK_ALL">
+	<Action type="Uncheck_WithoutActions" target="PrimaryWeapon"/>
+	<Action type="Uncheck_WithoutActions" target="SecondaryWeapon"/>
+	<Action type="Uncheck_WithoutActions" target="PrimaryWeaponMuzzle"/>
+	<Action type="Uncheck_WithoutActions" target="PrimaryWeaponScope"/>
+	<Action type="Uncheck_WithoutActions" target="PrimaryWeaponAmmo"/>
+	<Action type="Uncheck_WithoutActions" target="SecondaryWeaponMuzzle"/>
+	<Action type="Uncheck_WithoutActions" target="SecondaryWeaponScope"/>
+	<Action type="Uncheck_WithoutActions" target="SecondaryWeaponAmmo"/>
+	<Action type="Uncheck_WithoutActions" target="Helmet"/>
+	<Action type="Uncheck_WithoutActions" target="HelmetNVG"/>
+	<Action type="Uncheck_WithoutActions" target="Armor"/>
+	<Action type="Uncheck_WithoutActions" target="UtilityPouch1"/>
+	<Action type="Uncheck_WithoutActions" target="UtilityPouch2"/>
+	<Action type="Uncheck_WithoutActions" target="SupportGear1"/>
+</EventActionBatch>
+
+<EventActionBatch name="GUI_CUSTOMIZE_SHOW_DEFAULT">
+	<!-- hiding these will result in the default view -->
+	<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+	<Action type="Hide" target="#equipment_list_panel"/>
+	<Action type="Hide" target="#equipment_details_panel"/>
+</EventActionBatch>
+
+<!-- this is added as a child to the deploy screen item in code -->
+<Item name="Customization_Screen" sizeX="1106" sizeY="1380" hidden="true">
+	<OnOpen>
+		<Action type="PlaySound" target="gui_customize_equip"/>
+		<Action type="AddChild" target="Deploy_Screen"/> <!-- we're doing this to allow DeployScreen to receive input, since this page captures input -->
+		<Action type="TriggerEvent" target="GUI_CAPTURE_INPUT"/>
+		<Action type="TriggerEvent" target="GUI_CUSTOMIZE_SHOW_DEFAULT"/>
+		<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_OPENED"/>
+
+		<!-- Add as child here, so that it gets hidden when we close the customization screen via game code. Note that Menu_Main_Blurred_Background keeps its own hidden/shown status, in case it was previously open, otherwise it stays hidden.
+			We also depend on code to close the customization screen before showing the Squads screen and viceversa.
+		-->
+		<Action type="AddChild" target="Menu_Main_Blurred_Background"/>
+		<Action type="MoveToBackground" target="Menu_Main_Blurred_Background"/>
+	</OnOpen>
+
+	<OnClose>
+		<Action type="TriggerEvent" target="GUI_RELEASE_INPUT"/>
+		<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_CLOSED"/>
+		<Action type="RemoveChild" target="Deploy_Screen"/>
+	</OnClose>
+
+	<OnKeyDown key0="27" key1="32"> <!-- Escape and Space -->
+		<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_BACK"/>
+	</OnKeyDown>
+
+	<!-- clicking on this (the background) will close the customization screen
+		 note that the the "background" item below should also 'stealFocus'
+	-->
+	<Item origin="0 0" sizeX="9999" sizeY="9999">
+		<OnCursorDown>
+			<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_BACK"/>
+		</OnCursorDown>
+		<OnRClickDown>
+			<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_BACK"/>
+		</OnRClickDown>
+	</Item>
+
+	<!-- background -->
+	<StaticImage stealFocus="true">
+		<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="1154" sizeY="1444" color="ffffffc8"/>
+	</StaticImage>
+
+	<Editbox name="#trooper_name" origin="64 24" align="lt" acceptNumbers="true" acceptLetters="true" forceUppercase="false" maxCharacters="16" focusedTextColor="ffffffff">
+		<TextFormat origin="10 0" align="l" text="THIS IS YOUR NAME" font="header_2" textColor="f97b03"/>
+		<OnHoverEnd>
+			<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_TRPRNAME_MODIFIED"/>
+		</OnHoverEnd>
+		<OnHover>
+			<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" color="000000e6" sizeX="1036" sizeY="80"/>
+		</OnHover>
+		<OnClick>
+			<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" color="000000e6" sizeX="1036" sizeY="80"/>
+		</OnClick>
+		<Cursor>
+			<RenderObject2D texture="data/textures/gui/editbox_cursor.tga" scaleY="3"/>
+		</Cursor>
+	</Editbox>
+
+	<StaticImage name="edit_icon" origin="-10 14" align="rt">
+		<RenderObject2D texture="data/textures/gui/customization/edit_name.dds"/>
+	</StaticImage>
+
+	<StaticImage name="#trooper_rank" origin="0 10" align="lt">
+		<RenderObject2D texture="data/textures/gui/customization/trooper_rank_01.dds"/>
+	</StaticImage>
+
+	<!-- total stars -->
+	<StaticImage origin="218 30" align="rt">
+		<RenderObject2D texture="data/textures/gui/customization/customization_stars.dds" />
+		<StaticText  align="t" name="#total_stars" origin="0 -120" text="32" font="header_3" textColor="f97b03"/>
+	</StaticImage>
+
+	<!-- total battlehonors -->
+	<StaticImage origin="218 -190" align="rt" tooltip="@customization_battlehonors_ttip" hidden="true">
+		<RenderObject2D texture="data/textures/gui/customization/customization_bh.dds" />
+		<StaticText  align="t" name="#total_battlehonors" origin="0 -200" text="32" font="header_3" textColor="f97b03"/>
+	</StaticImage>
+	<!--
+
+	PROFILE
+
+	-->
+	<Item name="#player_profile_panel" align="l">
+		<StaticImage align="l" name="#portrait" origin="0 360">
+			<RenderObject2D texture="data/textures/portraits/ranger1_large.dds" blendMode="none"/>
+
+			<Button origin="15 -15" align="lt">
+				<RenderObject2D texture="data/textures/gui/customization/info_normal.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/customization/info_hover.tga"/>
+					<Action type="Show" target="#player_profile_info"/>
+				</OnHover>
+				<OnHoverEnd>
+					<Action type="Hide" target="#player_profile_info"/>
+				</OnHoverEnd>
+			</Button>
+
+			<Button origin="5 0" align="l">
+				<RenderObject2D texture="data/textures/gui/menu_arrowright_normal.tga" flipX="true"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/menu_arrowright_hover.tga" flipX="true"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/menu_arrowright_normal.tga" flipX="true"/>
+					<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_PORTRAIT_PREV"/>
+				</OnClick>
+			</Button>
+
+			<Button origin="-5 0" align="r">
+				<RenderObject2D texture="data/textures/gui/menu_arrowright_normal.tga" />
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/menu_arrowright_hover.tga" />
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/menu_arrowright_normal.tga" />
+					<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_PORTRAIT_NEXT"/>
+				</OnClick>
+			</Button>
+
+			<StaticImage name="#ClassIcon" origin="-15 -15" align="rt">
+				<RenderObject2D texture="data/textures/gui/deploy/class_icon_assaulter.dds" sizeX="48" sizeY="48" />
+			</StaticImage>
+
+			<StaticImage name="#player_profile_info" align="lt" origin="-430 0" hidden="true">
+				<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="400" sizeY="329" color="ffffffc8"/>
+				<StaticText align="lt" origin="8 0" text="@menu_cust_stats_title" font="header_4" textColor="f97b03"/>
+				<StaticImage origin="0 -39" align="t">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="384" sizeY="4" color="f97b03"/>
+				</StaticImage>
+				<StaticImage align="lt" origin="0 -4">
+
+					<StaticImage origin="0 -44" align="lt">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="29" color="00000050"/>
+						<StaticText align="l" origin="5 0" text="@menu_cust_stats_campaigns" font="paragraph_2" textColor="f0e3cc"/>
+						<StaticText name="totalCampaignsPlayed" align="r" origin="-5 0" text="45" font="paragraph_2" textColor="f0e3cc"/>
+					</StaticImage>
+
+					<StaticImage origin="0 -74" align="lt">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="29" color="ffffff00"/>
+						<StaticText align="l" origin="5 0" text="@menu_cust_stats_missions" font="paragraph_2" textColor="f0e3cc"/>
+						<StaticText name="totalMissionsWon" align="r" origin="-5 0" text="45" font="paragraph_2" textColor="f0e3cc"/>
+					</StaticImage>
+
+					<StaticImage origin="0 -104" align="lt">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="29" color="00000050"/>
+						<StaticText align="l" origin="5 0" text="@menu_m_stats_kills" font="paragraph_2" textColor="f0e3cc"/>
+						<StaticText name="kills" align="r" origin="-5 0" text="45" font="paragraph_2" textColor="f0e3cc"/>
+					</StaticImage>
+
+					<StaticImage origin="0 -134" align="lt">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="29" color="ffffff00"/>
+						<StaticText align="l" origin="5 0" text="@menu_cust_stats_shots" font="paragraph_2" textColor="f0e3cc"/>
+						<StaticText name="bulletsFired" align="r" origin="-5 0" text="45" font="paragraph_2" textColor="f0e3cc"/>
+					</StaticImage>
+
+					<StaticImage origin="0 -164" align="lt">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="29" color="00000050"/>
+						<StaticText align="l" origin="5 0" text="@menu_cust_stats_doorskicked" font="paragraph_2" textColor="f0e3cc"/>
+						<StaticText name="doorsKicked" align="r" origin="-5 0" text="45" font="paragraph_2" textColor="f0e3cc"/>
+					</StaticImage>
+
+					<StaticImage origin="0 -194" align="lt">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="29" color="ffffff00"/>
+						<StaticText align="l" origin="5 0" text="@menu_cust_stats_doorsblown" font="paragraph_2" textColor="f0e3cc"/>
+						<StaticText name="doorsBlownUp" align="r" origin="-5 0" text="45" font="paragraph_2" textColor="f0e3cc"/>
+					</StaticImage>
+
+					<StaticImage origin="0 -224" align="lt">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="29" color="00000050"/>
+						<StaticText align="l" origin="5 0" text="@menu_cust_stats_wallsbreached" font="paragraph_2" textColor="f0e3cc"/>
+						<StaticText name="wallsBreached" align="r" origin="-5 0" text="45" font="paragraph_2" textColor="f0e3cc"/>
+					</StaticImage>
+
+					<StaticImage origin="0 -254" align="lt">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="29" color="ffffff00"/>
+						<StaticText align="l" origin="5 0" text="@menu_cust_stats_walked" font="paragraph_2" textColor="f0e3cc"/>
+						<StaticText name="distanceWalkedMeters" align="r" origin="-5 0" text="45" font="paragraph_2" textColor="f0e3cc"/>
+					</StaticImage>
+
+					<StaticImage origin="0 -284" align="lt">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="29" color="00000050"/>
+						<StaticText align="l" origin="5 0" text="@menu_cust_stats_injuries" font="paragraph_2" textColor="f0e3cc"/>
+						<StaticText name="hitsTaken" align="r" origin="-5 0" text="45" font="paragraph_2" textColor="f0e3cc"/>
+					</StaticImage>
+
+					<!--
+					<StaticImage origin="0 -" align="lt">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="29" color="ffffff00"/>
+						<StaticText name="#info2" align="l" origin="5 0" text="@menu_cust_stats_kills" font="paragraph_2" textColor="f0e3cc"/>
+					</StaticImage>
+
+					<StaticImage origin="0 -" align="lt">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="29" color="00000050"/>
+						<StaticText name="#info5" align="l" origin="5 0" text="@menu_cust_stats_grenades" font="paragraph_2" textColor="f0e3cc"/>
+					</StaticImage>
+					-->
+
+				</StaticImage>
+			</StaticImage>
+
+			<Item align="b">
+				<StaticImage origin="0 50" tooltip="@menu_cust_trooper_rank_ttip" stealFocus="true">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="528" sizeY="92" color="211e1dc8"/>
+				</StaticImage>
+
+				<StaticImage origin="16 40" name="#xp_bar">
+					<RenderObject2D texture="data/textures/gui/customization/xp_base.tga"/>
+					<StaticImage origin="0 0" name="#bar_element">
+						<RenderObject2D texture="data/textures/gui/customization/xp_fill.tga"/>
+					</StaticImage>
+
+					<StaticText align="l" origin="20 36" name="#rank_name" text="ROOKIE" font="header_4" textColor="f0e3cc"/>
+					<StaticText align="r" origin="0 36" name="#xp_count" text="999/999" font="header_4" textColor="f0e3cc"/>
+				</StaticImage>
+
+				<StaticImage origin="-228 40">
+					<RenderObject2D texture="data/textures/gui/customization/xp_level.tga"/>
+					<StaticText origin="0 0" text="99" name="#rank_level" font="header_5" textColor="211e1d"/>
+				</StaticImage>
+			</Item>
+		</StaticImage>
+
+
+		<!-- abilities -->
+		<Item align="l" origin="0 100">
+			<StaticText text="@menu_cust_abilities_title" origin="0 -8" align="lt" font="header_3" textColor="f97b03"/>
+			<StaticImage origin="0 -72" align="lt">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="536" sizeY="4" color="f97b03"/>
+			</StaticImage>
+
+			<!-- name must be the same as in entities/human_innate_abilities.xml -->
+			<StaticImage align="lt" origin="0 -80" tooltip="@menu_cust_ability_marksmanship_ttip">
+				<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="540" sizeY="64" color="ffffffc8"/>
+				<StaticText align="lt" origin="10 0" text="@menu_cust_ability_marksmanship" font="paragraph_2" textColor="f0e3cc"/>
+				<StaticImage name="Marksmanship" align="lt" origin="8 -36">
+					<RenderObject2D texture="data/textures/gui/customization/stat_base.tga"/>
+					<StaticImage name="#bar_element" origin="-234 0" hidden="true">
+						<RenderObject2D texture="data/textures/gui/customization/stat_single_fill.tga"/>
+					</StaticImage>
+					<StaticImage name="#bar_more" hidden="true">
+						<RenderObject2D texture="data/textures/gui/customization/stat_single_increase.tga"/>
+					</StaticImage>
+				</StaticImage>
+			</StaticImage>
+
+			<StaticImage align="lt" origin="0 -150" tooltip="@menu_cust_ability_assault_ttip" stealFocus="true">
+				<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="540" sizeY="64" color="ffffffc8"/>
+				<StaticText align="lt" origin="10 0" text="@menu_cust_ability_assault" font="paragraph_2" textColor="f0e3cc"/>
+				<StaticImage name="AssaultShooting" align="lt" origin="8 -36">
+					<RenderObject2D texture="data/textures/gui/customization/stat_base.tga"/>
+					<StaticImage name="#bar_element" origin="-234 0" hidden="true">
+						<RenderObject2D texture="data/textures/gui/customization/stat_single_fill.tga"/>
+					</StaticImage>
+					<StaticImage name="#bar_more" hidden="true">
+						<RenderObject2D texture="data/textures/gui/customization/stat_single_increase.tga"/>
+					</StaticImage>
+				</StaticImage>
+			</StaticImage>
+
+			<StaticImage align="lt" origin="0 -220" tooltip="@menu_cust_ability_field_ttip" stealFocus="true">
+				<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="540" sizeY="64" color="ffffffc8"/>
+				<StaticText align="lt" origin="10 0" text="@menu_cust_ability_field" font="paragraph_2" textColor="f0e3cc"/>
+				<StaticImage name="FieldSkills" align="lt" origin="8 -36">
+					<RenderObject2D texture="data/textures/gui/customization/stat_base.tga"/>
+					<StaticImage name="#bar_element" origin="-234 0" hidden="true">
+						<RenderObject2D texture="data/textures/gui/customization/stat_single_fill.tga"/>
+					</StaticImage>
+					<StaticImage name="#bar_more" hidden="true">
+						<RenderObject2D texture="data/textures/gui/customization/stat_single_increase.tga"/>
+					</StaticImage>
+				</StaticImage>
+			</StaticImage>
+
+			<!--
+				UPGRADES
+
+				Upgrade buttons are linked to upgrades defined for each class in units.xml, in the order specified there (upgrade1 is linked to #bh1_upgrade [...] upgrade6 is linked to #bh6_upgrade)
+				We can have max 6 upgrades, but you need to add more buttons here.
+				The current 2 upgrades out of 4 limit is imposed via UI, by blocking each consecutive upgrade when the other is active, as well as from code.
+			-->
+
+			<Item name="#bh_upgrade_default" origin="270 -350" align="c">
+				<StaticImage origin="0 0">
+					<RenderObject2D texture="data/textures/gui/customization/bh_upgrade_default.dds" scaleX="1.2" scaleY="1.2" color="ffffff80"/>
+				</StaticImage>
+			</Item>
+
+
+			<Item name="#bh1_upgrade" origin="270 -350" align="c" hidden="true">
+				<StaticImage origin="0 0">
+					<RenderObject2D texture="data/textures/gui/customization/bh_upgrade_defense.dds" scaleX="1.2" scaleY="1.2"/>
+				</StaticImage>
+			</Item>
+
+			<Item name="#bh3_upgrade" origin="270 -350" align="c" hidden="true">
+				<StaticImage origin="0 0">
+					<RenderObject2D texture="data/textures/gui/customization/bh_upgrade_defense.dds" flipX="True" scaleX="1.2" scaleY="1.2"/>
+				</StaticImage>
+			</Item>
+
+			<Item name="#bh2_upgrade" origin="270 -350" align="c" hidden="true">
+				<StaticImage origin="0 0">
+					<RenderObject2D texture="data/textures/gui/customization/bh_upgrade_offense.dds" scaleX="1.2" scaleY="1.2"/>
+				</StaticImage>
+			</Item>
+
+			<Item name="#bh4_upgrade" origin="270 -350" align="c" hidden="true">
+				<StaticImage origin="0 0">
+					<RenderObject2D texture="data/textures/gui/customization/bh_upgrade_offense.dds" flipX="True" scaleX="1.2" scaleY="1.2"/>
+				</StaticImage>
+			</Item>
+
+			<Checkbox align="lt" name="#bh_upgrade_1" origin="0 -300"  defaultState="UncheckedState" hidden="true">
+
+				<Item name="#bh1_unchecked" origin="0 0" align="c">
+					<StaticImage origin="0 -16" align="t">
+						<RenderObject2D texture="data/textures/gui/customization/battlehonor_point.dds" scaleX="0.6" scaleY="0.6"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_defense_unchecked.dds" flipX="true" blendMode="none"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh1_unchecked_hover" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 -12" align="t">
+						<RenderObject2D texture="data/textures/gui/customization/battlehonor_point.dds" scaleX="0.7" scaleY="0.7"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_defense_unchecked_hover.dds" flipX="true" blendMode="none"/>
+					</StaticImage>
+					<StaticImage align="c" origin="0 -63">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="6" sizeY="24" color="f97b03"/>
+					</StaticImage>
+					<StaticImage align="c" origin="0 -63">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="24" sizeY="6" color="f97b03"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh1_checked" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 -16" align="t">
+						<RenderObject2D texture="data/textures/gui/campaign/endscreen_battlehonor_full.dds" scaleX="0.6" scaleY="0.6"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_defense_checked.dds" flipX="true" blendMode="none"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh1_checked_hover" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 -12" align="t">
+						<RenderObject2D texture="data/textures/gui/campaign/endscreen_battlehonor_full.dds" scaleX="0.7" scaleY="0.7"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_defense_hover.dds" flipX="true" blendMode="none"/>
+					</StaticImage>
+					<!--
+					<StaticImage align="c" origin="0 -63">
+						<RenderObject2D texture="data/textures/gui/customization/mod_unavailable.tga" sizeX="54" sizeY="54" color="161411" />
+					</StaticImage>
+					-->
+				</Item>
+
+				<Item name="#bh1_lock" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="97" sizeY="57" color="423c37"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_defense_unchecked.dds" flipX="true" blendMode="none" color="928a7c"/>
+					</StaticImage>
+				</Item>
+
+				<UncheckedState>
+					<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="97" sizeY="57" color="f0e3cc"/>
+					<OnOpen>
+						<Action type="Hide" target="#bh1_checked"/>
+						<Action type="Hide" target="#bh1_upgrade"/>
+
+						<Action type="Show" target="#bh2_unchecked"/>
+						<Action type="Hide" target="#bh2_lock"/>
+						<Action type="EnableInput" target="#bh_upgrade_2"/>
+					</OnOpen>
+					<OnHover>
+						<Action type="Show" target="#bh1_unchecked_hover"/>
+
+						<Action type="Hide" target="#bh2_unchecked"/>
+						<Action type="Show" target="#bh2_lock"/>
+					</OnHover>
+					<OnHoverEnd>
+						<Action type="Hide" target="#bh1_unchecked_hover"/>
+
+						<Action type="Show" target="#bh2_unchecked"/>
+						<Action type="Hide" target="#bh2_lock"/>
+					</OnHoverEnd>
+					<OnClick>
+						<Action type="PlaySound" target="gui_customize_equip"/>
+						<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_UPGRADE1"/>
+					</OnClick>
+				</UncheckedState>
+
+				<CheckedState>
+					<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="100" sizeY="60" color="211e1dcc"/>
+					<OnOpen>
+						<Action type="Show" target="#bh1_checked"/>
+						<Action type="Show" target="#bh1_upgrade"/>
+
+						<Action type="Hide" target="#bh2_unchecked"/>
+						<Action type="Show" target="#bh2_lock"/>
+						<Action type="DisableInput" target="#bh_upgrade_2"/>
+					</OnOpen>
+					<OnHover>
+						<Action type="Show" target="#bh1_checked_hover"/>
+					</OnHover>
+					<OnHoverEnd>
+						<Action type="Hide" target="#bh1_checked_hover"/>
+					</OnHoverEnd>
+					<OnClick>
+						<Action type="PlaySound" target="gui_customize_equip"/>
+						<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_DOWNGRADE1"/>
+					</OnClick>
+				</CheckedState>
+				<!--
+				<StaticText text="Offense" align="ct" origin="0 30" font="paragraph_2" textColor="f0e3cc"/>
+				-->
+			</Checkbox>
+
+			<Checkbox align="lt" name="#bh_upgrade_2" origin="102 -300"  defaultState="UncheckedState"  hidden="true">
+
+				<Item name="#bh2_unchecked" origin="0 0" align="c">
+					<StaticImage origin="0 -16" align="t">
+						<RenderObject2D texture="data/textures/gui/customization/battlehonor_point.dds" scaleX="0.6" scaleY="0.6"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_offense_unchecked.dds" blendMode="none"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh2_unchecked_hover" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 -12" align="t">
+						<RenderObject2D texture="data/textures/gui/customization/battlehonor_point.dds" scaleX="0.7" scaleY="0.7"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_offense_unchecked_hover.dds" blendMode="none"/>
+					</StaticImage>
+					<StaticImage align="c" origin="0 -63">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="6" sizeY="24" color="f97b03"/>
+					</StaticImage>
+					<StaticImage align="c" origin="0 -63">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="24" sizeY="6" color="f97b03"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh2_checked" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 -16" align="t">
+						<RenderObject2D texture="data/textures/gui/campaign/endscreen_battlehonor_full.dds" scaleX="0.6" scaleY="0.6"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_offense_checked.dds" blendMode="none"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh2_checked_hover" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 -12" align="t">
+						<RenderObject2D texture="data/textures/gui/campaign/endscreen_battlehonor_full.dds" scaleX="0.7" scaleY="0.7"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_offense_hover.dds" blendMode="none"/>
+					</StaticImage>
+					<!--
+					<StaticImage align="c" origin="0 -63">
+						<RenderObject2D texture="data/textures/gui/customization/mod_unavailable.tga" sizeX="54" sizeY="54" color="161411" />
+					</StaticImage>
+					-->
+				</Item>
+
+				<Item name="#bh2_lock" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="97" sizeY="57" color="423c37"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_offense_unchecked.dds" blendMode="none" color="928a7c"/>
+					</StaticImage>
+				</Item>
+
+
+				<UncheckedState>
+					<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="97" sizeY="57" color="f0e3cc"/>
+					<OnOpen>
+						<Action type="Hide" target="#bh2_checked"/>
+						<Action type="Hide" target="#bh2_upgrade"/>
+
+						<Action type="Show" target="#bh1_unchecked"/>
+						<Action type="Hide" target="#bh1_lock"/>
+						<Action type="EnableInput" target="#bh_upgrade_1"/>
+					</OnOpen>
+					<OnHover>
+						<Action type="Show" target="#bh2_unchecked_hover"/>
+						<Action type="Hide" target="#bh1_unchecked"/>
+						<Action type="Show" target="#bh1_lock"/>
+					</OnHover>
+					<OnHoverEnd>
+						<Action type="Hide" target="#bh2_unchecked_hover"/>
+						<Action type="Show" target="#bh1_unchecked"/>
+						<Action type="Hide" target="#bh1_lock"/>
+					</OnHoverEnd>
+					<OnClick>
+						<Action type="PlaySound" target="gui_customize_equip"/>
+						<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_UPGRADE2"/>
+					</OnClick>
+				</UncheckedState>
+
+				<CheckedState>
+					<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="100" sizeY="60" color="211e1dcc"/>
+					<OnOpen>
+						<Action type="Show" target="#bh2_checked"/>
+						<Action type="Show" target="#bh2_upgrade"/>
+
+						<Action type="Hide" target="#bh1_unchecked"/>
+						<Action type="Show" target="#bh1_lock"/>
+						<Action type="DisableInput" target="#bh_upgrade_1"/>
+					</OnOpen>
+					<OnHover>
+						<Action type="Show" target="#bh2_checked_hover"/>
+					</OnHover>
+					<OnHoverEnd>
+						<Action type="Hide" target="#bh2_checked_hover"/>
+					</OnHoverEnd>
+					<OnClick>
+						<Action type="PlaySound" target="gui_customize_equip"/>
+						<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_DOWNGRADE2"/>
+					</OnClick>
+				</CheckedState>
+				<!--
+				<StaticText text="Offense" align="ct" origin="0 30" font="paragraph_2" textColor="f0e3cc"/>
+				-->
+			</Checkbox>
+
+			<Checkbox align="lt" name="#bh_upgrade_3" origin="340 -300"  defaultState="UncheckedState" hidden="true">
+
+				<Item name="#bh3_unchecked" origin="0 0" align="c">
+					<StaticImage origin="0 -16" align="t">
+						<RenderObject2D texture="data/textures/gui/customization/battlehonor_point.dds" scaleX="0.6" scaleY="0.6"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_defense_unchecked.dds" blendMode="none"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh3_unchecked_hover" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 -12" align="t">
+						<RenderObject2D texture="data/textures/gui/customization/battlehonor_point.dds" scaleX="0.7" scaleY="0.7"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_defense_unchecked_hover.dds" blendMode="none"/>
+					</StaticImage>
+					<StaticImage align="c" origin="0 -63">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="6" sizeY="24" color="f97b03"/>
+					</StaticImage>
+					<StaticImage align="c" origin="0 -63">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="24" sizeY="6" color="f97b03"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh3_checked" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 -16" align="t">
+						<RenderObject2D texture="data/textures/gui/campaign/endscreen_battlehonor_full.dds" scaleX="0.6" scaleY="0.6"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_defense_checked.dds" blendMode="none"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh3_checked_hover" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 -12" align="t">
+						<RenderObject2D texture="data/textures/gui/campaign/endscreen_battlehonor_full.dds" scaleX="0.7" scaleY="0.7"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_defense_hover.dds" blendMode="none"/>
+					</StaticImage>
+					<!--
+					<StaticImage align="c" origin="0 -63">
+						<RenderObject2D texture="data/textures/gui/customization/mod_unavailable.tga" sizeX="54" sizeY="54" color="161411" />
+					</StaticImage>
+					-->
+				</Item>
+
+				<Item name="#bh3_lock" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="97" sizeY="57" color="423c37"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_defense_unchecked.dds" blendMode="none" color="928a7c"/>
+					</StaticImage>
+				</Item>
+
+				<UncheckedState>
+					<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="97" sizeY="57" color="f0e3cc"/>
+					<OnOpen>
+						<Action type="Hide" target="#bh3_checked"/>
+						<Action type="Hide" target="#bh3_upgrade"/>
+
+						<Action type="Show" target="#bh4_unchecked"/>
+						<Action type="Hide" target="#bh4_lock"/>
+						<Action type="EnableInput" target="#bh_upgrade_4"/>
+					</OnOpen>
+					<OnHover>
+						<Action type="Show" target="#bh3_unchecked_hover"/>
+
+						<Action type="Hide" target="#bh4_unchecked"/>
+						<Action type="Show" target="#bh4_lock"/>
+					</OnHover>
+					<OnHoverEnd>
+						<Action type="Hide" target="#bh3_unchecked_hover"/>
+
+						<Action type="Show" target="#bh4_unchecked"/>
+						<Action type="Hide" target="#bh4_lock"/>
+					</OnHoverEnd>
+					<OnClick>
+						<Action type="PlaySound" target="gui_customize_equip"/>
+						<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_UPGRADE3"/>
+					</OnClick>
+				</UncheckedState>
+
+				<CheckedState>
+					<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="100" sizeY="60" color="211e1dcc"/>
+					<OnOpen>
+						<Action type="Show" target="#bh3_checked"/>
+						<Action type="Show" target="#bh3_upgrade"/>
+
+						<Action type="Hide" target="#bh4_unchecked"/>
+						<Action type="Show" target="#bh4_lock"/>
+						<Action type="DisableInput" target="#bh_upgrade_4"/>
+					</OnOpen>
+					<OnHover>
+						<Action type="Show" target="#bh3_checked_hover"/>
+					</OnHover>
+					<OnHoverEnd>
+						<Action type="Hide" target="#bh3_checked_hover"/>
+					</OnHoverEnd>
+					<OnClick>
+						<Action type="PlaySound" target="gui_customize_equip"/>
+						<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_DOWNGRADE3"/>
+					</OnClick>
+				</CheckedState>
+				<!--
+				<StaticText text="Defense" align="ct" origin="0 30" font="paragraph_2" textColor="f0e3cc"/>
+				-->
+			</Checkbox>
+
+			<Checkbox align="lt" name="#bh_upgrade_4" origin="442 -300"  defaultState="UncheckedState" hidden="true">
+
+				<Item name="#bh4_unchecked" origin="0 0" align="c">
+					<StaticImage origin="0 -16" align="t">
+						<RenderObject2D texture="data/textures/gui/customization/battlehonor_point.dds" scaleX="0.6" scaleY="0.6"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_offense_unchecked.dds" flipX="true" blendMode="none"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh4_unchecked_hover" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 -12" align="t">
+						<RenderObject2D texture="data/textures/gui/customization/battlehonor_point.dds" scaleX="0.7" scaleY="0.7"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_offense_unchecked_hover.dds" flipX="true" blendMode="none"/>
+					</StaticImage>
+					<StaticImage align="c" origin="0 -63">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="6" sizeY="24" color="f97b03"/>
+					</StaticImage>
+					<StaticImage align="c" origin="0 -63">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="24" sizeY="6" color="f97b03"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh4_checked" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 -16" align="t">
+						<RenderObject2D texture="data/textures/gui/campaign/endscreen_battlehonor_full.dds" scaleX="0.6" scaleY="0.6"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_offense_checked.dds" flipX="true" blendMode="none"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh4_checked_hover" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 -12" align="t">
+						<RenderObject2D texture="data/textures/gui/campaign/endscreen_battlehonor_full.dds" scaleX="0.7" scaleY="0.7"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_offense_hover.dds" flipX="true" blendMode="none"/>
+					</StaticImage>
+					<!--
+					<StaticImage align="c" origin="0 -63">
+						<RenderObject2D texture="data/textures/gui/customization/mod_unavailable.tga" sizeX="54" sizeY="54" color="161411" />
+					</StaticImage>
+					-->
+				</Item>
+
+				<Item name="#bh4_lock" origin="0 0" align="c" hidden="true">
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="97" sizeY="57" color="423c37"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/customization/bh_offense_unchecked.dds" blendMode="none" flipX="true" color="928a7c"/>
+					</StaticImage>
+				</Item>
+
+				<UncheckedState>
+					<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="97" sizeY="57" color="f0e3cc"/>
+					<OnOpen>
+						<Action type="Hide" target="#bh4_checked"/>
+						<Action type="Hide" target="#bh4_upgrade"/>
+
+						<Action type="Show" target="#bh3_unchecked"/>
+						<Action type="Hide" target="#bh3_lock"/>
+						<Action type="EnableInput" target="#bh_upgrade_3"/>
+					</OnOpen>
+					<OnHover>
+						<Action type="Show" target="#bh4_unchecked_hover"/>
+						<Action type="Hide" target="#bh3_unchecked"/>
+						<Action type="Show" target="#bh3_lock"/>
+					</OnHover>
+					<OnHoverEnd>
+						<Action type="Hide" target="#bh4_unchecked_hover"/>
+						<Action type="Show" target="#bh3_unchecked"/>
+						<Action type="Hide" target="#bh3_lock"/>
+					</OnHoverEnd>
+					<OnClick>
+						<Action type="PlaySound" target="gui_customize_equip"/>
+						<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_UPGRADE4"/>
+					</OnClick>
+				</UncheckedState>
+
+				<CheckedState>
+					<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="100" sizeY="60" color="211e1dcc"/>
+					<OnOpen>
+						<Action type="Show" target="#bh4_checked"/>
+						<Action type="Show" target="#bh4_upgrade"/>
+
+						<Action type="Hide" target="#bh3_unchecked"/>
+						<Action type="Show" target="#bh3_lock"/>
+						<Action type="DisableInput" target="#bh_upgrade_3"/>
+					</OnOpen>
+					<OnHover>
+						<Action type="Show" target="#bh4_checked_hover"/>
+					</OnHover>
+					<OnHoverEnd>
+						<Action type="Hide" target="#bh4_checked_hover"/>
+					</OnHoverEnd>
+					<OnClick>
+						<Action type="PlaySound" target="gui_customize_equip"/>
+						<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_DOWNGRADE4"/>
+					</OnClick>
+				</CheckedState>
+				<!--
+				<StaticText text="Offense" align="ct" origin="0 30" font="paragraph_2" textColor="f0e3cc"/>
+				-->
+			</Checkbox>
+
+
+
+		<!-- commented out the old ones while I mockup the new ones
+			<Item align="lt" origin="0 -308" sizeX="266" sizeY="64" >
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="266" sizeY="64" color="ffffffc8"/>
+				</StaticImage>
+				<Item name="#bh_ability_unchecked_left" origin="0 0" sizeX="250" sizeY="48">
+					<StaticImage origin="0 0" align="t">
+						<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="250" sizeY="4" color="f0e3cc"/>
+					</StaticImage>
+					<StaticImage origin="0 0" align="b">
+						<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="250" sizeY="4" color="f0e3cc"/>
+					</StaticImage>
+					<StaticImage origin="0 0" align="l">
+						<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="4" sizeY="40" color="f0e3cc"/>
+					</StaticImage>
+					<StaticImage origin="0 0" align="r">
+						<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="4" sizeY="40" color="f0e3cc"/>
+					</StaticImage>
+					<StaticImage name="bh_point_bg" align="c" origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="242" sizeY="40" color="0c0b0b80"/>
+					</StaticImage>
+					<StaticImage name="bh_point_icon" align="t" origin="0 28">
+						<RenderObject2D texture="data/textures/gui/customization/battlehonor_point.dds" scaleX="1" scaleY="1" />
+					</StaticImage>
+					<StaticImage align="c" origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="24" color="f0e3cc"/>
+					</StaticImage>
+					<StaticImage align="c" origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="24" sizeY="8" color="f0e3cc"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh_ability_checked_left" origin="0 0" sizeX="250" sizeY="48" hidden="true">
+					<StaticImage name="bh_point_bg" align="c" origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="250" sizeY="48" color="f0e3cc"/>
+					</StaticImage>
+					<StaticImage name="bh_point_icon" align="t" origin="0 25">
+						<RenderObject2D texture="data/textures/gui/campaign/endscreen_battlehonor_full.dds" scaleX="1" scaleY="1" />
+					</StaticImage>
+					<StaticImage align="c" origin="80 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="24" color="40392b"/>
+					</StaticImage>
+					<StaticImage align="c" origin="80 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="24" sizeY="8" color="40392b"/>
+					</StaticImage>
+					<StaticImage align="c" origin="-80 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="24" color="40392b"/>
+					</StaticImage>
+					<StaticImage align="c" origin="-80 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="24" sizeY="8" color="40392b"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh_ability_hover_left" origin="0 0" sizeX="250" sizeY="48" hidden="true">
+					<StaticImage name="bh_point_bg" align="c" origin="0 0" hidden="true">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="250" sizeY="48" color="f97b03"/>
+					</StaticImage>
+					<StaticImage name="bh_point_icon" align="t" origin="0 32">
+						<RenderObject2D texture="data/textures/gui/customization/battlehonor_point.dds" scaleX="1.1" scaleY="1.1" color="f97b03"/>
+					</StaticImage>
+					<StaticImage align="c" origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="12" sizeY="30" color="f97b03"/>
+					</StaticImage>
+					<StaticImage align="c" origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="30" sizeY="12" color="f97b03"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh_ability_hover_checked_left" origin="0 0" sizeX="250" sizeY="48" hidden="true">
+					<StaticImage name="bh_point_bg" align="c" origin="0 0" hidden="true">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="250" sizeY="48" color="f97b03"/>
+					</StaticImage>
+
+					<StaticImage name="bh_point_icon" align="t" origin="0 32">
+						<RenderObject2D texture="data/textures/gui/customization/battlehonor_point.dds" scaleX="1.12" scaleY="1.12" color="f97b03"/>
+					</StaticImage>
+					<StaticImage name="bh_point_icon" align="t" origin="0 25">
+						<RenderObject2D texture="data/textures/gui/campaign/endscreen_battlehonor_full.dds" scaleX="1" scaleY="1" color="ffffff"/>
+					</StaticImage>
+				</Item>
+
+				<Checkbox name="#add_bh_ability_left" sizeX="250" sizeY="48" origin="0 0" defaultState="UncheckedState" >
+					<UncheckedState sizeX="250" sizeY="80">
+						<OnOpen>
+							<Action type="Show" target="#bh_ability_unchecked_left"/>
+							<Action type="Hide" target="#bh_ability_hover_checked_left"/>
+						</OnOpen>
+						<OnHover>
+							<Action type="Show" target="#bh_ability_hover_left"/>
+
+						</OnHover>
+						<OnHoverEnd>
+							<Action type="Hide" target="#bh_ability_hover_left"/>
+							<Action type="Show" target="#bh_ability_unchecked_left"/>
+						</OnHoverEnd>
+						<OnClick>
+							<Action type="Show" target="#bh_ability_checked_left"/>
+							<Action type="Hide" target="#bh_ability_hover_left"/>
+							<Action type="Hide" target="#bh_ability_unchecked_left"/>
+						</OnClick>
+					</UncheckedState>
+
+					<CheckedState acceptInput="true" sizeX="250" sizeY="80">
+						<OnOpen>
+							<Action type="Show" target="#bh_ability_checked_left"/>
+							<Action type="Hide" target="#bh_ability_hover_checked_left"/>
+						</OnOpen>
+						<OnHover>
+							<Action type="Show" target="#bh_ability_hover_checked_left"/>
+
+						</OnHover>
+						<OnHoverEnd>
+							<Action type="Show" target="#bh_ability_checked_left"/>
+							<Action type="Hide" target="#bh_ability_hover_checked_left"/>
+						</OnHoverEnd>
+						<OnClick>
+							<Action type="Hide" target="#bh_ability_checked_left"/>
+							<Action type="Show" target="#bh_ability_unchecked_left"/>
+						</OnClick>
+					</CheckedState>
+				</Checkbox>
+			</Item>
+
+			<Item align="rt" origin="540 -308" sizeX="266" sizeY="64" >
+				<StaticImage origin="0 0" align="rt">
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="266" sizeY="64" color="ffffffc8"/>
+				</StaticImage>
+				<Item name="#bh_ability_unchecked_right"  origin="0 0" sizeX="250" sizeY="48">
+					<StaticImage origin="0 0" align="t">
+						<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="250" sizeY="4" color="f0e3cc"/>
+					</StaticImage>
+					<StaticImage origin="0 0" align="b">
+						<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="250" sizeY="4" color="f0e3cc"/>
+					</StaticImage>
+					<StaticImage origin="0 0" align="l">
+						<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="4" sizeY="40" color="f0e3cc"/>
+					</StaticImage>
+					<StaticImage origin="0 0" align="r">
+						<RenderObject2D texture="data/textures/gui/square.tga"  sizeX="4" sizeY="40" color="f0e3cc"/>
+					</StaticImage>
+					<StaticImage name="bh_point_bg" align="c" origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="242" sizeY="40" color="0c0b0b80"/>
+					</StaticImage>
+					<StaticImage name="bh_point_icon" align="t" origin="0 28">
+						<RenderObject2D texture="data/textures/gui/customization/battlehonor_point.dds" scaleX="1" scaleY="1" />
+					</StaticImage>
+					<StaticImage align="c" origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="24" color="f0e3cc"/>
+					</StaticImage>
+					<StaticImage align="c" origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="24" sizeY="8" color="f0e3cc"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh_ability_checked_right" origin="0 0" sizeX="250" sizeY="48" hidden="true">
+					<StaticImage name="bh_point_bg" align="c" origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="250" sizeY="48" color="f0e3cc"/>
+					</StaticImage>
+					<StaticImage name="bh_point_icon" align="t" origin="0 25">
+						<RenderObject2D texture="data/textures/gui/campaign/endscreen_battlehonor_full.dds" scaleX="1" scaleY="1" />
+					</StaticImage>
+					<StaticImage align="c" origin="80 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="24" color="40392b"/>
+					</StaticImage>
+					<StaticImage align="c" origin="80 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="24" sizeY="8" color="40392b"/>
+					</StaticImage>
+					<StaticImage align="c" origin="-80 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="24" color="40392b"/>
+					</StaticImage>
+					<StaticImage align="c" origin="-80 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="24" sizeY="8" color="40392b"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh_ability_hover_right" origin="0 0" sizeX="250" sizeY="48" hidden="true">
+					<StaticImage name="bh_point_bg" align="c" origin="0 0" hidden="true">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="250" sizeY="48" color="f97b03"/>
+					</StaticImage>
+					<StaticImage name="bh_point_icon" align="t" origin="0 32">
+						<RenderObject2D texture="data/textures/gui/customization/battlehonor_point.dds" scaleX="1.1" scaleY="1.1" color="f97b03"/>
+					</StaticImage>
+					<StaticImage align="c" origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="12" sizeY="30" color="f97b03"/>
+					</StaticImage>
+					<StaticImage align="c" origin="0 0">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="30" sizeY="12" color="f97b03"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="#bh_ability_hover_checked_right" origin="0 0" sizeX="250" sizeY="48" hidden="true">
+					<StaticImage name="bh_point_bg" align="c" origin="0 0" hidden="true">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="250" sizeY="48" color="f97b03"/>
+					</StaticImage>
+
+					<StaticImage name="bh_point_icon" align="t" origin="0 32">
+						<RenderObject2D texture="data/textures/gui/customization/battlehonor_point.dds" scaleX="1.12" scaleY="1.12" color="f97b03"/>
+					</StaticImage>
+					<StaticImage name="bh_point_icon" align="t" origin="0 25">
+						<RenderObject2D texture="data/textures/gui/campaign/endscreen_battlehonor_full.dds" scaleX="1" scaleY="1" color="ffffff"/>
+					</StaticImage>
+				</Item>
+
+				<Checkbox name="#add_bh_ability_right" sizeX="250" sizeY="48" origin="0 0" defaultState="UncheckedState" >
+					<UncheckedState sizeX="250" sizeY="80">
+						<OnOpen>
+							<Action type="Show" target="#bh_ability_unchecked_right"/>
+							<Action type="Hide" target="#bh_ability_hover_checked_right"/>
+						</OnOpen>
+						<OnHover>
+							<Action type="Show" target="#bh_ability_hover_right"/>
+
+						</OnHover>
+						<OnHoverEnd>
+							<Action type="Hide" target="#bh_ability_hover_right"/>
+							<Action type="Show" target="#bh_ability_unchecked_right"/>
+						</OnHoverEnd>
+						<OnClick>
+							<Action type="Show" target="#bh_ability_checked_right"/>
+							<Action type="Hide" target="#bh_ability_hover_right"/>
+							<Action type="Hide" target="#bh_ability_unchecked_right"/>
+						</OnClick>
+					</UncheckedState>
+
+					<CheckedState acceptInput="true" sizeX="250" sizeY="80">
+						<OnOpen>
+							<Action type="Show" target="#bh_ability_checked_right"/>
+							<Action type="Hide" target="#bh_ability_hover_checked_right"/>
+						</OnOpen>
+						<OnHover>
+							<Action type="Show" target="#bh_ability_hover_checked_right"/>
+
+						</OnHover>
+						<OnHoverEnd>
+							<Action type="Show" target="#bh_ability_checked_right"/>
+							<Action type="Hide" target="#bh_ability_hover_checked_right"/>
+						</OnHoverEnd>
+						<OnClick>
+							<Action type="Hide" target="#bh_ability_checked_right"/>
+							<Action type="Show" target="#bh_ability_unchecked_right"/>
+						</OnClick>
+					</CheckedState>
+				</Checkbox>
+			</Item>
+		-->
+<!--
+			<StaticImage align="lt" origin="0 -290" tooltip="@menu_cust_ability_melee_ttip" stealFocus="true">
+				<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="540" sizeY="64" color="ffffffc8"/>
+				<StaticText align="lt" origin="10 0" text="@menu_cust_ability_melee" font="paragraph_2" textColor="7f7f7f"/>
+				<StaticImage name="Melee" align="lt" origin="8 -36">
+					<RenderObject2D texture="data/textures/gui/customization/stat_base.tga"/>
+					<StaticImage name="#bar_element" origin="-234 0" hidden="true">
+						<RenderObject2D texture="data/textures/gui/customization/stat_single_fill.tga"/>
+					</StaticImage>
+					<StaticImage name="#bar_more" hidden="true">
+						<RenderObject2D texture="data/textures/gui/customization/stat_single_increase.tga"/>
+					</StaticImage>
+				</StaticImage>
+			</StaticImage>
+
+
+			<StaticImage align="lt" origin="0 -360" tooltip="@menu_cust_ability_physical_ttip" stealFocus="true">
+				<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="540" sizeY="64" color="ffffffc8"/>
+				<StaticText align="lt" origin="10 0" text="@menu_cust_ability_physical" font="paragraph_2" textColor="7f7f7f"/>
+				<StaticImage name="Physical" align="lt" origin="8 -36">
+					<RenderObject2D texture="data/textures/gui/customization/stat_base.tga"/>
+					<StaticImage name="#bar_element" origin="-234 0" hidden="true">
+						<RenderObject2D texture="data/textures/gui/customization/stat_single_fill.tga"/>
+					</StaticImage>
+					<StaticImage name="#bar_more" hidden="true">
+						<RenderObject2D texture="data/textures/gui/customization/stat_single_increase.tga"/>
+					</StaticImage>
+				</StaticImage>
+			</StaticImage>
+-->
+		</Item>
+
+		<!--
+		back -> close customization screen
+		-->
+		<Button align="l" origin="0 -636" name="#customize_back_profile">
+			<ButtonText text="@menu_generic_back" align="l" font="header_2" textColor="f0e3cc"/>
+			<OnHover>
+				<ButtonText text="@menu_generic_back" align="l" font="header_2" textColor="211e1d"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" align="l" color="f0e3cc" />
+			</OnHover>
+			<OnClick>
+				<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_BACK"/>
+			</OnClick>
+		</Button>
+	</Item>
+
+
+	<!--
+
+	EQUIPMENT STATS
+
+	-->
+
+	<Item name="#player_equipment_related_stats_parent" align="l" origin="0 -363">
+		<StaticText origin="0 -8" text="@menu_cust_equipment_stats_title" align="lt" font="header_3" textColor="f97b03"/>
+		<StaticImage origin="0 -72" align="lt">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="536" sizeY="4" color="f97b03"/>
+		</StaticImage>
+
+		<StaticImage align="lt" origin="0 -80" tooltip="@menu_cust_mobility_ttip" stealFocus="true">
+			<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="540" sizeY="64" color="ffffffc8"/>
+
+			<StaticText align="lt" origin="10 0" text="@menu_cust_mobility" font="paragraph_2" textColor="f97b03"/>
+			<StaticImage align="lt" origin="10 -36" name="#mobility_stats">
+				<RenderObject2D texture="data/textures/gui/customization/stat_base.tga"/>
+				<StaticImage name="#bar_element" origin="-234 0" hidden="true">
+					<RenderObject2D texture="data/textures/gui/customization/stat_single_equip_fill.tga"/>
+				</StaticImage>
+				<StaticImage name="#bar_less" hidden="true">
+					<RenderObject2D texture="data/textures/gui/customization/stat_single_reduction.tga"/>
+				</StaticImage>
+				<StaticImage name="#bar_more" hidden="true">
+					<RenderObject2D texture="data/textures/gui/customization/stat_single_increase.tga"/>
+				</StaticImage>
+			</StaticImage>
+		</StaticImage>
+
+		<StaticImage align="lt" origin="0 -150" tooltip="@menu_cust_concealment_ttip">
+			<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="540" sizeY="64" color="ffffffc8"/>
+
+			<StaticText align="lt" origin="10 0" text="@menu_cust_concealment" font="paragraph_2" textColor="f97b03"/>
+
+			<StaticText align="rt" origin="-14 -4" name="#concealment_overt"  text="@menu_cust_conceal_overt" font="paragraph_3" tooltip="@menu_cust_conceal_overt_ttip" hidden="true" textColor="e62121"/>
+			<StaticText align="rt" origin="-14 -4" name="#concealment_sus"    text="@menu_cust_conceal_sus" font="paragraph_3" tooltip="@menu_cust_conceal_sus_ttip" hidden="true" textColor="ffc600"/>
+			<StaticText align="rt" origin="-14 -4" name="#concealment_covert" text="@menu_cust_conceal_covert" font="paragraph_3" tooltip="@menu_cust_conceal_covert_ttip" hidden="true" textColor="9fd3ff"/>
+
+			<StaticImage align="lt" origin="10 -36" name="#concealment_stats">
+				<RenderObject2D texture="data/textures/gui/customization/stat_base.tga"/>
+
+				<StaticImage name="#bar_element" origin="-234 0" hidden="true">
+					<RenderObject2D texture="data/textures/gui/customization/stat_single_equip_fill.tga"/>
+				</StaticImage>
+				<StaticImage name="#bar_less" hidden="true">
+					<RenderObject2D texture="data/textures/gui/customization/stat_single_reduction.tga"/>
+				</StaticImage>
+				<StaticImage name="#bar_more" hidden="true">
+					<RenderObject2D texture="data/textures/gui/customization/stat_single_increase.tga"/>
+				</StaticImage>
+			</StaticImage>
+
+			<StaticImage align="b" origin="-156 0">
+				<RenderObject2D texture="data/textures/gui/customization/stats_arrow.dds" color="ffc600"/>
+			</StaticImage>
+			<StaticImage align="b" origin="104 0">
+				<RenderObject2D texture="data/textures/gui/customization/stats_arrow.dds" color="9fd3ff"/>
+			</StaticImage>
+		</StaticImage>
+	</Item>
+
+	<!--
+
+	EQUIPMENT LIST
+
+	-->
+
+	<Item name="#equipment_list_panel" align="l" hidden="true">
+		<OnOpen>
+			<Action type="Hide" target="#player_profile_panel"/>
+		</OnOpen>
+		<OnClose>
+			<Action type="Show" target="#player_profile_panel"/>
+		</OnClose>
+
+		<StaticImage align="l" origin="0 122">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="548" sizeY="996" color="605a4f33"/>
+		</StaticImage>
+
+		<StaticImage align="l" origin="0 516">
+			<RenderObject2D texture="data/textures/gui/customization/list_border.tga"/>
+		</StaticImage>
+
+		<StaticImage align="l" origin="0 -266">
+			<RenderObject2D texture="data/textures/gui/customization/list_border.tga" flipY="true"/>
+		</StaticImage>
+
+		<!-- goes down to -228 on Y -->
+		<Button name="#equipment_item_template" hidden="true" align="l" origin="0 0">
+			<RenderObject2D texture="data/textures/gui/customization/large_button_normal.tga"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/customization/large_button_hover.tga"/>
+				<Action type="Show" target="#equipment_details_panel"/>
+				<Action type="Show" target="#equipment_item_hover_but"/>
+				<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_HOVER_LIST_ITEM"/>
+			</OnHover>
+			<OnHoverEnd>
+				<!-- hidden in code, depending on whether we're customizing attachments or items
+				<Action type="Hide" target="#equipment_details_panel"/> -->
+
+				<Action type="Hide" target="#equipment_item_hover_but"/>
+				<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_HOVER_LIST_ITEM_END"/>
+			</OnHoverEnd>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/customization/large_button_normal.tga"/>
+				<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_ITEM_TRY_EQUIP"/>
+				<Action type="PlaySound" target="gui_customize_equip"/>
+
+				<!-- called in code, if item doesn't have a cost or was unlocked
+				<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+				<Action type="Hide" target="#equipment_list_panel"/>
+				-->
+			</OnClick>
+
+			<OnScrollDown>
+				<Action type="ScrollListForward" target="#equipment_list_parent"/>
+			</OnScrollDown>
+			<OnScrollUp>
+				<Action type="ScrollListBackward" target="#equipment_list_parent"/>
+			</OnScrollUp>
+
+			<StaticImage align="lt" origin="10 -10" name="#equipment_item_status">
+				<RenderObject2D texture="data/textures/gui/customization/icon_status_unequipped.tga"/>
+
+				<StaticImage name="#equipment_item_hover_but" hidden="true">
+					<RenderObject2D texture="data/textures/gui/customization/icon_status_hover.tga"/>
+				</StaticImage>
+				<StaticImage name="#equipment_item_equipped" hidden="true">
+					<RenderObject2D texture="data/textures/gui/customization/icon_status_equipped.tga"/>
+				</StaticImage>
+			</StaticImage>
+
+			<StaticImage origin="0 16" name="#image">
+				<RenderObject2D texture="data/models/weapons/m4_ui.dds"/>
+			</StaticImage>
+			<StaticText name="#id" font="paragraph_2" hidden="true"/>
+			<StaticText name="#name" origin="10 4" text="M4 Carbine" font="paragraph_2" align="lb" textColor="f0e3cc"/>
+
+			<Item name="#unlock" origin="-4 -12" align="rt" hidden="true" sizeX="100" sizeY="48">
+				<StaticImage name="#unlock_stars_bgnd" hidden="true">
+					<RenderObject2D texture="data/textures/gui/customization/stars_ribbon_normal.tga"/>
+				</StaticImage>
+				<StaticImage name="#unlock_bh_bgnd" hidden="true">
+					<RenderObject2D texture="data/textures/gui/customization/bh_ribbon_normal.dds" />
+				</StaticImage>
+				<StaticText name="#unlock_stars" align="r" origin="-8 0" text="8" font="header_4" textColor="f97b03"/>
+			</Item>
+
+			<StaticImage name="#muzzle_indicator" align="b" origin="215 50" hidden="true">
+				<RenderObject2D texture="data/models/weapons/attachments/basic_silencer_ui_small.dds" blendMode="add" color="7f7f7f7f"/>
+			</StaticImage>
+		</Button>
+
+		<!-- Use this to figure out the position/size of the scroll list
+		<StaticImage align="l" origin="0 125">
+			<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="548" sizeY="940" color="ffffffe6"/>
+		</StaticImage>
+		-->
+		<ItemList name="#equipment_list_parent" align="l" origin="4 124" direction="y" sizeX="548" sizeY="944" clipChildren="true">
+			<ButtonGraphics align="l" origin="-26 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="20" sizeY="32" color="f97b0340"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="20" sizeY="32" color="f97b03ff"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="20" sizeY="32" color="f97b03ff"/>
+				</OnClick>
+			</ButtonGraphics>
+			<!-- items cloned from #equipment_item_template are added here dynamically by the game -->
+		</ItemList>
+
+		<Button align="lt" origin="260 616" stealFocus="true">
+			<RenderObject2D texture="data/textures/gui/customization/scroll_arrow.dds" flipY="true" color="f97b03" scaleX="0.8" scaleY="0.8"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/customization/scroll_arrow.dds" flipY="true" color="f97b03"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/customization/scroll_arrow.dds" flipY="true" color="f97b03" scaleX="0.8" scaleY="0.8"/>
+				<Action type="ScrollListBackward" target="#equipment_list_parent"/>
+			</OnClick>
+		</Button>
+
+		<Button align="lb" origin="260 -367" stealFocus="true">
+			<RenderObject2D texture="data/textures/gui/customization/scroll_arrow.dds"  color="f97b03" scaleX="0.8" scaleY="0.8"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/customization/scroll_arrow.dds"  color="f97b03"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/customization/scroll_arrow.dds"  color="f97b03" scaleX="0.8" scaleY="0.8"/>
+				<Action type="ScrollListForward" target="#equipment_list_parent"/>
+			</OnClick>
+		</Button>
+
+
+		<!--
+		back -> close equipment list
+		-->
+		<Button align="l" origin="0 -636" name="#customize_back_eqplist">
+			<ButtonText text="@menu_generic_back" align="l" font="header_2" textColor="f0e3cc"/>
+			<OnHover>
+				<ButtonText text="@menu_generic_back" align="l" font="header_2" textColor="211e1d"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" align="l" color="f0e3cc" />
+			</OnHover>
+			<OnClick>
+				<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+				<Action type="Hide" target="#equipment_list_panel"/>
+			</OnClick>
+		</Button>
+	</Item>
+
+
+	<!--
+
+	EQUIPMENT DETAILS
+
+	-->
+	<Item name="#equipment_details_panel" align="r" hidden="true" sizeX="540">
+		<OnOpen>
+			<Action type="Hide" target="#inventory_panel"/>
+		</OnOpen>
+		<OnClose>
+			<Action type="Show" target="#inventory_panel"/>
+		</OnClose>
+
+		<!-- name / description / operation -->
+		<Item origin="0 477" sizeX="540">
+			<StaticImage name="#image" origin="-2 16">
+				<RenderObject2D texture="data/models/weapons/m4_ui.dds"/>
+			</StaticImage>
+			<StaticText name="#name" origin="0 -140" text="M4 Carbine" font="header_3" align="l" textColor="f97b03"/>
+			<StaticImage origin="0 -168" align="lt">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="536" sizeY="4" color="f97b03"/>
+			</StaticImage>
+
+			<StaticText name="#description_firearm" align="lt" origin="0 -290" text="Semi-automatic 9mm pistol. Standard issue for Rangers." font="paragraph_2" wordWrap="true" textColor="f0e3cc">
+				<Movie name="#movie" origin="0 -400" align="b" hidden="true" sizeX="536" sizeY="402" file="data/movies/breaching_charge.ogv" loop="true"/>
+			</StaticText>
+
+			<StaticText name="#description_equipment" align="lt" origin="0 -190" text="Semi-automatic 9mm pistol. Standard issue for Rangers." font="paragraph_2" wordWrap="true" textColor="f0e3cc">
+				<Movie name="#movie" origin="0 -420" align="b" hidden="true" sizeX="536" sizeY="402" file="data/movies/breaching_charge.ogv" loop="true">
+				<StaticImage origin="0 -8" align="b">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="541" sizeY="4" color="f97b03"/>
+				</StaticImage>
+				</Movie>
+			</StaticText>
+		</Item>
+
+		<!-- stats -->
+		<Item origin="0 0" sizeX="540" name="#details_firearm_stats">
+			<StaticImage name="#details_firearm_overview" origin="0 240">
+				<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="540" sizeY="96" color="ffffffc8"/>
+
+				<StaticText align="lt" origin="6   0" text="@menu_cust_item_caliber" font="paragraph_2" textColor="f97b03"/>
+				<StaticText align="lt" origin="6 -30" text="@menu_cust_item_operation" font="paragraph_2" textColor="f97b03"/>
+				<StaticText align="lt" origin="6 -60" text="@menu_cust_item_magazine" font="paragraph_2" textColor="f97b03"/>
+
+				<StaticText align="rt" origin="-6   0" name="#caliber" text=".45 ACP" font="paragraph_2" textColor="f0e3cc"/>
+				<StaticText align="rt" origin="-6 -30" name="#operation" text="Semi-Automatic, 3rd Burst" font="paragraph_2" textColor="f0e3cc"/>
+				<StaticText align="rt" origin="-6 -60" name="#magazine" text="16+1" font="paragraph_2" textColor="f0e3cc"/>
+			</StaticImage>
+
+			<Item origin="0 -153" sizeX="540">
+
+				<Item name="plot1_segments" origin="0 -9" align="lt">
+					<StaticImage name="1" align="lb" origin="108 -106">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="4" sizeY="106" color="0c0b0bbf"/>
+					</StaticImage>
+					<StaticImage name="1" align="lb" origin="216 -106">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="4" sizeY="106" color="0c0b0bbf"/>
+					</StaticImage>
+					<StaticImage name="1" align="lb" origin="324 -106">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="4" sizeY="106" color="0c0b0bbf"/>
+					</StaticImage>
+					<StaticImage name="1" align="lb" origin="432 -106">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="4" sizeY="106" color="0c0b0bbf"/>
+					</StaticImage>
+				</Item>
+				<Plot origin="2 -9" align="lt" name="#stats_plot1">
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="536" sizeY="106" color="ffffffc8"/>
+
+					<StaticText align="lt" origin="10 0" text="@menu_cust_item_aimspeed" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticImage align="lb" origin="0 0">
+						<RenderObject2D  texture="data/textures/gui/customization/graph_0m.dds"/>
+					</StaticImage>
+					<StaticImage align="rb" origin="0 0">
+						<RenderObject2D  texture="data/textures/gui/customization/graph_50m.dds"/>
+					</StaticImage>
+				</Plot>
+				<Item name="plot1_border" origin="0 -9" align="lt">
+					<StaticImage name="top_border" align="lt" origin="0 1">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="540" sizeY="2" color="40392b"/>
+					</StaticImage>
+					<StaticImage name="bottom_border" align="lt" origin="0 -106">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="540" sizeY="2" color="40392b"/>
+					</StaticImage>
+					<StaticImage name="left_border" align="lt" origin="0 1">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="2" sizeY="109" color="40392b"/>
+					</StaticImage>
+					<StaticImage name="right_border" align="lt" origin="538 1">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="2" sizeY="109" color="40392b"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="plot2_segments" origin="0 -127" align="lt">
+					<StaticImage name="1" align="lb" origin="108 -106">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="4" sizeY="106" color="0c0b0bbf"/>
+					</StaticImage>
+					<StaticImage name="1" align="lb" origin="216 -106">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="4" sizeY="106" color="0c0b0bbf"/>
+					</StaticImage>
+					<StaticImage name="1" align="lb" origin="324 -106">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="4" sizeY="106" color="0c0b0bbf"/>
+					</StaticImage>
+					<StaticImage name="1" align="lb" origin="432 -106">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="4" sizeY="106" color="0c0b0bbf"/>
+					</StaticImage>
+				</Item>
+				<Plot origin="2 -127" align="lt" name="#stats_plot2">
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="536" sizeY="106" color="ffffffc8"/>
+
+					<StaticText align="lt" origin="10 0" text="@menu_cust_item_accuracy" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticImage align="lb" origin="0 0">
+						<RenderObject2D  texture="data/textures/gui/customization/graph_0m.dds"/>
+					</StaticImage>
+					<StaticImage align="rb" origin="0 0">
+						<RenderObject2D  texture="data/textures/gui/customization/graph_50m.dds"/>
+					</StaticImage>
+				</Plot>
+				<Item name="plot2_border" origin="0 -127" align="lt">
+					<StaticImage name="top_border" align="lt" origin="0 1">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="540" sizeY="2" color="40392b"/>
+					</StaticImage>
+					<StaticImage name="bottom_border" align="lt" origin="0 -106">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="540" sizeY="2" color="40392b"/>
+					</StaticImage>
+					<StaticImage name="left_border" align="lt" origin="0 1">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="2" sizeY="109" color="40392b"/>
+					</StaticImage>
+					<StaticImage name="right_border" align="lt" origin="538 1">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="2" sizeY="109" color="40392b"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="plot3_segments" origin="0 -244" align="lt">
+					<StaticImage name="1" align="lb" origin="108 -106">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="4" sizeY="106" color="0c0b0bbf"/>
+					</StaticImage>
+					<StaticImage name="1" align="lb" origin="216 -106">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="4" sizeY="106" color="0c0b0bbf"/>
+					</StaticImage>
+					<StaticImage name="1" align="lb" origin="324 -106">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="4" sizeY="106" color="0c0b0bbf"/>
+					</StaticImage>
+					<StaticImage name="1" align="lb" origin="432 -106">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="4" sizeY="106" color="0c0b0bbf"/>
+					</StaticImage>
+				</Item>
+				<Plot origin="2 -244" align="lt" name="#stats_plot3">
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="536" sizeY="106" color="ffffffc8"/>
+
+					<StaticText align="lt" origin="10 0" text="@menu_cust_item_crit" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticImage align="lb" origin="0 0">
+						<RenderObject2D  texture="data/textures/gui/customization/graph_0m.dds"/>
+					</StaticImage>
+					<StaticImage align="rb" origin="0 0">
+						<RenderObject2D  texture="data/textures/gui/customization/graph_50m.dds"/>
+					</StaticImage>
+				</Plot>
+				<Item name="plot3_border" origin="0 -244" align="lt">
+					<StaticImage name="top_border" align="lt" origin="0 1">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="540" sizeY="2" color="40392b"/>
+					</StaticImage>
+					<StaticImage name="bottom_border" align="lt" origin="0 -106">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="540" sizeY="2" color="40392b"/>
+					</StaticImage>
+					<StaticImage name="left_border" align="lt" origin="0 1">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="2" sizeY="109" color="40392b"/>
+					</StaticImage>
+					<StaticImage name="right_border" align="lt" origin="538 1">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="2" sizeY="109" color="40392b"/>
+					</StaticImage>
+				</Item>
+
+				<StaticImage align="lt" origin="274 -360">
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="266" sizeY="64" color="ffffffc8"/>
+
+					<StaticText align="lt" origin="10 0" text="@menu_cust_item_reloadspeed" font="paragraph_2" textColor="f0e3cc"/>
+
+					<StaticImage align="lt" origin="12 -36" name="#stats_bar_reloadspeed">
+						<RenderObject2D texture="data/textures/gui/customization/stat_base_small.tga" />
+						<StaticImage name="#bar_element" origin="-108 0" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_small_fill.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_less" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_small_reduction.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_more" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_small_increase.tga"/>
+						</StaticImage>
+					</StaticImage>
+				</StaticImage>
+
+				<StaticImage align="lt" origin="0 -360">
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="266" sizeY="64" color="ffffffc8"/>
+
+					<StaticText align="lt" origin="10 0" text="@menu_cust_item_maneuverability" font="paragraph_2" textColor="f0e3cc"/>
+
+					<StaticImage align="lt" origin="12 -36" name="#stats_bar_maneuvrability">
+						<RenderObject2D texture="data/textures/gui/customization/stat_base_small.tga"/>
+						<StaticImage name="#bar_element" origin="-108 0" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_small_fill.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_less" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_small_reduction.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_more" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_small_increase.tga"/>
+						</StaticImage>
+					</StaticImage>
+				</StaticImage>
+			</Item>
+		</Item> <!-- details_firearm_stats -->
+
+		<Item origin="0 0" name="#details_armor_stats">
+			<Item origin="0 -293" sizeX="540">
+				<StaticText align="lt" origin="0 0" text="@menu_cust_item_armorstats" font="header_3" textColor="f97b03"/>
+				<StaticImage origin="0 -64" align="lt">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="536" sizeY="4" color="f97b03"/>
+				</StaticImage>
+
+				<StaticImage align="lt" origin="0 -80">
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="540" sizeY="64" color="ffffffc8"/>
+
+					<StaticText align="lt" origin="10 0" text="@menu_cust_item_frontarmor" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticImage align="lt" origin="9 -36" name="#stats_bar_frontarmor">
+						<RenderObject2D texture="data/textures/gui/customization/stat_base.tga"/>
+						<StaticImage name="#bar_element" origin="-234 0" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_fill.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_less" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_reduction.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_more" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_increase.tga"/>
+						</StaticImage>
+					</StaticImage>
+				</StaticImage>
+
+				<StaticImage align="lt" origin="0 -150">
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="540" sizeY="64" color="ffffffc8"/>
+
+					<StaticText align="lt" origin="10 0" text="@menu_cust_item_sidearmor" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticImage align="lt" origin="8 -36" name="#stats_bar_sidearmor">
+						<RenderObject2D texture="data/textures/gui/customization/stat_base.tga"/>
+						<StaticImage name="#bar_element" origin="-234 0" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_fill.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_less" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_reduction.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_more" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_increase.tga"/>
+						</StaticImage>
+					</StaticImage>
+				</StaticImage>
+
+				<StaticImage align="lt" origin="0 -220">
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="540" sizeY="64" color="ffffffc8"/>
+
+					<StaticText align="lt" origin="10 0" text="@menu_cust_item_reararmor" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticImage align="lt" origin="8 -36" name="#stats_bar_reararmor">
+						<RenderObject2D texture="data/textures/gui/customization/stat_base.tga"/>
+						<StaticImage name="#bar_element" origin="-234 0" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_fill.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_less" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_reduction.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_more" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_increase.tga"/>
+						</StaticImage>
+					</StaticImage>
+				</StaticImage>
+			</Item>
+		</Item> <!-- details_armor_stats -->
+
+		<Item origin="0 0" name="#details_shield_stats">
+			<Item origin="0 -363" sizeX="540">
+				<StaticText align="lt" origin="0 0" text="@menu_cust_item_armorstats" font="header_3" textColor="f97b03"/>
+				<StaticImage origin="0 -64" align="lt">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="536" sizeY="4" color="f97b03"/>
+				</StaticImage>
+
+				<StaticImage align="lt" origin="0 -80">
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="540" sizeY="64" color="ffffffc8"/>
+
+					<StaticText align="lt" origin="10 0" text="@menu_cust_item_frontarmor" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticImage align="lt" origin="9 -36" name="#stats_bar_frontarmor">
+						<RenderObject2D texture="data/textures/gui/customization/stat_base.tga"/>
+						<StaticImage name="#bar_element" origin="-234 0" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_fill.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_less" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_reduction.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_more" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_increase.tga"/>
+						</StaticImage>
+					</StaticImage>
+				</StaticImage>
+
+				<StaticImage align="lt" origin="0 -150">
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="540" sizeY="64" color="ffffffc8"/>
+
+					<StaticText align="lt" origin="10 0" text="@menu_cust_item_fov" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticImage align="lt" origin="8 -36" name="#stats_bar_fov">
+						<RenderObject2D texture="data/textures/gui/customization/stat_base.tga"/>
+						<StaticImage name="#bar_element" origin="-234 0" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_fill.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_less" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_reduction.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_more" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_increase.tga"/>
+						</StaticImage>
+					</StaticImage>
+				</StaticImage>
+				<!--
+				<StaticImage align="lt" origin="0 -220">
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="540" sizeY="64" color="ffffffc8"/>
+
+					<StaticText align="lt" origin="10 0" text="@menu_cust_item_reararmor" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticImage align="lt" origin="8 -36" name="#stats_bar_reararmor">
+						<RenderObject2D texture="data/textures/gui/customization/stat_base.tga"/>
+						<StaticImage name="#bar_element" origin="-234 0" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_fill.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_less" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_reduction.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_more" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_increase.tga"/>
+						</StaticImage>
+					</StaticImage>
+				</StaticImage>
+				-->
+			</Item>
+		</Item> <!-- details_shield_stats -->
+
+		<Item origin="0 0" name="#details_helmet_stats">
+			<Item origin="0 -433" sizeX="540">
+				<StaticText align="lt" origin="0 0" text="@menu_cust_item_armorstats" font="header_3" textColor="f97b03"/>
+				<StaticImage origin="0 -64" align="lt">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="536" sizeY="4" color="f97b03"/>
+				</StaticImage>
+
+				<StaticImage align="lt" origin="0 -80">
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="540" sizeY="64" color="ffffffc8"/>
+
+					<StaticText align="lt" origin="10 0" text="@menu_cust_item_helmetarmor" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticImage align="lt" origin="9 -36" name="#stats_bar_frontarmor">
+						<RenderObject2D texture="data/textures/gui/customization/stat_base.tga"/>
+						<StaticImage name="#bar_element" origin="-234 0" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_fill.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_less" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_reduction.tga"/>
+						</StaticImage>
+						<StaticImage name="#bar_more" hidden="true">
+							<RenderObject2D texture="data/textures/gui/customization/stat_single_increase.tga"/>
+						</StaticImage>
+					</StaticImage>
+				</StaticImage>
+			</Item>
+		</Item> <!-- details_helmet_stats -->
+	</Item>
+
+
+	<!--
+
+	EQUIPMENT
+
+	-->
+	<Item name="#inventory_panel" align="r">
+		<Checkbox name="PrimaryWeapon" align="r" origin="0 477" defaultState="UncheckedState">
+			<UncheckedState>
+				<RenderObject2D texture="data/textures/gui/customization/large_button_normal.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/customization/large_button_hover.tga"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/customization/large_button_selectedhover.tga"/>
+					<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_INVENTORY_SELECT"/>
+					<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+					<Action type="Show" target="#equipment_list_panel"/>
+				</OnClick>
+			</UncheckedState>
+
+			<CheckedState>
+				<RenderObject2D texture="data/textures/gui/customization/large_button_selected.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/customization/large_button_selectedhover.tga"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/customization/large_button_hover.tga"/>
+					<Action type="Hide" target="#equipment_list_panel"/>
+				</OnClick>
+			</CheckedState>
+			<StaticImage origin="0 16" name="#image">
+				<RenderObject2D texture="data/models/weapons/m4_ui.dds"/>
+			</StaticImage>
+			<StaticText name="#name" origin="10 4" text="M4 Carbine" font="paragraph_2" align="lb" textColor="f0e3cc"/>
+
+			<Checkbox name="PrimaryWeaponMuzzle" align="b" origin="215 96" defaultState="UncheckedState">
+				<UncheckedState sizeY="58">
+					<RenderObject2D texture="data/textures/gui/customization/mod_large_normal.dds" blendMode="none"/>
+					<OnHover>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_hover.dds" blendMode="none"/>
+					</OnHover>
+					<OnClick>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_selected_hover.dds" blendMode="none"/>
+						<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_INVENTORY_SELECT"/>
+						<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+						<Action type="Show" target="#equipment_list_panel"/>
+					</OnClick>
+				</UncheckedState>
+
+				<CheckedState sizeY="58">
+					<RenderObject2D texture="data/textures/gui/customization/mod_large_selected.dds" blendMode="none"/>
+					<OnHover>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_selected_hover.dds" blendMode="none"/>
+					</OnHover>
+					<OnClick>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_hover.dds" blendMode="none"/>
+						<Action type="Hide" target="#equipment_list_panel"/>
+					</OnClick>
+				</CheckedState>
+				<StaticImage name="#image_attach">
+					<RenderObject2D texture="data/models/weapons/attachments/silencer_none.dds" blendMode="none"/>
+				</StaticImage>
+				<StaticImage name="#image_empty" hidden="true">
+					<RenderObject2D texture="data/models/weapons/attachments/silencer_none.dds" blendMode="none"/>
+				</StaticImage>
+			</Checkbox>
+
+			<Checkbox name="PrimaryWeaponScope" align="b" origin="215 50" defaultState="UncheckedState">
+				<UncheckedState sizeX="110">
+					<RenderObject2D texture="data/textures/gui/customization/mod_large_normal.dds" blendMode="none"/>
+					<OnHover>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_hover.dds" blendMode="none"/>
+					</OnHover>
+					<OnClick>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_selected_hover.dds" blendMode="none"/>
+						<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_INVENTORY_SELECT"/>
+						<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+						<Action type="Show" target="#equipment_list_panel"/>
+					</OnClick>
+				</UncheckedState>
+
+				<CheckedState sizeX="110">
+					<RenderObject2D texture="data/textures/gui/customization/mod_large_selected.dds" blendMode="none"/>
+					<OnHover>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_selected_hover.dds" blendMode="none"/>
+					</OnHover>
+					<OnClick>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_hover.dds" blendMode="none"/>
+						<Action type="Hide" target="#equipment_list_panel"/>
+					</OnClick>
+				</CheckedState>
+				<StaticImage name="#image_attach">
+					<RenderObject2D texture="data/models/weapons/attachments/acog_4x_ui_small.dds" blendMode="none"/>
+				</StaticImage>
+			</Checkbox>
+
+			<Checkbox name="PrimaryWeaponAmmo" align="b" origin="141 50" defaultState="UncheckedState">
+				<UncheckedState sizeX="60">
+					<RenderObject2D texture="data/textures/gui/customization/mod_small_normal.dds" blendMode="none"/>
+					<OnHover>
+						<RenderObject2D texture="data/textures/gui/customization/mod_small_hover.dds" blendMode="none"/>
+					</OnHover>
+					<OnClick>
+						<RenderObject2D texture="data/textures/gui/customization/mod_small_selected_hover.dds" blendMode="none"/>
+						<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_INVENTORY_SELECT"/>
+						<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+						<Action type="Show" target="#equipment_list_panel"/>
+					</OnClick>
+				</UncheckedState>
+
+				<CheckedState sizeX="60">
+					<RenderObject2D texture="data/textures/gui/customization/mod_small_selected.dds" blendMode="none"/>
+					<OnHover>
+						<RenderObject2D texture="data/textures/gui/customization/mod_small_selected_hover.dds" blendMode="none"/>
+					</OnHover>
+					<OnClick>
+						<RenderObject2D texture="data/textures/gui/customization/mod_small_hover.dds" blendMode="none"/>
+						<Action type="Hide" target="#equipment_list_panel"/>
+					</OnClick>
+				</CheckedState>
+				<StaticImage name="#image_attach">
+					<RenderObject2D texture="data/models/weapons/attachments/40fmj_ammo_ui_small.dds" blendMode="none"/>
+				</StaticImage>
+			</Checkbox>
+		</Checkbox>
+
+		<Checkbox name="SecondaryWeapon" align="r" origin="0 242" defaultState="UncheckedState">
+			<UncheckedState>
+				<RenderObject2D texture="data/textures/gui/customization/large_button_normal.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/customization/large_button_hover.tga"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/customization/large_button_selectedhover.tga"/>
+					<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_INVENTORY_SELECT"/>
+					<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+					<Action type="Show" target="#equipment_list_panel"/>
+				</OnClick>
+			</UncheckedState>
+
+			<CheckedState>
+				<RenderObject2D texture="data/textures/gui/customization/large_button_selected.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/customization/large_button_selectedhover.tga"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/customization/large_button_hover.tga"/>
+					<Action type="Hide" target="#equipment_list_panel"/>
+				</OnClick>
+			</CheckedState>
+			<StaticImage origin="0 16" name="#image">
+				<RenderObject2D texture="data/models/weapons/m4_ui.dds"/>
+			</StaticImage>
+			<StaticText name="#name" origin="10 4" text="1911 Pistol" font="paragraph_2" align="lb" textColor="f0e3cc"/>
+
+			<Checkbox name="SecondaryWeaponMuzzle" align="b" origin="215 96" defaultState="UncheckedState">
+				<UncheckedState sizeY="58">
+					<RenderObject2D texture="data/textures/gui/customization/mod_large_normal.dds" blendMode="none"/>
+					<OnHover>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_hover.dds" blendMode="none"/>
+					</OnHover>
+					<OnClick>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_selected_hover.dds" blendMode="none"/>
+						<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_INVENTORY_SELECT"/>
+						<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+						<Action type="Show" target="#equipment_list_panel"/>
+					</OnClick>
+				</UncheckedState>
+
+				<CheckedState sizeY="58">
+					<RenderObject2D texture="data/textures/gui/customization/mod_large_selected.dds" blendMode="none"/>
+					<OnHover>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_selected_hover.dds" blendMode="none"/>
+					</OnHover>
+					<OnClick>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_hover.dds" blendMode="none"/>
+						<Action type="Hide" target="#equipment_list_panel"/>
+					</OnClick>
+				</CheckedState>
+				<StaticImage name="#image_attach">
+					<RenderObject2D texture="data/models/weapons/attachments/silencer_none.dds" blendMode="none"/>
+				</StaticImage>
+				<StaticImage name="#image_empty" hidden="true">
+					<RenderObject2D texture="data/models/weapons/attachments/silencer_none.dds" blendMode="none"/>
+				</StaticImage>
+			</Checkbox>
+
+			<Checkbox name="SecondaryWeaponScope" align="b" origin="215 50" defaultState="UncheckedState">
+				<UncheckedState sizeX="110">
+					<RenderObject2D texture="data/textures/gui/customization/mod_large_normal.dds" blendMode="none"/>
+					<OnHover>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_hover.dds" blendMode="none"/>
+					</OnHover>
+					<OnClick>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_selected_hover.dds" blendMode="none"/>
+						<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_INVENTORY_SELECT"/>
+						<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+						<Action type="Show" target="#equipment_list_panel"/>
+					</OnClick>
+				</UncheckedState>
+
+				<CheckedState sizeX="110">
+					<RenderObject2D texture="data/textures/gui/customization/mod_large_selected.dds" blendMode="none"/>
+					<OnHover>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_selected_hover.dds" blendMode="none"/>
+					</OnHover>
+					<OnClick>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_hover.dds" blendMode="none"/>
+						<Action type="Hide" target="#equipment_list_panel"/>
+					</OnClick>
+				</CheckedState>
+				<StaticImage name="#image_attach">
+					<RenderObject2D texture="data/models/weapons/attachments/acog_4x_ui_small.dds" blendMode="none"/>
+				</StaticImage>
+			</Checkbox>
+
+			<Checkbox name="SecondaryWeaponAmmo" align="b" origin="141 50" defaultState="UncheckedState">
+				<UncheckedState sizeX="60">
+					<RenderObject2D texture="data/textures/gui/customization/mod_small_normal.dds" blendMode="none"/>
+					<OnHover>
+						<RenderObject2D texture="data/textures/gui/customization/mod_small_hover.dds" blendMode="none"/>
+					</OnHover>
+					<OnClick>
+						<RenderObject2D texture="data/textures/gui/customization/mod_small_selected_hover.dds" blendMode="none"/>
+						<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_INVENTORY_SELECT"/>
+						<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+						<Action type="Show" target="#equipment_list_panel"/>
+					</OnClick>
+				</UncheckedState>
+
+				<CheckedState sizeX="60">
+					<RenderObject2D texture="data/textures/gui/customization/mod_small_selected.dds" blendMode="none"/>
+					<OnHover>
+						<RenderObject2D texture="data/textures/gui/customization/mod_small_selected_hover.dds" blendMode="none"/>
+					</OnHover>
+					<OnClick>
+						<RenderObject2D texture="data/textures/gui/customization/mod_small_hover.dds" blendMode="none"/>
+						<Action type="Hide" target="#equipment_list_panel"/>
+					</OnClick>
+				</CheckedState>
+				<StaticImage name="#image_attach">
+					<RenderObject2D texture="data/models/weapons/attachments/40fmj_ammo_ui_small.dds" blendMode="none"/>
+				</StaticImage>
+			</Checkbox>
+		</Checkbox>
+
+		<Checkbox name="Helmet" align="r" origin="-272 7" defaultState="UncheckedState">
+			<UncheckedState>
+				<RenderObject2D texture="data/textures/gui/customization/small_button_normal.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_hover.tga"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_selectedhover.tga"/>
+					<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_INVENTORY_SELECT"/>
+					<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+					<Action type="Show" target="#equipment_list_panel"/>
+				</OnClick>
+			</UncheckedState>
+
+			<CheckedState>
+				<RenderObject2D texture="data/textures/gui/customization/small_button_selected.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_selectedhover.tga"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_hover.tga"/>
+					<Action type="Hide" target="#equipment_list_panel"/>
+				</OnClick>
+			</CheckedState>
+			<StaticImage origin="0 16" name="#image">
+				<RenderObject2D texture="data/models/equipment/breaching_charge_ui.dds"/>
+			</StaticImage>
+			<StaticText name="#name" origin="10 4" text="Helmet" font="paragraph_2" align="lb" textColor="f0e3cc"/>
+
+			<Checkbox name="HelmetNVG" align="b" origin="80 48" defaultState="UncheckedState">
+				<UncheckedState>
+					<RenderObject2D texture="data/textures/gui/customization/mod_large_normal.dds" blendMode="none"/>
+					<OnHover>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_hover.dds" blendMode="none"/>
+					</OnHover>
+					<OnClick>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_selected_hover.dds" blendMode="none"/>
+						<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_INVENTORY_SELECT"/>
+						<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+						<Action type="Show" target="#equipment_list_panel"/>
+					</OnClick>
+				</UncheckedState>
+
+				<CheckedState>
+					<RenderObject2D texture="data/textures/gui/customization/mod_large_selected.dds" blendMode="none"/>
+					<OnHover>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_selected_hover.dds" blendMode="none"/>
+					</OnHover>
+					<OnClick>
+						<RenderObject2D texture="data/textures/gui/customization/mod_large_hover.dds" blendMode="none"/>
+						<Action type="Hide" target="#equipment_list_panel"/>
+					</OnClick>
+				</CheckedState>
+				<StaticImage name="#image_attach">
+					<RenderObject2D texture="data/models/humans/attachments/nvg_01_ui_small.dds" blendMode="normal"/>
+				</StaticImage>
+			</Checkbox>
+		</Checkbox>
+
+		<Checkbox name="Armor" align="r" origin="0 7" defaultState="UncheckedState">
+			<UncheckedState>
+				<RenderObject2D texture="data/textures/gui/customization/small_button_normal.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_hover.tga"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_selectedhover.tga"/>
+					<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_INVENTORY_SELECT"/>
+					<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+					<Action type="Show" target="#equipment_list_panel"/>
+				</OnClick>
+			</UncheckedState>
+
+			<CheckedState>
+				<RenderObject2D texture="data/textures/gui/customization/small_button_selected.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_selectedhover.tga"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_hover.tga"/>
+					<Action type="Hide" target="#equipment_list_panel"/>
+				</OnClick>
+			</CheckedState>
+			<StaticImage origin="0 16" name="#image">
+				<RenderObject2D texture="data/models/weapons/m4_ui.dds"/>
+			</StaticImage>
+			<StaticText name="#name" origin="10 4" text="Armor" font="paragraph_2" align="lb" textColor="f0e3cc"/>
+		</Checkbox>
+
+		<Checkbox name="UtilityPouch1" align="r" origin="-272 -228" defaultState="UncheckedState">
+			<UncheckedState>
+				<RenderObject2D texture="data/textures/gui/customization/small_button_normal.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_hover.tga"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_selectedhover.tga"/>
+					<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_INVENTORY_SELECT"/>
+					<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+					<Action type="Show" target="#equipment_list_panel"/>
+				</OnClick>
+			</UncheckedState>
+
+			<CheckedState>
+				<RenderObject2D texture="data/textures/gui/customization/small_button_selected.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_selectedhover.tga"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_hover.tga"/>
+					<Action type="Hide" target="#equipment_list_panel"/>
+				</OnClick>
+			</CheckedState>
+			<StaticImage origin="0 16" name="#image">
+				<RenderObject2D texture="data/models/equipment/frag_grenade_ui.dds"/>
+			</StaticImage>
+			<StaticText name="#name" origin="10 4" text="Flashbang" font="paragraph_2" align="lb" textColor="f0e3cc"/>
+		</Checkbox>
+
+		<Checkbox name="UtilityPouch2" align="r" origin="0 -228" defaultState="UncheckedState">
+			<UncheckedState>
+				<RenderObject2D texture="data/textures/gui/customization/small_button_normal.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_hover.tga"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_selectedhover.tga"/>
+					<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_INVENTORY_SELECT"/>
+					<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+					<Action type="Show" target="#equipment_list_panel"/>
+				</OnClick>
+			</UncheckedState>
+
+			<CheckedState>
+				<RenderObject2D texture="data/textures/gui/customization/small_button_selected.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_selectedhover.tga"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/customization/small_button_hover.tga"/>
+					<Action type="Hide" target="#equipment_list_panel"/>
+				</OnClick>
+			</CheckedState>
+			<StaticImage origin="0 16" name="#image">
+				<RenderObject2D texture="data/models/equipment/frag_grenade_ui.dds"/>
+			</StaticImage>
+			<StaticText name="#name" origin="10 4" text="Slap charge" font="paragraph_2" align="lb" textColor="f0e3cc"/>
+		</Checkbox>
+
+		<Checkbox name="SupportGear1" align="r" origin="0 -463" defaultState="UncheckedState">
+			<UncheckedState>
+				<RenderObject2D texture="data/textures/gui/customization/large_button_normal.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/customization/large_button_hover.tga"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/customization/large_button_selectedhover.tga"/>
+					<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_INVENTORY_SELECT"/>
+					<Action type="TriggerEvent" target="GUI_CUSTOMIZE_UNCHECK_ALL"/>
+					<Action type="Show" target="#equipment_list_panel"/>
+				</OnClick>
+			</UncheckedState>
+
+			<CheckedState>
+				<RenderObject2D texture="data/textures/gui/customization/large_button_selected.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/customization/large_button_selectedhover.tga"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/customization/large_button_hover.tga"/>
+					<Action type="Hide" target="#equipment_list_panel"/>
+				</OnClick>
+			</CheckedState>
+			<StaticImage origin="0 16" name="#image">
+				<RenderObject2D texture="data/models/weapons/m4_ui.dds"/>
+			</StaticImage>
+			<StaticText name="#name" origin="10 4" text="Breaching charges" font="paragraph_2" align="lb" textColor="f0e3cc"/>
+		</Checkbox>
+
+		<Button name="#copy" align="r" origin="-94 -625" tooltip="@menu_cust_copy">
+			<RenderObject2D texture="data/textures/gui/customization/loadout_copy_normal.tga"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/customization/loadout_copy_hover.tga"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/customization/loadout_copy_normal.tga"/>
+				<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_COPY_LOADOUT"/>
+			</OnClick>
+		</Button>
+		<Button name="#paste" align="r" origin="-5 -625" tooltip="@menu_cust_paste">
+			<RenderObject2D texture="data/textures/gui/customization/loadout_paste_normal.tga"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/customization/loadout_paste_hover.tga"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/customization/loadout_paste_normal.tga"/>
+				<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_PASTE_LOADOUT"/>
+			</OnClick>
+		</Button>
+	</Item>
+</Item>
+
+<StaticImage name="Customization_UnlockItem" origin="0 0" hidden="true">
+	<OnOpen>
+		<Action type="TriggerEvent" target="GUI_CAPTURE_INPUT"/>
+		<Action type="SetForeground" target="this"/>
+	</OnOpen>
+
+	<OnClose>
+		<Action type="TriggerEvent" target="GUI_RELEASE_INPUT"/>
+	</OnClose>
+
+	<OnKeyDown key0="27">
+		<Action type="Hide" target="this"/>
+	</OnKeyDown>
+
+	<RenderObject2D texture="data/textures/gui/menu_pause_black.tga" color="fffffff9" sizeX="9999" sizeY="9999"/>
+
+	<StaticImage origin="0 12">
+		<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="1016" sizeY="490"/>
+	</StaticImage>
+
+	<Item origin="0 0" sizeX="1000" sizeY="456">
+		<StaticImage origin="0 0">
+			<RenderObject2D texture="data/textures/gui/square.tga" color="40392b" sizeX="1000" sizeY="456"/>
+		</StaticImage>
+
+		<StaticImage align="t" origin="0 -88">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1000" sizeY="268" color="0c0b0b80"/>
+
+			<StaticImage name="#image" origin="0 -40">
+				<RenderObject2D texture="data/models/weapons/m4_ui.dds"/>
+			</StaticImage>
+
+			<StaticText name="#name" align="lt" origin="18 0" text="Long Ass Rifle Name" font="header_3" textColor="f97b03"/>
+
+			<StaticImage name="#unlock_stars_bgnd" align="rt" origin="-18 -12" hidden="true">
+				<RenderObject2D texture="data/textures/gui/customization/unlock_stars.dds"/>
+			</StaticImage>
+			<StaticImage name="#unlock_bh_bgnd" align="rt" origin="-18 -12" hidden="false">
+				<RenderObject2D texture="data/textures/gui/customization/unlock_bh.dds"/>
+			</StaticImage>
+
+			<StaticText name="#stars" align="rt" origin="-72 0" text="99" font="header_3" textColor="f97b03"/>
+		</StaticImage>
+
+		<StaticImage origin="0 0" align="t">
+			<RenderObject2D texture="data/textures/gui/square.tga" align="t" sizeX="1000" sizeY="88" color="f97b03"/>
+			<StaticText origin="15 0" text="@customization_unlock_title" font="header_2" textColor="211e1d"/>
+		</StaticImage>
+
+		<Button origin="18 16" align="lb" >
+			<ButtonText align="l" origin="20 0" text="@menu_generic_unlock" font="header_2" textColor="f0e3cc"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="false"/>
+				<ButtonText align="l" origin="20 0" text="@menu_generic_unlock" font="header_2" textColor="40392b"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="0c0b0b80" flipX="false"/>
+				<Action type="Hide" target="Customization_UnlockItem"/>
+				<Action type="TriggerEvent" target="GUI_GAME_CUSTOMIZE_UNLOCKITEM_YES"/>
+			</OnClick>
+		</Button>
+
+		<Button origin="-18 16" align="rb">
+			<ButtonText align="r" origin="-20 0" text="@menu_generic_cancel" font="header_2" textColor="f0e3cc"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="true"/>
+				<ButtonText align="r" origin="-20 0" text="@menu_generic_cancel" font="header_2" textColor="40392b"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="0c0b0b80" flipX="true"/>
+				<Action type="Hide" target="Customization_UnlockItem"/>
+
+			</OnClick>
+		</Button>
+	</Item>
+</StaticImage>
+
+</GUIItems>

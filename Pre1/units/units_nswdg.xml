@@ -1,0 +1,96 @@
+<!--
+Note on adding new Units:
+	- some of the UI resources are currently hardcoded in data/gui/deploy.xml, adding/modifying units will require modifying that file as well, so that they show up in Deploy
+	- squads.xml also needs modifying, by adding a new 'SquadSelect_UNITNAME' item to the New Unit dialogue
+-->
+<Units>
+	<Unit
+		name="NSWDG"
+		nameUI="@unit_nswdg_name"
+		description="@unit_nswdg_description"
+		flagTex="data/textures/gui/squads/nswdg_bg_01.dds"
+		flagColor="626978"
+		rndNameEntry="@#squadnamenswdg">
+
+		<Classes>
+			<Class name="DEVAssault" nameUI="@unit_rangers_assault"	numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+			<Class name="DEVSupport" nameUI="@unit_rangers_support"	numSlots="2" supply="100" iconTex="data/textures/gui/deploy/class_icon_support.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+			<Class name="DEVMarksman" nameUI="@unit_rangers_marksman"	numSlots="2" supply="100" iconTex="data/textures/gui/deploy/class_icon_marksman.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+			<Class name="DEVUndercover" nameUI="@unit_cia_undercover"	numSlots="1" supply="200" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+			<Class name="DEVBlackOps" nameUI="@unit_cia_blackops"	numSlots="1" supply="200" iconTex="data/textures/gui/deploy/class_icon_blackops.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+		</Classes>
+
+		<TrooperRanks>
+			<Rank name="@nsw_rank_0" xpNeeded="0" 	badgeTex="data/textures/gui/customization/trooper_rank_05.dds"/>
+			<Rank name="@nsw_rank_1" xpNeeded="12250" 	badgeTex="data/textures/gui/customization/trooper_rank_06.dds"/>
+			<Rank name="@nsw_rank_2" xpNeeded="33068" 	badgeTex="data/textures/gui/customization/trooper_rank_07.dds"/>
+			<Rank name="@nsw_rank_3" xpNeeded="71856" 	badgeTex="data/textures/gui/customization/trooper_rank_08.dds"/>
+			<Rank name="@nsw_rank_4" xpNeeded="136450" 	badgeTex="data/textures/gui/customization/trooper_rank_09.dds"/>
+			<Rank name="@nsw_rank_5" xpNeeded="208960" 	badgeTex="data/textures/gui/customization/trooper_rank_10.dds"/>
+		</TrooperRanks>
+
+		<Ranks>
+			<Rank xpNeeded="0" 		badgeTex=""/>
+			<Rank xpNeeded="8000" 	badgeTex=""/>
+			<Rank xpNeeded="18000" 	badgeTex=""/>
+			<Rank xpNeeded="29960" 	badgeTex=""/>
+			<Rank xpNeeded="43840" 	badgeTex=""/>
+			<Rank xpNeeded="59600" 	badgeTex=""/>
+			<Rank xpNeeded="77200" 	badgeTex=""/>
+			<Rank xpNeeded="96620" 	badgeTex=""/>
+			<Rank xpNeeded="117800" 	badgeTex=""/>
+			<Rank xpNeeded="140720" 	badgeTex=""/>
+			<Rank xpNeeded="165360" 	badgeTex=""/>
+			<Rank xpNeeded="191640" 	badgeTex=""/>
+			<Rank xpNeeded="219580" badgeTex=""/>
+			<Rank xpNeeded="249100" badgeTex=""/>
+			<Rank xpNeeded="280200" badgeTex=""/>
+			<Rank xpNeeded="312840" badgeTex=""/>
+		</Ranks>
+
+		<Doctrine doctrinePointsPerSquadLevel="2">
+			<!-- handguns -->
+			<Node name="Handguns_ShortRangeDrills">
+				<Node name="Handguns_ControlledPairs" numLevels="2"/>
+				<Node name="Handguns_PrecisionShooting"/>
+			</Node>
+			<Node name="Handguns_MediumRangeDrills" numLevels="2"/>
+			<Node name="Handguns_ReloadDrills"/>
+			<Node name="Handguns_TransitionDrills"/>
+			<Node name="Handguns_SuppressorUse"/>
+
+			<!-- rifles -->
+			<Node name="Rifles_ShortRangeDrills">
+				<Node name="Rifles_RoomClearingDrills" numLevels="2"/>
+				<Node name="Rifles_CloseRangeBurst" numLevels="2"/>
+			</Node>
+			<Node name="Rifles_ReloadDrills"/>
+			<Node name="Rifles_MediumRangeDrills">
+				<Node name="Rifles_MediumRangeBurst" numLevels="4"/>
+				<Node name="Rifles_SurgicalShooting" numLevels="2">
+					<Node name="Rifles_ObscuredTargets" numLevels="2"/>
+				</Node>
+			</Node>
+			<Node name="Rifles_BarricadeShooting"/>
+			<Node name="Rifles_LongRangeDrills" numLevels="2"/>
+
+			<!-- support -->
+			<Node name="Support_AssaultSAWs" numLevels="2"/>
+			<Node name="Support_AssaultMarksmen" numLevels="2"/>
+			<Node name="Support_ImprovedSuppression"/>
+			<Node name="Support_Melee" numLevels="2"/>
+			<Node name="Support_LanguageBasics"/>
+			<Node name="Support_ThrowablesTraining"/>
+			<Node name="Support_SelfFirstAid"/>
+
+			<!-- elite -->
+			<Node name="Elite_ExtraConditioning" minSquadLevel="13"/>
+			<Node name="Elite_AdvancedLanguage" minSquadLevel="13"/>
+			<Node name="Elite_AdvancedShooting" minSquadLevel="13"/>
+			<Node name="Elite_AdvancedCombatives" minSquadLevel="13"/>
+			<Node name="Elite_ExplosiveBreaching" minSquadLevel="13"/>
+			<Node name="Elite_AssaultPlanning" minSquadLevel="13"/>
+			<Node name="Elite_ViolenceOfAction" minSquadLevel="13"/>
+		</Doctrine>
+	</Unit>
+</Units>

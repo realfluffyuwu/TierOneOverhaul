@@ -1,0 +1,149 @@
+<ActionWaypoints>
+	<wp
+		type="THROW_GRENADE"
+		equipment="Strike Marker"
+		ui_prefix="data/textures/gui_ingame/waypoints/strike"
+		ttip="@menu_game_sm_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_sm_none_ttip"/>
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="Decoy Grenade HI"
+		ui_prefix="data/textures/gui_ingame/waypoints/decoy_hi"
+		ttip="@menu_game_decoy_hi_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_decoy_none_ttip"/>
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="Decoy Grenade LO"
+		ui_prefix="data/textures/gui_ingame/waypoints/decoy_lo"
+		ttip="@menu_game_decoy_lo_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_decoy_none_ttip"/>
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="CS Gas Grenade"
+		ui_prefix="data/textures/gui_ingame/waypoints/cs"
+		ttip="@menu_game_csg_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_csg_none_ttip"/>
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="CS Gas Grenade Single"
+		ui_prefix="data/textures/gui_ingame/waypoints/cs"
+		ttip="@menu_game_csg_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_csg_none_ttip"/>
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="CS Gas Grenade Kit"
+		ui_prefix="data/textures/gui_ingame/waypoints/cs"
+		ttip="@menu_game_csg_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_csg_none_ttip"/>
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="SVest"
+		ui_prefix="data/textures/gui_ingame/waypoints/blow_up"
+		ttip="@menu_game_svest_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_svest_none_ttip"/>
+
+	<wp
+		type="GRENADE_LAUNCHER"
+		equipment="MGL HE"
+		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
+		ttip="@menu_game_grenadelaunch_ttip"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
+	<wp
+		type="GRENADE_LAUNCHER"
+		equipment="MGL CS"
+		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
+		ttip="@menu_game_grenadelaunch_ttip"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
+	<wp
+		type="GRENADE_LAUNCHER"
+		equipment="MGL SMK"
+		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
+		ttip="@menu_game_grenadelaunch_ttip"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
+	<wp
+		type="GRENADE_LAUNCHER"
+		equipment="MGL FB"
+		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
+		ttip="@menu_game_grenadelaunch_ttip"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
+	<wp
+		type="GRENADE_LAUNCHER"
+		equipment="GL40 HE"
+		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
+		ttip="@menu_game_grenadelaunch_ttip"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
+	<wp
+		type="GRENADE_LAUNCHER"
+		equipment="GL40 HEDP"
+		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
+		ttip="@menu_game_grenadelaunch_ttip"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
+	<wp
+		type="GRENADE_LAUNCHER"
+		equipment="GL40 CS"
+		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
+		ttip="@menu_game_grenadelaunch_ttip"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
+	<wp
+		type="GRENADE_LAUNCHER"
+		equipment="GL40 SMK"
+		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
+		ttip="@menu_game_grenadelaunch_ttip"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
+	<wp
+		type="GRENADE_LAUNCHER"
+		equipment="M320 HE"
+		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
+		ttip="@menu_game_grenadelaunch_ttip"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
+	<wp
+		type="GRENADE_LAUNCHER"
+		equipment="M320 HEDP"
+		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
+		ttip="@menu_game_grenadelaunch_ttip"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
+	<wp
+		type="GRENADE_LAUNCHER"
+		equipment="M320 CS"
+		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
+		ttip="@menu_game_grenadelaunch_ttip"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
+	<wp
+		type="GRENADE_LAUNCHER"
+		equipment="M320 SMK"
+		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
+		ttip="@menu_game_grenadelaunch_ttip"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
+	<wp
+		type="GRENADE_LAUNCHER"
+		equipment="M320 PIKE"
+		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
+		ttip="@menu_game_grenadelaunch_ttip"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
+	<wp
+		type="GRENADE_LAUNCHER"
+		equipment="IZLID"
+		ui_prefix="data/textures/gui_ingame/waypoints/strike"
+		ttip="@menu_game_grenadelaunch_ttip"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
+
+	<wp
+		type="CROWBAR"
+		equipment="Tomahawk"
+		ui_prefix="data/textures/gui_ingame/waypoints/crowbar"
+		ttip="Use tomahawk"
+		ttip_disabled="@menu_game_tool_disabled_ttip"/>
+</ActionWaypoints>

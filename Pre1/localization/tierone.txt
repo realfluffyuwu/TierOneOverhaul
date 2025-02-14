@@ -1,0 +1,241 @@
+#
+# MOD
+#
+
+@unit_rangers_operator=BLACK OPS
+@unit_nswdg_description=Known for their precision and efficiency, the NSW Development Group is tasked with executing some of the highest risk missions JSOC has to offer.
+
+@firearm_vp9_name=B&T VP9
+@firearm_vp9_desc=The spiritual successor to the famed Welrod pistol, the deadly silent B&T VP9 is perfect for putting down unaware enemies. However, its bolt-action nature requires that its user neutralizes their target on the first shot.\n\nSound Travel Range: 1.5m
+@firearm_p90sd_name=FN P90 SMG Suppressed
+@firearm_p90sd_desc=P90 outfitted with the FN Attenuator suppressor. It'll be quiet, but it won't be as quiet as you think. Added weight and length of the suppressor will reduce weapon handling.\n\nSound Travel Range: 12m
+@firearm_p90_name=FN P90 SMG
+@firearm_p90_desc=Designed in the early 90s for special military and counter terrorist units, the P90 is a compact bullpup PDW that notably features a top mounted 50-round magazine and boasts a rate of fire of 900 RPM. Because of this, the P90 is an absolutely devastating tool in CQB environments.
+@firearm_mcxspearsd_name=XM5 Suppressed
+@firearm_mcxspearsd_desc=The XM5 was always intended to be used with its purpose built suppressor to mitigate the blast of its high powered round and short barrel. The 6.8 however, was designed as a high velocity round, so subsonic options aren't currently available for it.\n\nSound Travel Range: 27m
+@firearm_mcxspear_name=XM5 Carbine
+@firearm_mcxspear_desc=Fresh out of the NGSW trial and into your hands, the XM5 boasts AR-like controls and a brand new 6.8x51mm cartridge intended to bridge the gap between the old 7.62 and 5.56.\n\nIt also comes with a suggestion box and satisfaction survey.
+@firearm_g3ka4sd_name=HK G3KA4 Suppressed
+@firearm_g3ka4sd_desc=G3KA4 with a full length suppressor to make it even heavier than it already was.\n\nSound Travel Range: 36m
+@firearm_g3ka4_name=HK G3KA4
+@firearm_g3ka4_desc=If you're a die-hard H&K fan, tired of the AR platform, want to show off how old-school and badass you are, but still want to keep up with the times, this is the rifle for you. With a 12" barrel, polymer trigger unit, and customizable handguard, the HK G3KA4 is, in essence, an old man trying to fit into a bachelor party. Ridiculously long reloads aside, it gets the job done.
+@firearm_urgi_carabine_name=URG-I 14.5"
+@firearm_urgi_carabine_desc=Currently being phased into service with the US Army’s various Special Forces Groups and the 75th Ranger Regiment, the URG-I represents a new generation of high-speed rifles for today's operators. Lighter and ergonomically superior to the M4 Carbine, with nearly identical ballistics makes this a must have rifle in the field.
+@firearm_urgisd_carabine_name=URG-I 14.5" Suppressed
+@firearm_urgisd_carabine_desc=URG-I outfitted with a SOCOM556-RC2 suppressor.\n\nAdded weight and length of suppressor will slightly reduce weapon handling.\n\nSound Travel Range: 20m
+@firearm_m16a4dmrsd_name=Squad DM Rifle Suppressed
+@firearm_m16a4dmrsd_desc=SDM-R with a suppressor on it.\n\nAdded weight and length of the suppressor will reduce weapon handling.\n\nSound Travel Range: 18m
+@firearm_mg338sd_name=XM338 LMMG Suppressed
+@firearm_mg338sd_desc=XM338 outfitted with a suppressor. Don't ask me why it looks like a bottle, that's a question for Sig.\n\nAdded weight and length of the suppressor will reduce weapon handling.\n\nSound Travel Range: 47.5m
+@firearm_mk17sd_std_name=Mk17 STD Suppressed
+@firearm_mk17sd_std_desc=Mk17 outfitted with a suppressor.\n\nAdded weight and length of the suppressor will reduce weapon handling.\n\nSound Travel Range: 35m
+@firearm_mk17sd_cqc_name=Mk17 CQC Suppressed
+@firearm_mk17sd_cqc_desc=Mk17 CQC outfitted with a suppressor. Don't expect it to do too much though.\n\nAdded weight and length of the suppressor will reduce weapon handling.\n\nSound Travel Range: 38m
+@firearm_m249spwsd_name=M249 SPW Suppressed
+@firearm_m249spwsd_desc=An M249 fitted with a suppressor durable enough to not blow up and melt after the first 200 rounds.\n\nAdded weight and length of the suppressor will reduce weapon handling.\n\nSound Travel Range: 22m
+@firearm_m16a4sd_name=M16A4 Rifle Suppressed
+@firearm_m16a4sd_desc=M16A4 outfitted with a suppressor.\n\nAdded weight and length of the suppressor will reduce weapon handling.\n\nSound Travel Range: 18m
+@firearm_m4sd_carabine_name=M4 Carbine Suppressed
+@firearm_m4sd_carabine_desc=M4 Carbine outfitted with a suppressor.\n\nAdded weight and length of the suppressor will reduce weapon handling.\n\nSound Travel Range: 20m
+@firearm_ak105_name=AK-105
+@firearm_ak105_desc=Shortened carbine variant of the AK-74M, designed by Kalashnikov. Chambered in 5.45x39mm with a 12.4" barrel, the AK-105 is essentially the MK-18 of the AK family.\n\nSlightly heavier than AR platforms and harder to reload.
+@firearm_ak105sd_name=AK-105 Suppressed
+@firearm_ak105sd_desc=AK-105 outfitted with a suppressor.\n\nAdded weight and length of the suppressor will reduce weapon handling.\n\nSound Travel Range: 23m
+@firearm_asval_name=AS Val
+@firearm_asval_desc=Chambered in the very silent and very deadly 9x39mm cartridge, this integrally suppressed Soviet rifle can output huge amounts of damage at close range. Due to the subsonic rounds however, it will lack damage at longer ranges. Comes with only 20-round mags!\n\nSound Travel Range: 3m
+@firearm_mjolnir_name=Mk-18 Mod 1 Mjölnir
+@firearm_mjolnir_desc=A gun that would give the sniper a run for his money. Chambered in .338 Lapua Magnum, this beast of a rifle can drop bad guys at 1000 yards without breaking a sweat. Very heavy however, so it's probably not a good idea to use it in close range.\n\nAfter all, it's not called the Mjölnir for no reason.
+@firearm_apc9k_t1_name=B&T APC9K PRO-G
+@firearm_apc9k_desc=The Advanced Police Carbine (APC) series was developed to meet and exceed the demands of modern police, special forces, and military units around the world.\n\nIn 2019, the United States Army selected the APC9K as its Sub Compact Weapon (SCW) to support global personal protective missions.
+@firearm_gl40_name=FN40GL Mk2
+@firearm_gl40he_desc=The FN40GL® Mk2 grenade launcher has been designed and developed by FN Herstal to fit onto either the FN SCAR®-L or the FN SCAR®-H platform. It can also be used as a stand-alone grenade launcher when attached to a buttstock assembly.\n\nLoaded with standard HE munitions.
+@firearm_gl40hedp_desc=The FN40GL® Mk2 grenade launcher has been designed and developed by FN Herstal to fit onto either the FN SCAR®-L or the FN SCAR®-H platform. It can also be used as a stand-alone grenade launcher when attached to a buttstock assembly.\n\nLoaded with standard HEDP munitions that can be used to breach small holes in walls.
+@firearm_gl40cs_desc=The FN40GL® Mk2 grenade launcher has been designed and developed by FN Herstal to fit onto either the FN SCAR®-L or the FN SCAR®-H platform. It can also be used as a stand-alone grenade launcher when attached to a buttstock assembly.\n\nLoaded with CS gas munitions.
+@firearm_gl40smk_desc=The FN40GL® Mk2 grenade launcher has been designed and developed by FN Herstal to fit onto either the FN SCAR®-L or the FN SCAR®-H platform. It can also be used as a stand-alone grenade launcher when attached to a buttstock assembly.\n\nLoaded with smoke munitions.
+@firearm_mgl_name=Milkor M32 MGL
+@firearm_mglhe_desc=The MGL is a multiple-shot weapon, intended to significantly increase a small squad's firepower when compared to traditional single-shot grenade launchers like the M203. A variety of rounds can be loaded, then fired as fast as the trigger can be pulled.\n\nLoaded with standard HE munitions.
+@firearm_mglhedp_desc=The MGL is a multiple-shot weapon, intended to significantly increase a small squad's firepower when compared to traditional single-shot grenade launchers like the M203. A variety of rounds can be loaded, then fired as fast as the trigger can be pulled.\n\nLoaded with standard HEDP munitions that can be used to breach small holes in walls.
+@firearm_mglcs_desc=The MGL is a multiple-shot weapon, intended to significantly increase a small squad's firepower when compared to traditional single-shot grenade launchers like the M203. A variety of rounds can be loaded, then fired as fast as the trigger can be pulled.\n\nLoaded with CS gas munitions.
+@firearm_mglsmk_desc=The MGL is a multiple-shot weapon, intended to significantly increase a small squad's firepower when compared to traditional single-shot grenade launchers like the M203. A variety of rounds can be loaded, then fired as fast as the trigger can be pulled.\n\nLoaded with smoke munitions.
+@firearm_mglfb_desc=The MGL is a multiple-shot weapon, intended to significantly increase a small squad's firepower when compared to traditional single-shot grenade launchers like the M203. A variety of rounds can be loaded, then fired as fast as the trigger can be pulled.\n\nLoaded with experimental concussive munitions.
+@firearm_vector_name=KRISS Vector GEN II
+@firearm_vectorsd_name=KRISS Vector GEN II Suppressed
+@firearm_vector9_desc=A gun that requires no introduction. Thanks to its Super V system, it is able to provide a blistering fire rate of 1,200 rounds per minute while also reducing felt recoil to a minimum.\n\nJust remember to reload!
+@firearm_vector9sd_desc=Suppressed variant of the KRISS Vector, as if it wasn't bulky enough.\n\nAdded weight and length of the suppressor will reduce weapon handling.\n\nSound Travel Range: 4.5m(Sub), 8m(Super)
+@firearm_vector45_desc=A gun that requires no introduction. Thanks to its Super V system, the gun can provide a blistering fire rate of 1,200 rounds per minute while also reducing felt recoil to a minimum. Just remember to reload!\n\nThis variant is chambered in .45 ACP.
+@firearm_mp7a1_name=MP7A1 SMG
+@firearm_mp7a1_desc=Chambered in the unique 4.6x30mm cartrige, the MP7 represents a new generation of enhanced-performance submachine guns that bridge the gap between assault rifles and conventional submachine guns.
+@firearm_mp7a1sd_name=MP7A1 SMG Suppressed
+@firearm_mp7a1sd_desc=What do you get when you slap a suppressor on DEVGRU's favorite SMG?\n\nA silent and deadly package that basement operators worldwide can only dream of owning.\n\nSound Travel Range: 12m
+@firearm_mcx_name=MCX LVAW
+@firearm_mcx_desc=Configurable in more than 500 combinations, the ground-breaking and modular SIG MCX is ready for any mission.\n\nThis variant is fitted with an integral suppressor to reduce overall length while also keeping sound signatures low.\n\nSound Travel Range: 5.5m(Sub), 24m(Super)
+@firearm_hk416_name=HK416A5 11"
+@firearm_hk416_desc=The German engineering take on the AR15, the HK416 utilizes a short stroke piston system as opposed to the traditional direct impingement gas system. Even with the increased weight of the piston, it remains a favorite of Tier 1 Special Operation Groups and armchair commandos worldwide.
+@firearm_hk416sd_name=HK416A5 11" Suppressed
+@firearm_hk416sd_desc=HK416 outfitted with a suppressor.\n\nAdded weight and length of suppressor will slightly reduce weapon handling.\n\nSound Travel Range: 22m
+@firearm_mk18sd_name=Mk18 Carbine Suppressed
+@firearm_mk18sd_desc=Mk18 outfitted with a suppressor.\n\nAdded weight and length of suppressor will slightly reduce weapon handling.\n\nSound Travel Range: 23m
+@firearm_m110a1sd_name=M110A1 SDMR Suppressed
+@firearm_m110a1sd_desc=M110A1 SDMR outfitted with a suppressor.\n\nAdded weight and length of the suppressor will reduce weapon handling.\n\nSound Travel Range: 36m
+@firearm_g19xsd_name=G19X Suppressed
+@firearm_g19xsd_desc=G19X outfitted with a suppressor.\n\nAdded weight and length of the suppressor will reduce weapon handling.\n\nSound Travel Range: 3.5m(Sub), 7m(Super)
+@firearm_g2240sd_name=G22 Suppressed
+@firearm_g2240sd_desc=G22 outfitted with a suppressor.\n\nAdded weight and length of the suppressor will reduce weapon handling.\n\nSound Travel Range: 8m
+
+@firearm_mk20ssrSup_desc=Suppressors reduce the muzzle flash and sound report of firearms, and confuse unalerted enemies that do hear something.\n\nThere's no reliable subsonic 7.62x51 ammo, so this won't make you magically silent - but the SSR keeps noise (relatively) low.\n\nSound Travel Range: 30m
+@firearm_mk17_lbSup_desc=Suppressors reduce the muzzle flash and sound report of firearms, and confuse unalerted enemies that do hear something.\n\nThere's no reliable subsonic 7.62x51 ammo, so this won't make you magically silent but the added weight helps with recoil.\n\nSound Travel Range: 33m
+
+@firearm_mcxrattler_name=MCX Rattler
+@firearm_mcxrattler_desc=Representing the shortest possible take on a carbine, the Rattler is a gas piston MCX that's short enough to fit under a coat or in a car. While the 5.5 inch barrel hurts terminal ballistics, it'll still get the job done when size is a priority.
+@firearm_mcxrattlersd_name=MCX Rattler Suppressed
+@firearm_mcxrattlersd_desc=Representing the shortest possible take on a carbine, the Rattler is a gas piston MCX that's short enough to fit under a coat or in a car. While the 5.5 inch barrel hurts terminal ballistics, it'll still get the job done when size is a priority.\n\nSound Travel Range: 6.5m(Sub), 25m(Super)
+@firearm_mp7a2_name=MP7A2 SMG
+@firearm_mp7a2_desc=Chambered in the unique 4.6x30mm cartrige, the MP7 represents a new generation of enhanced-performance submachine guns that bridge the gap between assault rifles and conventional submachine guns.
+@firearm_mp7a2sd_name=MP7A2 SMG Suppressed
+@firearm_mp7a2sd_desc=What do you get when you slap a suppressor on DEVGRU's favorite SMG?\n\nA silent and deadly package that basement operators worldwide can only dream of owning.\n\nSound Travel Range: 9m
+@firearm_hk416dev_name=HK416D 10.4"
+@firearm_hk416dev_desc=The German engineering take on the AR15, the HK416 utilizes a short stroke piston system as opposed to the traditional direct impingement gas system. Even with the increased weight of the piston, it remains a favorite of Tier 1 Special Operation Groups and armchair commandos worldwide.
+@firearm_hk416devsd_name=HK416D 10.4" Suppressed
+@firearm_hk416devsd_desc=HK416D outfitted with a suppressor.\n\nAdded weight and length of suppressor will slightly reduce weapon handling.\n\nSound Travel Range: 22m
+@firearm_nsr_name=Noveske Gen III 10.5"
+@firearm_nsr_desc=A high quality AR produced by Noveske to SEAL standards.\n\nPrecision machined, free floated, and featuring only the best components for the best operators.
+@firearm_nsrsd_name=Noveske Gen III Suppressed
+@firearm_nsrsd_desc=Noveske Gen III outfitted with a suppressor.\n\nAdded weight and length of suppressor will slightly reduce weapon handling.\n\nSound Travel Range: 20m
+@firearm_mk11_name=Mk11 Mod 1
+@firearm_mk11_desc=Straight from KAC and Stoner himself comes the latest and greatest take on the AR-10 rifle.\n\nExtremely accurate and handy enough to clear a room with the best of them.
+@firearm_mk11sd_name=Mk11 Mod 1 Suppressed
+@firearm_mk11sd_desc=Mk11 Mod 1 outfitted with a suppressor.\n\nAdded weight and length of suppressor will slightly reduce weapon handling.\n\nSound Travel Range: 30m
+@firearm_mk12_name=Mk12 Mod 1 SPR
+@firearm_mk12_desc=Following in the concept of the recon rifle, the SPR is essentially a shortened and accurized M16 to give precision firepower in a rifle almost as compact as the M4.\n\nIt's still only 5.56 though.
+@firearm_mk12sd_name=Mk12 Mod 1 SPR Suppressed
+@firearm_mk12sd_desc=Mk12 SPR outfitted with a suppressor.\n\nAdded weight and length of suppressor will slightly reduce weapon handling.\n\nSound Travel Range: 16m
+@firearm_mk13_name=Mk13 Mod 5
+@firearm_mk13_desc=A hybridized design drawing from both the famous Accuracy International chassis construction and the M24, the MK13 offers both pinpoint accuracy and power in a portable configuration.\n\nWhile it's poorly suited for rapid fire or CQB situations, it more than makes up for it when given a little room to breathe.
+@firearm_mk46_name=Mk46 Mod 1 LMG
+@firearm_mk46_desc=SOCOM's take on the classic M249.\n\nIt's lighter and shorter, but still retains the original stock for the sake of comfort and ergonomics.\n\nPlus, the nice cheek weld makes it a bit easier to look through those fancy optics.
+@firearm_mk46sd_name=Mk46 Mod 1 Suppressed
+@firearm_mk46sd_desc=Mk46 Mod 1 outfitted with a suppressor.\n\nAdded weight and length of the suppressor will reduce weapon handling.\n\nSound Travel Range: 22m
+@firearm_m320_name=M320 GLM
+@firearm_m320he_desc=Currently in the process of replacing the M203, the M320 offers both underbarrel and standalone configurations as well as an improved sighting system and different breech design allowing for more ergonomic reloads and the use of elongated projectiles such as the Pike missile.\n\nLoaded with standard HE munitions.
+@firearm_m320hedp_desc=Currently in the process of replacing the M203, the M320 offers both underbarrel and standalone configurations as well as an improved sighting system and different breech design allowing for more ergonomic reloads and the use of elongated projectiles such as the Pike missile.\n\nLoaded with standard HEDP munitions that can be used to breach small holes in walls.
+@firearm_m320cs_desc=Currently in the process of replacing the M203, the M320 offers both underbarrel and standalone configurations as well as an improved sighting system and different breech design allowing for more ergonomic reloads and the use of elongated projectiles such as the Pike missile.\n\nLoaded with CS gas munitions.
+@firearm_m320smk_desc=Currently in the process of replacing the M203, the M320 offers both underbarrel and standalone configurations as well as an improved sighting system and different breech design allowing for more ergonomic reloads and the use of elongated projectiles such as the Pike missile.\n\nLoaded with smoke munitions.
+
+@ammo_SS190_name=SS190 31gr Black Tip
+@ammo_SS190_desc=Standard ammunition with steel penetrator and aluminum core.
+@ammo_68AP_name=XM277E1 135gr AP
+@ammo_68AP_desc=Classified experimental .277 SIG Fury armor-piercing ammunution.
+@ammo_68FMJ_name=XM277 140gr FMJ
+@ammo_68FMJ_desc=Prototype .277 SIG Fury FMJ ammunition.
+@ammo_762FMJM80LP_name=M80 147gr LP
+@ammo_762FMJM80LP_desc=M80 147gr FMJ round with a low power load for suppressed shooting.
+@ammo_7N6_name=165gr 7N6
+@ammo_7N6_desc=Standard steel core FMJ cartridge.
+@ammo_SP5_name=260gr SP-5
+@ammo_SP5_desc=Standard subsonic FMJ cartridge.
+@ammo_SP6_name=246gr SP-6
+@ammo_SP6_desc=Standard subsonic armor-piercing cartridge.
+@ammo_338scenar_name=250gr Lapua Scenar
+@ammo_338scenar_desc=Standard .338 Lapua Magnum rounds are extremely effective at long range.
+@ammo_40mmFB_name=XM655 Concussion
+@ammo_40mmFB_desc=Prototype flashbang shell with impact fuse. Developed by CTS.
+@ammo_40mmHE_name=M441 HE
+@ammo_40mmHE_desc=Standard high-explosive shell.
+@ammo_40mmHEDP_name=M433 HEDP
+@ammo_40mmHEDP_desc=High-explosive rounds that can also be used to breach small openings into walls.
+@ammo_40mmCS_name=M651 CS Gas
+@ammo_40mmCS_desc=Tear gas round. Extremely effective for crowd control. Avoid firing at allies.
+@ammo_actionsx_name=31gr Action SX
+@ammo_actionsx_desc=Segmented hollow point rounds provide high stopping power in close ranges.
+@ammo_fmjsx_name=40gr FMJ SX
+@ammo_fmjsx_desc=FMJ rounds provide ideal armor penetration and ballistics at range.
+@ammo_300BLKSUB_name=220gr Subsonic
+@ammo_300BLKSUB_desc=Subsonic load provides a whisper quiet sound signature and high damage in CQB.
+@ammo_300BLKSUP_name=110gr Supersonic
+@ammo_300BLKSUP_desc=Supersonic load provides balanced damage at the cost of a louder sound signature.
+# A 5.56x45 round necked up to .308, providing superb stopping power in close to medium ranges.
+@ammo_556APM995_name=M995 52gr AP
+@ammo_556APM995_desc=AP round w/ Tungsten Carbide Penetrator will easily punch through enemy body armor and various objects.
+@ammo_556FMJM855LP_name=M855 62gr LP
+@ammo_556FMJM855LP_desc=M855 62gr Green Tip round with a low power load for suppressed shooting.
+@ammo_556FMJM855A1LP_name=M855A1 62gr LP
+@ammo_556FMJM855A1LP_desc=M855A1 62gr EPR round with a low power load for suppressed shooting.
+@ammo_556FMJMk318LP_name=Mk318 62gr LP
+@ammo_556FMJMk318LP_desc=MK318 62gr SOST Ball round with a low power load for suppressed shooting.
+@ammo_556APM995LP_name=M995 52gr LP
+@ammo_556APM995LP_desc=M995 52gr AP round with a low power load for suppressed shooting.
+@ammo_300Mk248_name=220gr Mk248 Mod 1
+@ammo_300Mk248_desc=Standard .300 Winchester Magnum rounds are extremely effective at long range.
+
+@ammo_556SUB_name=Atomic 112gr Subsonic
+@ammo_556SUB_desc=Commercial subsonic 5.56 round that happens to somewhat cycle reliably through unmodified AR-pattern rifles.\n\nNot effective at range or against armored targets.
+
+@nvg_nswdg_gpnvg18_name=GPNVG-18 Quad-Tube NVG
+@nvg_nswdg_gpnvg18_desc=The GPNVG-18 offers the widest field of view of any issued night vision system on the planet. At 97 degrees, it's almost as if you aren't even wearing them.\n\nExcept for the massive weight and sore neck.\n\nAllows you to engage enemies in the dark while remaining hidden yourself - until you open fire.
+
+@scope_m2a1_name=M2A1 Reflex Sight
+@scope_m2a1_desc=The M2A1 sight was designed to compensate for the natural drift of the 40mm grenade. The built-in light sensor dims the reticle during daylight hours and allows for a brighter reticle during night time operations.
+
+@grenade_sm_name=Strike Marker
+@grenade_sm_desc="Since when does Shepherd care about danger close?"\n\nA heavily modified IFF strobe that allows our friendly neighborhood Predator to lock its Hellfires on for those days you don't feel like clearing a building. Just make sure to get your guys clear of the kill zone.\n\nTime to Impact: 5s\nBlast Radius: 8m\nKill Range: 15m
+
+@grenade_decoy_hi_name=3x Decoy 115dB
+@grenade_decoy_hi_desc=Counter-intel grenade that utilizes built-in speakers to distract the enemy. Great for pointing the enemy in the wrong direction so you can sneak past them.\n\nOr pop 'em in the back of the head. It's up to you, really.\n\nFuse time: 1s\nSound Radius: 20m
+
+@grenade_decoy_lo_name=3x Decoy 75dB
+@grenade_decoy_lo_desc=Counter-intel grenade that utilizes built-in speakers to distract the enemy. Great for pointing the enemy in the wrong direction so you can sneak past them.\n\nOr pop 'em in the back of the head. It's up to you, really.\n\nFuse time: 1s\nSound Radius: 5m
+
+@grenade_csgsingle_name=1x CS Gas Grenade
+@grenade_csg_name=2x CS Gas Grenade
+@grenade_csg_desc=Basically a smoke grenade, except it dispenses a high volume of concentrated CS Gas. Will royally f**k up anyone's day, including you and your teammates if you aren't careful. Great for crowd control.\n\nFuse time: 1.5s\nEffective Range: 3m\nMax Range: 5m
+@grenade_csg_kit_name=3x CS Gas Grenade
+
+@laser_designator_name=Laser Designator
+@laser_designator_desc="You see that building over there? I don't want to."\n\nHandheld designator designed by L3 Harris.
+
+@utility_svest_name=Suicide Vest
+@utility_svest_desc=The suicide vest or S-Vest is nothing more than a few pounds of explosives stuffed under your clothes and ready to blow. While many may argue that such a tactic is cruel and backwards, it does allow delivery of more raw power than any grenade or rocket could hope for.\n\nTry not to draw the short straw though.
+
+@menu_game_sm_ttip=Throw strike marker
+@menu_game_sm_none_ttip=Out of strike markers
+@menu_game_decoy_hi_ttip=Throw decoy grenade (115dB)
+@menu_game_decoy_lo_ttip=Throw decoy grenade (75dB)
+@menu_game_decoy_none_ttip=Out of decoy grenades
+@menu_game_csg_ttip=Throw CS gas grenade
+@menu_game_csg_none_ttip=Out of CS gas grenades
+@menu_game_svest_ttip=Blow yourself up
+@menu_game_svest_none_ttip=Out of suicide vests
+
+@firearm_caliber_68x51_name=6.8×51mm
+@firearm_caliber_338lm_name=.338 LM
+@firearm_caliber_300wm_name=.300 WM
+@firearm_caliber_40mmHE_name=40mm HE
+@firearm_caliber_40mmCS_name=40mm CS
+@firearm_caliber_40mmFB_name=40mm Stun
+@firearm_caliber_40mmHEDP_name=40mm HEDP
+@firearm_caliber_40mmSMK_name=40mm Smoke
+
+@firearm_operation_doubleaction_name=Double-Action
+
+@unit_alpha_name=ALPHA GROUP
+@unit_nswdg_name=NSWDG
+
+@nsw_rank_0=Petty Officer Third Class
+@nsw_rank_1=Petty Officer Second Class
+@nsw_rank_2=Petty Officer First Class
+@nsw_rank_3=Chief Petty Officer
+@nsw_rank_4=Senior Chief Petty Officer
+@nsw_rank_5=Master Chief Petty Officer
+
+@#squadnamenswdg=BLUE SQDN - A TROOP
+@#squadnamenswdg=BLUE SQDN - B TROOP
+@#squadnamenswdg=BLUE SQDN - C TROOP
+@#squadnamenswdg=GOLD SQDN - A TROOP
+@#squadnamenswdg=GOLD SQDN - B TROOP
+@#squadnamenswdg=GOLD SQDN - C TROOP
+@#squadnamenswdg=RED SQDN - A TROOP
+@#squadnamenswdg=RED SQDN - B TROOP
+@#squadnamenswdg=RED SQDN - C TROOP
+@#squadnamenswdg=SILVER SQDN - A TROOP
+@#squadnamenswdg=SILVER SQDN - B TROOP
+@#squadnamenswdg=SILVER SQDN - C TROOP

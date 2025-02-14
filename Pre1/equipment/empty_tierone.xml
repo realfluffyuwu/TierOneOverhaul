@@ -1,0 +1,51 @@
+<Equipment>
+	<!-- these control where the Empty option shows up in the customization screen (for which slot/class combo) -->
+
+	<Bind eqp="EmptyUtility" to="Operator"/>
+	<Bind eqp="EmptyUtility" to="DEVAssault"/>
+	<Bind eqp="EmptyUtility" to="DEVSupport"/>
+	<Bind eqp="EmptyUtility" to="DEVMarksman"/>
+	<Bind eqp="EmptyUtility" to="DEVUndercover"/>
+	<Bind eqp="EmptyUtility" to="DEVBlackOps"/>
+
+	<Bind eqp="EmptyPrimary" to="DEVUndercover"/>
+	<Bind eqp="EmptyPrimary" to="DEVBlackOps"/>
+
+	<Bind eqp="EmptySecondary" to="Operator"/>
+	<Bind eqp="EmptySecondary" to="DEVAssault"/>
+	<Bind eqp="EmptySecondary" to="DEVSupport"/>
+	<Bind eqp="EmptySecondary" to="DEVMarksman"/>
+	<Bind eqp="EmptySecondary" to="DEVUndercover"/>
+	<Bind eqp="EmptySecondary" to="DEVBlackOps"/>
+
+	<Bind eqp="EmptyHelmetNVG" to="Operator"/>
+	<Bind eqp="EmptyHelmetNVG" to="DEVAssault"/>
+	<Bind eqp="EmptyHelmetNVG" to="DEVSupport"/>
+	<Bind eqp="EmptyHelmetNVG" to="DEVMarksman"/>
+	<Bind eqp="EmptyHelmetNVG" to="DEVUndercover"/>
+	<Bind eqp="EmptyHelmetNVG" to="DEVBlackOps"/>
+
+	<Bind eqp="EmptyArmor" to="DEVUndercover"/>
+	<Bind eqp="EmptyArmor" to="DEVBlackOps"/>
+
+	<Bind eqp="EmptySupportGear" to="Operator"/>
+	<Bind eqp="EmptySupportGear" to="DEVAssault"/>
+	<Bind eqp="EmptySupportGear" to="DEVSupport"/>
+	<Bind eqp="EmptySupportGear" to="DEVMarksman"/>
+	<Bind eqp="EmptySupportGear" to="DEVUndercover"/>
+	<Bind eqp="EmptySupportGear" to="DEVBlackOps"/>
+
+	<Bind eqp="EmptyPrimaryMuzzle" to="Operator"/>
+	<Bind eqp="EmptyPrimaryMuzzle" to="DEVAssault"/>
+	<Bind eqp="EmptyPrimaryMuzzle" to="DEVSupport"/>
+	<Bind eqp="EmptyPrimaryMuzzle" to="DEVMarksman"/>
+	<Bind eqp="EmptyPrimaryMuzzle" to="DEVUndercover"/>
+	<Bind eqp="EmptyPrimaryMuzzle" to="DEVBlackOps"/>
+
+	<Bind eqp="EmptySecondaryMuzzle" to="Operator"/>
+	<Bind eqp="EmptySecondaryMuzzle" to="DEVAssault"/>
+	<Bind eqp="EmptySecondaryMuzzle" to="DEVSupport"/>
+	<Bind eqp="EmptySecondaryMuzzle" to="DEVMarksman"/>
+	<Bind eqp="EmptySecondaryMuzzle" to="DEVUndercover"/>
+	<Bind eqp="EmptySecondaryMuzzle" to="DEVBlackOps"/>
+</Equipment>

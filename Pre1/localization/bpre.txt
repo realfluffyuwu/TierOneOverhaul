@@ -1,0 +1,6 @@
+#
+# MOD
+#
+
+@firearm_kmr_name=BCM 11.5" Custom
+@firearm_kmrsd_name=BCM 11.5" Suppressed

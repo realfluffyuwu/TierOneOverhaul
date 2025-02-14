@@ -1,0 +1,112 @@
+<Equipment>
+	<Bind eqp="CapDEV">
+		<to name="DEVAssault"/>
+		<to name="DEVSupport"/>
+		<to name="DEVMarksman"/>
+	</Bind>
+
+	<Helmet name="CapDEV" inventoryBinding="Helmet" unlockCost="0"
+			tooltip="@helmet_CIA_basiccap_name"
+			description="@helmet_CIA_basiccap_desc"
+			img="data/models/humans/attachments/cia_cap_ui.dds"
+		>
+
+		<MobilityModifiers moveSpeedModifierPercent="3" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="0" />
+		<RenderObject3D model="data/models/humans/attachments/cia_cap.khm" diffuseTex="data/models/humans/attachments/nsw_cap_01.dds" attachSlot="Bip001 Head"/>
+
+		<Params protectionInfoText="@equipment_protect2" allowNVG="false">
+			<ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0"/>
+		</Params>
+	</Helmet>
+
+	<Bind eqp="HelmetBumpDEV">
+		<to name="DEVAssault"/>
+		<to name="DEVSupport"/>
+		<to name="DEVMarksman"/>
+	</Bind>
+	<Helmet name="HelmetBumpDEV" inventoryBinding="Helmet" unlockCost="2"
+			tooltip="@helmet_CIA_bump_name"
+			description="@helmet_CIA_bump_desc"
+			img="data/models/humans/attachments/bump_helmet_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="2" turnSpeedModifierPercent="1"/>
+		<ConcealmentModifier add="-2" />
+		<RenderObject3D model="data/models/humans/attachments/cia_ballistic_helmet.khm" diffuseTex="data/models/humans/attachments/nsw_bump_helmet.dds" attachSlot="Bip001 Head">
+			<Specular shininess="8" intensity="1.3"/>
+		</RenderObject3D>
+
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0"/>
+		</Params>
+	</Helmet>
+
+	<Bind eqp="HelmetFASTDEV">
+		<to name="DEVAssault"/>
+		<to name="DEVSupport"/>
+		<to name="DEVMarksman"/>
+	</Bind>
+
+	<Helmet name="HelmetFASTDEV" inventoryBinding="Helmet" unlockCost="8"
+			tooltip="@helmet_rangers_fast_name"
+			description="@helmet_rangers_fast_desc"
+			img="data/models/humans/attachments/ranger_helmet_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="0" />
+
+		<RenderObject3D model="data/models/humans/attachments/nsw_assaulter_helmet.khm" diffuseTex="data/models/humans/attachments/nsw_assaulter_helmet_2.dds" attachSlot="Bip001 Head">
+			<Specular shininess="8" intensity="1.3"/>
+		</RenderObject3D>
+
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="360" coveragePercent="10" piercingProtectionLevel="3"/>
+		</Params>
+	</Helmet>
+
+	<Bind eqp="HelmetFASTMandibleDEV">
+		<to name="DEVAssault"/>
+		<to name="DEVSupport"/>
+		<to name="DEVMarksman"/>
+	</Bind>
+
+	<Helmet name="HelmetFASTMandibleDEV" inventoryBinding="Helmet" unlockCost="10"
+			tooltip="@helmet_rangers_fastmandible_name"
+			description="@helmet_rangers_fastmandible_desc"
+			img="data/models/humans/attachments/mandible_helmet_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="-1"/>
+		<ConcealmentModifier add="0" />
+
+		<RenderObject3D model="data/models/humans/attachments/nsw_assaulter_helmet.khm" diffuseTex="data/models/humans/attachments/nsw_assaulter_helmet_2.dds" attachSlot="Bip001 Head">
+			<Specular shininess="8" intensity="1.3"/>
+		</RenderObject3D>
+
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="360" coveragePercent="14" piercingProtectionLevel="3"/>
+		</Params>
+	</Helmet>
+
+	<Bind eqp="HelmetFASTRFDEV">
+		<to name="DEVAssault"/>
+		<to name="DEVSupport"/>
+		<to name="DEVMarksman"/>
+	</Bind>
+
+	<Helmet name="HelmetFASTRFDEV" inventoryBinding="Helmet" unlockCost="12"
+			tooltip="@helmet_rangers_fastrf_name"
+			description="@helmet_rangers_fastrf_desc"
+			img="data/models/humans/attachments/ranger_helmet_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="-3"/>
+		<ConcealmentModifier add="0" />
+
+		<RenderObject3D model="data/models/humans/attachments/nsw_assaulter_helmet.khm" diffuseTex="data/models/humans/attachments/nsw_assaulter_helmet.dds" attachSlot="Bip001 Head">
+			<Specular shininess="8" intensity="1.3"/>
+		</RenderObject3D>
+
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="360" coveragePercent="10" piercingProtectionLevel="5"/>
+		</Params>
+	</Helmet>
+</Equipment>

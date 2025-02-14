@@ -1,0 +1,452 @@
+<GUIItems>
+
+<!-- this is added as a child to the deploy screen item in code -->
+<Item name="Squad_Screen" sizeX="1106" sizeY="1380" hidden="true">
+	<OnOpen>
+		<Action type="TriggerEvent" target="GUI_GAME_SQUADSCREEN_OPENED"/>
+		<Action type="PlaySound" target="gui_customize_equip"/>
+	</OnOpen>
+
+	<OnClose>
+		<Action type="TriggerEvent" target="GUI_GAME_SQUADSCREEN_CLOSED"/>
+	</OnClose>
+
+	<!-- clicking on this (the background) will close the screen
+		 note that the the "background" item below should also 'stealFocus'
+	-->
+	<Item origin="-250 0" sizeX="2200" sizeY="9999">
+		<OnCursorDown>
+			<Action type="TriggerEvent" target="GUI_GAME_SQUADSCREEN_BACK"/>
+		</OnCursorDown>
+	</Item>
+
+	<!-- background -->
+	<StaticImage stealFocus="true">
+		<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="1154" sizeY="1444" color="ffffffc8"/>
+		<StaticText text="SQUAD" origin="24 674" align="l" font="header_2" textColor="f97b03"/>
+	</StaticImage>
+
+	<!--
+	SQUADS LIST
+	-->
+
+	<Item name="#squads_list_panel" align="l">
+		<OnOpen>
+			<Action type="Hide" target="#player_profile_panel"/>
+		</OnOpen>
+		<OnClose>
+			<Action type="Show" target="#player_profile_panel"/>
+		</OnClose>
+
+		<StaticImage align="l" origin="0 74">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="548" sizeY="1044" color="605a4f33"/>
+		</StaticImage>
+
+		<StaticImage align="l" origin="0 516">
+			<RenderObject2D texture="data/textures/gui/customization/list_border.tga"/>
+			<StaticImage align="t" origin="0 -8">
+				<RenderObject2D texture="data/textures/gui/customization/scroll_arrow.dds" flipY="true" color="f97b03" scaleX="0.8" scaleY="0.8"/>
+			</StaticImage>
+		</StaticImage>
+
+		<StaticImage align="l" origin="0 -368">
+			<RenderObject2D texture="data/textures/gui/customization/list_border.tga" flipY="true"/>
+			<StaticImage align="b" origin="0 8">
+				<RenderObject2D texture="data/textures/gui/customization/scroll_arrow.dds"  color="f97b03" scaleX="0.8" scaleY="0.8"/>
+			</StaticImage>
+		</StaticImage>
+
+		<!-- goes down to -228 on Y -->
+		<Button name="#squad_item_template" hidden="true" align="l" origin="0 0" sizeX="544" sizeY="240">
+
+		<!-- any changes here must also be made in #main_menu_squad_widget -->
+
+			<RenderObject2D texture="data/textures/gui/squads/rangers_bg_01.dds" color="ffffffcc"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/squads/rangers_bg_01.dds" color="ffffffff" blendMode="none"/>
+				<Action type="Show" target="#squad_item_hover_but"/>
+				<!-- <Action type="Show" target="#squad_item_hover_but2"/> -->
+				<!-- <Action type="TriggerEvent" target="GUI_GAME_SQUADSCREEN_HOVER_LIST_ITEM"/> -->
+			</OnHover>
+			<OnHoverEnd>
+				<Action type="Hide" target="#squad_item_hover_but"/>
+				<!-- <Action type="Hide" target="#squad_item_hover_but2"/> -->
+				<!-- <Action type="TriggerEvent" target="GUI_GAME_SQUADSCREEN_HOVER_LIST_ITEM_END"/> -->
+			</OnHoverEnd>
+			<OnClick>
+				<Action type="TriggerEvent" target="GUI_GAME_SQUADSCREEN_SELECTION_CHANGED"/>
+				<Action type="PlaySound" target="gui_customize_equip"/>
+			</OnClick>
+			<OnScrollDown>
+				<Action type="ScrollListForward" target="#squads_list_parent"/>
+			</OnScrollDown>
+			<OnScrollUp>
+				<Action type="ScrollListBackward" target="#squads_list_parent"/>
+			</OnScrollUp>
+
+			<StaticImage name="Squad Identity" align="b" origin="0 6">
+				<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b40" sizeX="536" sizeY="98"/>
+				<StaticText name="#unit_name" align="l" origin="6 24" text="UNIT NAME" font="header_5" textColor="f0e3cc"/>
+				<StaticText name="#squad_name" align="l" origin="4 -16" text="BONNIE'S BOOMSTICK" font="header_3" textColor="f97b03"/>
+				<StaticText name="#squad_id" font="header_3" hidden="true"/>
+			</StaticImage>
+			<StaticImage name="Squad Level" align="rt" origin="-25 -45">
+				<!-- <RenderObject2D texture="data/textures/gui/customization/trooper_rank_10.dds"/> -->
+				<StaticText name="#squad_level" align="r" origin="0 0" text="20" font="header_3" textColor="f97b03"/>
+				<StaticText align="r" origin="-45 -12" text="@menu_squads_level" font="header_5" textColor="f0e3cc"/>
+			</StaticImage>
+
+			<!--
+			<StaticImage align="lt" origin="10 -10" name="#squad_item_status">
+				<RenderObject2D texture="data/textures/gui/customization/icon_status_unequipped.tga"/>
+				<StaticImage name="#squad_item_hover_but2" hidden="true">
+					<RenderObject2D texture="data/textures/gui/customization/icon_status_hover.tga"/>
+				</StaticImage>
+				<StaticImage name="#squad_item_selected" hidden="true">
+					<RenderObject2D texture="data/textures/gui/customization/icon_status_equipped.tga"/>
+				</StaticImage>
+			</StaticImage>
+			-->
+			<StaticImage name="#squad_item_selected" hidden="true">
+				<RenderObject2D texture="data/textures/gui/squads/squad_button_highlight.dds"/>
+			</StaticImage>
+			<StaticImage name="#squad_item_hover_but" hidden="true">
+				<RenderObject2D texture="data/textures/gui/squads/squad_button_highlight.dds"/>
+			</StaticImage>
+		</Button>
+
+		<!-- Use this to figure out the position/size of the scroll list
+		<StaticImage align="l" origin="0 125">
+			<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="548" sizeY="940" color="ffffffe6"/>
+		</StaticImage>
+		-->
+		<ItemList name="#squads_list_parent" align="l" origin="4 74" direction="y" sizeX="548" sizeY="1044" clipChildren="true">
+			<ButtonGraphics align="l" origin="-26 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="20" sizeY="32" color="f97b0340"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="20" sizeY="32" color="f97b03ff"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="20" sizeY="32" color="f97b03ff"/>
+				</OnClick>
+			</ButtonGraphics>
+			<!-- items cloned from #squad_item_template are added here dynamically by the game -->
+		</ItemList>
+
+		<Item origin="170 -528">
+			<Button align="r" origin="-90 0" tooltip="@menu_generic_new">
+				<RenderObject2D texture="data/textures/gui/squads/squad_new.dds"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/squads/squad_new_hover.dds"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/squads/squad_new.dds"/>
+					<Action type="Show" target="#NewSquadDialog"/>
+				</OnClick>
+			</Button>
+			<Button align="r" origin="0 0" tooltip="@menu_generic_delete">
+				<RenderObject2D texture="data/textures/gui/squads/squad_delete.dds"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/squads/squad_delete_hover.dds"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/squads/squad_delete.dds"/>
+					<Action type="TriggerEvent" target="GUI_GAME_SQUADSCREEN_DELETE"/>
+				</OnClick>
+			</Button>
+		</Item>
+	</Item>
+
+
+	<!--
+	SQUAD DETAILS
+	-->
+	<Item name="#squad_details_panel" align="r" hidden="false" sizeX="540">
+		<Item origin="0 477" sizeX="540">
+			<Editbox name="#squad_name" origin="0 116" align="l" acceptNumbers="true" acceptLetters="true" forceUppercase="false" maxCharacters="19" focusedTextColor="ffffffff">
+				<TextFormat origin="10 0" align="l" text="BONNIE'S BOOMSTICK" font="header_3" textColor="f97b03"/>
+				<OnHoverEnd>
+					<Action type="TriggerEvent" target="GUI_GAME_SQUADSCREEN_NAME_MODIFIED"/>
+				</OnHoverEnd>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" color="000000e6" sizeX="536" sizeY="76"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" color="000000e6" sizeX="536" sizeY="76"/>
+				</OnClick>
+				<Cursor>
+					<RenderObject2D texture="data/textures/gui/editbox_cursor.tga" scaleY="2"/>
+				</Cursor>
+			</Editbox>
+
+			<StaticImage origin="0 88" align="lt">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="536" sizeY="4" color="f97b03"/>
+			</StaticImage>
+
+			<Item name="Level Text" origin="0 50" sizeX="536" sizeY="40" tooltip="@menu_squads_squadrank_ttip">
+				<StaticText text="LEVEL" align="l" font="header_4" textColor="f0e3cc"/>
+				<StaticText name="#squad_level" text="99" origin="74 0" align="l" font="header_4" textColor="f0e3cc"/>
+				<StaticText name="#squad_progress" text="999/999" align="r" font="header_4" textColor="f0e3cc"/>
+			</Item>
+
+			<Item name="#squad_progress_bar" origin="0 16" sizeX="536" sizeY="32" tooltip="@menu_squads_squadrank_ttip">
+				<StaticImage>
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="536" sizeY="32" color="40392b80"/>
+				</StaticImage>
+				<StaticImage>
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="532" sizeY="28" color="0c0b0b80"/>
+				</StaticImage>
+				<StaticImage name="#bar_element">
+					<RenderObject2D texture="data/textures/gui/square.tga" color="f97b03" sizeY="32"/>
+				</StaticImage>
+			</Item>
+
+			<!--
+			<StaticText name="#doctrine_points" text="999" align="r" font="header_3" textColor="f97b03" origin="0 -38"/>
+			-->
+
+			<Button align="l" origin="0 -38" acceptInput="false" tooltip="@menu_m_doctrine_ttip">
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" scaleX="0.8" scaleY="0.8" align="l" color="0c0b0b80" />
+				<ButtonText text="@menu_m_doctrine" origin="4 0" align="l" font="header_3" textColor="7f7f7f"/>
+				<OnHover>
+					<ButtonText text="@menu_m_doctrine" origin="4 0" align="l" font="header_3" textColor="211e1d"/>
+					<RenderObject2D texture="data/textures/gui/button_hover_01.tga" scaleX="0.8" scaleY="0.8" align="l" color="f0e3cc" />
+				</OnHover>
+				<OnClick>
+					<ButtonText text="@menu_m_doctrine" origin="4 0" align="l" font="header_3" textColor="f0e3cc"/>
+					<RenderObject2D texture="data/textures/gui/button_hover_01.tga" scaleX="0.8" scaleY="0.8" align="l" color="40392b" />
+				</OnClick>
+			</Button>
+
+			<StaticImage origin="0 -142">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="540" sizeY="66" color="0c0b0b80"/>
+
+				<StaticText align="lt" origin="6   0" text="Unit" font="paragraph_2" textColor="f97b03"/>
+				<StaticText align="lt" origin="6 -30" text="Status" font="paragraph_2" textColor="f97b03"/>
+
+				<StaticText align="rt" origin="-6   0" name="#unit_name" text="Rangers" font="paragraph_2" textColor="f0e3cc"/>
+				<StaticText align="rt" origin="-6 -30" name="#unit_status" text="Deployable" font="paragraph_2" textColor="f0e3cc"/>
+			</StaticImage>
+
+			<StaticText name="#unit_description" align="lt" origin="0 -200" text="description" font="paragraph_2" wordWrap="true" textColor="f0e3cc"/>
+
+			<Item name="#squad_stats" origin="0 -400" align="lt">
+				<StaticText origin="0 0" text="ACTIVITY REPORT" font="header_3" align="l" textColor="f97b03"/>
+				<StaticImage origin="0 -32" align="lt">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="536" sizeY="4" color="f97b03"/>
+				</StaticImage>
+				<StaticImage origin="0 -44" align="lt">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="540" sizeY="188" color="0c0b0b80"/>
+
+					<StaticText align="lt" origin="6   0"  text="@menu_cust_stats_missions" font="paragraph_2" textColor="f97b03"/>
+					<StaticText align="lt" origin="6 -30"  text="@menu_cust_stats_missions_failed" font="paragraph_2" textColor="f97b03"/>
+					<StaticText align="lt" origin="6 -60"  text="@menu_m_stats_kills" font="paragraph_2" textColor="f97b03"/>
+					<StaticText align="lt" origin="6 -90"  text="@menu_m_stats_hostagessaved" font="paragraph_2" textColor="f97b03"/>
+					<StaticText align="lt" origin="6 -120" text="@menu_m_stats_hvtsecured" font="paragraph_2" textColor="f97b03"/>
+					<StaticText align="lt" origin="6 -150" text="@menu_cust_stats_doorskicked" font="paragraph_2" textColor="f97b03"/>
+
+					<StaticText align="rt" origin="-6   0"  name="totalMissionsWon" text="999" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticText align="rt" origin="-6 -30"  name="missionFailed" text="999" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticText align="rt" origin="-6 -60"  name="kills" text="999" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticText align="rt" origin="-6 -90"  name="rescues" text="999" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticText align="rt" origin="-6 -120" name="arrests" text="999" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticText align="rt" origin="-6 -150" name="doorsKicked" text="999" font="paragraph_2" textColor="f0e3cc"/>
+				</StaticImage>
+			</Item>
+		</Item>
+	</Item>
+
+	<!--
+	back
+	-->
+	<Button align="l" origin="0 -636">
+		<ButtonText text="@menu_generic_back" align="l" font="header_2" textColor="f0e3cc"/>
+		<OnHover>
+			<ButtonText text="@menu_generic_back" align="l" font="header_2" textColor="211e1d"/>
+			<RenderObject2D texture="data/textures/gui/button_hover_01.tga" align="l" color="f0e3cc" />
+		</OnHover>
+		<OnClick>
+			<ButtonText text="@menu_generic_back" align="l" font="header_2" textColor="f0e3cc"/>
+			<RenderObject2D texture="data/textures/gui/button_hover_01.tga" align="l" color="40392b" />
+			<Action type="TriggerEvent" target="GUI_GAME_SQUADSCREEN_BACK"/>
+		</OnClick>
+	</Button>
+
+	<Button name="#squads_customize_button" origin="340 -636">
+		<ButtonText text="@menu_deploy_customize" align="r" font="header_2" textColor="f0e3cc"/>
+		<OnHover>
+			<ButtonText text="@menu_deploy_customize" align="r" font="header_2" textColor="211e1d"/>
+			<RenderObject2D texture="data/textures/gui/button_hover_01.tga" align="r" color="f0e3cc" flipX="true"/>
+		</OnHover>
+		<OnClick>
+			<RenderObject2D texture="data/textures/gui/button_hover_01.tga" align="r" color="40392b" flipX="true"/>
+			<Action type="TriggerEvent" target="GUI_GAME_DEPLOY_ON_CUSTOMIZE_TOGGLE"/>
+		</OnClick>
+	</Button>
+
+	<Button name="#squads_deploy_button" origin="340 -636">
+		<ButtonText text="@menu_squads_deploy" align="r" font="header_2" textColor="f0e3cc"/>
+		<OnHover>
+			<ButtonText text="@menu_squads_deploy" align="r" font="header_2" textColor="211e1d"/>
+			<RenderObject2D texture="data/textures/gui/button_hover_01.tga" align="r" color="f0e3cc" flipX="true"/>
+		</OnHover>
+		<OnClick>
+			<RenderObject2D texture="data/textures/gui/button_hover_01.tga" align="r" color="40392b" flipX="true"/>
+			<Action type="TriggerEvent" target="GUI_GAME_SQUADSCREEN_DEPLOY"/>
+			<Action type="Hide" target="Squad_Screen"/>
+		</OnClick>
+	</Button>
+</Item>
+
+
+<StaticImage name="#NewSquadDialog" origin="0 0" hidden="true">
+	<OnOpen>
+		<Action type="TriggerEvent" target="GUI_CAPTURE_INPUT"/>
+		<Action type="SetForeground" target="#NewSquadDialog"/>
+		<Action type="TriggerEvent" target="GUI_GAME_SQUADSCREEN_NEW_OPENED"/>
+	</OnOpen>
+
+	<OnClose>
+		<Action type="TriggerEvent" target="GUI_RELEASE_INPUT"/>
+	</OnClose>
+
+	<OnKeyDown key0="27">
+		<Action type="Hide" target="#NewSquadDialog"/>
+	</OnKeyDown>
+
+	<RenderObject2D texture="data/textures/gui/menu_pause_black.tga" color="fffffff9" sizeX="9999" sizeY="9999"/>
+
+	<StaticImage origin="0 12">
+		<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="1122" sizeY="690"/>
+	</StaticImage>
+
+	<Item origin="0 0" sizeX="1106" sizeY="700">
+		<StaticImage origin="0 0">
+			<RenderObject2D texture="data/textures/gui/square.tga" color="40392b" sizeX="1106" sizeY="700"/>
+		</StaticImage>
+
+		<StaticImage origin="0 0" align="t">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1106" sizeY="88" color="f97b03"/>
+			<StaticText origin="0 0" name="#Caption" text="@menu_squads_new" font="header_2" textColor="211e1d"/>
+		</StaticImage>
+
+		<StaticImage origin="0 234" >
+			<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="0c0b0b40"/>
+		</StaticImage>
+		<StaticImage origin="0 -196" >
+			<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="0c0b0b40" flipY="true"/>
+		</StaticImage>
+		<StaticImage origin="0 160" >
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1106" sizeY="88" color="0c0b0b40"/>
+			<Editbox name="#squad_name" acceptNumbers="true" acceptLetters="true" forceUppercase="false" maxCharacters="19" focusedTextColor="ffffffff">
+				<TextFormat text="BONNIE'S BOOMSTICK" font="header_3" textColor="f97b03"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" color="000000e6" sizeX="536" sizeY="76"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" color="000000e6" sizeX="536" sizeY="76"/>
+				</OnClick>
+				<Cursor>
+					<RenderObject2D texture="data/textures/gui/editbox_cursor.tga" scaleY="2"/>
+				</Cursor>
+			</Editbox>
+		</StaticImage>
+
+		<Checkbox name="#unit_select_template" origin="0 0" defaultState="UncheckedState" hidden="true">
+			<UncheckedState sizeX="560">
+				<RenderObject2D texture="data/textures/gui/squads/rangers_bg_01.dds" color="ffffffe6"/>
+				<OnOpen>
+					<Action type="Hide" target="#squadselect_hover"/>
+				</OnOpen>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/squads/rangers_bg_01.dds" color="ffffffff" blendMode="none"/>
+					<Action type="Show" target="#squadselect_hover"/>
+				</OnHover>
+				<OnHoverEnd>
+					<Action type="Hide" target="#squadselect_hover"/>
+				</OnHoverEnd>
+				<OnClick>
+					<Action type="TriggerEvent" target="GUI_GAME_SQUADSCREEN_NEW_UNIT_SELECTED"/>
+				</OnClick>
+			</UncheckedState>
+
+			<CheckedState acceptInput="false" sizeX="560">
+				<OnOpen>
+					<Action type="Show" target="#squadselect_hover"/>
+				</OnOpen>
+				<RenderObject2D texture="data/textures/gui/squads/rangers_bg_01.dds" color="ffffffe6"/>
+			</CheckedState>
+
+			<StaticImage>
+				<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b40" sizeX="536" sizeY="98"/>
+				<StaticText name="#unit_name" text="@unit_rangers_name" font="header_2" textColor="f0e3cc"/>
+			</StaticImage>
+			<StaticImage name="#squadselect_hover" hidden="false">
+				<RenderObject2D texture="data/textures/gui/squads/squad_button_highlight.dds"/>
+			</StaticImage>
+		</Checkbox>
+
+		<ItemList name="#unit_list" origin="0 -20" direction="x" sizeX="552" sizeY="240" clipChildren="true">
+			<ButtonGraphics align="b" origin="0 -24" acceptInput="false">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="20" sizeY="16" color="f97b0340"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="20" sizeY="16" color="f97b03ff"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="20" sizeY="16" color="f97b03ff"/>
+				</OnClick>
+			</ButtonGraphics>
+
+			<!-- items cloned from #unit_select_template are added here dynamically by the game -->
+
+		</ItemList>
+
+		<Button origin="-340 -20">
+			<RenderObject2D texture="data/textures/gui/menu_arrow.dds" color="f0e3cc7f" flipX="true"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/menu_arrow.dds" color="f0e3cc" flipX="true"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/menu_arrow.dds" color="f0e3cc7f" flipX="true"/>
+				<Action type="TriggerEvent" target="GUI_GAME_SQUADSCREEN_NEW_UNIT_SCROLL_BWD"/>
+			</OnClick>
+		</Button>
+
+		<Button origin="340 -20">
+			<RenderObject2D texture="data/textures/gui/menu_arrow.dds" color="f0e3cc7f" flipX="false"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/menu_arrow.dds" color="f0e3cc" flipX="false"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/menu_arrow.dds" color="f0e3cc7f" flipX="false"/>
+				<Action type="TriggerEvent" target="GUI_GAME_SQUADSCREEN_NEW_UNIT_SCROLL_FWD"/>
+			</OnClick>
+		</Button>
+
+		<Button origin="18 36" align="lb" >
+			<ButtonText align="l" origin="20 0" text="@menu_generic_cancel" font="header_2" textColor="f0e3cc"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="false"/>
+				<ButtonText align="l" origin="20 0" text="@menu_generic_cancel" font="header_2" textColor="40392b"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="0c0b0b80" flipX="false"/>
+				<Action type="Hide" target="#NewSquadDialog"/>
+			</OnClick>
+		</Button>
+		<Button origin="-18 36" align="rb">
+			<ButtonText align="r" origin="-20 0" text="@menu_squads_create" font="header_2" textColor="f0e3cc"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="true"/>
+				<ButtonText align="r" origin="-20 0" text="@menu_squads_create" font="header_2" textColor="40392b"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="0c0b0b80" flipX="true"/>
+				<Action type="Hide" target="#NewSquadDialog"/>
+				<Action type="TriggerEvent" target="GUI_GAME_SQUADSCREEN_NEW"/>
+			</OnClick>
+		</Button>
+	</Item>
+</StaticImage>
+
+</GUIItems>

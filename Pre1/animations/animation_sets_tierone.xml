@@ -1,0 +1,13 @@
+<AnimationSets>
+
+	<AnimationSet name="izlid" inherit="rifle">
+		<Animation handle="idle" name="rpg26_aim" />
+		<Animation handle="idle_low" name="rpg26_aim" />
+		<Animation handle="fire" name="rpg26_aim" />
+		<Animation handle="lowerweapon" name="rpg26_aim" />
+		<Animation handle="raiseweapon" name="rpg26_aim" />
+		<Animation handle="change_in" name="rpg26_change_in" />
+		<Animation handle="change_out" name="rpg26_change_out" />
+	</AnimationSet>
+  
+</AnimationSets>

@@ -1,0 +1,174 @@
+<Entities>
+	<Entity name="DEV Assaulter" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/nsw_assaulter.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm" diffuseTex="data/models/humans/attachments/nsw_assaulter_vest.dds"/>
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100"/>
+		<Human type="GoodGuy"
+			unit="NSWDG"
+			class="DEVAssault">
+
+			<Id name="DEV Assaulter" portrait="data/textures/portraits/ranger2.dds" gender="0" voicePack="male_very_american"/>
+			<FOV degrees="150" distanceMeters="999" eyeRadiusMeters="1"/>
+			<Brain suppressionRecovery="40.0"/>
+			<!-- mobility can be changed by the current equipment, in the specified range -->
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.52" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="MK 18 DEV"/>
+				<Item name="IronSights"/>
+				<Item name="G19 Pistol DEV"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Smoke Grenade"/>
+				<Item name="Frag Grenade"/>
+				<Item name="Lockpick"/>
+				<Item name="CapDEV"/>
+				<Item name="Rangers SFLCS Level III"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="DEV Support" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/nsw_support.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm" diffuseTex="data/models/humans/attachments/nsw_assaulter_vest.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_right.khm" attachSlot="vest_right" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_left.khm" attachSlot="vest_left" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100"/>
+		<Human type="GoodGuy"
+			unit="NSWDG"
+			class="DEVSupport">
+
+			<Id name="DEV Support" portrait="data/textures/portraits/ranger3.dds" gender="0" voicePack="male_very_american"/>
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
+			<Brain suppressionRecovery="30.0"/>
+			<!-- mobility can be changed by the current equipment, in the specified range -->
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.52" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="MK 18 DEV"/>
+				<Item name="IronSights"/>
+				<Item name="G19 Pistol DEV"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Smoke Grenade"/>
+				<Item name="Frag Grenade"/>
+				<Item name="Lockpick"/>
+				<Item name="CapDEV"/>
+				<Item name="Rangers SFLCS Level III"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="DEV Marksman" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/nsw_marksman.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm" diffuseTex="data/models/humans/attachments/nsw_assaulter_vest.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/ranger_marksman_wristmap.khm" diffuseTex="data/models/humans/attachments/ranger_marksman_wristmap.dds" />
+		<RenderObject3D model="data/models/humans/attachments/cia_scarf.khm" diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100"/>
+		<Human type="GoodGuy"
+			unit="NSWDG"
+			class="DEVMarksman">
+
+			<Id name="DEV Marksman" portrait="data/textures/portraits/ranger5.dds" gender="0" voicePack="male_very_american"/>
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
+			<Brain suppressionRecovery="30.0"/>
+			<!-- mobility can be changed by the current equipment, in the specified range -->
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.52" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="MK 18 DEV"/>
+				<Item name="IronSights"/>
+				<Item name="G19 Pistol DEV"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Smoke Grenade"/>
+				<Item name="Frag Grenade"/>
+				<Item name="Lockpick"/>
+				<Item name="CapDEV"/>
+				<Item name="Rangers SFLCS Level III"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="DEV Undercover" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse1.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/cia_scarf.khm" diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/cia_jacket.khm" diffuseTex="data/models/humans/attachments/nsw_jacket.dds" windAnimated="1"/>
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100"/>
+		<Human type="GoodGuy"
+			unit="NSWDG"
+			class="DEVUndercover">
+
+			<Id name="DEV Undercover" portrait="data/textures/portraits/ranger55.dds" gender="0" voicePack="male_very_american"/>
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
+			<Brain suppressionRecovery="30.0"/>
+			<!-- mobility can be changed by the current equipment, in the specified range -->
+			<Mobility>
+				<MoveSpeed min="1" defaultMetersPerSec="2" max="9"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Concealment default="10" canHide="true"/>
+
+			<Equipment>
+				<Item name="IronSights"/>
+				<Item name="G17 Pistol CIA BOps"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Flashbang"/>
+				<Item name="Slap Charge"/>
+				<Item name="CapUndercover"/>
+				<Item name="Lockpick"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="DEV BlackOps" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/nsw_blackops.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/cia_scarf.khm" diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/cia_vest_01.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_vest.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100"/>
+		<Human type="GoodGuy"
+			unit="NSWDG"
+			class="DEVBlackOps">
+
+			<Id name="DEV BlackOps" portrait="data/textures/portraits/ranger56.dds" gender="0" voicePack="male_very_american"/>
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
+			<Brain suppressionRecovery="30.0"/>
+			<!-- mobility can be changed by the current equipment, in the specified range -->
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Concealment default="7"/>
+
+			<Equipment>
+				<Item name="M4 CIA BOps"/>
+				<Item name="IronSights"/>
+				<Item name="G17 Pistol CIA BOps"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Flashbang"/>
+				<Item name="Slap Charge"/>
+				<Item name="Lockpick"/>
+				<Item name="Poncho"/>
+				<Item name="CapBlackOps"/>
+				<Item name="CIA TacVest Level III"/>
+			</Equipment>
+		</Human>
+	</Entity>
+</Entities>
