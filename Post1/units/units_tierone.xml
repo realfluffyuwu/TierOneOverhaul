@@ -1,0 +1,122 @@
+<!--
+Note on adding new Units: you can find a template mod for adding a new Unit in the game's
+DoorKickers2/mods/ subfolder
+-->
+<Units>
+	<!--
+		'name' uniquely identifies this unit throughout the xml files
+		'nameUI' is the localized version that shows up in the game's UI, therefore needs not be unique and
+	is not referenced anywhere in the xml files
+		'supply' is how much a single trooper from that class will count in total supply allowed for a map.
+	One slot = 100 supply
+	-->
+	<Unit
+		name="Rangers_TierOne"
+		nameUI="TIER ONE RANGERS"
+		description="@unit_rangers_description"
+		flagTex="data/textures/gui/squads/rangers_bg_01.dds"
+		flagColor="cb893e"
+		movie="data/movies/unlock_rangers.ogv"
+		rndNameEntry="@#squadnamerangers"
+		voicepack="commander_eng"
+		sniperVoice="sniper_eng"
+		incapacitationChance="80"
+		incapacitationChanceCrit="25">
+
+		<Classes>
+			<!--
+				Class 'name' needs to be unique between all units. When you add a new one, make sure to prefix it
+			with the unit's name. These here *should* have been called RangersAssault,
+			RangersSupport etc to avoid conflicts.
+
+				Upgrades are defined trooper_upgrades.xml (they are declared as doctrine nodes). The UI expects
+			them in the order given here, but it doesn't otherwise matter.
+				You can have up to 6 upgrades, with maxUpgradeable limiting how many you can choose.
+			-->
+			<Class name="Assault_TierOne" nameUI="@unit_rangers_assault"
+				description="@class_rangers_assault"
+				numSlots="8" supply="100"
+				iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"
+				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
+			<Class name="Support_TierOne" nameUI="@unit_rangers_support"
+				description="@class_rangers_support"
+				numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_support.dds"
+				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
+			<Class name="Marksman_TierOne" nameUI="@unit_rangers_marksman"
+				description="@class_rangers_marksman"
+				numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_marksman.dds"
+				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
+			<Class name="Grenadier_TierOne" nameUI="@unit_rangers_grenadier"
+				description="@class_rangers_grenadier"
+				numSlots="4" supply="100"
+				iconTex="data/textures/gui/deploy/class_icon_grenadier.dds"
+				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
+			<Class name="Operator_TierOne" nameUI="@unit_rangers_operator"
+				description="@class_rangers_assault"
+				numSlots="2" supply="200"
+				iconTex="data/textures/gui/deploy/class_icon_operator.dds"
+				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
+		</Classes>
+
+		<TrooperRanks>
+			<Rank name="@trooper_rank_0" xpNeeded="0"
+				badgeTex="data/textures/gui/customization/trooper_rank_01.dds" />
+			<Rank name="@trooper_rank_1" xpNeeded="700"
+				badgeTex="data/textures/gui/customization/trooper_rank_03.dds" />
+			<Rank name="@trooper_rank_2" xpNeeded="2300"
+				badgeTex="data/textures/gui/customization/trooper_rank_05.dds" />
+			<Rank name="@trooper_rank_3" xpNeeded="5600"
+				badgeTex="data/textures/gui/customization/trooper_rank_02.dds" />
+			<Rank name="@trooper_rank_4" xpNeeded="11800"
+				badgeTex="data/textures/gui/customization/trooper_rank_04.dds" />
+			<Rank name="@trooper_rank_5" xpNeeded="22400"
+				badgeTex="data/textures/gui/customization/trooper_rank_06.dds" />
+			<Rank name="@trooper_rank_6" xpNeeded="38400"
+				badgeTex="data/textures/gui/customization/trooper_rank_07.dds" />
+			<Rank name="@trooper_rank_7" xpNeeded="60200"
+				badgeTex="data/textures/gui/customization/trooper_rank_08.dds" />
+			<Rank name="@trooper_rank_8" xpNeeded="86400"
+				badgeTex="data/textures/gui/customization/trooper_rank_09.dds" />
+			<Rank name="@trooper_rank_9" xpNeeded="126400"
+				badgeTex="data/textures/gui/customization/trooper_rank_10.dds" />
+		</TrooperRanks>
+
+		<Ranks>
+			<Rank xpNeeded="0" badgeTex="" />
+			<Rank xpNeeded="6000" badgeTex="" />
+			<Rank xpNeeded="13000" badgeTex="" />
+			<Rank xpNeeded="21000" badgeTex="" />
+			<Rank xpNeeded="30000" badgeTex="" />
+			<Rank xpNeeded="60000" badgeTex="" />
+			<Rank xpNeeded="100000" badgeTex="" />
+			<Rank xpNeeded="150000" badgeTex="" />
+			<Rank xpNeeded="210000" badgeTex="" />
+			<Rank xpNeeded="280000" badgeTex="" />
+			<Rank xpNeeded="350000" badgeTex="" />
+			<Rank xpNeeded="420000" badgeTex="" />
+			<Rank xpNeeded="490000" badgeTex="" />
+			<Rank xpNeeded="600000" badgeTex="" />
+			<Rank xpNeeded="700000" badgeTex="" />
+			<Rank xpNeeded="800000" badgeTex="" />
+		</Ranks>
+
+		<!-- DOCTRINE HELP
+			'doctrinePointsPerSquadLevel' = number of usable doctrine points we get for each squad rank.
+
+			Nodes reference those defined in doctrine_nodes.xml. We declare the relations between them and
+		things like min squad level required and number of points allowed.
+
+			'numLevels' = the number of points we are allowed to put into this node. Defaults to 1.
+				any existing child will only be unlocked when all levels have been added, but the benefits will be
+		received for each level additively.
+			'minSquadLevel' = you can only unlock this node once your squad reaches the specified level.
+		Defaults to 1.
+
+			Child nodes will only unlock once we unlock their parent. One node can have multiple parents (up to
+		4) and they all need to be unlocked for the child to activate.
+				Nodes with multiple parents must be copy/pasted as a child to all its parents.
+
+			The UI for these is defined in data/gui/doctrine.xml
+		-->
+	</Unit>
+</Units>
