@@ -1,0 +1,65 @@
+<Equipment>
+	<Bind eqp="EmptyUtility">
+		<to name="Assault_NSWDG"/>
+		<to name="Support_NSWDG"/>
+		<to name="Marksman_NSWDG"/>
+		<to name="Undercover_NSWDG"/>
+		<to name="BlackOps_NSWDG"/>
+	</Bind>
+
+	<Bind eqp="EmptyPrimary">
+		<to name="Assault_NSWDG"/>
+		<to name="Support_NSWDG"/>
+		<to name="Marksman_NSWDG"/>
+		<to name="Undercover_NSWDG"/>
+		<to name="BlackOps_NSWDG"/>
+	</Bind>
+
+	<Bind eqp="EmptySecondary">
+		<to name="Assault_NSWDG"/>
+		<to name="Support_NSWDG"/>
+		<to name="Marksman_NSWDG"/>
+		<to name="Undercover_NSWDG"/>
+		<to name="BlackOps_NSWDG"/>
+	</Bind>
+	
+	<Bind eqp="EmptyHelmetNVG">
+		<to name="Assault_NSWDG"/>
+		<to name="Support_NSWDG"/>
+		<to name="Marksman_NSWDG"/>
+		<to name="Undercover_NSWDG"/>
+		<to name="BlackOps_NSWDG"/>
+	</Bind>
+
+	<Bind eqp="EmptyArmor">
+		<to name="Assault_NSWDG"/>
+		<to name="Support_NSWDG"/>
+		<to name="Marksman_NSWDG"/>
+		<to name="Undercover_NSWDG"/>
+		<to name="BlackOps_NSWDG"/>
+	</Bind>
+
+	<Bind eqp="EmptySupportGear">
+		<to name="Assault_NSWDG"/>
+		<to name="Support_NSWDG"/>
+		<to name="Marksman_NSWDG"/>
+		<to name="Undercover_NSWDG"/>
+		<to name="BlackOps_NSWDG"/>
+	</Bind>
+
+	<Bind eqp="EmptyPrimaryMuzzle">
+		<to name="Assault_NSWDG"/>
+		<to name="Support_NSWDG"/>
+		<to name="Marksman_NSWDG"/>
+		<to name="Undercover_NSWDG"/>
+		<to name="BlackOps_NSWDG"/>
+	</Bind>
+
+	<Bind eqp="EmptySecondaryMuzzle">
+		<to name="Assault_NSWDG"/>
+		<to name="Support_NSWDG"/>
+		<to name="Marksman_NSWDG"/>
+		<to name="Undercover_NSWDG"/>
+		<to name="BlackOps_NSWDG"/>
+	</Bind>
+</Equipment>
