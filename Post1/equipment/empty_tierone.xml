@@ -1,65 +1,65 @@
 <Equipment>
 	<Bind eqp="EmptyUtility">
-		<to name="Assault_TierOne" />
-		<to name="Support_TierOne" />
-		<to name="Marksman_TierOne" />
-		<to name="Undercover_TierOne" />
-		<to name="BlackOps_TierOne" />
+		<to name="Ranger_Assault_TierOne" />
+		<to name="Ranger_Support_TierOne" />
+		<to name="Ranger_Marksman_TierOne" />
+		<to name="Ranger_Grenadier_TierOne" />
+		<to name="Ranger_Operator_TierOne" />
 	</Bind>
 
 	<Bind eqp="EmptyPrimary">
-		<to name="Assault_TierOne" />
-		<to name="Support_TierOne" />
-		<to name="Marksman_TierOne" />
-		<to name="Undercover_TierOne" />
-		<to name="BlackOps_TierOne" />
+		<to name="Ranger_Assault_TierOne" />
+		<to name="Ranger_Support_TierOne" />
+		<to name="Ranger_Marksman_TierOne" />
+		<to name="Ranger_Grenadier_TierOne" />
+		<to name="Ranger_Operator_TierOne" />
 	</Bind>
 
 	<Bind eqp="EmptySecondary">
-		<to name="Assault_TierOne" />
-		<to name="Support_TierOne" />
-		<to name="Marksman_TierOne" />
-		<to name="Undercover_TierOne" />
-		<to name="BlackOps_TierOne" />
+		<to name="Ranger_Assault_TierOne" />
+		<to name="Ranger_Support_TierOne" />
+		<to name="Ranger_Marksman_TierOne" />
+		<to name="Ranger_Grenadier_TierOne" />
+		<to name="Ranger_Operator_TierOne" />
 	</Bind>
 
 	<Bind eqp="EmptyHelmetNVG">
-		<to name="Assault_TierOne" />
-		<to name="Support_TierOne" />
-		<to name="Marksman_TierOne" />
-		<to name="Undercover_TierOne" />
-		<to name="BlackOps_TierOne" />
+		<to name="Ranger_Assault_TierOne" />
+		<to name="Ranger_Support_TierOne" />
+		<to name="Ranger_Marksman_TierOne" />
+		<to name="Ranger_Grenadier_TierOne" />
+		<to name="Ranger_Operator_TierOne" />
 	</Bind>
 
 	<Bind eqp="EmptyArmor">
-		<to name="Assault_TierOne" />
-		<to name="Support_TierOne" />
-		<to name="Marksman_TierOne" />
-		<to name="Undercover_TierOne" />
-		<to name="BlackOps_TierOne" />
+		<to name="Ranger_Assault_TierOne" />
+		<to name="Ranger_Support_TierOne" />
+		<to name="Ranger_Marksman_TierOne" />
+		<to name="Ranger_Grenadier_TierOne" />
+		<to name="Ranger_Operator_TierOne" />
 	</Bind>
 
 	<Bind eqp="EmptySupportGear">
-		<to name="Assault_TierOne" />
-		<to name="Support_TierOne" />
-		<to name="Marksman_TierOne" />
-		<to name="Undercover_TierOne" />
-		<to name="BlackOps_TierOne" />
+		<to name="Ranger_Assault_TierOne" />
+		<to name="Ranger_Support_TierOne" />
+		<to name="Ranger_Marksman_TierOne" />
+		<to name="Ranger_Grenadier_TierOne" />
+		<to name="Ranger_Operator_TierOne" />
 	</Bind>
 
 	<Bind eqp="EmptyPrimaryMuzzle">
-		<to name="Assault_TierOne" />
-		<to name="Support_TierOne" />
-		<to name="Marksman_TierOne" />
-		<to name="Undercover_TierOne" />
-		<to name="BlackOps_TierOne" />
+		<to name="Ranger_Assault_TierOne" />
+		<to name="Ranger_Support_TierOne" />
+		<to name="Ranger_Marksman_TierOne" />
+		<to name="Ranger_Grenadier_TierOne" />
+		<to name="Ranger_Operator_TierOne" />
 	</Bind>
 
 	<Bind eqp="EmptySecondaryMuzzle">
-		<to name="Assault_TierOne" />
-		<to name="Support_TierOne" />
-		<to name="Marksman_TierOne" />
-		<to name="Undercover_TierOne" />
-		<to name="BlackOps_TierOne" />
+		<to name="Ranger_Assault_TierOne" />
+		<to name="Ranger_Support_TierOne" />
+		<to name="Ranger_Marksman_TierOne" />
+		<to name="Ranger_Grenadier_TierOne" />
+		<to name="Ranger_Operator_TierOne" />
 	</Bind>
 </Equipment>
