@@ -33,25 +33,25 @@ DoorKickers2/mods/ subfolder
 			them in the order given here, but it doesn't otherwise matter.
 				You can have up to 6 upgrades, with maxUpgradeable limiting how many you can choose.
 			-->
-			<Class name="Assault_TierOne" nameUI="@unit_rangers_assault"
+			<Class name="Ranger_Assault_TierOne" nameUI="@unit_rangers_assault"
 				description="@class_rangers_assault"
 				numSlots="8" supply="100"
 				iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"
 				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="Support_TierOne" nameUI="@unit_rangers_support"
+			<Class name="Ranger_Support_TierOne" nameUI="@unit_rangers_support"
 				description="@class_rangers_support"
 				numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_support.dds"
 				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="Marksman_TierOne" nameUI="@unit_rangers_marksman"
+			<Class name="Ranger_Marksman_TierOne" nameUI="@unit_rangers_marksman"
 				description="@class_rangers_marksman"
 				numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_marksman.dds"
 				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="Grenadier_TierOne" nameUI="@unit_rangers_grenadier"
+			<Class name="Ranger_Grenadier_TierOne" nameUI="@unit_rangers_grenadier"
 				description="@class_rangers_grenadier"
 				numSlots="4" supply="100"
 				iconTex="data/textures/gui/deploy/class_icon_grenadier.dds"
 				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="Operator_TierOne" nameUI="@unit_rangers_operator"
+			<Class name="Ranger_Operator_TierOne" nameUI="@unit_rangers_operator"
 				description="@class_rangers_assault"
 				numSlots="2" supply="200"
 				iconTex="data/textures/gui/deploy/class_icon_operator.dds"

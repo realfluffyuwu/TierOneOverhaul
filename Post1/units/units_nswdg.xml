@@ -7,7 +7,7 @@ dialogue
 -->
 <Units>
 	<Unit
-		name="NSWDG"
+		name="NSWDG_TierOne"
 		nameUI="@unit_nswdg_name"
 		description="@unit_nswdg_description"
 		flagTex="data/textures/gui/squads/nswdg_bg_01.dds"
@@ -20,19 +20,24 @@ dialogue
 		incapacitationChanceCrit="25">
 
 		<Classes>
-			<Class name="Assault_NSWDG" nameUI="@unit_rangers_assault" numSlots="4" supply="100"
+			<Class name="NSWDG_Assault_TierOne" nameUI="@unit_rangers_assault" numSlots="4"
+				supply="100"
 				iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"
 				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="Support_NSWDG" nameUI="@unit_rangers_support" numSlots="2" supply="100"
+			<Class name="NSWDG_Support_TierOne" nameUI="@unit_rangers_support" numSlots="2"
+				supply="100"
 				iconTex="data/textures/gui/deploy/class_icon_support.dds"
 				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="Marksman_NSWDG" nameUI="@unit_rangers_marksman" numSlots="2" supply="100"
+			<Class name="NSWDG_Marksman_TierOne" nameUI="@unit_rangers_marksman" numSlots="2"
+				supply="100"
 				iconTex="data/textures/gui/deploy/class_icon_marksman.dds"
 				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="Undercover_NSWDG" nameUI="@unit_cia_undercover" numSlots="1" supply="200"
+			<Class name="NSWDG_Undercover_TierOne" nameUI="@unit_cia_undercover" numSlots="1"
+				supply="200"
 				iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
 				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="BlackOps_NSWDG" nameUI="@unit_cia_blackops" numSlots="1" supply="200"
+			<Class name="NSWDG_BlackOps_TierOne" nameUI="@unit_cia_blackops" numSlots="1"
+				supply="200"
 				iconTex="data/textures/gui/deploy/class_icon_blackops.dds"
 				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
 		</Classes>

@@ -1,411 +1,464 @@
 <HumanIdentities>
 
 	<!-- DEVGROUP male -->
-	<Portrait tex="data/textures/portraits/ranger1.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger2.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger3.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger4.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger5.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger6.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger7.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger8.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger9.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger10.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger11.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger12.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger16.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger17.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger18.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger19.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger20.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger21.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger22.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger23.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger24.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger25.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger27.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger28.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger29.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger30.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger31.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger32.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger33.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger34.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger35.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger36.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger37.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger38.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger40.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger41.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger42.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger43.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger44.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger45.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger46.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger47.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger48.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger49.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger50.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger51.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger52.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger53.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger54.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger55.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger56.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger57.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/ranger58.dds" unit="NSWDG" gender="0" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/ranger1.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger2.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger3.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger4.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger5.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger6.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger7.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger8.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger9.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger10.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger11.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger12.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger16.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger17.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger18.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger19.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger20.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger21.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger22.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger23.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger24.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger25.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger27.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger28.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger29.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger30.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger31.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger32.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger33.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger34.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger35.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger36.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger37.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger38.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger40.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger41.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger42.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger43.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger44.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger45.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger46.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger47.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger48.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger49.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger50.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger51.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger52.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger53.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger54.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger55.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger56.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger57.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
+	<Portrait tex="data/textures/portraits/ranger58.dds" unit="NSWDG_TierOne" gender="0"
+		voicePack="male_very_american" />
 
-	<UnitNames unit0="NSWDG">
+	<UnitNames unit0="NSWDG_TierOne">
 		<Gender value="0">
-			<Name n="LYFIELD"/>
-			<Name n="ANDY"/>
-			<Name n="SASNA"/>
-			<Name n="BOT"/>
-			<Name n="AZIL"/>
-			<Name n="ARCHER"/>
-			<Name n="NORKIERT"/>
-			<Name n="STELIO KONTOS"/>
-			<Name n="K-NINE"/>
-			<Name n="SPUD"/>
-			<Name n="BIGGLES"/>
-			<Name n="WILDSOCK"/>
-			<Name n="EYE-TIE"/>
-			<Name n="SABER"/>
-			<Name n="RAZOR"/>
-			<Name n="PEANUT"/>
-			<Name n="AXIOS"/>
-			<Name n="DRACO"/>
-			<Name n="RUSTY"/>
-			<Name n="CHOU"/>
-			<Name n="MARS"/>
-			<Name n="KET"/>
-			<Name n="POLTERGEIST"/>
-			<Name n="STARFORD"/>
-			<Name n="BLACKJACK"/>
-			<Name n="PANDA"/>
-			<Name n="KO-TAC"/>
-			<Name n="RUNNER"/>
-			<Name n="MAGNUM"/>
-			<Name n="HATCHET"/>
-			<Name n="COWBOY"/>
-			<Name n="DUCK"/>
-			<Name n="SARGE"/>
-			<Name n="PILGRIM"/>
-			<Name n="DOPE"/>
-			<Name n="BOLLOCKS"/>
-			<Name n="PRIME"/>
-			<Name n="GRASS"/>
-			<Name n="HAWK"/>
-			<Name n="DOC"/>
-			<Name n="MAX"/>
-			<Name n="ICE"/>
-			<Name n="HAWKEYE"/>
-			<Name n="SICK"/>
-			<Name n="BREW"/>
-			<Name n="WILD"/>
-			<Name n="MAINFRAME"/>
-			<Name n="HITMAN"/>
-			<Name n="FISH"/>
-			<Name n="FISHMAN"/>
-			<Name n="BANDIT"/>
-			<Name n="SMOKEY"/>
-			<Name n="REEK"/>
-			<Name n="STORM"/>
-			<Name n="FISHFACE"/>
-			<Name n="JACK"/>
-			<Name n="AXE"/>
-			<Name n="SPANK"/>
-			<Name n="WOLF"/>
-			<Name n="CYPHER"/>
-			<Name n="FUSE"/>
-			<Name n="RACCOON"/>
-			<Name n="POOH"/>
-			<Name n="ROCK"/>
-			<Name n="COBRA"/>
-			<Name n="MIYAGI"/>
-			<Name n="VIKING"/>
-			<Name n="SICKBOY"/>
-			<Name n="TOMCAT"/>
-			<Name n="MIKE"/>
-			<Name n="STAGMAN"/>
-			<Name n="PRIEST"/>
-			<Name n="ICEMAN"/>
-			<Name n="BLIND"/>
-			<Name n="SURGE"/>
-			<Name n="RAY"/>
-			<Name n="SUNSHINE"/>
-			<Name n="JOE"/>
-			<Name n="KILLER"/>
-			<Name n="JOCK"/>
-			<Name n="MEATHEAD"/>
-			<Name n="GABE"/>
-			<Name n="HAFER"/>
-			<Name n="BEST"/>
-			<Name n="SCOTCH"/>
-			<Name n="SUGAR"/>
-			<Name n="TUBE"/>
-			<Name n="BUDD"/>
-			<Name n="LORD"/>
-			<Name n="GRASSHOPPER"/>
-			<Name n="MAVERICK"/>
-			<Name n="PINTEA"/>
-			<Name n="RONNIE"/>
-			<Name n="TANTO"/>
-			<Name n="ONKEL"/>
-			<Name n="OZ"/>
-			<Name n="GRIMES"/>
-			<Name n="FLICK"/>
-			<Name n="LANCE"/>
-			<Name n="RUDY"/>
-			<Name n="GODFATHER"/>
-			<Name n="SYKES"/>
-			<Name n="KRUGER"/>
-			<Name n="CONNOR"/>
-			<Name n="SOCKS"/>
-			<Name n="GARCIA"/>
-			<Name n="SCOOBY"/>
-			<Name n="SHAGGY"/>
-			<Name n="DEXTER"/>
-			<Name n="JONES"/>
-			<Name n="JONESY"/>
-			<Name n="JOSEY"/>
-			<Name n="WALES"/>
-			<Name n="CLINT"/>
-			<Name n="RIDER"/>
-			<Name n="MUNNY"/>
-			<Name n="LOGAN"/>
-			<Name n="SCHOFIELD"/>
-			<Name n="QUICK MIKE"/>
-			<Name n="SILKY"/>
-			<Name n="RICO"/>
-			<Name n="ZIM"/>
-			<Name n="RASCZAK"/>
-			<Name n="IBANEZ"/>
-			<Name n="WATKINS"/>
-			<Name n="REX"/>
-			<Name n="WESTMORE"/>
-			<Name n="WASHBURN"/>
-			<Name n="OAKLAND"/>
-			<Name n="GRAHAM"/>
-			<Name n="BONO"/>
-			<Name n="CLARK"/>
-			<Name n="ALLEN"/>
-			<Name n="DERHAM"/>
-			<Name n="CHASE"/>
-			<Name n="CLANCY"/>
-			<Name n="KELLY"/>
-			<Name n="MARSHALL"/>
-			<Name n="KEATING"/>
-			<Name n="PERRY"/>
-			<Name n="TODD"/>
-			<Name n="KNOX"/>
-			<Name n="DALTON"/>
-			<Name n="PITTS"/>
-			<Name n="NOLAN"/>
-			<Name n="HAGER"/>
-			<Name n="HOPKINS"/>
-			<Name n="POTTER"/>
-			<Name n="DURSLEY"/>
-			<Name n="WARWICK"/>
-			<Name n="NATE"/>
-			<Name n="BREMMER"/>
-			<Name n="CONAN"/>
-			<Name n="DOWNEY"/>
-			<Name n="WORMAN"/>
-			<Name n="STEADFAST"/>
-			<Name n="GUYBRUSH"/>
-			<Name n="WALLY"/>
-			<Name n="THREEPWOOD"/>
-			<Name n="LUCAS"/>
-			<Name n="BOTKIN"/>
-			<Name n="SPIKE"/>
-			<Name n="DADDY"/>
-			<Name n="SCHAFER"/>
-			<Name n="CORLEY"/>
-			<Name n="NESTOR"/>
-			<Name n="ACHILLES"/>
-			<Name n="HECTOR"/>
-			<Name n="LUKE"/>
-			<Name n="SOLO"/>
-			<Name n="WEDGE"/>
-			<Name n="CORRAN"/>
-			<Name n="TYCHO"/>
-			<Name n="LANDO"/>
-			<Name n="MANDO"/>
-			<Name n="PICARD"/>
-			<Name n="RIKER"/>
-			<Name n="CRUSHER"/>
-			<Name n="KIRK"/>
-			<Name n="SPOCK"/>
-			<Name n="SPOOKY"/>
-			<Name n="SULU"/>
-			<Name n="CHEKOV"/>
-			<Name n="KRAUT"/>
-			<Name n="KRAUSE"/>
-			<Name n="ROGERS"/>
-			<Name n="BRADLEE"/>
-			<Name n="WOODY"/>
-			<Name n="BAILEY"/>
-			<Name n="LANGDON"/>
-			<Name n="SULLY"/>
-			<Name n="GENE"/>
-			<Name n="ALAN"/>
-			<Name n="MACAULEY"/>
-			<Name n="DONOVAN"/>
-			<Name n="DISNEY"/>
-			<Name n="GOOSE"/>
-			<Name n="CROWNE"/>
-			<Name n="WILSON"/>
-			<Name n="NAVORSKI"/>
-			<Name n="LINCOLN"/>
-			<Name n="HANRATTY"/>
-			<Name n="SULLIVAN"/>
-			<Name n="NOLAND"/>
-			<Name n="FOX"/>
-			<Name n="MILLER"/>
-			<Name n="LOVELL"/>
-			<Name n="GUMP"/>
-			<Name n="BECKETT"/>
-			<Name n="BALDWIN"/>
-			<Name n="DUGAN"/>
-			<Name n="BAXTER"/>
-			<Name n="TURNER"/>
-			<Name n="PETERSON"/>
-			<Name n="GOLD"/>
-			<Name n="STREEBEK"/>
-			<Name n="BASNER"/>
-			<Name n="FIELDING"/>
-			<Name n="GASSKO"/>
-			<Name n="BAUER"/>
-			<Name n="HANKS"/>
-			<Name n="BOOTH"/>
-			<Name n="MEIER"/>
-			<Name n="SPECTOR"/>
-			<Name n="JENSEN"/>
-			<Name n="SLYE"/>
-			<Name n="MECHNER"/>
-			<Name n="CARMACK"/>
-			<Name n="REYNOLDS"/>
-			<Name n="NEWELL"/>
-			<Name n="HOLLIS"/>
-			<Name n="WRIGHT"/>
-			<Name n="CRAWFORD"/>
-			<Name n="GARRIOTT"/>
-			<Name n="DUNNIGAN"/>
-			<Name n="GARFIELD"/>
-			<Name n="LOUIE"/>
-			<Name n="HOLLAND"/>
-			<Name n="WILLIS"/>
-			<Name n="GRIFFITH"/>
-			<Name n="KRAMER"/>
-			<Name n="HOFFMAN"/>
-			<Name n="STEVENS"/>
-			<Name n="RUSKIN"/>
-			<Name n="BACON"/>
-			<Name n="KILLIAN"/>
-			<Name n="Mc COY"/>
-			<Name n="KING"/>
-			<Name n="WHITE"/>
-			<Name n="FORD"/>
-			<Name n="DECKARD"/>
-			<Name n="GRAFF"/>
-			<Name n="DRUMMER"/>
-			<Name n="TANNEN"/>
-			<Name n="POMEROY"/>
-			<Name n="GODDARD"/>
-			<Name n="STONEHILL"/>
-			<Name n="STONEWALL"/>
-			<Name n="BROGAN"/>
-			<Name n="STANFIELD"/>
-			<Name n="HARRIS"/>
-			<Name n="LARRABEE"/>
-			<Name n="RYAN"/>
-			<Name n="KIMBLE"/>
-			<Name n="SABICH"/>
-			<Name n="TRAINER"/>
-			<Name n="WALKER"/>
-			<Name n="BOOK"/>
-			<Name n="INDY"/>
-			<Name n="TOMMY"/>
-			<Name n="BARNSBY"/>
-			<Name n="BOYD"/>
-			<Name n="HEWETT"/>
-			<Name n="HOBEY"/>
-			<Name n="CROWDER"/>
-			<Name n="BROOKS"/>
-			<Name n="KENT"/>
-			<Name n="STEWART"/>
-			<Name n="HAMMER"/>
-			<Name n="STEELE"/>
-			<Name n="CHAPEL"/>
-			<Name n="GARRET"/>
-			<Name n="LOCKSLEY"/>
-			<Name n="POSTMAN"/>
-			<Name n="DUNBAR"/>
-			<Name n="HAYNES"/>
-			<Name n="FARRELL"/>
-			<Name n="COCHRAN"/>
-			<Name n="PITKIN"/>
-			<Name n="BONNER"/>
-			<Name n="COSTNER"/>
-			<Name n="HICKOCK"/>
-			<Name n="GIDEON"/>
-			<Name n="SPARROW"/>
-			<Name n="WEATHERS"/>
-			<Name n="PASCAL"/>
-			<Name n="RINGO"/>
-			<Name n="WALLACE"/>
-			<Name n="HOLLIDAY"/>
-			<Name n="GARAND"/>
-			<Name n="AIMBOT"/>
-			<Name n="TIMMY"/>
-			<Name n="GANDALF"/>
-			<Name n="STRIDER"/>
-			<Name n="PIPPIN"/>
-			<Name n="MERRY"/>
-			<Name n="FILI"/>
-			<Name n="KILI"/>
-			<Name n="BEAR"/>
-			<Name n="SNIMMS"/>
-			<Name n="SHOURAI"/>
-			<Name n="McDEVITT"/>
-			<Name n="MOUSE"/>
-			<Name n="VREN"/>
-			<Name n="LARS"/>
-			<Name n="BODO"/>
-			<Name n="MANZINI"/>
-			<Name n="FOLEY"/>
-			<Name n="WEST"/>
-			<Name n="BANANA GUY"/>
-			<Name n="ROTA"/>
-			<Name n="VOID"/>
-			<Name n="PAIRS"/>
-			<Name n="PEREGRINE"/>
-			<Name n="REECE"/>
-			<Name n="AUBREY"/>
-			<Name n="MATURIN"/>
-			<Name n="AWKWARD"/>
-			<Name n="KILLICK"/>
-			<Name n="BONDEN"/>
-			<Name n="PLAICE"/>
-			<Name n="PULLINGS"/>
-			<Name n="BLAKENEY"/>
-			<Name n="MOWETT"/>
-			<Name n="HOOKER"/> <!-- note: make sure gender stays set to '0' -->
-			<Name n="LOKI"/>
-			<Name n="SPIDER"/>
-			<Name n="FIRELINE"/>
-			<Name n="PANGUINO"/>
-			<Name n="PIF"/>
-			<Name n="RaNdOm"/>
-			<Name n="CEO"/>
-			<Name n="DUCKSAUCE"/>
-			<Name n="JOPS"/>
-			<Name n="NERF"/>
-			<Name n="ALLISTER"/>
-			<Name n="Dr SQUA"/>
-			<Name n="GIBSON"/>
-			<Name n="DOGMAN"/>
+			<Name n="LYFIELD" />
+			<Name n="ANDY" />
+			<Name n="SASNA" />
+			<Name n="BOT" />
+			<Name n="AZIL" />
+			<Name n="ARCHER" />
+			<Name n="NORKIERT" />
+			<Name n="STELIO KONTOS" />
+			<Name n="K-NINE" />
+			<Name n="SPUD" />
+			<Name n="BIGGLES" />
+			<Name n="WILDSOCK" />
+			<Name n="EYE-TIE" />
+			<Name n="SABER" />
+			<Name n="RAZOR" />
+			<Name n="PEANUT" />
+			<Name n="AXIOS" />
+			<Name n="DRACO" />
+			<Name n="RUSTY" />
+			<Name n="CHOU" />
+			<Name n="MARS" />
+			<Name n="KET" />
+			<Name n="POLTERGEIST" />
+			<Name n="STARFORD" />
+			<Name n="BLACKJACK" />
+			<Name n="PANDA" />
+			<Name n="KO-TAC" />
+			<Name n="RUNNER" />
+			<Name n="MAGNUM" />
+			<Name n="HATCHET" />
+			<Name n="COWBOY" />
+			<Name n="DUCK" />
+			<Name n="SARGE" />
+			<Name n="PILGRIM" />
+			<Name n="DOPE" />
+			<Name n="BOLLOCKS" />
+			<Name n="PRIME" />
+			<Name n="GRASS" />
+			<Name n="HAWK" />
+			<Name n="DOC" />
+			<Name n="MAX" />
+			<Name n="ICE" />
+			<Name n="HAWKEYE" />
+			<Name n="SICK" />
+			<Name n="BREW" />
+			<Name n="WILD" />
+			<Name n="MAINFRAME" />
+			<Name n="HITMAN" />
+			<Name n="FISH" />
+			<Name n="FISHMAN" />
+			<Name n="BANDIT" />
+			<Name n="SMOKEY" />
+			<Name n="REEK" />
+			<Name n="STORM" />
+			<Name n="FISHFACE" />
+			<Name n="JACK" />
+			<Name n="AXE" />
+			<Name n="SPANK" />
+			<Name n="WOLF" />
+			<Name n="CYPHER" />
+			<Name n="FUSE" />
+			<Name n="RACCOON" />
+			<Name n="POOH" />
+			<Name n="ROCK" />
+			<Name n="COBRA" />
+			<Name n="MIYAGI" />
+			<Name n="VIKING" />
+			<Name n="SICKBOY" />
+			<Name n="TOMCAT" />
+			<Name n="MIKE" />
+			<Name n="STAGMAN" />
+			<Name n="PRIEST" />
+			<Name n="ICEMAN" />
+			<Name n="BLIND" />
+			<Name n="SURGE" />
+			<Name n="RAY" />
+			<Name n="SUNSHINE" />
+			<Name n="JOE" />
+			<Name n="KILLER" />
+			<Name n="JOCK" />
+			<Name n="MEATHEAD" />
+			<Name n="GABE" />
+			<Name n="HAFER" />
+			<Name n="BEST" />
+			<Name n="SCOTCH" />
+			<Name n="SUGAR" />
+			<Name n="TUBE" />
+			<Name n="BUDD" />
+			<Name n="LORD" />
+			<Name n="GRASSHOPPER" />
+			<Name n="MAVERICK" />
+			<Name n="PINTEA" />
+			<Name n="RONNIE" />
+			<Name n="TANTO" />
+			<Name n="ONKEL" />
+			<Name n="OZ" />
+			<Name n="GRIMES" />
+			<Name n="FLICK" />
+			<Name n="LANCE" />
+			<Name n="RUDY" />
+			<Name n="GODFATHER" />
+			<Name n="SYKES" />
+			<Name n="KRUGER" />
+			<Name n="CONNOR" />
+			<Name n="SOCKS" />
+			<Name n="GARCIA" />
+			<Name n="SCOOBY" />
+			<Name n="SHAGGY" />
+			<Name n="DEXTER" />
+			<Name n="JONES" />
+			<Name n="JONESY" />
+			<Name n="JOSEY" />
+			<Name n="WALES" />
+			<Name n="CLINT" />
+			<Name n="RIDER" />
+			<Name n="MUNNY" />
+			<Name n="LOGAN" />
+			<Name n="SCHOFIELD" />
+			<Name n="QUICK MIKE" />
+			<Name n="SILKY" />
+			<Name n="RICO" />
+			<Name n="ZIM" />
+			<Name n="RASCZAK" />
+			<Name n="IBANEZ" />
+			<Name n="WATKINS" />
+			<Name n="REX" />
+			<Name n="WESTMORE" />
+			<Name n="WASHBURN" />
+			<Name n="OAKLAND" />
+			<Name n="GRAHAM" />
+			<Name n="BONO" />
+			<Name n="CLARK" />
+			<Name n="ALLEN" />
+			<Name n="DERHAM" />
+			<Name n="CHASE" />
+			<Name n="CLANCY" />
+			<Name n="KELLY" />
+			<Name n="MARSHALL" />
+			<Name n="KEATING" />
+			<Name n="PERRY" />
+			<Name n="TODD" />
+			<Name n="KNOX" />
+			<Name n="DALTON" />
+			<Name n="PITTS" />
+			<Name n="NOLAN" />
+			<Name n="HAGER" />
+			<Name n="HOPKINS" />
+			<Name n="POTTER" />
+			<Name n="DURSLEY" />
+			<Name n="WARWICK" />
+			<Name n="NATE" />
+			<Name n="BREMMER" />
+			<Name n="CONAN" />
+			<Name n="DOWNEY" />
+			<Name n="WORMAN" />
+			<Name n="STEADFAST" />
+			<Name n="GUYBRUSH" />
+			<Name n="WALLY" />
+			<Name n="THREEPWOOD" />
+			<Name n="LUCAS" />
+			<Name n="BOTKIN" />
+			<Name n="SPIKE" />
+			<Name n="DADDY" />
+			<Name n="SCHAFER" />
+			<Name n="CORLEY" />
+			<Name n="NESTOR" />
+			<Name n="ACHILLES" />
+			<Name n="HECTOR" />
+			<Name n="LUKE" />
+			<Name n="SOLO" />
+			<Name n="WEDGE" />
+			<Name n="CORRAN" />
+			<Name n="TYCHO" />
+			<Name n="LANDO" />
+			<Name n="MANDO" />
+			<Name n="PICARD" />
+			<Name n="RIKER" />
+			<Name n="CRUSHER" />
+			<Name n="KIRK" />
+			<Name n="SPOCK" />
+			<Name n="SPOOKY" />
+			<Name n="SULU" />
+			<Name n="CHEKOV" />
+			<Name n="KRAUT" />
+			<Name n="KRAUSE" />
+			<Name n="ROGERS" />
+			<Name n="BRADLEE" />
+			<Name n="WOODY" />
+			<Name n="BAILEY" />
+			<Name n="LANGDON" />
+			<Name n="SULLY" />
+			<Name n="GENE" />
+			<Name n="ALAN" />
+			<Name n="MACAULEY" />
+			<Name n="DONOVAN" />
+			<Name n="DISNEY" />
+			<Name n="GOOSE" />
+			<Name n="CROWNE" />
+			<Name n="WILSON" />
+			<Name n="NAVORSKI" />
+			<Name n="LINCOLN" />
+			<Name n="HANRATTY" />
+			<Name n="SULLIVAN" />
+			<Name n="NOLAND" />
+			<Name n="FOX" />
+			<Name n="MILLER" />
+			<Name n="LOVELL" />
+			<Name n="GUMP" />
+			<Name n="BECKETT" />
+			<Name n="BALDWIN" />
+			<Name n="DUGAN" />
+			<Name n="BAXTER" />
+			<Name n="TURNER" />
+			<Name n="PETERSON" />
+			<Name n="GOLD" />
+			<Name n="STREEBEK" />
+			<Name n="BASNER" />
+			<Name n="FIELDING" />
+			<Name n="GASSKO" />
+			<Name n="BAUER" />
+			<Name n="HANKS" />
+			<Name n="BOOTH" />
+			<Name n="MEIER" />
+			<Name n="SPECTOR" />
+			<Name n="JENSEN" />
+			<Name n="SLYE" />
+			<Name n="MECHNER" />
+			<Name n="CARMACK" />
+			<Name n="REYNOLDS" />
+			<Name n="NEWELL" />
+			<Name n="HOLLIS" />
+			<Name n="WRIGHT" />
+			<Name n="CRAWFORD" />
+			<Name n="GARRIOTT" />
+			<Name n="DUNNIGAN" />
+			<Name n="GARFIELD" />
+			<Name n="LOUIE" />
+			<Name n="HOLLAND" />
+			<Name n="WILLIS" />
+			<Name n="GRIFFITH" />
+			<Name n="KRAMER" />
+			<Name n="HOFFMAN" />
+			<Name n="STEVENS" />
+			<Name n="RUSKIN" />
+			<Name n="BACON" />
+			<Name n="KILLIAN" />
+			<Name n="Mc COY" />
+			<Name n="KING" />
+			<Name n="WHITE" />
+			<Name n="FORD" />
+			<Name n="DECKARD" />
+			<Name n="GRAFF" />
+			<Name n="DRUMMER" />
+			<Name n="TANNEN" />
+			<Name n="POMEROY" />
+			<Name n="GODDARD" />
+			<Name n="STONEHILL" />
+			<Name n="STONEWALL" />
+			<Name n="BROGAN" />
+			<Name n="STANFIELD" />
+			<Name n="HARRIS" />
+			<Name n="LARRABEE" />
+			<Name n="RYAN" />
+			<Name n="KIMBLE" />
+			<Name n="SABICH" />
+			<Name n="TRAINER" />
+			<Name n="WALKER" />
+			<Name n="BOOK" />
+			<Name n="INDY" />
+			<Name n="TOMMY" />
+			<Name n="BARNSBY" />
+			<Name n="BOYD" />
+			<Name n="HEWETT" />
+			<Name n="HOBEY" />
+			<Name n="CROWDER" />
+			<Name n="BROOKS" />
+			<Name n="KENT" />
+			<Name n="STEWART" />
+			<Name n="HAMMER" />
+			<Name n="STEELE" />
+			<Name n="CHAPEL" />
+			<Name n="GARRET" />
+			<Name n="LOCKSLEY" />
+			<Name n="POSTMAN" />
+			<Name n="DUNBAR" />
+			<Name n="HAYNES" />
+			<Name n="FARRELL" />
+			<Name n="COCHRAN" />
+			<Name n="PITKIN" />
+			<Name n="BONNER" />
+			<Name n="COSTNER" />
+			<Name n="HICKOCK" />
+			<Name n="GIDEON" />
+			<Name n="SPARROW" />
+			<Name n="WEATHERS" />
+			<Name n="PASCAL" />
+			<Name n="RINGO" />
+			<Name n="WALLACE" />
+			<Name n="HOLLIDAY" />
+			<Name n="GARAND" />
+			<Name n="AIMBOT" />
+			<Name n="TIMMY" />
+			<Name n="GANDALF" />
+			<Name n="STRIDER" />
+			<Name n="PIPPIN" />
+			<Name n="MERRY" />
+			<Name n="FILI" />
+			<Name n="KILI" />
+			<Name n="BEAR" />
+			<Name n="SNIMMS" />
+			<Name n="SHOURAI" />
+			<Name n="McDEVITT" />
+			<Name n="MOUSE" />
+			<Name n="VREN" />
+			<Name n="LARS" />
+			<Name n="BODO" />
+			<Name n="MANZINI" />
+			<Name n="FOLEY" />
+			<Name n="WEST" />
+			<Name n="BANANA GUY" />
+			<Name n="ROTA" />
+			<Name n="VOID" />
+			<Name n="PAIRS" />
+			<Name n="PEREGRINE" />
+			<Name n="REECE" />
+			<Name n="AUBREY" />
+			<Name n="MATURIN" />
+			<Name n="AWKWARD" />
+			<Name n="KILLICK" />
+			<Name n="BONDEN" />
+			<Name n="PLAICE" />
+			<Name n="PULLINGS" />
+			<Name n="BLAKENEY" />
+			<Name n="MOWETT" />
+			<Name n="HOOKER" /> <!-- note: make sure gender stays set to '0' -->
+			<Name n="LOKI" />
+			<Name n="SPIDER" />
+			<Name n="FIRELINE" />
+			<Name n="PANGUINO" />
+			<Name n="PIF" />
+			<Name n="RaNdOm" />
+			<Name n="CEO" />
+			<Name n="DUCKSAUCE" />
+			<Name n="JOPS" />
+			<Name n="NERF" />
+			<Name n="ALLISTER" />
+			<Name n="Dr SQUA" />
+			<Name n="GIBSON" />
+			<Name n="DOGMAN" />
 		</Gender>
 	</UnitNames>
 </HumanIdentities>
