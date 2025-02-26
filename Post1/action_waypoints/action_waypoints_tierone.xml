@@ -1,7 +1,7 @@
 <ActionWaypoints>
 	<wp
 		type="THROW_GRENADE"
-		equipment="Strike Marker"
+		equipment="Strike Marker_TierOne"
 		ui_prefix="data/textures/gui_ingame/waypoints/strike"
 		ttip="@menu_game_sm_ttip"
 		ttip_disabled="@menu_generic_cannot_use"
@@ -57,25 +57,25 @@
 
 	<wp
 		type="GRENADE_LAUNCHER"
-		equipment="MGL HE"
+		equipment="MGL HE_TierOne"
 		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
 		ttip="@menu_game_grenadelaunch_ttip"
 		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
 	<wp
 		type="GRENADE_LAUNCHER"
-		equipment="MGL CS"
+		equipment="MGL CS_TierOne"
 		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
 		ttip="@menu_game_grenadelaunch_ttip"
 		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
 	<wp
 		type="GRENADE_LAUNCHER"
-		equipment="MGL SMK"
+		equipment="MGL SMK_TierOne"
 		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
 		ttip="@menu_game_grenadelaunch_ttip"
 		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
 	<wp
 		type="GRENADE_LAUNCHER"
-		equipment="MGL FB"
+		equipment="MGL FB_TierOne"
 		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
 		ttip="@menu_game_grenadelaunch_ttip"
 		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
@@ -105,31 +105,31 @@
 		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
 	<wp
 		type="GRENADE_LAUNCHER"
-		equipment="M320 HE"
+		equipment="M320 HE_TierOne"
 		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
 		ttip="@menu_game_grenadelaunch_ttip"
 		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
 	<wp
 		type="GRENADE_LAUNCHER"
-		equipment="M320 HEDP"
+		equipment="M320 HEDP_TierOne"
 		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
 		ttip="@menu_game_grenadelaunch_ttip"
 		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
 	<wp
 		type="GRENADE_LAUNCHER"
-		equipment="M320 CS"
+		equipment="M320 CS_TierOne"
 		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
 		ttip="@menu_game_grenadelaunch_ttip"
 		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
 	<wp
 		type="GRENADE_LAUNCHER"
-		equipment="M320 SMK"
+		equipment="M320 SMK_TierOne"
 		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
 		ttip="@menu_game_grenadelaunch_ttip"
 		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
 	<wp
 		type="GRENADE_LAUNCHER"
-		equipment="M320 PIKE"
+		equipment="M320 PIKE_TierOne"
 		ui_prefix="data/textures/gui_ingame/waypoints/grenade_launcher"
 		ttip="@menu_game_grenadelaunch_ttip"
 		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>

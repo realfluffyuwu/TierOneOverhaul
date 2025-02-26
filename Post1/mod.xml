@@ -1,23 +1,43 @@
-<!--
-"title" uniquely identifies the mod name in Steam Workshop. Once published to workshop, the mod
-name can no longer be changed.
-"description" what is says
-"image" shows up in-game but also in Steam Workshop. Should be a 16:9 PNG/JPEG image.
-"author" what is says
-"tags" only show up in Steam Workshop. comma-separated values. preferably one of:
-"Missions,Enemies,Objects,Replays,Weapons,Armor,Gear,Total Conversions,Interface,Sound,Other".
-"gameVersion" game version with which the mod is compatible
-"changeNotes" only used when updating an already published mod, redundant otherwise
-"languageMod" should only be valid if this adds a new language to the game, in which case it will
-show up in the Languages options list
--->
-<Mod
-	title="Tier One Overhaul"
-	description="Nearly full overhaul of the game. Adds new weapons, attack types, equipment, units, and more."
-	image=""
-	author="MSFMiller, Sly, Fluffy"
-	tags="Total Conversions,Weapons,Gear,Sound,Other"
-	changeNotes=""
-	languageMod=""
-	gameVersion="100"
-/>
+<Mod title="Tier One Overhaul" gameVersion="105" author="Fluffy" description="Back by Popular demand, The Fabled Tier One Overhaul.
+
+I need to Level with you guys here, It was an undertaking and a half to Port this to 1.0
+Please be Patient and Report any Issues you Run into, I tried my Best to make it not overwrite things as much as I can.
+
+If you feel there was a Change like Weapons or Equipment missing from the Units please let me know.
+
+
+Nexus Description:
+Nearly full overhaul of the game.
+Adds new weapons, attack types, equipment, units, and more.
+
+NEW UNIT: NSW Development Group
+    -x4 Assaulter
+    -x2 Support
+    -x2 Marksman
+    -x1 Undercover
+    -x1 Black Ops
+
+NEW WEAPONS: 
+    -HK MP7A2
+    -MCX Rattler
+    -Noveske Gen III 10.5&quot;
+    -HK416D 10.4&quot;
+    -Mk17 Custom
+    -Mk46 Mod 1
+    -Mk11 Mod 1
+    -Mk12 Mod 1
+    -Mk13 Mod 5
+    -M320 GLM(HE/HEDP/CS/Smoke)
+    -Milkor M32 MGL(Smoke)
+    -FN40GL Mk2(Smoke)
+-Weapon descriptions provided by dps524
+-3D model for M320 provided by nachomacho
+-Smoke GLs suggested by Ryuk
+
+NEW EQUIPMENT:
+    -GPNVG-18(White Phosphor) by jacob-
+    -Suicide Bomb(NWS Militia)
+
+COSMETICS:
+    -Custom Helmets(AOR1/MC) by jacob-
+    -Custom Uniforms(AOR1/MC)" changeNotes="" languageMod="" tags="Playable Units,Equipment,Sound Effects,Total Conversion,Other" ugcId="3434735226"/>
