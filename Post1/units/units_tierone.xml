@@ -33,52 +33,24 @@ DoorKickers2/mods/ subfolder
 			them in the order given here, but it doesn't otherwise matter.
 				You can have up to 6 upgrades, with maxUpgradeable limiting how many you can choose.
 			-->
-			<Class name="Ranger_Assault_TierOne" nameUI="@unit_rangers_assault"
-				description="@class_rangers_assault"
-				numSlots="8" supply="100"
-				iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"
-				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="Ranger_Support_TierOne" nameUI="@unit_rangers_support"
-				description="@class_rangers_support"
-				numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_support.dds"
-				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="Ranger_Marksman_TierOne" nameUI="@unit_rangers_marksman"
-				description="@class_rangers_marksman"
-				numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_marksman.dds"
-				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="Ranger_Grenadier_TierOne" nameUI="@unit_rangers_grenadier"
-				description="@class_rangers_grenadier"
-				numSlots="4" supply="100"
-				iconTex="data/textures/gui/deploy/class_icon_grenadier.dds"
-				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="Ranger_Operator_TierOne" nameUI="@unit_rangers_operator"
-				description="@class_rangers_assault"
-				numSlots="2" supply="200"
-				iconTex="data/textures/gui/deploy/class_icon_operator.dds"
-				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
+			<Class name="Ranger_Assault_TierOne" nameUI="@unit_rangers_assault"	description="@class_rangers_assault" numSlots="8" supply="100" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds" />
+			<Class name="Ranger_Support_TierOne" nameUI="@unit_rangers_support" description="@class_rangers_support" numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_support.dds" />
+			<Class name="Ranger_Marksman_TierOne" nameUI="@unit_rangers_marksman" description="@class_rangers_marksman" numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_marksman.dds" />
+			<Class name="Ranger_Grenadier_TierOne" nameUI="@unit_rangers_grenadier" description="@class_rangers_grenadier" numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_grenadier.dds" />
+			<Class name="Ranger_Operator_TierOne" nameUI="@unit_rangers_operator" description="@class_rangers_assault" numSlots="2" supply="200" iconTex="data/textures/gui/deploy/class_icon_operator.dds" />
 		</Classes>
 
 		<TrooperRanks>
-			<Rank name="@trooper_rank_0" xpNeeded="0"
-				badgeTex="data/textures/gui/customization/trooper_rank_01.dds" />
-			<Rank name="@trooper_rank_1" xpNeeded="700"
-				badgeTex="data/textures/gui/customization/trooper_rank_03.dds" />
-			<Rank name="@trooper_rank_2" xpNeeded="2300"
-				badgeTex="data/textures/gui/customization/trooper_rank_05.dds" />
-			<Rank name="@trooper_rank_3" xpNeeded="5600"
-				badgeTex="data/textures/gui/customization/trooper_rank_02.dds" />
-			<Rank name="@trooper_rank_4" xpNeeded="11800"
-				badgeTex="data/textures/gui/customization/trooper_rank_04.dds" />
-			<Rank name="@trooper_rank_5" xpNeeded="22400"
-				badgeTex="data/textures/gui/customization/trooper_rank_06.dds" />
-			<Rank name="@trooper_rank_6" xpNeeded="38400"
-				badgeTex="data/textures/gui/customization/trooper_rank_07.dds" />
-			<Rank name="@trooper_rank_7" xpNeeded="60200"
-				badgeTex="data/textures/gui/customization/trooper_rank_08.dds" />
-			<Rank name="@trooper_rank_8" xpNeeded="86400"
-				badgeTex="data/textures/gui/customization/trooper_rank_09.dds" />
-			<Rank name="@trooper_rank_9" xpNeeded="126400"
-				badgeTex="data/textures/gui/customization/trooper_rank_10.dds" />
+			<Rank name="@trooper_rank_0" xpNeeded="0" badgeTex="data/textures/gui/customization/trooper_rank_01.dds" />
+			<Rank name="@trooper_rank_1" xpNeeded="700" badgeTex="data/textures/gui/customization/trooper_rank_03.dds" />
+			<Rank name="@trooper_rank_2" xpNeeded="2300" badgeTex="data/textures/gui/customization/trooper_rank_05.dds" />
+			<Rank name="@trooper_rank_3" xpNeeded="5600" badgeTex="data/textures/gui/customization/trooper_rank_02.dds" />
+			<Rank name="@trooper_rank_4" xpNeeded="11800" badgeTex="data/textures/gui/customization/trooper_rank_04.dds" />
+			<Rank name="@trooper_rank_5" xpNeeded="22400" badgeTex="data/textures/gui/customization/trooper_rank_06.dds" />
+			<Rank name="@trooper_rank_6" xpNeeded="38400" badgeTex="data/textures/gui/customization/trooper_rank_07.dds" />
+			<Rank name="@trooper_rank_7" xpNeeded="60200" badgeTex="data/textures/gui/customization/trooper_rank_08.dds" />
+			<Rank name="@trooper_rank_8" xpNeeded="86400" badgeTex="data/textures/gui/customization/trooper_rank_09.dds" />
+			<Rank name="@trooper_rank_9" xpNeeded="126400" badgeTex="data/textures/gui/customization/trooper_rank_10.dds" />
 		</TrooperRanks>
 
 		<Ranks>

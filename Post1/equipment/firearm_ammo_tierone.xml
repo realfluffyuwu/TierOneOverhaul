@@ -1,0 +1,1349 @@
+<Equipment>
+
+<!--
+TIER ONE AMMO
+-->
+<!-- MOD -->
+
+<!-- -->
+<Ammo name="556FMJMk262_MK12"
+		tooltip="@ammo_556FMJMk262_name"
+		description="@ammo_556FMJMk262_desc"
+		img="data/models/weapons/attachments/mk262_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="6"
+			audibleSoundRadius="100"
+			physicsImpactForce="2.0"
+			damageType="0"
+			silenced="0">
+			<Damage start="34" end="34" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="20" end="20" startDist="0" endDist="100"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+</Ammo>
+
+	<Ammo name="556FMJMk262_MK12SD"
+			tooltip="@ammo_556FMJMk262_name"
+			description="@ammo_556FMJMk262_desc"
+			img="data/models/weapons/attachments/mk262_ammo_ui.dds"
+			>
+			<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+			<Params	roundsPerSecond="6"
+				audibleSoundRadius="16"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+				<Damage start="34" end="34" startDist="0" endDist="100"/>
+				<CriticalChancePercent start="20" end="20" startDist="0" endDist="100"/>
+				<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			</Params>
+	</Ammo>
+
+	<Ammo name="300FMJMk248_MK13"
+			tooltip="@ammo_300Mk248_name"
+			description="@ammo_300Mk248_desc"
+			img="data/models/weapons/attachments/338scenar_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="0.15"
+				audibleSoundRadius="300"
+				physicsImpactForce="8.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="110" end="90" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="50" end="50" startDist="0" endDist="10"/>
+			<ArmorPenetration start="10" end="7" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+
+<!-- -->
+	<Ammo name="300BLKSUBLOUD_MCXRATTLER"
+			tooltip="@ammo_300BLKSUB_name"
+			description="@ammo_300BLKSUB_desc"
+			img="data/models/weapons/attachments/300blksub_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="70"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="55" end="17" startDist="0" endDist="20"/>
+			<CriticalChancePercent start="25" end="0" startDist="0" endDist="12.5"/>
+			<ArmorPenetration start="1" end="1" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="300BLKSUPLOUD_MCXRATTLER"
+			tooltip="@ammo_300BLKSUP_name"
+			description="@ammo_300BLKSUP_desc"
+			img="data/models/weapons/attachments/300blksup_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="70"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="35" end="25" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="25" end="20" startDist="0" endDist="35"/>
+			<ArmorPenetration start="2" end="2" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+	<Ammo name="300BLKSUB_MCXRATTLER"
+			tooltip="@ammo_300BLKSUB_name"
+			description="@ammo_300BLKSUB_desc"
+			img="data/models/weapons/attachments/300blksub_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="6.5"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="55" end="17" startDist="0" endDist="20"/>
+			<CriticalChancePercent start="25" end="0" startDist="0" endDist="12.5"/>
+			<ArmorPenetration start="1" end="1" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="300BLKSUP_MCXRATTLER"
+			tooltip="@ammo_300BLKSUP_name"
+			description="@ammo_300BLKSUP_desc"
+			img="data/models/weapons/attachments/300blksup_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="25"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="35" end="25" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="25" end="20" startDist="0" endDist="35"/>
+			<ArmorPenetration start="2" end="2" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="919JHPM1153_VP9"
+			tooltip="@ammo_919JHPM1153_name"
+			description="@ammo_919JHPM1153_suphgdesc"
+			img="data/models/weapons/attachments/m1153_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="5.5"
+				audibleSoundRadius="1.5"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="29" end="26" startDist="0" endDist="30"/>
+			<CriticalChancePercent start="120" end="0" startDist="0" endDist="20"/>
+			<ArmorPenetration start="0" end="0" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="SS190_P90SD"
+			tooltip="@ammo_SS190_name"
+			description="@ammo_SS190_desc"
+			img="data/models/weapons/attachments/ss190_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="15"
+				audibleSoundRadius="12"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="17" end="15" startDist="0" endDist="50"/>
+			<CriticalChancePercent start="16" end="10" startDist="0" endDist="65"/>
+			<ArmorPenetration start="5" end="4" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="SS190_P90"
+			tooltip="@ammo_SS190_name"
+			description="@ammo_SS190_desc"
+			img="data/models/weapons/attachments/ss190_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="15"
+				audibleSoundRadius="100"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="17" end="15" startDist="0" endDist="50"/>
+			<CriticalChancePercent start="16" end="10" startDist="0" endDist="65"/>
+			<ArmorPenetration start="5" end="4" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="68AP_MCXSPEARSD"
+			tooltip="@ammo_68AP_name"
+			description="@ammo_68AP_desc"
+			img="data/models/weapons/attachments/68ap_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="10.5"
+				audibleSoundRadius="27"
+				physicsImpactForce="4.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="35" end="33" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="35" end="35" startDist="0" endDist="30"/>
+			<ArmorPenetration start="12" end="12" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+
+<!-- -->
+	<Ammo name="68AP_MCXSPEAR"
+			tooltip="@ammo_68AP_name"
+			description="@ammo_68AP_desc"
+			img="data/models/weapons/attachments/68ap_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="10.5"
+				audibleSoundRadius="100"
+				physicsImpactForce="4.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="35" end="33" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="35" end="35" startDist="0" endDist="30"/>
+			<ArmorPenetration start="12" end="12" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="68FMJ_MCXSPEARSD"
+			tooltip="@ammo_68FMJ_name"
+			description="@ammo_68FMJ_desc"
+			img="data/models/weapons/attachments/68fmj_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="10.5"
+				audibleSoundRadius="27"
+				physicsImpactForce="4.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="40" end="35" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="30" end="30" startDist="0" endDist="30"/>
+			<ArmorPenetration start="7" end="7" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+
+<!-- -->
+	<Ammo name="68FMJ_MCXSPEAR"
+			tooltip="@ammo_68FMJ_name"
+			description="@ammo_68FMJ_desc"
+			img="data/models/weapons/attachments/68fmj_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="10.5"
+				audibleSoundRadius="100"
+				physicsImpactForce="4.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="40" end="35" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="30" end="30" startDist="0" endDist="30"/>
+			<ArmorPenetration start="7" end="7" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="762FMJM80_G3KA4SD"
+			tooltip="@ammo_762FMJM80_name"
+			description="@ammo_762FMJM80_desc"
+			img="data/models/weapons/attachments/m80_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="9.2"
+				audibleSoundRadius="36"
+				physicsImpactForce="4.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="40" end="30" startDist="0" endDist="30"/>
+			<CriticalChancePercent start="35" end="35" startDist="0" endDist="30"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="762FMJM80_G3KA4"
+			tooltip="@ammo_762FMJM80_name"
+			description="@ammo_762FMJM80_desc"
+			img="data/models/weapons/attachments/m80_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="9.2"
+				audibleSoundRadius="100"
+				physicsImpactForce="4.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="40" end="30" startDist="0" endDist="30"/>
+			<CriticalChancePercent start="35" end="35" startDist="0" endDist="30"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="556FMJMk262_M16A4MarksmanSD"
+			tooltip="@ammo_556FMJMk262_name"
+			description="@ammo_556FMJMk262_desc"
+			img="data/models/weapons/attachments/mk262_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="6"
+				audibleSoundRadius="18"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="30" end="30" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="20" end="20" startDist="0" endDist="100"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="338FMJ_MG338SD"
+			tooltip="@ammo_338FMJXM338_name"
+			description="@ammo_338FMJXM338_desc"
+			img="data/models/weapons/attachments/xm338_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="10"
+				audibleSoundRadius="47.5"
+				physicsImpactForce="12.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="34" end="34" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="17" end="15" startDist="0" endDist="100"/>
+			<ArmorPenetration start="6" end="6" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="762FMJM80_MK17CQCSD"
+			tooltip="@ammo_762FMJM80LP_name"
+			description="@ammo_762FMJM80LP_desc"
+			img="data/models/weapons/attachments/m80_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="10"
+				audibleSoundRadius="38"
+				physicsImpactForce="4.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="35" end="25" startDist="0" endDist="30"/>
+			<CriticalChancePercent start="30" end="10" startDist="0" endDist="10"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="762FMJM80_MK17STDSD"
+			tooltip="@ammo_762FMJM80_name"
+			description="@ammo_762FMJM80_desc"
+			img="data/models/weapons/attachments/m80_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="20"
+				audibleSoundRadius="35"
+				physicsImpactForce="4.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="40" end="30" startDist="0" endDist="30"/>
+			<CriticalChancePercent start="35" end="35" startDist="0" endDist="30"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="556FMJM855_M4SD"
+			tooltip="@ammo_556FMJM855_name"
+			description="@ammo_556FMJM855_desc"
+			img="data/models/weapons/attachments/m855_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="20"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="28" end="20" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="35" end="15" startDist="0" endDist="45"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="556FMJM855_M16A4SD"
+			tooltip="@ammo_556FMJM855_name"
+			description="@ammo_556FMJM855_desc"
+			img="data/models/weapons/attachments/m855_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="15"
+				audibleSoundRadius="18"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="30" end="20" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="35" end="15" startDist="0" endDist="60"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="556FMJM855A1_M4SD"
+			tooltip="@ammo_556FMJM855A1_name"
+			description="@ammo_556FMJM855A1_desc"
+			img="data/models/weapons/attachments/m855a1_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="20"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="29" end="20" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="35" end="15" startDist="0" endDist="55"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="556FMJM855A1_M16A4SD"
+			tooltip="@ammo_556FMJM855A1_name"
+			description="@ammo_556FMJM855A1_desc"
+			img="data/models/weapons/attachments/m855a1_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="15.5"
+				audibleSoundRadius="18"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="30" end="20" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="35" end="17" startDist="0" endDist="60"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="556FMJMk318_M4SD"
+			tooltip="@ammo_556FMJMk318_name"
+			description="@ammo_556FMJMk318_desc"
+			img="data/models/weapons/attachments/mk318_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="13"
+				audibleSoundRadius="20"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="35" end="25" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="25" end="20" startDist="0" endDist="42"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="556FMJMk318_M16A4SD"
+			tooltip="@ammo_556FMJMk318_name"
+			description="@ammo_556FMJMk318_desc"
+			img="data/models/weapons/attachments/mk318_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="16"
+				audibleSoundRadius="18"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="36" end="25" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="25" end="20" startDist="0" endDist="60"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+
+	<Ammo name="556FMJM855_M249SPWSD"
+			tooltip="@ammo_556FMJM855_name"
+			description="@ammo_556FMJM855_desc"
+			img="data/models/weapons/attachments/m855_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="13"
+				audibleSoundRadius="22"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="28" end="20" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="15" end="15" startDist="0" endDist="100"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+
+	<Ammo name="919FMJM882_APC9K"
+			tooltip="@ammo_919FMJM882_name"
+			description="@ammo_919FMJM882_desc"
+			img="data/models/weapons/attachments/m882_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="18"
+				audibleSoundRadius="50"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="15" end="10" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="30" end="10" startDist="0" endDist="30"/>
+			<ArmorPenetration start="4" end="2" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="919JHPM1153_APC9K"
+			tooltip="@ammo_919JHPM1153_name"
+			description="@ammo_919JHPM1153_desc"
+			img="data/models/weapons/attachments/m1153_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="18"
+				audibleSoundRadius="50"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="29" end="5" startDist="0" endDist="30"/>
+			<CriticalChancePercent start="20" end="10" startDist="0" endDist="15"/>
+			<ArmorPenetration start="3" end="2" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="919FMJM1152_APC9K"
+			tooltip="@ammo_919FMJM1152_name"
+			description="@ammo_919FMJM1152_desc"
+			img="data/models/weapons/attachments/m1152_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="18"
+				audibleSoundRadius="50"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="20" end="5" startDist="0" endDist="60"/>
+			<CriticalChancePercent start="25" end="8" startDist="0" endDist="30"/>
+			<ArmorPenetration start="4" end="2" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+
+<!-- -->
+	<Ammo name="939SP5_ASVAL"
+			tooltip="@ammo_SP5_name"
+			description="@ammo_SP5_desc"
+			img="data/models/weapons/attachments/sp5_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="15"
+				audibleSoundRadius="3"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="58" end="5" startDist="0" endDist="30"/>
+			<CriticalChancePercent start="30" end="5" startDist="0" endDist="25"/>
+			<ArmorPenetration start="5" end="4" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+
+<!-- -->
+	<Ammo name="939SP6_ASVAL"
+			tooltip="@ammo_SP6_name"
+			description="@ammo_SP6_desc"
+			img="data/models/weapons/attachments/sp6_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="15"
+				audibleSoundRadius="3"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="50" end="10" startDist="0" endDist="25"/>
+			<CriticalChancePercent start="35" end="5" startDist="0" endDist="20"/>
+			<ArmorPenetration start="8" end="6" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+
+<!-- -->
+	<Ammo name="5457N6_AK105"
+			tooltip="@ammo_7N6_name"
+			description="@ammo_7N6_desc"
+			img="data/models/weapons/attachments/7n6_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="10.8"
+				audibleSoundRadius="100"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="28" end="17" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="15" end="10" startDist="0" endDist="35"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="5457N6_AK105SD"
+			tooltip="@ammo_7N6_name"
+			description="@ammo_7N6_desc"
+			img="data/models/weapons/attachments/7n6_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="6"
+				audibleSoundRadius="23"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="28" end="17" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="15" end="10" startDist="0" endDist="35"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+	<Ammo name="556SUB_M16A4SD"
+			tooltip="@ammo_556SUB_name"
+			description="@ammo_556SUB_desc"
+			img="data/models/weapons/attachments/mk318_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="7"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="30" end="13" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="15" end="5" startDist="0" endDist="25"/>
+			<ArmorPenetration start="1" end="0" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+	<Ammo name="556SUB_M4SD"
+			tooltip="@ammo_556SUB_name"
+			description="@ammo_556SUB_desc"
+			img="data/models/weapons/attachments/mk318_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="8"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="30" end="13" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="15" end="5" startDist="0" endDist="25"/>
+			<ArmorPenetration start="1" end="0" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+	<Ammo name="556SUB_MK18SD"
+			tooltip="@ammo_556SUB_name"
+			description="@ammo_556SUB_desc"
+			img="data/models/weapons/attachments/mk318_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="9"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="30" end="13" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="15" end="5" startDist="0" endDist="25"/>
+			<ArmorPenetration start="1" end="0" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+	<Ammo name="556SUB_HK416SD"
+			tooltip="@ammo_556SUB_name"
+			description="@ammo_556SUB_desc"
+			img="data/models/weapons/attachments/mk318_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="13"
+				audibleSoundRadius="8.5"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="30" end="13" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="15" end="5" startDist="0" endDist="25"/>
+			<ArmorPenetration start="1" end="0" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+<!-- -->
+	<Ammo name="556APM995_HK416"
+			tooltip="@ammo_556APM995_name"
+			description="@ammo_556APM995_desc"
+			img="data/models/weapons/attachments/m995_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="13"
+				audibleSoundRadius="20"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="25" end="2" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="25" end="25" startDist="0" endDist="35"/>
+			<ArmorPenetration start="10" end="10" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+
+<!-- -->
+	<Ammo name="556FMJMk318_HK416SD"
+			tooltip="@ammo_556FMJMk318_name"
+			description="@ammo_556FMJMk318_desc"
+			img="data/models/weapons/attachments/mk318_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="13"
+			audibleSoundRadius="22"
+			physicsImpactForce="2.0"
+			damageType="0"
+			silenced="1">
+		<Damage start="35" end="25" startDist="0" endDist="100"/>
+		<CriticalChancePercent start="25" end="20" startDist="0" endDist="35"/>
+		<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+	</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="556FMJM855_HK416SD"
+			tooltip="@ammo_556FMJM855_name"
+			description="@ammo_556FMJM855_desc"
+			img="data/models/weapons/attachments/m855_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="13"
+			audibleSoundRadius="22"
+			physicsImpactForce="2.0"
+			damageType="0"
+			silenced="1">
+
+		<!-- the damage value is linearly interpolated in the given range, between min/max damage -->
+		<Damage start="23" end="19" startDist="0" endDist="100"/>
+
+		<!-- base value, can be modified by AttackType/Abilities/Doctrine/etc. -->
+		<CriticalChancePercent start="30" end="15" startDist="0" endDist="25"/>
+
+		<!-- i.e. divides distance range in (end - start) discrete intervals for AP -->
+		<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+	</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="556FMJM855A1_HK416SD"
+			tooltip="@ammo_556FMJM855A1_name"
+			description="@ammo_556FMJM855A1_desc"
+			img="data/models/weapons/attachments/m855a1_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="13"
+			audibleSoundRadius="22"
+			physicsImpactForce="2.0"
+			damageType="0"
+			silenced="1">
+		<Damage start="26" end="20" startDist="0" endDist="100"/>
+		<CriticalChancePercent start="35" end="15" startDist="0" endDist="35"/>
+		<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+	</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="556APM995_HK416SD"
+			tooltip="@ammo_556APM995LP_name"
+			description="@ammo_556APM995LP_desc"
+			img="data/models/weapons/attachments/m995_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="13"
+				audibleSoundRadius="5"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="22" end="2" startDist="0" endDist="60"/>
+			<CriticalChancePercent start="25" end="20" startDist="0" endDist="25"/>
+			<ArmorPenetration start="10" end="8" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="556FMJMk318_MK18SD"
+			tooltip="@ammo_556FMJMk318_name"
+			description="@ammo_556FMJMk318LP_desc"
+			img="data/models/weapons/attachments/mk318_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="23"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="35" end="25" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="25" end="20" startDist="0" endDist="35"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="556FMJM855_MK18SD"
+			tooltip="@ammo_556FMJM855_name"
+			description="@ammo_556FMJM855_desc"
+			img="data/models/weapons/attachments/m855_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="23"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+
+			<!-- the damage value is linearly interpolated in the given range, between min/max damage -->
+			<Damage start="23" end="19" startDist="0" endDist="100"/>
+
+			<!-- base value, can be modified by AttackType/Abilities/Doctrine/etc. -->
+			<CriticalChancePercent start="30" end="15" startDist="0" endDist="25"/>
+
+			<!-- i.e. divides distance range in (end - start) discrete intervals for AP -->
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="556FMJM855A1_MK18SD"
+			tooltip="@ammo_556FMJM855A1_name"
+			description="@ammo_556FMJM855A1_desc"
+			img="data/models/weapons/attachments/m855a1_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="23"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="26" end="20" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="35" end="15" startDist="0" endDist="35"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="556APM995_MK18SD"
+			tooltip="@ammo_556APM995LP_name"
+			description="@ammo_556APM995LP_desc"
+			img="data/models/weapons/attachments/m995_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="7"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="20" end="1" startDist="0" endDist="60"/>
+			<CriticalChancePercent start="25" end="20" startDist="0" endDist="25"/>
+			<ArmorPenetration start="10" end="8" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="300BLKSUB_MCX"
+			tooltip="@ammo_300BLKSUB_name"
+			description="@ammo_300BLKSUB_desc"
+			img="data/models/weapons/attachments/300blksub_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="5.5"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="55" end="17" startDist="0" endDist="20"/>
+			<CriticalChancePercent start="25" end="0" startDist="0" endDist="12.5"/>
+			<ArmorPenetration start="1" end="1" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="300BLKSUP_MCX"
+			tooltip="@ammo_300BLKSUP_name"
+			description="@ammo_300BLKSUP_desc"
+			img="data/models/weapons/attachments/300blksup_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="24"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="35" end="25" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="25" end="20" startDist="0" endDist="35"/>
+			<ArmorPenetration start="2" end="2" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="ACTION_MP7"
+			tooltip="@ammo_actionsx_name"
+			description="@ammo_actionsx_desc"
+			img="data/models/weapons/attachments/actionsx_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="15.8"
+				audibleSoundRadius="50"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="31" end="10" startDist="0" endDist="25"/>
+			<CriticalChancePercent start="15" end="5" startDist="0" endDist="20"/>
+			<ArmorPenetration start="2" end="1" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="FMJ_MP7"
+			tooltip="@ammo_fmjsx_name"
+			description="@ammo_fmjsx_desc"
+			img="data/models/weapons/attachments/fmjsx_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="15.8"
+				audibleSoundRadius="50"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="20" end="15" startDist="0" endDist="50"/>
+			<CriticalChancePercent start="23" end="8" startDist="0" endDist="65"/>
+			<ArmorPenetration start="4" end="3" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="ACTION_MP7SD"
+			tooltip="@ammo_actionsx_name"
+			description="@ammo_actionsx_desc"
+			img="data/models/weapons/attachments/actionsx_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="15.8"
+				audibleSoundRadius="12"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="31" end="10" startDist="0" endDist="40"/>
+			<CriticalChancePercent start="15" end="5" startDist="0" endDist="20"/>
+			<ArmorPenetration start="2" end="1" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="FMJ_MP7SD"
+			tooltip="@ammo_fmjsx_name"
+			description="@ammo_fmjsx_desc"
+			img="data/models/weapons/attachments/fmjsx_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="15.8"
+				audibleSoundRadius="12"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="20" end="15" startDist="0" endDist="50"/>
+			<CriticalChancePercent start="23" end="8" startDist="0" endDist="65"/>
+			<ArmorPenetration start="4" end="3" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="338SCENAR_MJOLNIR"
+			tooltip="@ammo_338scenar_name"
+			description="@ammo_338scenar_desc"
+			img="data/models/weapons/attachments/338scenar_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="1.5"
+				audibleSoundRadius="300"
+				physicsImpactForce="8.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="110" end="80" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="50" end="50" startDist="0" endDist="10"/>
+			<ArmorPenetration start="12" end="9" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="40MM_HE"
+			tooltip="@ammo_40mmHE_name"
+			description="@ammo_40mmHE_desc"
+			img="data/models/weapons/attachments/40mmhe_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="15.8"
+				audibleSoundRadius="70"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="0" end="0" startDist="0" endDist="50"/>
+			<CriticalChancePercent start="15" end="10" startDist="0" endDist="65"/>
+			<ArmorPenetration start="4" end="3" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="40MM_HEDP"
+			tooltip="@ammo_40mmHEDP_name"
+			description="@ammo_40mmHEDP_desc"
+			img="data/models/weapons/attachments/40mmhedp_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="15.8"
+				audibleSoundRadius="70"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="0" end="0" startDist="0" endDist="50"/>
+			<CriticalChancePercent start="15" end="10" startDist="0" endDist="65"/>
+			<ArmorPenetration start="4" end="3" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="40MM_CS"
+			tooltip="@ammo_40mmCS_name"
+			description="@ammo_40mmCS_desc"
+			img="data/models/weapons/attachments/40mmcs_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="15.8"
+				audibleSoundRadius="70"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="0" end="0" startDist="0" endDist="50"/>
+			<CriticalChancePercent start="15" end="10" startDist="0" endDist="65"/>
+			<ArmorPenetration start="4" end="3" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="40MM_FB"
+			tooltip="@ammo_40mmFB_name"
+			description="@ammo_40mmFB_desc"
+			img="data/models/weapons/attachments/40mmfb_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="15.8"
+				audibleSoundRadius="70"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="0" end="0" startDist="0" endDist="50"/>
+			<CriticalChancePercent start="15" end="10" startDist="0" endDist="65"/>
+			<ArmorPenetration start="4" end="3" startDist="0" endDist="60"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="919FMJM882_Vector"
+			tooltip="@ammo_919FMJM882_name"
+			description="@ammo_919FMJM882_desc"
+			img="data/models/weapons/attachments/m882_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="20"
+				audibleSoundRadius="50"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="15" end="10" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="33" end="25" startDist="0" endDist="30"/>
+			<ArmorPenetration start="4" end="2" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="919JHPM1153_Vector"
+			tooltip="@ammo_919JHPM1153_name"
+			description="@ammo_919JHPM1153_desc"
+			img="data/models/weapons/attachments/m1153_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="17"
+				audibleSoundRadius="50"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="25" end="5" startDist="0" endDist="30"/>
+			<CriticalChancePercent start="28" end="1" startDist="0" endDist="15"/>
+			<ArmorPenetration start="3" end="2" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="919FMJM1152_Vector"
+			tooltip="@ammo_919FMJM1152_name"
+			description="@ammo_919FMJM1152_desc"
+			img="data/models/weapons/attachments/m1152_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="20"
+				audibleSoundRadius="50"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="20" end="5" startDist="0" endDist="60"/>
+			<CriticalChancePercent start="15" end="10" startDist="0" endDist="30"/>
+			<ArmorPenetration start="4" end="2" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+<!-- -->
+<!-- -->
+	<Ammo name="919FMJM882_VectorSD"
+			tooltip="@ammo_919FMJM882_name"
+			description="@ammo_919FMJM882_desc"
+			img="data/models/weapons/attachments/m882_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="20"
+				audibleSoundRadius="8"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="15" end="10" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="33" end="25" startDist="0" endDist="30"/>
+			<ArmorPenetration start="4" end="2" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="919JHPM1153_VectorSD"
+			tooltip="@ammo_919JHPM1153_name"
+			description="@ammo_919JHPM1153_desc"
+			img="data/models/weapons/attachments/m1153_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="17"
+				audibleSoundRadius="4.5"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="25" end="5" startDist="0" endDist="30"/>
+			<CriticalChancePercent start="28" end="1" startDist="0" endDist="15"/>
+			<ArmorPenetration start="3" end="2" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+<!-- -->
+	<Ammo name="919FMJM1152_VectorSD"
+			tooltip="@ammo_919FMJM1152_name"
+			description="@ammo_919FMJM1152_desc"
+			img="data/models/weapons/attachments/m1152_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="20"
+				audibleSoundRadius="8"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="20" end="5" startDist="0" endDist="60"/>
+			<CriticalChancePercent start="15" end="10" startDist="0" endDist="30"/>
+			<ArmorPenetration start="4" end="2" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+<!-- -->
+
+
+<!-- -->
+	<Ammo name="762FMJM80A1_M110A1SD"
+			tooltip="@ammo_762FMJM80A1_name"
+			description="@ammo_762FMJM80A1_desc"
+			img="data/models/weapons/attachments/m80a1_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="5"
+				audibleSoundRadius="36"
+				physicsImpactForce="4.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="50" end="50" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="30" end="50" startDist="0" endDist="10"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+	<Ammo name="762FMJM80A1_MK11SD"
+			tooltip="@ammo_762FMJM80A1_name"
+			description="@ammo_762FMJM80A1_desc"
+			img="data/models/weapons/attachments/m80a1_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="5"
+				audibleSoundRadius="30"
+				physicsImpactForce="4.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="50" end="50" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="30" end="50" startDist="0" endDist="10"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+	<Ammo name="762FMJM118LR_MK17LBSup"
+			tooltip="@ammo_762FMJM118LR_name"
+			description="@ammo_762FMJM118LR_desc"
+			img="data/models/weapons/attachments/m118lr_ammo_ui.dds"
+		>
+
+		<Params	roundsPerSecond="10"
+				audibleSoundRadius="33"
+				physicsImpactForce="4.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="40" end="40" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="30" end="45" startDist="0" endDist="10"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+	<Ammo name="762FMJM118LR_MK20SSRSup"
+			tooltip="@ammo_762FMJM118LR_name"
+			description="@ammo_762FMJM118LR_desc"
+			img="data/models/weapons/attachments/m118lr_ammo_ui.dds"
+		>
+
+		<Params	roundsPerSecond="5"
+				audibleSoundRadius="30"
+				physicsImpactForce="4.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="50" end="50" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="30" end="50" startDist="0" endDist="10"/>
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+<!-- -->
+	<Ammo name="919FMJM882_G19XSD Pistol"
+			tooltip="@ammo_919FMJM882_name"
+			description="@ammo_919FMJM882_desc"
+			img="data/models/weapons/attachments/m882_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="6"
+				audibleSoundRadius="7"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="1">
+			<Damage start="20" end="20" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="25" end="0" startDist="0" endDist="100"/>
+			<ArmorPenetration start="3" end="2" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+<!-- -->
+	<Ammo name="40FMJ180GR_G2240SD Pistol"
+			tooltip="@ammo_40FMJ180GR_name"
+			description="@ammo_40FMJ180GR_desc"
+			img="data/models/weapons/attachments/40fmj_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="6"
+				audibleSoundRadius="8"
+				physicsImpactForce="2.8"
+				damageType="0"
+				silenced="1">
+			<Damage start="25" end="25" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="45" end="45" startDist="0" endDist="100"/>
+			<ArmorPenetration start="3" end="3" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
+</Equipment>

@@ -10,7 +10,7 @@ dialogue
 		name="NSWDG_TierOne"
 		nameUI="@unit_nswdg_name"
 		description="@unit_nswdg_description"
-		flagTex="data/textures/gui/squads/nswdg_bg_01.dds"
+		flagTex="data/textures/gui/squads/nswdg_bg_02.dds"
 		flagColor="626978"
 		movie="data/movies/unlock_rangers.ogv"
 		rndNameEntry="@#squadnamenswdg"
@@ -20,41 +20,20 @@ dialogue
 		incapacitationChanceCrit="25">
 
 		<Classes>
-			<Class name="NSWDG_Assault_TierOne" nameUI="@unit_rangers_assault" numSlots="4"
-				supply="100"
-				iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"
-				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="NSWDG_Support_TierOne" nameUI="@unit_rangers_support" numSlots="2"
-				supply="100"
-				iconTex="data/textures/gui/deploy/class_icon_support.dds"
-				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="NSWDG_Marksman_TierOne" nameUI="@unit_rangers_marksman" numSlots="2"
-				supply="100"
-				iconTex="data/textures/gui/deploy/class_icon_marksman.dds"
-				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="NSWDG_Undercover_TierOne" nameUI="@unit_cia_undercover" numSlots="1"
-				supply="200"
-				iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
-			<Class name="NSWDG_BlackOps_TierOne" nameUI="@unit_cia_blackops" numSlots="1"
-				supply="200"
-				iconTex="data/textures/gui/deploy/class_icon_blackops.dds"
-				upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
+			<Class name="NSWDG_Assault_TierOne" nameUI="@unit_rangers_assault" numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds" />
+			<Class name="NSWDG_Support_TierOne" nameUI="@unit_rangers_support" numSlots="2" supply="100" iconTex="data/textures/gui/deploy/class_icon_support.dds" />
+			<Class name="NSWDG_Marksman_TierOne" nameUI="@unit_rangers_marksman" numSlots="2" supply="100" iconTex="data/textures/gui/deploy/class_icon_marksman.dds" />
+			<Class name="NSWDG_Undercover_TierOne" nameUI="@unit_cia_undercover" numSlots="1" supply="200" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" />
+			<Class name="NSWDG_BlackOps_TierOne" nameUI="@unit_cia_blackops" numSlots="1" supply="200" iconTex="data/textures/gui/deploy/class_icon_blackops.dds"  />
 		</Classes>
 
 		<TrooperRanks>
-			<Rank name="@nsw_rank_0" xpNeeded="0"
-				badgeTex="data/textures/gui/customization/trooper_rank_05.dds" />
-			<Rank name="@nsw_rank_1" xpNeeded="12250"
-				badgeTex="data/textures/gui/customization/trooper_rank_06.dds" />
-			<Rank name="@nsw_rank_2" xpNeeded="33068"
-				badgeTex="data/textures/gui/customization/trooper_rank_07.dds" />
-			<Rank name="@nsw_rank_3" xpNeeded="71856"
-				badgeTex="data/textures/gui/customization/trooper_rank_08.dds" />
-			<Rank name="@nsw_rank_4" xpNeeded="136450"
-				badgeTex="data/textures/gui/customization/trooper_rank_09.dds" />
-			<Rank name="@nsw_rank_5" xpNeeded="208960"
-				badgeTex="data/textures/gui/customization/trooper_rank_10.dds" />
+			<Rank name="@nsw_rank_0" xpNeeded="0" badgeTex="data/textures/gui/customization/trooper_rank_05.dds" />
+			<Rank name="@nsw_rank_1" xpNeeded="12250" badgeTex="data/textures/gui/customization/trooper_rank_06.dds" />
+			<Rank name="@nsw_rank_2" xpNeeded="33068" badgeTex="data/textures/gui/customization/trooper_rank_07.dds" />
+			<Rank name="@nsw_rank_3" xpNeeded="71856" badgeTex="data/textures/gui/customization/trooper_rank_08.dds" />
+			<Rank name="@nsw_rank_4" xpNeeded="136450" badgeTex="data/textures/gui/customization/trooper_rank_09.dds" />
+			<Rank name="@nsw_rank_5" xpNeeded="208960" badgeTex="data/textures/gui/customization/trooper_rank_10.dds" />
 		</TrooperRanks>
 
 		<Ranks>
@@ -75,50 +54,5 @@ dialogue
 			<Rank xpNeeded="280200" badgeTex="" />
 			<Rank xpNeeded="312840" badgeTex="" />
 		</Ranks>
-
-		<Doctrine doctrinePointsPerSquadLevel="2">
-			<!-- handguns -->
-			<Node name="Handguns_ShortRangeDrills">
-				<Node name="Handguns_ControlledPairs" numLevels="2" />
-				<Node name="Handguns_PrecisionShooting" />
-			</Node>
-			<Node name="Handguns_MediumRangeDrills" numLevels="2" />
-			<Node name="Handguns_ReloadDrills" />
-			<Node name="Handguns_TransitionDrills" />
-			<Node name="Handguns_SuppressorUse" />
-
-			<!-- rifles -->
-			<Node name="Rifles_ShortRangeDrills">
-				<Node name="Rifles_RoomClearingDrills" numLevels="2" />
-				<Node name="Rifles_CloseRangeBurst" numLevels="2" />
-			</Node>
-			<Node name="Rifles_ReloadDrills" />
-			<Node name="Rifles_MediumRangeDrills">
-				<Node name="Rifles_MediumRangeBurst" numLevels="4" />
-				<Node name="Rifles_SurgicalShooting" numLevels="2">
-					<Node name="Rifles_ObscuredTargets" numLevels="2" />
-				</Node>
-			</Node>
-			<Node name="Rifles_BarricadeShooting" />
-			<Node name="Rifles_LongRangeDrills" numLevels="2" />
-
-			<!-- support -->
-			<Node name="Support_AssaultSAWs" numLevels="2" />
-			<Node name="Support_AssaultMarksmen" numLevels="2" />
-			<Node name="Support_ImprovedSuppression" />
-			<Node name="Support_Melee" />
-			<Node name="Support_LanguageBasics" />
-			<Node name="Support_ThrowablesTraining" />
-			<Node name="Support_SelfFirstAid" />
-
-			<!-- elite -->
-			<Node name="Elite_ExtraConditioning" minSquadLevel="14" />
-			<Node name="Elite_AdvancedLanguage" minSquadLevel="14" />
-			<Node name="Elite_AdvancedShooting" minSquadLevel="14" />
-			<Node name="Elite_AdvancedCombatives" minSquadLevel="14" />
-			<Node name="Elite_ExplosiveBreaching" minSquadLevel="14" />
-			<!-- Node name="Elite_AssaultPlanning" minSquadLevel="14"/ -->
-			<Node name="Elite_ViolenceOfAction" minSquadLevel="14" />
-		</Doctrine>
 	</Unit>
 </Units>

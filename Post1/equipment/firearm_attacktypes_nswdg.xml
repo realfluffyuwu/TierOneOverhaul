@@ -1,0 +1,1317 @@
+<!-- all time settings are in milliseconds -->
+<FirearmAttackTypes>
+	<!--
+	<ModifiableParams> - all of these can be modified by abilities
+		min/maxAimTime = This is the time it takes from when the weapon is ready&aimed at the enemy and until we shoot. The final aim time is interpolated between min/max distance to the target (minDistance = minAimTime, maxDistance = maxAimTime).
+		roundsPerSecondOverride = if defined (!= 0), it will overwrite the weapon's "roundsPerSecond" parameter
+		minShots = greater or equal to 1. if greater, then the min number of shots will be fired, even if the target is dead.
+		maxShots = number of shots before waiting "aimTime" again. A value is chosen randomly between min/maxShots, -1 to shoot continuously
+		resetTime = once a shot sequence has finished, we wait for this amount of time before the next shot sequence begins
+		accuracyAdd = modifier for the base accuracy of the weapon. 0 = exactly the weapon's base accuracy
+		followupShotAccuracyAdd = simulates recoil by adding to accuracyModiferPercent for each subsequent shot after the first one
+		critChanceAdd = percent to add to the base critical chance from the weapon/ammo
+	-->
+<!-- MOD -->
+	<AttackType name="DEV_PointShoot">
+		<ModifiableParams
+			minAimTime="275"
+			maxAimTime="290"
+			roundsPerSecondOverride="8.5"
+			minShots="1"
+			maxShots="-1"
+			resetTime="100"
+			accuracyAdd="-20"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DoubleTapClose">
+		<ModifiableParams
+			minAimTime="290"
+			maxAimTime="315"
+			roundsPerSecondOverride="7"
+			minShots="1"
+			maxShots="-1"
+			resetTime="100"
+			accuracyAdd="20"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DoubleTap">
+		<ModifiableParams
+			minAimTime="315"
+			maxAimTime="340"
+			roundsPerSecondOverride="6"
+			minShots="1"
+			maxShots="2"
+			resetTime="150"
+			accuracyAdd="20"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DoubleTapMed1">
+		<ModifiableParams
+			minAimTime="340"
+			maxAimTime="380"
+			roundsPerSecondOverride="5"
+			minShots="1"
+			maxShots="2"
+			resetTime="200"
+			accuracyAdd="20"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DoubleTapMed2">
+		<ModifiableParams
+			minAimTime="380"
+			maxAimTime="425"
+			roundsPerSecondOverride="4"
+			minShots="1"
+			maxShots="2"
+			resetTime="250"
+			accuracyAdd="10"
+			followupShotAccuracyAdd="30"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DoubleTapLong">
+		<ModifiableParams
+			minAimTime="425"
+			maxAimTime="450"
+			roundsPerSecondOverride="3.3"
+			minShots="1"
+			maxShots="2"
+			resetTime="250"
+			accuracyAdd="0"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="5"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_CarbineAimedFire">
+		<ModifiableParams
+			minAimTime="450"
+			maxAimTime="500"
+			roundsPerSecondOverride="1.5"
+			minShots="1"
+			maxShots="2"
+			resetTime="300"
+			accuracyAdd="-20"
+			followupShotAccuracyAdd="10"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_CarbineAimedFireXX">
+		<ModifiableParams
+			minAimTime="500"
+			maxAimTime="700"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="200"
+			accuracyAdd="-60"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="-15"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_HeavyDoubleTapClose">
+		<ModifiableParams
+			minAimTime="300"
+			maxAimTime="325"
+			roundsPerSecondOverride="6"
+			minShots="2"
+			maxShots="2"
+			resetTime="150"
+			accuracyAdd="0"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="25"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_HeavyDoubleTap">
+		<ModifiableParams
+			minAimTime="325"
+			maxAimTime="360"
+			roundsPerSecondOverride="5"
+			minShots="2"
+			maxShots="2"
+			resetTime="200"
+			accuracyAdd="10"
+			followupShotAccuracyAdd="-10"
+			critChanceAdd="30"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_HeavyDoubleTapMed1">
+		<ModifiableParams
+			minAimTime="360"
+			maxAimTime="400"
+			roundsPerSecondOverride="4"
+			minShots="2"
+			maxShots="2"
+			resetTime="250"
+			accuracyAdd="10"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="20"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_HeavyDoubleTapMed2">
+		<ModifiableParams
+			minAimTime="400"
+			maxAimTime="435"
+			roundsPerSecondOverride="3"
+			minShots="2"
+			maxShots="2"
+			resetTime="250"
+			accuracyAdd="-10"
+			followupShotAccuracyAdd="10"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_HeavyDoubleTapLong">
+		<ModifiableParams
+			minAimTime="435"
+			maxAimTime="470"
+			roundsPerSecondOverride="2.3"
+			minShots="2"
+			maxShots="2"
+			resetTime="300"
+			accuracyAdd="-60"
+			followupShotAccuracyAdd="-20"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_HeavyCarbineAimedFire">
+		<ModifiableParams
+			minAimTime="470"
+			maxAimTime="550"
+			roundsPerSecondOverride="1.3"
+			minShots="1"
+			maxShots="1"
+			resetTime="300"
+			accuracyAdd="-70"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_HeavyCarbineAimedFireXX">
+		<ModifiableParams
+			minAimTime="550"
+			maxAimTime="700"
+			roundsPerSecondOverride="0.7"
+			minShots="1"
+			maxShots="1"
+			resetTime="200"
+			accuracyAdd="-80"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="-15"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_LMGStrafeShort">
+		<ModifiableParams
+			minAimTime="325"
+			maxAimTime="400"
+			roundsPerSecondOverride="0"
+			minShots="6"
+			maxShots="10"
+			resetTime="200"
+			accuracyAdd="-30"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_LMGStrafe">
+		<ModifiableParams
+			minAimTime="400"
+			maxAimTime="410"
+			roundsPerSecondOverride="0"
+			minShots="7"
+			maxShots="11"
+			resetTime="300"
+			accuracyAdd="-50"
+			followupShotAccuracyAdd="1"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_LMGStrafeMed">
+		<ModifiableParams
+			minAimTime="410"
+			maxAimTime="420"
+			roundsPerSecondOverride="0"
+			minShots="8"
+			maxShots="13"
+			resetTime="200"
+			accuracyAdd="-80"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="-20"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_LMGStrafeLong">
+		<ModifiableParams
+			minAimTime="420"
+			maxAimTime="430"
+			roundsPerSecondOverride="0"
+			minShots="9"
+			maxShots="16"
+			resetTime="200"
+			accuracyAdd="-80"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="-20"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_LMGStrafeLongXX">
+		<ModifiableParams
+			minAimTime="430"
+			maxAimTime="450"
+			roundsPerSecondOverride="0"
+			minShots="10"
+			maxShots="18"
+			resetTime="200"
+			accuracyAdd="-70"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="-30"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_LMGStrafeShortMounted">
+		<ModifiableParams
+			minAimTime="340"
+			maxAimTime="375"
+			roundsPerSecondOverride="0"
+			minShots="8"
+			maxShots="12"
+			resetTime="100"
+			accuracyAdd="-40"
+			followupShotAccuracyAdd="0.5"
+			critChanceAdd="5"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_LMGStrafeMounted">
+		<ModifiableParams
+			minAimTime="375"
+			maxAimTime="400"
+			roundsPerSecondOverride="0"
+			minShots="4"
+			maxShots="9"
+			resetTime="150"
+			accuracyAdd="-10"
+			followupShotAccuracyAdd="5"
+			critChanceAdd="20"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_LMGStrafeMedMounted">
+		<ModifiableParams
+			minAimTime="400"
+			maxAimTime="450"
+			roundsPerSecondOverride="0"
+			minShots="4"
+			maxShots="8"
+			resetTime="150"
+			followupShotAccuracyAdd="5"
+			accuracyAdd="0"
+			critChanceAdd="25"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_LMGStrafeLongMounted">
+		<ModifiableParams
+			minAimTime="450"
+			maxAimTime="650"
+			roundsPerSecondOverride="0"
+			minShots="4"
+			maxShots="6"
+			resetTime="170"
+			accuracyAdd="-30"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_LMGStrafeLongXXMounted">
+		<ModifiableParams
+			minAimTime="650"
+			maxAimTime="800"
+			roundsPerSecondOverride="0"
+			minShots="4"
+			maxShots="5"
+			resetTime="190"
+			accuracyAdd="-50"
+			followupShotAccuracyAdd="-5"
+			critChanceAdd="-20"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_GPMGStrafeShort">
+		<ModifiableParams
+			minAimTime="390"
+			maxAimTime="500"
+			roundsPerSecondOverride="0"
+			minShots="5"
+			maxShots="9"
+			resetTime="250"
+			accuracyAdd="-30"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="-20"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_GPMGStrafe">
+		<ModifiableParams
+			minAimTime="500"
+			maxAimTime="600"
+			roundsPerSecondOverride="0"
+			minShots="6"
+			maxShots="10"
+			resetTime="350"
+			accuracyAdd="-50"
+			followupShotAccuracyAdd="-10"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_GPMGStrafeMed">
+		<ModifiableParams
+			minAimTime="600"
+			maxAimTime="625"
+			roundsPerSecondOverride="0"
+			minShots="7"
+			maxShots="12"
+			resetTime="250"
+			followupShotAccuracyAdd="-10"
+			accuracyAdd="-80"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_GPMGStrafeLong">
+		<ModifiableParams
+			minAimTime="625"
+			maxAimTime="650"
+			roundsPerSecondOverride="0"
+			minShots="8"
+			maxShots="15"
+			resetTime="250"
+			accuracyAdd="-80"
+			followupShotAccuracyAdd="-10"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_GPMGStrafeLongXX">
+		<ModifiableParams
+			minAimTime="650"
+			maxAimTime="700"
+			roundsPerSecondOverride="0"
+			minShots="9"
+			maxShots="17"
+			resetTime="250"
+			accuracyAdd="-80"
+			followupShotAccuracyAdd="0.5"
+			critChanceAdd="5"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_GPMGStrafeShortMounted">
+		<ModifiableParams
+			minAimTime="365"
+			maxAimTime="450"
+			roundsPerSecondOverride="0"
+			minShots="5"
+			maxShots="8"
+			resetTime="200"
+			accuracyAdd="-40"
+			followupShotAccuracyAdd="0.5"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_GPMGStrafeMounted">
+		<ModifiableParams
+			minAimTime="450"
+			maxAimTime="500"
+			roundsPerSecondOverride="0"
+			minShots="3"
+			maxShots="5"
+			resetTime="330"
+			accuracyAdd="10"
+			followupShotAccuracyAdd="5"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_GPMGStrafeMedMounted">
+		<ModifiableParams
+			minAimTime="500"
+			maxAimTime="550"
+			roundsPerSecondOverride="0"
+			minShots="2"
+			maxShots="4"
+			resetTime="400"
+			followupShotAccuracyAdd="5"
+			accuracyAdd="0"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_GPMGStrafeLongMounted">
+		<ModifiableParams
+			minAimTime="550"
+			maxAimTime="600"
+			roundsPerSecondOverride="0"
+			minShots="2"
+			maxShots="3"
+			resetTime="470"
+			accuracyAdd="-10"
+			followupShotAccuracyAdd="10"
+			critChanceAdd="15"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_GPMGStrafeLongXXMounted">
+		<ModifiableParams
+			minAimTime="600"
+			maxAimTime="650"
+			roundsPerSecondOverride="0"
+			minShots="1"
+			maxShots="2"
+			resetTime="500"
+			accuracyAdd="-20"
+			followupShotAccuracyAdd="10"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMRRapidFire">
+		<ModifiableParams
+
+			minAimTime="350"
+			maxAimTime="385"
+			roundsPerSecondOverride="3.5"
+			minShots="1"
+			maxShots="-1"
+			resetTime="50"
+			accuracyAdd="-70"
+			followupShotAccuracyAdd="10"
+
+			critChanceAdd="-30"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMR556RapidFire">
+		<ModifiableParams
+
+			minAimTime="335"
+			maxAimTime="365"
+			roundsPerSecondOverride="0"
+			minShots="1"
+			maxShots="-1"
+			resetTime="50"
+			accuracyAdd="-70"
+			followupShotAccuracyAdd="10"
+
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMRRapidFireMed">
+		<ModifiableParams
+			minAimTime="385"
+			maxAimTime="485"
+			roundsPerSecondOverride="2.5"
+			minShots="1"
+			maxShots="3"
+			resetTime="250"
+			accuracyAdd="-50"
+			followupShotAccuracyAdd="-5"
+			critChanceAdd="-30"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMR556RapidFireMed">
+		<ModifiableParams
+			minAimTime="365"
+			maxAimTime="470"
+			roundsPerSecondOverride="4"
+			minShots="1"
+			maxShots="3"
+			resetTime="250"
+			accuracyAdd="-50"
+			followupShotAccuracyAdd="-5"
+			critChanceAdd="20"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMRRapidFireLong">
+		<ModifiableParams
+			minAimTime="485"
+			maxAimTime="650"
+			roundsPerSecondOverride="1.4"
+			minShots="1"
+			maxShots="1"
+			resetTime="200"
+			accuracyAdd="-20"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="-20"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMR556RapidFireLong">
+		<ModifiableParams
+			minAimTime="470"
+			maxAimTime="650"
+			roundsPerSecondOverride="1.6"
+			minShots="1"
+			maxShots="1"
+			resetTime="200"
+			accuracyAdd="-20"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="20"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMRAimedFire">
+		<ModifiableParams
+			minAimTime="650"
+			maxAimTime="750"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="300"
+			accuracyAdd="50"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMRAimedFireXX">
+		<ModifiableParams
+			minAimTime="750"
+			maxAimTime="825"
+			roundsPerSecondOverride="0.8"
+			minShots="1"
+			maxShots="1"
+			resetTime="400"
+			accuracyAdd="-10"
+			followupShotAccuracyAdd="10"
+			critChanceAdd="-20"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMRRapidFireLongMounted">
+		<ModifiableParams
+			minAimTime="425"
+			maxAimTime="500"
+			roundsPerSecondOverride="1.6"
+			minShots="1"
+			maxShots="1"
+			resetTime="200"
+			accuracyAdd="20"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="-15"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMR556RapidFireLongMounted">
+		<ModifiableParams
+			minAimTime="350"
+			maxAimTime="500"
+			roundsPerSecondOverride="2.3"
+			minShots="1"
+			maxShots="1"
+			resetTime="150"
+			accuracyAdd="20"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMRAimedFireMounted">
+		<ModifiableParams
+			minAimTime="500"
+			maxAimTime="600"
+			roundsPerSecondOverride="0.95"
+			minShots="1"
+			maxShots="1"
+			resetTime="250"
+			accuracyAdd="50"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMRAimedFireXXMounted">
+		<ModifiableParams
+			minAimTime="600"
+			maxAimTime="700"
+			roundsPerSecondOverride="0.7"
+			minShots="1"
+			maxShots="1"
+			resetTime="250"
+			accuracyAdd="0"
+			followupShotAccuracyAdd="10"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<!-- HEAVY DMR -->
+	<AttackType name="DEV_DMRHeavyRapidFire">
+		<ModifiableParams
+
+			minAimTime="450"
+			maxAimTime="600"
+			roundsPerSecondOverride="1.3"
+			minShots="1"
+			maxShots="1"
+			resetTime="50"
+			accuracyAdd="-100"
+			followupShotAccuracyAdd="5"
+
+			critChanceAdd="-30"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMRHeavyRapidFireMed">
+		<ModifiableParams
+			minAimTime="600"
+			maxAimTime="750"
+			roundsPerSecondOverride="1.1"
+			minShots="1"
+			maxShots="1"
+			resetTime="250"
+			accuracyAdd="-80"
+			followupShotAccuracyAdd="-5"
+			critChanceAdd="-30"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMRHeavyRapidFireLong">
+		<ModifiableParams
+			minAimTime="750"
+			maxAimTime="850"
+			roundsPerSecondOverride="0.6"
+			minShots="1"
+			maxShots="1"
+			resetTime="300"
+			accuracyAdd="-70"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="-20"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMRHeavyAimedFire">
+		<ModifiableParams
+			minAimTime="850"
+			maxAimTime="1000"
+			roundsPerSecondOverride="0.7"
+			minShots="1"
+			maxShots="1"
+			resetTime="200"
+			accuracyAdd="0"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMRHeavyAimedFireXX">
+		<ModifiableParams
+			minAimTime="1000"
+			maxAimTime="1100"
+			roundsPerSecondOverride="0.6"
+			minShots="1"
+			maxShots="1"
+			resetTime="200"
+			accuracyAdd="0"
+			followupShotAccuracyAdd="10"
+			critChanceAdd="20"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMRHeavyRapidFireLongMounted">
+		<ModifiableParams
+			minAimTime="650"
+			maxAimTime="700"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="400"
+			accuracyAdd="100"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMRHeavyAimedFireMounted">
+		<ModifiableParams
+			minAimTime="700"
+			maxAimTime="800"
+			roundsPerSecondOverride="0.8"
+			minShots="1"
+			maxShots="1"
+			resetTime="400"
+			accuracyAdd="100"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="40"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DMRHeavyAimedFireXXMounted">
+		<ModifiableParams
+			minAimTime="800"
+			maxAimTime="900"
+			roundsPerSecondOverride="0.7"
+			minShots="1"
+			maxShots="1"
+			resetTime="400"
+			accuracyAdd="100"
+			followupShotAccuracyAdd="10"
+			critChanceAdd="60"
+		/>
+	</AttackType>
+
+	<!-- MOD BOLT ACTION -->
+
+	<AttackType name="DEV_BoltActionAimedFire">
+		<ModifiableParams
+			minAimTime="850"
+			maxAimTime="1000"
+			roundsPerSecondOverride="0.4"
+			minShots="1"
+			maxShots="1"
+			resetTime="400"
+			accuracyAdd="0"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_BoltActionAimedFireXX">
+		<ModifiableParams
+			minAimTime="1000"
+			maxAimTime="1100"
+			roundsPerSecondOverride="0.2"
+			minShots="1"
+			maxShots="1"
+			resetTime="400"
+			accuracyAdd="0"
+			followupShotAccuracyAdd="10"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_BoltActionAimedFireMounted">
+		<ModifiableParams
+			minAimTime="700"
+			maxAimTime="800"
+			roundsPerSecondOverride="0.6"
+			minShots="1"
+			maxShots="1"
+			resetTime="400"
+			accuracyAdd="100"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="40"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_BoltActionAimedFireXXMounted">
+		<ModifiableParams
+			minAimTime="800"
+			maxAimTime="900"
+			roundsPerSecondOverride="0.4"
+			minShots="1"
+			maxShots="1"
+			resetTime="400"
+			accuracyAdd="100"
+			followupShotAccuracyAdd="10"
+			critChanceAdd="40"
+		/>
+	</AttackType>
+	<!-- MOD PISTOL -->
+
+		<AttackType name="DEV_EmergencyFire45">
+		<ModifiableParams
+			minAimTime="150"
+			maxAimTime="200"
+			roundsPerSecondOverride="0"
+			minShots="1"
+			maxShots="-1"
+			resetTime="200"
+			accuracyAdd="40"
+			followupShotAccuracyAdd="2"
+			critChanceAdd="-25"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_EmergencyFire9mil">
+		<ModifiableParams
+			minAimTime="150"
+			maxAimTime="200"
+			roundsPerSecondOverride="6.5"
+			minShots="1"
+			maxShots="-1"
+			resetTime="150"
+			accuracyAdd="40"
+			followupShotAccuracyAdd="3"
+			critChanceAdd="-25"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DoubleTap45">
+		<ModifiableParams
+			minAimTime="200"
+			maxAimTime="200"
+			roundsPerSecondOverride="4"
+			minShots="2"
+			maxShots="2"
+			resetTime="350"
+			accuracyAdd="20"
+			followupShotAccuracyAdd="-5"
+			critChanceAdd="15"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_DoubleTap9mil">
+		<ModifiableParams
+			minAimTime="200"
+			maxAimTime="200"
+			roundsPerSecondOverride="4.5"
+			minShots="2"
+			maxShots="2"
+			resetTime="300"
+			accuracyAdd="20"
+			followupShotAccuracyAdd="-3"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_ControlledPair45">
+		<ModifiableParams
+			minAimTime="200"
+			maxAimTime="400"
+			roundsPerSecondOverride="2.8"
+			minShots="2"
+			maxShots="2"
+			resetTime="400"
+			accuracyAdd="30"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="15"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_ControlledPair9mil">
+		<ModifiableParams
+			minAimTime="200"
+			maxAimTime="400"
+			roundsPerSecondOverride="3.2"
+			minShots="2"
+			maxShots="2"
+			resetTime="350"
+			accuracyAdd="30"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_PistolAimedFire45">
+		<ModifiableParams
+			minAimTime="400"
+			maxAimTime="600"
+			roundsPerSecondOverride="1.8"
+			minShots="1"
+			maxShots="2"
+			resetTime="400"
+			accuracyAdd="50"
+			followupShotAccuracyAdd="10"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_PistolAimedFire9mil">
+		<ModifiableParams
+			minAimTime="400"
+			maxAimTime="600"
+			roundsPerSecondOverride="2"
+			minShots="1"
+			maxShots="2"
+			resetTime="300"
+			accuracyAdd="50"
+			followupShotAccuracyAdd="11"
+			critChanceAdd="-20"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_PistolAimedFireLong45">
+		<ModifiableParams
+			minAimTime="500"
+			maxAimTime="800"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="200"
+			accuracyAdd="60"
+			followupShotAccuracyAdd="10"
+			critChanceAdd="-15"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_PistolAimedFireLong9mil">
+		<ModifiableParams
+			minAimTime="500"
+			maxAimTime="800"
+			roundsPerSecondOverride="1.1"
+			minShots="1"
+			maxShots="1"
+			resetTime="175"
+			accuracyAdd="60"
+			followupShotAccuracyAdd="20"
+			critChanceAdd="-20"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_PistolAimedFireLong45XX">
+		<ModifiableParams
+			minAimTime="800"
+			maxAimTime="900"
+			roundsPerSecondOverride="0.5"
+			minShots="1"
+			maxShots="1"
+			resetTime="200"
+			accuracyAdd="-50"
+			followupShotAccuracyAdd="1"
+			critChanceAdd="-15"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_PistolAimedFireLong9milXX">
+		<ModifiableParams
+			minAimTime="800"
+			maxAimTime="900"
+			roundsPerSecondOverride="0.6"
+			minShots="1"
+			maxShots="1"
+			resetTime="175"
+			accuracyAdd="-50"
+			followupShotAccuracyAdd="2"
+			critChanceAdd="-15"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_WelrodClose">
+		<ModifiableParams
+			minAimTime="700"
+			maxAimTime="800"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="1000"
+			accuracyAdd="100"
+			followupShotAccuracyAdd="2"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_WelrodMedium">
+		<ModifiableParams
+			minAimTime="1100"
+			maxAimTime="1200"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="1000"
+			accuracyAdd="100"
+			followupShotAccuracyAdd="2"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_WelrodFarXX">
+		<ModifiableParams
+			minAimTime="2400"
+			maxAimTime="2600"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="175"
+			accuracyAdd="100"
+			followupShotAccuracyAdd="2"
+			critChanceAdd="-50"
+		/>
+	</AttackType>
+
+	<!--
+		MOD SMG
+	-->
+	<AttackType name="DEV_SMGAutoFire">
+		<ModifiableParams
+			minAimTime="280"
+			maxAimTime="295"
+			roundsPerSecondOverride="0"
+			minShots="3"
+			maxShots="12"
+			resetTime="200"
+			accuracyAdd="-40"
+			followupShotAccuracyAdd="2"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_SMGBurstFire">
+		<ModifiableParams
+			minAimTime="295"
+			maxAimTime="315"
+			roundsPerSecondOverride="0"
+			minShots="2"
+			maxShots="4"
+			resetTime="200"
+			accuracyAdd="-40"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-5"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_SMGBurstFireMed">
+		<ModifiableParams
+			minAimTime="315"
+			maxAimTime="400"
+			roundsPerSecondOverride="0"
+			minShots="2"
+			maxShots="3"
+			resetTime="500"
+			accuracyAdd="-30"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-5"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_SMGAimedFire">
+		<ModifiableParams
+			minAimTime="400"
+			maxAimTime="550"
+			roundsPerSecondOverride="0"
+			minShots="1"
+			maxShots="3"
+			resetTime="700"
+			accuracyAdd="-30"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_SMGAimedFireXX">
+		<ModifiableParams
+			minAimTime="550"
+			maxAimTime="650"
+			roundsPerSecondOverride="0"
+			minShots="1"
+			maxShots="1"
+			resetTime="1200"
+			accuracyAdd="-50"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-15"
+		/>
+	</AttackType>
+
+
+	<AttackType name="TierOne_HeavySMGAutoFire">
+		<ModifiableParams
+			minAimTime="300"
+			maxAimTime="325"
+			roundsPerSecondOverride="0"
+			minShots="3"
+			maxShots="12"
+			resetTime="200"
+			accuracyAdd="-40"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="TierOne_HeavySMGBurstFire">
+		<ModifiableParams
+			minAimTime="325"
+			maxAimTime="350"
+			roundsPerSecondOverride="0"
+			minShots="2"
+			maxShots="4"
+			resetTime="200"
+			accuracyAdd="-40"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-5"
+		/>
+	</AttackType>
+
+	<AttackType name="TierOne_HeavySMGBurstFireMed">
+		<ModifiableParams
+			minAimTime="350"
+			maxAimTime="450"
+			roundsPerSecondOverride="0"
+			minShots="2"
+			maxShots="3"
+			resetTime="500"
+			accuracyAdd="-30"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-5"
+		/>
+	</AttackType>
+
+	<AttackType name="TierOne_HeavySMGAimedFire">
+		<ModifiableParams
+			minAimTime="450"
+			maxAimTime="550"
+			roundsPerSecondOverride="0"
+			minShots="1"
+			maxShots="3"
+			resetTime="700"
+			accuracyAdd="-40"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="TierOne_HeavySMGAimedFireXX">
+		<ModifiableParams
+			minAimTime="550"
+			maxAimTime="650"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="1200"
+			accuracyAdd="-50"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-15"
+		/>
+	</AttackType>
+
+
+
+	<AttackType name="DEV_VectorAutoFire">
+		<ModifiableParams
+			minAimTime="250"
+			maxAimTime="300"
+			roundsPerSecondOverride="0"
+			minShots="5"
+			maxShots="-1"
+			resetTime="200"
+			accuracyAdd="-40"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_VectorBurstFire">
+		<ModifiableParams
+			minAimTime="300"
+			maxAimTime="350"
+			roundsPerSecondOverride="0"
+			minShots="3"
+			maxShots="6"
+			resetTime="200"
+			accuracyAdd="-30"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_Vector2Burst">
+		<ModifiableParams
+			minAimTime="350"
+			maxAimTime="450"
+			roundsPerSecondOverride="0"
+			minShots="2"
+			maxShots="2"
+			resetTime="400"
+			accuracyAdd="-10"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_Vector2BurstLong">
+		<ModifiableParams
+			minAimTime="450"
+			maxAimTime="600"
+			roundsPerSecondOverride="0"
+			minShots="2"
+			maxShots="2"
+			resetTime="700"
+			accuracyAdd="-10"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_VectorSingleFire">
+		<ModifiableParams
+			minAimTime="600"
+			maxAimTime="650"
+			roundsPerSecondOverride="0"
+			minShots="1"
+			maxShots="1"
+			resetTime="250"
+			accuracyAdd="-30"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_MGLHoldFire">
+		<ModifiableParams
+			minAimTime="10000000"
+			maxAimTime="10000000"
+			roundsPerSecondOverride="1"
+			minShots="0"
+			maxShots="0"
+			resetTime="200"
+			accuracyAdd="-100"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_MGL">
+		<ModifiableParams
+			minAimTime="500"
+			maxAimTime="700"
+			roundsPerSecondOverride="1"
+			minShots="0"
+			maxShots="0"
+			resetTime="200"
+			accuracyAdd="150"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="DEV_GL40">
+		<ModifiableParams
+			minAimTime="400"
+			maxAimTime="500"
+			minShots="1"
+			maxShots="1"
+			resetTime="1000"
+			accuracyAdd="0"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+</FirearmAttackTypes>

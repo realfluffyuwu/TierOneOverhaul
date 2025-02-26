@@ -1,0 +1,925 @@
+<Particles>
+    <!-- MOD -->
+	<ParticleSystem name="Missile" poolSize="16">
+		<!-- TRAIL -->
+				<Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.005" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="20.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0075" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="19.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.010" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="19.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0125" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="18.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.015" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="18.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+		<Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.005" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="17.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0075" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="17.000"spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.010" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="16.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0125" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="16.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.015" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="15.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+		<Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.005" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="15.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0075" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="14.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.010" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="14.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0125" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="13.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.015" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="13.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+		<Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.005" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="12.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0075" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="12.000"spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.010" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000"  spawnOffsetX="11.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0125" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000" spawnOffsetX="11.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.015" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000" spawnOffsetX="10.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+		<Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.005" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000" spawnOffsetX="10.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0075" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000" spawnOffsetX="9.50" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.010" emitDelay="0.010" emitCount="1" spawnOffsetY="9.000" spawnOffsetX="9.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0125" emitDelay="0.010" emitCount="1" spawnOffsetY="8.500" spawnOffsetX="8.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.015" emitDelay="0.010" emitCount="1" spawnOffsetY="8.000" spawnOffsetX="8.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0175" emitDelay="0.010" emitCount="1" spawnOffsetY="7.500" spawnOffsetX="7.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.02" emitDelay="0.010" emitCount="1" spawnOffsetY="7.000" spawnOffsetX="7.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0225" emitDelay="0.010" emitCount="1" spawnOffsetY="6.500" spawnOffsetX="6.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.025" emitDelay="0.010" emitCount="1" spawnOffsetY="6.000" spawnOffsetX="6.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0275" emitDelay="0.010" emitCount="1" spawnOffsetY="5.500" spawnOffsetX="5.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.03" emitDelay="0.010" emitCount="1" spawnOffsetY="5.000" spawnOffsetX="5.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0325" emitDelay="0.010" emitCount="1" spawnOffsetY="4.500" spawnOffsetX="4.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.035" emitDelay="0.010" emitCount="1" spawnOffsetY="4.000" spawnOffsetX="4.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0375" emitDelay="0.010" emitCount="1" spawnOffsetY="3.500" spawnOffsetX="3.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.04" emitDelay="0.010" emitCount="1" spawnOffsetY="3.000" spawnOffsetX="3.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0425" emitDelay="0.010" emitCount="1" spawnOffsetY="2.500" spawnOffsetX="2.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.045" emitDelay="0.010" emitCount="1" spawnOffsetY="2.000" spawnOffsetX="2.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0475" emitDelay="0.010" emitCount="1" spawnOffsetY="1.500" spawnOffsetX="1.500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.05" emitDelay="0.010" emitCount="1" spawnOffsetY="1.000" spawnOffsetX="1.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.0525" emitDelay="0.010" emitCount="1" spawnOffsetY=".500" spawnOffsetX=".500" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail smoke" loop="false" shape="rect" startDelay="0.055" emitDelay="0.010" emitCount="1" spawnOffsetY=".000" spawnOffsetX="0.000" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200" >
+            <Particle lifetime="1.700" lifetimeMax="3.200" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scale="0.700" scaleMax="2.000" sizeX="0.550" sizeZ="0.550" orient="80.000" orientMax="100.000"/>
+            <Movement speedX="0.400" speedXMax="0.600" speedYMax="0.400" friction="0.001" scaleStart="0.800" scaleEnd="1.700" rotationPerSec="5.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.300" fadeOut="0.400" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+
+
+		<!-- EXPLOSION -->
+        <Emitter name="distort" emitDelay="1.000" spawnOffsetY="0.500">
+            <Particle lifetime="0.300"/>
+            <Initial scale="2.000"/>
+            <Movement scaleEnd="20.560"/>
+            <Material fadeIn="0.100" fadeOut="0.700" distortPostProcess="1" distortAmount="100.760" mainTex="data/textures/fx/distort_ring.tga" colorize="FFFEFEFF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.600" uvScrollV1="0.020" uvDistortX="0.200" uvDistortY="0.260"/>
+            </Material>
+        </Emitter>
+		<Emitter name="smoke puff" shape="rect" startDelay="0.001" duration="0.050" emitDelay="0.01" emitCount="20" spawnOffsetY="0.100" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200">
+            <Particle lifetime="6.000" lifetimeMax="12.000" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scaleMax="2.000" sizeX="1.500" sizeZ="1.500" orient="-180.000" orientMax="180.000"/>
+            <Movement speedY="0.000" speedYMax="0.200" speedZ="40.000" speedZMax="80.000" friction="4.100" scaleStart="2.000" scaleEnd="3.000" rotationPerSec="0.000" direction="orient"/>
+            <Material softThickness="0.040" fadeIn="0.200" fadeOut="6.100" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="101010CA">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+		<Emitter name="smoke puff" shape="rect" startDelay="0.001" duration="0.050" emitCount="20" emitDelay="0.01" spawnOffsetY="1.300" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200">
+            <Particle lifetime="5.000" lifetimeMax="14.000" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scaleMax="2.000" sizeX="1.500" sizeZ="1.500" orient="-180.000" orientMax="180.000"/>
+            <Movement speedY="1.000" speedYMax="2.000" speedZ="30.000" speedZMax="55.000" friction="8.150" scaleStart="1.100" scaleEnd="1.500" rotationPerSec="10.000" direction="orient"/>
+            <Material softThickness="0.040" fadeIn="0.000" fadeOut="5.800" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="2222223B">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="sparks" startDelay="0.010" duration="0.100" emitDelay="1.000" emitCount="24" spawnOffsetY="0.500">
+            <Particle lifetime="0.200" lifetimeMax="0.300"/>
+            <Initial scale="1.200" scaleMax="0.500" sizeX="1.700" sizeZ="0.150" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="5.000" speedXMax="20.000" friction="0.500" scaleStart="3.000" scaleEnd="0.200" direction="orient"/>
+            <Material fadeIn="0.300" fadeOut="0.700" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="FF3800FF"/>
+        </Emitter>
+        <Emitter name="debris" startDelay="0.010" duration="0.100" emitDelay="0.005">
+            <Particle lifetime="3.810" lifetimeMax="8.410"/>
+            <Initial scale="0.300" scaleMax="0.800" sizeX="0.400" sizeZ="0.400" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="3.500" speedYMax="4.000" speedZ="55.000" speedZMax="80.000" friction="15.390" scaleStart="0.500" scaleEnd="1.000" direction="orient" gravity="true" bounce="0.300"/>
+            <Material fadeIn="0.040" fadeOut="0.700" lit="vert" randomAnimFrame="1" mainTex="data/textures/fx/rocks.dds" colorize="473C2BFF">
+                <TextureAnimation frameWidth="32" frameHeight="32" animSpeed="3"/>
+            </Material>
+        </Emitter>
+        <Emitter name="radial dust" emitDelay="1.000">
+            <Particle lifetime="0.300"/>
+            <Initial scale="3.000" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="2.000" scaleEnd="3.000"/>
+            <Material softThickness="0.100" fadeIn="0.100" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/radialdust1.dds" colorize="FFB64DFF">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+        <Emitter name="lingering dust" duration="0.100" emitCount="4">
+            <Particle lifetime="2.000"/>
+            <Initial scaleMax="1.200" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="-0.200" speedXMax="0.400" speedZ="0.200" speedZMax="0.300" scaleStart="1.300" scaleEnd="1.600" rotationPerSec="10.000" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.400" fadeOut="0.800" mainTex="data/textures/fx/smokepuff1.dds" colorize="2222223B">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="smoke puff" shape="rect" startDelay="0.001" duration="0.030" emitDelay="0.005" emitCount="2" spawnOffsetY="1.500" spawnBoxSizeY="0.500">
+            <Particle lifetime="7.000" lifetimeMax="15.000" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scaleMax="1.540" sizeX="2.000" sizeZ="2.000" orient="-180.000" orientMax="180.000"/>
+            <Movement speedYMax="2.000" speedZ="10.490" speedZMax="35.000" friction="120.000" scaleStart="2.000" scaleEnd="4.100" rotationPerSec="10.000" direction="orient"/>
+            <Material softThickness="0.040" fadeIn="0.001" fadeOut="7.500" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="10101092">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="fire_outer" shape="sphere" startDelay="0.300" duration="1.300" emitDelay="0.050" spawnBoxSizeX="6.000" spawnBoxSizeZ="6.000">
+            <Particle lifetime="4.000" lifetimeMax="10.000" mesh="data/models/fx/fire_mesh_01.khm"/>
+            <Initial scale="0.500" scaleMax="1.500" sizeX="0.800" orient="-15.000" orientMax="-60.000"/>
+            <Movement speedY="0.100" speedYMax="0.400" scaleEnd="0.010"/>
+            <Material softThickness="0.100" fadeIn="0.300" fadeOut="0.300" blendMode="screen" mainTex="data/textures/fx/fire_01.dds" colorize="FFFFFFFF">
+                <TextureAnimation frameWidth="64" frameHeight="128" animSpeed="3"/>
+            </Material>
+        </Emitter>
+        <Emitter name="fire_core" shape="sphere" startDelay="1.000" duration="0.200" emitDelay="0.020" spawnBoxSizeX="2.000" spawnBoxSizeZ="2.000">
+            <Particle lifetime="3.500" lifetimeMax="6.000" mesh="data/models/fx/fire_mesh_01.khm"/>
+            <Initial scale="0.500" scaleMax="1.500" sizeX="1.200" sizeZ="1.500" orient="-15.000" orientMax="-60.000"/>
+            <Movement speedY="0.100" speedYMax="0.400" scaleEnd="0.010"/>
+            <Material softThickness="0.100" fadeIn="0.100" fadeOut="0.300" blendMode="screen" mainTex="data/textures/fx/fire_01.dds" colorize="FFFFFFFF">
+                <TextureAnimation frameWidth="64" frameHeight="128" animSpeed="3"/>
+            </Material>
+        </Emitter>
+        <Emitter name="glow" shape="sphere" startDelay="0.200" duration="0.800" emitCount="2" spawnBoxSizeX="1.000" spawnBoxSizeY="0.020" spawnBoxSizeZ="1.000">
+            <Particle lifetime="0.100" lifetimeMax="0.200"/>
+            <Initial scale="1.000" scaleMax="3.000" sizeZ="1.400"/>
+            <Movement scaleStart="2.000" scaleEnd="0.500" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.100" fadeOut="0.600" blendMode="screen" depthSorted="1" mainTex="data/textures/fx/glow_close.dds" colorize="FFB9001E"/>
+        </Emitter>
+        <!--<Emitter name="sparks" startDelay="0.010" duration="0.100" emitDelay="1.000" emitCount="24" spawnOffsetY="1.000">
+            <Particle lifetime="0.100" lifetimeMax="0.500"/>
+            <Initial scale="0.800" scaleMax="1.000" sizeZ="0.100" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="40.000" speedXMax="50.000" friction="15000.000" scaleStart="3.000" scaleEnd="0.200" direction="orient"/>
+            <Material fadeIn="0.300" fadeOut="0.700" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="FF3800FF"/>
+        </Emitter>-->
+        <Emitter name="smoke_streak" duration="0.100" emitDelay="0.020" spawnOffsetY="1.000">
+            <Particle lifetime="0.200" lifetimeMax="0.300" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scaleMax="1.500" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="5.000" speedYMax="10.000" speedZ="30.000" speedZMax="46.000" friction="150000.000" scaleStart="2.800" scaleEnd="3.000" direction="orient"/>
+            <Material softThickness="0.130" fadeIn="0.001" fadeOut="0.620" lit="vert" mainTex="data/textures/fx/smoke_streak_01.dds" colorize="141414E3">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+        <Emitter name="sparks_radial" duration="0.100" emitDelay="1.000" spawnOffsetY="1.000">
+            <Particle lifetime="0.100" lifetimeMax="0.200"/>
+            <Initial scale="1.500" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement scaleEnd="3.000"/>
+            <Material softThickness="0.100" fadeIn="0.001" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/sparks_radial.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+        <Emitter name="sparks_radial" duration="0.100" emitDelay="1.000" spawnOffsetY="1.000">
+            <Particle lifetime="0.150" lifetimeMax="0.250"/>
+            <Initial scale="3.000" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement scaleEnd="3.000"/>
+            <Material softThickness="0.100" fadeIn="0.001" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/sparks_radial.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+        <Emitter name="extra explo" shape="rect" duration="0.100" emitDelay="1.000" emitCount="4" spawnOffsetY="0.800" spawnBoxSizeX="1.200" spawnBoxSizeY="0.400" spawnBoxSizeZ="1.200">
+            <Particle lifetime="0.200"/>
+            <Initial scale="4.300" scaleMax="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="2.010" scaleEnd="3.000" rotationPerSec="15.500" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.001" fadeOut="0.990" lit="vert" mainTex="data/textures/fx/explosion_01.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="512" frameHeight="512"/>
+            </Material>
+        </Emitter>
+        <!--<Emitter name="explosion_fire" duration="0.100" emitDelay="1.000" spawnOffsetY="1.000">
+            <Particle lifetime="1.400" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scaleMax="1.200" sizeX="3.000" sizeY="3.000" sizeZ="3.000" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="0.500" scaleEnd="3.000"/>
+            <Material softThickness="0.160" fadeIn="0.001" fadeOut="0.990" lit="vert" mainTex="data/textures/fx/explosion_01.dds" colorize="C6C6C6FF">
+                <TextureAnimation frameWidth="512" frameHeight="512"/>
+            </Material>
+        </Emitter>-->
+        <Emitter name="flash1" duration="0.100" emitDelay="1.000" spawnOffsetY="1.800">
+            <Particle lifetime="0.200"/>
+            <Initial scale="5.000" scaleMax="4.000" sizeX="3.000" sizeY="2.000" sizeZ="3.000"/>
+            <Movement scaleStart="0.300" scaleEnd="0.600"/>
+            <Material fadeIn="0.001" fadeOut="0.500" blendMode="add_masked" depthTested="0" mainTex="data/textures/fx/glow_close.dds" colorize="FFB400FF"/>
+        </Emitter>
+        <Emitter name="flash2" duration="0.100" emitDelay="1.000" spawnOffsetY="1.800">
+            <Particle lifetime="0.500"/>
+            <Initial sizeX="6.000" sizeZ="6.000"/>
+            <Movement scaleStart="0.500" scaleEnd="1.000"/>
+            <Material fadeIn="0.100" fadeOut="0.400" blendMode="add_masked" depthTested="0" mainTex="data/textures/fx/glow_far.dds" colorize="D94716FF"/>
+        </Emitter>
+    </ParticleSystem>
+
+	<ParticleSystem name="HEDP" poolSize="8">
+        <Emitter name="radial dust" duration="0.100" emitDelay="1.000" spawnOffsetY="0.100">
+            <Particle lifetime="0.700"/>
+            <Initial scale="0.500" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="2.000" scaleEnd="4.000"/>
+            <Material fadeIn="0.100" fadeOut="2.000" blendMode="add_masked" mainTex="data/textures/fx/radialdust1.dds" colorize="EDB564DE">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+        <Emitter name="distort" emitDelay="0.001" spawnOffsetY="0.100">
+            <Particle lifetime="0.150"/>
+            <Initial scale="1.000" sizeX="1.200" sizeY="1.200" sizeZ="1.200"/>
+            <Movement scaleStart="2.000" scaleEnd="5.000"/>
+            <Material fadeIn="0.300" fadeOut="0.700" distortPostProcess="1" distortAmount="70.000" mainTex="data/textures/fx/distort_ring.tga" colorize="FFFFFFFF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.100" uvScrollV1="0.100" uvDistortX="0.020" uvDistortY="0.020"/>
+            </Material>
+        </Emitter>
+        <Emitter name="debris" startDelay="0.010" duration="0.100" emitDelay="0.050" emitCount="2" spawnOffsetY="1.000">
+            <Particle lifetime="1.000" lifetimeMax="2.000"/>
+            <Initial scale="0.300" scaleMax="0.800" sizeX="0.400" sizeZ="0.400" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="3.500" speedYMax="4.000" speedZ="5.000" speedZMax="15.000" friction="0.700" scaleStart="0.500" scaleEnd="1.000" rotationPerSec="15.000" direction="orient" gravity="true" bounce="1.000"/>
+            <Material fadeIn="0.040" fadeOut="0.700" randomAnimFrame="1" mainTex="data/textures/fx/rocks.dds" colorize="B78C4AFF">
+                <TextureAnimation frameWidth="32" frameHeight="32" animSpeed="3"/>
+            </Material>
+        </Emitter>
+        <Emitter name="smoke puff" shape="rect" startDelay="0.005" duration="0.050" emitDelay="0.005" emitCount="2" spawnOffsetY="0.100" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200">
+            <Particle lifetime="2.000" lifetimeMax="6.000" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scaleMax="1.000" sizeX="1.500" sizeZ="1.500" orient="-180.000" orientMax="180.000"/>
+            <Movement speedY="1.000" speedYMax="3.000" speedZ="5.000" speedZMax="10.000" friction="6.360" scaleStart="1.000" scaleEnd="1.300" rotationPerSec="10.000" direction="orient"/>
+            <Material softThickness="0.240" fadeIn="0.000" fadeOut="1.800" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="101010CA">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+		<Emitter name="smoke puff" shape="rect" startDelay="0.005" duration="0.050" emitCount="2" emitDelay="0.001" spawnOffsetY="0.100" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200">
+            <Particle lifetime="5.000" lifetimeMax="10.000" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scaleMax="1.000" sizeX="1.500" sizeZ="1.500" orient="-180.000" orientMax="180.000"/>
+            <Movement speedY="1.000" speedYMax="2.000" speedZ="5.000" speedZMax="15.000" friction="6.360" scaleStart="1.000" scaleEnd="1.300" rotationPerSec="10.000" direction="orient"/>
+            <Material softThickness="0.240" fadeIn="0.000" fadeOut="1.800" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="2222223B">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="sparks" startDelay="0.010" duration="0.100" emitDelay="1.000" emitCount="24" spawnOffsetY="0.500">
+            <Particle lifetime="0.200" lifetimeMax="0.300"/>
+            <Initial scale="0.200" scaleMax="0.500" sizeX="1.700" sizeZ="0.150" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="5.000" speedXMax="20.000" friction="0.500" scaleStart="3.000" scaleEnd="0.200" direction="orient"/>
+            <Material fadeIn="0.300" fadeOut="0.700" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="FF3800FF"/>
+        </Emitter>
+        <Emitter name="smoke_streak" duration="0.100" emitDelay="0.025" spawnOffsetY="1.000">
+            <Particle lifetime="0.200"/>
+            <Initial scale="0.200" scaleMax="1.000" sizeX="1.590" sizeZ="1.660" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="5.000" speedYMax="10.000" speedZ="-20.000" speedZMax="-30.000" friction="10000.000" scaleEnd="3.000" direction="orient"/>
+            <Material fadeIn="0.001" fadeOut="0.300" mainTex="data/textures/fx/smoke_streak_01.dds" colorize="424242FF">
+                <TextureAnimation frameWidth="256" frameHeight="256" startFrame="-2" endFrame="-1"/>
+            </Material>
+        </Emitter>
+        <Emitter name="extra explo" shape="rect" duration="0.100" emitDelay="1.000" emitCount="4" spawnOffsetY="0.800" spawnBoxSizeX="1.000" spawnBoxSizeY="0.400" spawnBoxSizeZ="1.000">
+            <Particle lifetime="0.200"/>
+            <Initial scale="1.300" scaleMax="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement scaleEnd="3.000" rotationPerSec="15.500" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.001" fadeOut="0.300" lit="vert" mainTex="data/textures/fx/explosion_01.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="512" frameHeight="512"/>
+            </Material>
+        </Emitter>
+        <Emitter name="sparks_radial" duration="0.100" emitDelay="1.000" spawnOffsetY="1.000">
+            <Particle lifetime="0.200" lifetimeMax="0.300"/>
+            <Initial scale="2.500" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.400" scaleEnd="1.800"/>
+            <Material softThickness="0.100" fadeIn="0.001" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/sparks_radial.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+        <Emitter name="flash1" duration="0.100" emitDelay="1.000" spawnOffsetY="2.000">
+            <Particle lifetime="0.100"/>
+            <Initial scale="1.000" scaleMax="2.000" sizeX="3.000" sizeY="2.000" sizeZ="3.000"/>
+            <Movement scaleStart="0.300" scaleEnd="0.600"/>
+            <Material fadeIn="0.001" fadeOut="0.500" blendMode="add_masked" depthTested="0" mainTex="data/textures/fx/glow_close.dds" colorize="FFB400FF"/>
+        </Emitter>
+        <Emitter name="flash2" duration="0.100" emitDelay="1.000" spawnOffsetY="2.000">
+            <Particle lifetime="0.100"/>
+            <Initial sizeX="2.000" sizeZ="3.000"/>
+            <Movement scaleStart="2.000" scaleEnd="1.000"/>
+            <Material fadeIn="0.100" fadeOut="0.400" blendMode="add_masked" depthTested="0" mainTex="data/textures/fx/glow_far.dds" colorize="D94716FF"/>
+        </Emitter>
+    </ParticleSystem>
+
+	<ParticleSystem name="Tracer_Mjolnir" poolSize="1">
+        <Emitter name="smoke" startDelay="0.050" emitDelay="1.000">
+            <Particle lifetime="0.400" lifetimeMax="1.000"/>
+            <Initial sizeX="0.420" sizeY="0.980" sizeZ="0.980"/>
+            <Movement scaleEnd="1.100"/>
+            <Tracer/>
+            <Material fadeIn="0.100" fadeOut="0.160" mainTex="data/textures/fx/trail_smoke_main.dds" colorize="6B584DB4">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollV1="0.220" uvDistortX="0.300" uvDistortY="0.160"/>
+            </Material>
+        </Emitter>
+        <Emitter name="trail" emitDelay="1.000" emitCount="4">
+            <Particle lifetime="0.100"/>
+            <Initial scaleMax="1.200" sizeX="0.240" sizeY="0.650" sizeZ="1.050"/>
+            <Movement scaleStart="0.600" scaleEnd="1.300"/>
+            <Tracer/>
+            <Material fadeIn="0.110" fadeOut="0.999" blendMode="add_masked" mainTex="data/textures/fx/trail_bullet1.dds" colorize="F74B08FF">
+                <GradientMapped gradingTex="data/textures/fx/ramp_bullet1.tga"/>
+            </Material>
+        </Emitter>
+        <Emitter name="bullet" shape="end" emitDelay="1.000" emitCount="0" spawnOffsetZ="-16.000">
+            <Particle lifetime="0.200"/>
+            <Initial sizeX="1.350" sizeZ="0.080" orient="-90.000"/>
+            <Movement speedZ="100.000" scaleEnd="1.200"/>
+            <Material fadeIn="0.600" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/bullet_head.dds" colorize="F98348FF"/>
+        </Emitter>
+    </ParticleSystem>
+
+
+
+	<ParticleSystem name="MiniFrag" poolSize="8">
+        <Emitter name="radial dust" duration="0.100" emitDelay="1.000" spawnOffsetY="0.300">
+            <Particle lifetime="0.200"/>
+            <Initial scale="2.000" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.600" scaleEnd="1.200"/>
+            <Material fadeIn="0.100" fadeOut="0.200" blendMode="add_masked" mainTex="data/textures/fx/radialdust1.dds" colorize="ECCCBC89">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+		        <Emitter name="sparks_radial" duration="0.100" emitDelay="1.000" spawnOffsetY="1.000">
+            <Particle lifetime="0.400" lifetimeMax="0.500"/>
+            <Initial scale="2.500" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement scaleEnd="1.000"/>
+            <Material softThickness="0.100" fadeIn="0.001" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/sparks_radial.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+        <Emitter name="distort" emitDelay="1.000" emitCount="0" spawnOffsetY="0.200">
+            <Particle lifetime="0.300"/>
+            <Initial scale="2.000"/>
+            <Movement scaleStart="1.500" scaleEnd="2.500"/>
+            <Material fadeIn="0.200" fadeOut="0.600" distortPostProcess="1" distortAmount="18.454" mainTex="data/textures/fx/distort_ring.tga" colorize="FFFFFFFF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.100" uvScrollV1="0.100" uvDistortX="-0.050" uvDistortY="0.040"/>
+            </Material>
+        </Emitter>
+        <Emitter name="lingering dust" shape="rect" duration="0.100" emitDelay="0.020" emitCount="4" spawnOffsetY="1.500" spawnBoxSizeX="0.100" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.100">
+            <Particle lifetime="1.000" lifetimeMax="2.000"/>
+            <Initial scaleMax="1.200" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="-0.200" speedXMax="0.400" speedY="0.100" speedYMax="0.400" speedZ="0.200" speedZMax="0.300" scaleStart="1.300" scaleEnd="1.000" rotationPerSec="10.000" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.400" fadeOut="0.800" lit="vert" mainTex="data/textures/fx/smokepuff1.dds" colorize="86868656">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="sparks" duration="0.100" emitDelay="1.000" emitCount="24" spawnOffsetY="1.200">
+            <Particle lifetime="0.100" lifetimeMax="0.200"/>
+            <Initial scale="0.400" scaleMax="1.000" sizeX="2.000" sizeZ="0.200" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="5.000" speedXMax="12.000" speedY="1.000" speedYMax="2.000" friction="0.060" scaleEnd="0.400" direction="orient"/>
+            <Material fadeIn="0.300" fadeOut="0.700" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="FF8563FF"/>
+        </Emitter>
+	    <Emitter name="smoke puff" shape="rect" startDelay="0.005" duration="0.050" emitCount="2" emitDelay="0.001" spawnOffsetY="1.300" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200">
+            <Particle lifetime="2.000" lifetimeMax="5.000" mesh="data/models/fx/plane_tessellated_16.khm"/>
+            <Initial scaleMax="1.000" sizeX="1.500" sizeZ="1.500" orient="-180.000" orientMax="180.000"/>
+            <Movement speedY="1.000" speedYMax="2.000" speedZ="10.000" speedZMax="20.000" friction="10.360" scaleStart="0.500" scaleEnd="1.300" rotationPerSec="10.000" direction="orient"/>
+            <Material softThickness="0.240" fadeIn="0.300" fadeOut="1.100" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="2222223B">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="explosion" duration="0.100" emitDelay="1.000" spawnOffsetY="1.400">
+            <Particle lifetime="1.000"/>
+            <Initial scale="1.600" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.700" scaleEnd="1.400"/>
+            <Material softThickness="0.100" fadeIn="0.100" fadeOut="0.600" blendMode="add_masked" mainTex="data/textures/fx/explosion_stinger.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="128" frameHeight="128"/>
+            </Material>
+        </Emitter>
+        <Emitter name="sparks_radial" duration="0.100" emitDelay="1.000" emitCount="2" spawnOffsetY="1.500">
+            <Particle lifetime="0.150"/>
+            <Initial scale="1.500" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.800" scaleEnd="2.800"/>
+            <Material softThickness="0.100" fadeIn="0.001" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/sparks_radial.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+        <Emitter name="flash2" startDelay="0.040" duration="0.100" emitDelay="1.000" spawnOffsetY="2.000">
+            <Particle lifetime="0.100"/>
+            <Initial sizeX="1.000" sizeZ="1.000"/>
+            <Movement scaleStart="2.000" scaleEnd="2.100"/>
+            <Material fadeIn="0.001" fadeOut="0.500" blendMode="add_masked" depthTested="0" mainTex="data/textures/fx/flashbang_nova.tga" colorize="FFFDD9FF"/>
+        </Emitter>
+        <Emitter name="flash1" startDelay="0.030" duration="0.100" emitDelay="1.000" spawnOffsetY="2.000">
+            <Particle lifetime="0.120"/>
+            <Initial scale="1.000" sizeX="1.000" sizeZ="2.000"/>
+            <Movement scaleEnd="0.600"/>
+            <Material fadeIn="0.001" fadeOut="0.300" blendMode="add_masked" depthTested="0" mainTex="data/textures/fx/glow_close.dds" colorize="FF9600FF"/>
+        </Emitter>
+    </ParticleSystem>
+
+	<ParticleSystem name="MiniFlash" poolSize="8">
+        <Emitter name="radial dust" duration="0.100" emitDelay="1.000" spawnOffsetY="0.300">
+            <Particle lifetime="0.200"/>
+            <Initial scale="1.000" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.600" scaleEnd="1.200"/>
+            <Material fadeIn="0.100" fadeOut="0.200" blendMode="add_masked" mainTex="data/textures/fx/radialdust1.dds" colorize="ECCCBC89">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+		        <Emitter name="sparks_radial" duration="0.100" emitDelay="1.000" spawnOffsetY="1.000">
+            <Particle lifetime="0.400" lifetimeMax="0.500"/>
+            <Initial scale="1.500" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement scaleEnd="1.000"/>
+            <Material softThickness="0.100" fadeIn="0.001" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/sparks_radial.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+        <Emitter name="distort" emitDelay="1.000" emitCount="0" spawnOffsetY="0.200">
+            <Particle lifetime="0.300"/>
+            <Initial scale="2.000"/>
+            <Movement scaleStart="1.500" scaleEnd="2.500"/>
+            <Material fadeIn="0.200" fadeOut="0.600" distortPostProcess="1" distortAmount="18.454" mainTex="data/textures/fx/distort_ring.tga" colorize="FFFFFFFF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.100" uvScrollV1="0.100" uvDistortX="-0.050" uvDistortY="0.040"/>
+            </Material>
+        </Emitter>
+        <Emitter name="lingering dust" shape="rect" duration="0.100" emitDelay="0.020" emitCount="4" spawnOffsetY="1.500" spawnBoxSizeX="0.100" spawnBoxSizeY="0.000" spawnBoxSizeZ="0.100">
+            <Particle lifetime="0.200" lifetimeMax="0.400"/>
+            <Initial scaleMax="1.200" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="-0.200" speedXMax="0.400" speedY="0.100" speedYMax="0.400" speedZ="0.200" speedZMax="0.300" scaleStart="1.300" scaleEnd="1.000" rotationPerSec="10.000" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.400" fadeOut="0.800" lit="vert" mainTex="data/textures/fx/smokepuff1.dds" colorize="86868656">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="sparks" duration="0.100" emitDelay="1.000" emitCount="24" spawnOffsetY="0.200">
+            <Particle lifetime="0.100" lifetimeMax="0.200"/>
+            <Initial scale="0.400" scaleMax="1.000" sizeX="2.000" sizeZ="0.200" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="5.000" speedXMax="12.000" speedY="1.000" speedYMax="2.000" friction="0.060" scaleEnd="0.400" direction="orient"/>
+            <Material fadeIn="0.300" fadeOut="0.700" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="FF8563FF"/>
+        </Emitter>
+        <Emitter name="explosion" duration="0.100" emitDelay="1.000" spawnOffsetY="0.200">
+            <Particle lifetime="1.000"/>
+            <Initial scale="1.600" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.700" scaleEnd="1.400"/>
+            <Material softThickness="0.100" fadeIn="0.100" fadeOut="0.600" blendMode="add_masked" mainTex="data/textures/fx/explosion_stinger.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="128" frameHeight="128"/>
+            </Material>
+        </Emitter>
+        <Emitter name="sparks_radial" duration="0.100" emitDelay="1.000" emitCount="2" spawnOffsetY="1.500">
+            <Particle lifetime="0.150"/>
+            <Initial scale="1.500" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.800" scaleEnd="2.800"/>
+            <Material softThickness="0.100" fadeIn="0.001" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/sparks_radial.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+        <Emitter name="flash2" startDelay="0.040" duration="0.100" emitDelay="1.000" spawnOffsetY="2.000">
+            <Particle lifetime="0.100"/>
+            <Initial sizeX="1.000" sizeZ="1.000"/>
+            <Movement scaleStart="2.000" scaleEnd="2.100"/>
+            <Material fadeIn="0.001" fadeOut="0.500" blendMode="add_masked" depthTested="0" mainTex="data/textures/fx/flashbang_nova.tga" colorize="FFFDD9FF"/>
+        </Emitter>
+        <Emitter name="flash1" startDelay="0.030" duration="0.100" emitDelay="1.000" spawnOffsetY="2.000">
+            <Particle lifetime="0.120"/>
+            <Initial scale="1.000" sizeX="2.000" sizeZ="2.000"/>
+            <Movement scaleEnd="0.600"/>
+            <Material fadeIn="0.001" fadeOut="0.300" blendMode="add_masked" depthTested="0" mainTex="data/textures/fx/glow_close.dds" colorize="FF9600FF"/>
+        </Emitter>
+    </ParticleSystem>
+
+	<ParticleSystem name="CSGrenadeExplosion" poolSize="2">
+        <Emitter name="centerpuff">
+            <Particle lifetime="1.000"/>
+            <Initial sizeX="2.000" sizeZ="2.000"/>
+            <Movement scaleEnd="2.000"/>
+            <Material mainTex="data/textures/fx/explosion_stinger.dds" colorize="403C3CD9">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="-1" endFrame="15"/>
+            </Material>
+        </Emitter>
+        <Emitter name="smoke" startDelay="0.050" duration="8.500" emitDelay="0.06" emitCount="1" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200">
+            <Particle lifetime="1.000" lifetimeMax="4.500" mesh="data/models/fx/plane_tessellated_4.khm"/>
+            <Initial scale="0.700" scaleMax="1.500" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="0.000" speedYMax="1.000" speedZ="1.000" speedZMax="5.000" friction="0.010" scaleStart="0.100" scaleEnd="2.00" rotationPerSec="1.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.500" fadeOut="0.600" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="59545450">
+                <TextureAnimation frameWidth="64" frameHeight="64" startFrame="5" endFrame="10" animSpeed="0.5"/>
+            </Material>
+        </Emitter>
+        <Emitter name="" startDelay="0.300" duration="3.500" emitDelay="6.000" emitCount="2" spawnOffsetY="1.800">
+            <Particle lifetime="5.000"/>
+            <Initial sizeX="3.000" sizeZ="3.000"/>
+            <Movement scaleEnd="2.000"/>
+            <Material softThickness="0.200" fadeIn="0.050" fadeOut="0.700" loopAnimation="1" mainTex="data/textures/fx/atmospheric_gas.dds" colorize="6B6B6BB4">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="-1" endFrame="31" animSpeed="3"/>
+            </Material>
+        </Emitter>
+        <Emitter name="smoke" startDelay="0.000" duration="0.01" emitDelay="0.2" emitCount="20" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200">
+            <Particle lifetime="2.000" lifetimeMax="3.000" mesh="data/models/fx/plane_tessellated_4.khm"/>
+            <Initial scale="1.50" scaleMax="1.00" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="0.200" speedYMax="0.400" speedZ="13.000" speedZMax="23.000" friction="1.500" scaleStart=".500" scaleEnd="1.500" rotationPerSec="1.000" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.250" fadeOut="0.600" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="59545450">
+                <TextureAnimation frameWidth="64" frameHeight="64" startFrame="5" endFrame="10" animSpeed="0.5"/>
+            </Material>
+        </Emitter>
+    </ParticleSystem>
+
+	<ParticleSystem name="CSGrenade" poolSize="2">
+        <Emitter name="centerpuff">
+            <Particle lifetime="1.000"/>
+            <Initial sizeX="2.000" sizeZ="2.000"/>
+            <Movement scaleEnd="2.000"/>
+            <Material mainTex="data/textures/fx/explosion_stinger.dds" colorize="403C3CD9">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="-1" endFrame="15"/>
+            </Material>
+        </Emitter>
+		<Emitter name="sparks_radial" duration="0.100" emitDelay="1.000" emitCount="2">
+            <Particle lifetime="0.150"/>
+            <Initial scale="0.5" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.800" scaleEnd="2.800"/>
+            <Material softThickness="0.100" fadeIn="0.001" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/sparks_radial.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+        <Emitter name="smoke" startDelay="0.050" duration="8.500" emitDelay="0.06" emitCount="2" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200">
+            <Particle lifetime="1.000" lifetimeMax="5.500" mesh="data/models/fx/plane_tessellated_4.khm"/>
+            <Initial scale="0.700" scaleMax="1.500" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="0.000" speedYMax="1.000" speedZ="1.500" speedZMax="3.000" friction="0.005" scaleStart="0.100" scaleEnd="2.00" rotationPerSec="1.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.500" fadeOut="0.600" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="59545450">
+                <TextureAnimation frameWidth="64" frameHeight="64" startFrame="5" endFrame="10" animSpeed="0.5"/>
+            </Material>
+        </Emitter>
+        <Emitter name="smoke" startDelay="0.000" duration="0.01" emitDelay="0.2" emitCount="20" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200">
+            <Particle lifetime="2.000" lifetimeMax="4.000" mesh="data/models/fx/plane_tessellated_4.khm"/>
+            <Initial scale="1.50" scaleMax="1.00" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="0.200" speedYMax="0.400" speedZ="6.000" speedZMax="12.000" friction="0.200" scaleStart=".500" scaleEnd="1.500" rotationPerSec="1.000" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.250" fadeOut="0.600" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="59545450">
+                <TextureAnimation frameWidth="64" frameHeight="64" startFrame="5" endFrame="10" animSpeed="0.5"/>
+            </Material>
+        </Emitter>
+    </ParticleSystem>
+
+		<ParticleSystem name="PikeTrail" poolSize="2">
+        <Emitter name="trail smoke" loop="true" shape="rect" emitDelay="0.010" spawnOffsetZ="-0.400" spawnBoxSizeX="0.100" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.100" worldSpace="1">
+            <Particle lifetime="0.700" lifetimeMax="1.200" mesh="data/models/fx/plane_tessellated_4.khm"/>
+            <Initial scale="0.500" scaleMax="1.500" sizeX="0.400" sizeZ="0.550" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="0.400" speedXMax="3.000" speedYMax="0.400" speedZ="-0.200" speedZMax="-0.300" friction="0.030" scaleEnd="2.000" rotationPerSec="50.000"/>
+            <Material softThickness="0.100" fadeIn="0.020" fadeOut="0.300" blendMode="screen" lit="vert" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="EE964EFF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="fire" loop="true" startDelay="0.100" duration="0.100" emitDelay="0.200" spawnOffsetZ="-0.480">
+            <Particle lifetime="1.000"/>
+            <Initial scale="0.050" sizeZ="6.000"/>
+            <Movement bounce="4.000"/>
+            <Material fadeIn="0.140" fadeOut="0.579" blendMode="add_masked" mainTex="data/textures/fx/fire_jet.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="32" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="launch dust" duration="0.100" emitDelay="1.000" emitCount="4" spawnOffsetZ="-0.600">
+            <Particle lifetime="0.500"/>
+            <Initial sizeX="0.250" sizeY="0.500" sizeZ="0.400" orient="180.000"/>
+            <Movement/>
+            <Material softThickness="0.400" fadeIn="0.100" fadeOut="0.939" blendMode="add_masked" mainTex="data/textures/fx/explosion_directional_small.dds" colorize="FF6A00FF">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="glow" loop="true" startDelay="0.060" emitDelay="0.150" spawnOffsetY="0.150" spawnOffsetZ="-0.450">
+            <Particle lifetime="0.100" lifetimeMax="0.300"/>
+            <Initial scale="2.000" scaleMax="3.000"/>
+            <Movement scaleEnd="1.500"/>
+            <Material softThickness="0.100" fadeIn="0.001" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/bullethit_metal_heated.dds" colorize="FFFFFF4A"/>
+        </Emitter>
+    </ParticleSystem>
+
+	<!--<ParticleSystem name="SmokeStrike" poolSize="2">
+        <Emitter name="centerpuff">
+            <Particle lifetime="10.000"/>
+            <Initial sizeX="2.000" sizeZ="2.000"/>
+            <Movement scaleEnd="2.000"/>
+            <Material mainTex="data/textures/fx/explosion_stinger.dds" colorize="403C3CD9">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="-1" endFrame="15"/>
+            </Material>
+        </Emitter>
+        <Emitter name="sparks_radial" duration="0.100" emitDelay="1.000" emitCount="2" spawnOffsetY="1.500">
+            <Particle lifetime="0.150"/>
+            <Initial scale="0.500" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.800" scaleEnd="2.800"/>
+            <Material softThickness="0.100" fadeIn="0.001" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/sparks_radial.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+		<Emitter name="smoke" startDelay="0.050" duration="8.500" emitDelay="0.06" emitCount="1" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200">
+            <Particle lifetime="1.000" lifetimeMax="4.500" mesh="data/models/fx/plane_tessellated_4.khm"/>
+            <Initial scale="0.700" scaleMax="1.500" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="0.000" speedYMax="1.000" speedZ="10.000" speedZMax="15.000" friction="0.010" scaleStart="0.100" scaleEnd="2.00" rotationPerSec="1.000" direction="orient"/>
+            <Material softThickness="0.800" fadeIn="0.900" fadeOut="1.200" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="59545450">
+                <TextureAnimation frameWidth="64" frameHeight="64" startFrame="5" endFrame="10" animSpeed="0.5"/>
+            </Material>
+        </Emitter>
+        <Emitter name="" startDelay="0.300" duration="3.500" emitDelay="6.000" emitCount="2" spawnOffsetY="1.800">
+            <Particle lifetime="5.000"/>
+            <Initial sizeX="3.000" sizeZ="3.000"/>
+            <Movement scaleEnd="2.000"/>
+            <Material softThickness="0.200" fadeIn="0.050" fadeOut="0.700" loopAnimation="1" mainTex="data/textures/fx/atmospheric_gas.dds" colorize="6B6B6BB4">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="-1" endFrame="31" animSpeed="3"/>
+            </Material>
+        </Emitter>
+        <Emitter name="smoke" startDelay="0.000" duration="0.01" emitDelay="0.2" emitCount="50" spawnBoxSizeX="0.200" spawnBoxSizeY="5.200" spawnBoxSizeZ="0.200">
+            <Particle lifetime="10.000" lifetimeMax="15.000" mesh="data/models/fx/plane_tessellated_4.khm"/>
+            <Initial scale="1.50" scaleMax="1.00" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="1.200" speedYMax="3.400" speedZ="16.000" speedZMax="39.000" friction="0.300" scaleStart=".500" scaleEnd="3.500" rotationPerSec="1.000" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.150" fadeOut="0.200" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="59545450">
+                <TextureAnimation frameWidth="64" frameHeight="64" startFrame="5" endFrame="10" animSpeed="0.5"/>
+            </Material>
+        </Emitter>
+        <Emitter name="smoke" startDelay="0.000" duration="0.01" emitDelay="0.2" emitCount="50" spawnBoxSizeX="0.200" spawnBoxSizeY="5.200" spawnBoxSizeZ="0.200">
+            <Particle lifetime="10.000" lifetimeMax="15.000" mesh="data/models/fx/plane_tessellated_4.khm"/>
+            <Initial scale="1.50" scaleMax="1.00" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="1.200" speedYMax="3.400" speedZ="13.000" speedZMax="33.000" friction="0.300" scaleStart=".500" scaleEnd="3.500" rotationPerSec="1.000" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.150" fadeOut="0.200" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="59545450">
+                <TextureAnimation frameWidth="64" frameHeight="64" startFrame="5" endFrame="10" animSpeed="0.5"/>
+            </Material>
+        </Emitter>
+        <Emitter name="smoke" startDelay="0.000" duration="0.01" emitDelay="0.2" emitCount="50" spawnBoxSizeX="0.200" spawnBoxSizeY="5.200" spawnBoxSizeZ="0.200" spawnOffsetY="3.300">
+            <Particle lifetime="10.000" lifetimeMax="15.000" mesh="data/models/fx/plane_tessellated_4.khm"/>
+            <Initial scale="1.50" scaleMax="1.00" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="1.200" speedYMax="3.400" speedZ="10.000" speedZMax="28.000" friction="0.300" scaleStart=".500" scaleEnd="3.500" rotationPerSec="1.000" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.150" fadeOut="0.200" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="59545450">
+                <TextureAnimation frameWidth="64" frameHeight="64" startFrame="5" endFrame="10" animSpeed="0.5"/>
+            </Material>
+        </Emitter>
+        <Emitter name="smoke" startDelay="0.000" duration="0.01" emitDelay="0.2" emitCount="50" spawnBoxSizeX="0.200" spawnBoxSizeY="5.200" spawnBoxSizeZ="0.200" spawnOffsetY="3.300">
+            <Particle lifetime="10.000" lifetimeMax="15.000" mesh="data/models/fx/plane_tessellated_4.khm"/>
+            <Initial scale="1.50" scaleMax="1.00" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="1.200" speedYMax="3.400" speedZ="16.000" speedZMax="39.000" friction="0.300" scaleStart=".500" scaleEnd="3.500" rotationPerSec="1.000" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.150" fadeOut="0.200" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="59545450">
+                <TextureAnimation frameWidth="64" frameHeight="64" startFrame="5" endFrame="10" animSpeed="0.5"/>
+            </Material>
+        </Emitter>
+        <Emitter name="smoke" startDelay="0.000" duration="0.01" emitDelay="0.2" emitCount="50" spawnBoxSizeX="0.200" spawnBoxSizeY="5.200" spawnBoxSizeZ="0.200" spawnOffsetY="3.300">
+            <Particle lifetime="10.000" lifetimeMax="15.000" mesh="data/models/fx/plane_tessellated_4.khm"/>
+            <Initial scale="1.50" scaleMax="1.00" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="1.200" speedYMax="3.400" speedZ="13.000" speedZMax="33.000" friction="0.300" scaleStart=".500" scaleEnd="3.500" rotationPerSec="1.000" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.150" fadeOut="0.200" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="59545450">
+                <TextureAnimation frameWidth="64" frameHeight="64" startFrame="5" endFrame="10" animSpeed="0.5"/>
+            </Material>
+        </Emitter>
+        <Emitter name="smoke" startDelay="0.000" duration="0.01" emitDelay="0.2" emitCount="50" spawnBoxSizeX="0.200" spawnBoxSizeY="5.200" spawnBoxSizeZ="0.200" spawnOffsetY="3.300">
+            <Particle lifetime="10.000" lifetimeMax="15.000" mesh="data/models/fx/plane_tessellated_4.khm"/>
+            <Initial scale="1.50" scaleMax="1.00" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="1.200" speedYMax="3.400" speedZ="10.000" speedZMax="28.000" friction="0.300" scaleStart=".500" scaleEnd="3.500" rotationPerSec="1.000" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.150" fadeOut="0.200" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="59545450">
+                <TextureAnimation frameWidth="64" frameHeight="64" startFrame="5" endFrame="10" animSpeed="0.5"/>
+            </Material>
+        </Emitter>
+    </ParticleSystem>-->
+</Particles>

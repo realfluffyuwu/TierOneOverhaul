@@ -1,0 +1,448 @@
+<Equipment>
+	<!-- Assault -->
+	<Bind to="Ranger_Assault_TierOne">
+		<!-- Helmets -->
+		<eqp name="HelmetACH" />
+		<eqp name="HelmetFAST" />
+		<eqp name="HelmetFASTMandible" />
+		<eqp name="HelmetFASTRF" />
+		<eqp name="HelmetIHPS" />
+
+		<!-- NVGs -->
+		<eqp name="NVG" />
+		<eqp name="NVG_02" />
+		<eqp name="GPNVG_01" />
+
+		<!-- Armour -->
+		<eqp name="Rangers SFLCS Level III" />
+		<eqp name="Rangers SFLCS Level IV" />
+		<eqp name="Rangers SFLCS Extended" />
+		<eqp name="Rangers SFLCS Level IV Sides" />
+		<eqp name="Rangers NoPlates" />
+		<eqp name="Rangers Jumpable" />
+		<eqp name="Rangers Jumpable Swimmer" />
+
+		<!-- Utility -->
+		<eqp name="Flashbang" />
+		<eqp name="Flashbang Kit" />
+		<eqp name="Smoke Grenade" />
+		<eqp name="Smoke Grenade Kit" />
+		<eqp name="Frag Grenade" />
+		<eqp name="Frag Grenade Kit" />
+		<eqp name="Slap Charge" />
+		<eqp name="Slap Charge Kit" />
+		<eqp name="Stinger" />
+		<eqp name="CS Gas Grenade" />
+		<eqp name="CS Gas Grenade Kit" />
+		<eqp name="Decoy Grenade LO" />
+		<eqp name="Decoy Grenade HI" />
+		<eqp name="Breaching Charge" />
+		<eqp name="Breacher Shotgun" />
+		<eqp name="Lockpick Machine" />
+		<eqp name="Dynamic Hammer" />
+		<eqp name="Spy Camera" />
+		<eqp name="TEC Torch" />
+		<eqp name="AT4 Rocket Launcher" />
+		<eqp name="M320 HE" />
+		<eqp name="M320 CS" />
+		<eqp name="M320 SMK" />
+
+		<!-- Pistols -->
+		<eqp name="M17 Pistol_TierOne" />
+		<eqp name="M18 Pistol_TierOne" />
+		<eqp name="G19 Pistol_TierOne" />
+		<eqp name="G19Sup Pistol_TierOne" />
+		<eqp name="G19Custom Pistol_TierOne" />
+		<eqp name="G19X Pistol_TierOne" />
+		<eqp name="G19XSD Pistol_TierOne" />
+		<eqp name="HK45CT_TierOne" />
+		<eqp name="HK45CTSup_TierOne" />
+
+		<!-- Primaries -->
+		<eqp name="M1014" />
+		<eqp name="MP5A_TierOne" />
+		<eqp name="MP5SD_TierOne" />
+		<eqp name="MP7A1_TierOne" />
+		<eqp name="MP7A1 SD_TierOne" />
+		<eqp name="MCX RATTLER" />
+		<eqp name="MCX RATTLER SD" />
+		<eqp name="Vector9_TierOne" />
+		<eqp name="Vector9SD_TierOne" />
+		<eqp name="P90_TierOne" />
+		<eqp name="P90 SD_TierOne" />
+		<eqp name="URGI_TierOne" />
+		<eqp name="URGI SD_TierOne" />
+		<eqp name="AS VAL_TierOne" />
+		<eqp name="MK 18_TierOne" />
+		<eqp name="MK 18 SD_TierOne" />
+		<eqp name="XM7" />
+		<eqp name="XM7Sup" />
+		<eqp name="NSR" />
+		<eqp name="NSR SD" />
+		<eqp name="HK 416_TierOne" />
+		<eqp name="HK 416 SD_TierOne" />
+		<eqp name="MCX_TierOne" />
+		<eqp name="MCX SPEAR_TierOne" />
+		<eqp name="MCX SPEAR SD_TierOne" />
+		<eqp name="MK17STD_TierOne" />
+		<eqp name="MK17STD SD_TierOne" />
+		<eqp name="MK17CQC_TierOne" />
+		<eqp name="MK17CQC SD_TierOne" />
+
+	</Bind>
+
+	<!-- Support -->
+	<Bind to="Ranger_Support_TierOne">
+		<!-- Helmets -->
+		<eqp name="HelmetACH" />
+		<eqp name="HelmetFAST" />
+		<eqp name="HelmetFASTMandible" />
+		<eqp name="HelmetFASTRF" />
+		<eqp name="HelmetIHPS" />
+
+		<!-- NVGs -->
+		<eqp name="NVG" />
+		<eqp name="NVG_02" />
+
+		<!-- Armour -->
+		<eqp name="Rangers SFLCS Level III" />
+		<eqp name="Rangers SFLCS Level IV" />
+		<eqp name="Rangers SFLCS Extended" />
+		<eqp name="Rangers SFLCS Level IV Sides" />
+		<eqp name="Rangers NoPlates" />
+		<eqp name="Rangers Jumpable" />
+		<eqp name="Rangers Jumpable Swimmer" />
+
+		<!-- Utility -->
+		<eqp name="Flashbang" />
+		<eqp name="Flashbang Kit" />
+		<eqp name="Smoke Grenade" />
+		<eqp name="Smoke Grenade Kit" />
+		<eqp name="Frag Grenade" />
+		<eqp name="Frag Grenade Kit" />
+		<eqp name="Slap Charge" />
+		<eqp name="Slap Charge Kit" />
+		<eqp name="Stinger" />
+		<eqp name="CS Gas Grenade" />
+		<eqp name="CS Gas Grenade Kit" />
+		<eqp name="Decoy Grenade LO" />
+		<eqp name="Decoy Grenade HI" />
+		<eqp name="Breaching Charge" />
+		<eqp name="Breacher Shotgun" />
+		<eqp name="Lockpick Machine" />
+		<eqp name="Dynamic Hammer" />
+		<eqp name="Spy Camera" />
+		<eqp name="TEC Torch" />
+		<eqp name="AT4 Rocket Launcher" />
+		<eqp name="M320 HE" />
+		<eqp name="M320 CS" />
+		<eqp name="M320 SMK" />
+
+		<!-- Pistols -->
+		<eqp name="M17 Pistol_TierOne" />
+		<eqp name="M18 Pistol_TierOne" />
+		<eqp name="G19 Pistol_TierOne" />
+		<eqp name="G19Sup Pistol_TierOne" />
+		<eqp name="G19Custom Pistol_TierOne" />
+		<eqp name="G19X Pistol_TierOne" />
+		<eqp name="G19XSD Pistol_TierOne" />
+		<eqp name="APC9K T1_TierOne_TierOne" />
+		<eqp name="HK45CT_TierOne" />
+		<eqp name="HK45CTSup_TierOne" />
+
+		<!-- Primaries -->
+		<eqp name="M1014" />
+		<eqp name="NSR" />
+		<eqp name="NSR SD" />
+		<eqp name="MK17STD_TierOne" />
+		<eqp name="MK17STD SD_TierOne" />
+		<eqp name="MK17CQC_TierOne" />
+		<eqp name="MK17CQC SD_TierOne" />
+		<eqp name="M249SPW_TierOne" />
+		<eqp name="M249Sup_TierOne" />
+		<eqp name="LAMG_TierOne" />
+		<eqp name="LAMG Sup_TierOne" />
+		<eqp name="M240L_TierOne" />
+		<eqp name="MK48_TierOne" />
+		<eqp name="MK48Sup_TierOne" />
+		<eqp name="MG338_TierOne" />
+		<eqp name="MG338Sup_TierOne" />
+		<eqp name="XM250_TierOne" />
+		<eqp name="XM250Sup_TierOne" />
+	</Bind>
+
+	<!-- Marksman -->
+	<Bind to="Ranger_Marksman_TierOne">
+		<!-- Helmets -->
+		<eqp name="HelmetACH" />
+		<eqp name="HelmetFAST" />
+		<eqp name="HelmetFASTMandible" />
+		<eqp name="HelmetFASTRF" />
+		<eqp name="HelmetIHPS" />
+
+		<!-- NVGs -->
+		<eqp name="NVG" />
+		<eqp name="NVG_02" />
+
+		<!-- Armour -->
+		<eqp name="Rangers SFLCS Level III" />
+		<eqp name="Rangers SFLCS Level IV" />
+		<eqp name="Rangers SFLCS Extended" />
+		<eqp name="Rangers SFLCS Level IV Sides" />
+		<eqp name="Rangers NoPlates" />
+		<eqp name="Rangers Jumpable" />
+		<eqp name="Rangers Jumpable Swimmer" />
+
+		<!-- Utility -->
+		<eqp name="Flashbang" />
+		<eqp name="Flashbang Kit" />
+		<eqp name="Smoke Grenade" />
+		<eqp name="Smoke Grenade Kit" />
+		<eqp name="Frag Grenade" />
+		<eqp name="Frag Grenade Kit" />
+		<eqp name="Slap Charge" />
+		<eqp name="Slap Charge Kit" />
+		<eqp name="Stinger" />
+		<eqp name="CS Gas Grenade" />
+		<eqp name="CS Gas Grenade Kit" />
+		<eqp name="Decoy Grenade LO" />
+		<eqp name="Decoy Grenade HI" />
+		<eqp name="Breaching Charge" />
+		<eqp name="Breacher Shotgun" />
+		<eqp name="Lockpick Machine" />
+		<eqp name="Dynamic Hammer" />
+		<eqp name="Spy Camera" />
+		<eqp name="TEC Torch" />
+		<eqp name="AT4 Rocket Launcher" />
+		<eqp name="M320 HE" />
+		<eqp name="M320 CS" />
+		<eqp name="M320 SMK" />
+
+		<!-- Pistols -->
+		<eqp name="M17 Pistol_TierOne" />
+		<eqp name="M18 Pistol_TierOne" />
+		<eqp name="G19 Pistol_TierOne" />
+		<eqp name="G19Sup Pistol_TierOne" />
+		<eqp name="G19Custom Pistol_TierOne" />
+		<eqp name="G19X Pistol_TierOne" />
+		<eqp name="G19XSD Pistol_TierOne" />
+		<eqp name="APC9K T1_TierOne_TierOne" />
+		<eqp name="HK45CT_TierOne" />
+		<eqp name="HK45CTSup_TierOne" />
+
+		<!-- Primaries -->
+	<to name="Marksman"/>
+		<eqp name="M1014" />
+		<eqp name="NSR" />
+		<eqp name="NSR SD" />
+		<eqp name="MCX SPEAR_TierOne" />
+		<eqp name="MCX SPEAR SD_TierOne" />
+		<eqp name="MK17STD_TierOne" />
+		<eqp name="MK17STD SD_TierOne" />
+		<eqp name="MK17CQC_TierOne" />
+		<eqp name="MK17CQC SD_TierOne" />
+		<eqp name="MK17LB_TierOne" />
+		<eqp name="MK17LB Sup_TierOne" />
+		<eqp name="M14EBR_TierOne" />
+		<eqp name="MK20SSR_TierOne" />
+		<eqp name="MK20SSRSup_TierOne" />
+		<eqp name="M110A1_TierOne" />
+		<eqp name="M110A1Sup_TierOne" />
+	</Bind>
+
+	<!-- Grenadier -->
+	<Bind to="Ranger_Grenadier_TierOne">
+		<!-- Helmets -->
+		<eqp name="HelmetACH" />
+		<eqp name="HelmetFAST" />
+		<eqp name="HelmetFASTMandible" />
+		<eqp name="HelmetFASTRF" />
+		<eqp name="HelmetIHPS" />
+
+		<!-- NVGs -->
+		<eqp name="NVG" />
+		<eqp name="NVG_02" />
+		<eqp name="GPNVG_01" />
+
+		<!-- Armour -->
+		<eqp name="Rangers SFLCS Level III" />
+		<eqp name="Rangers SFLCS Level IV" />
+		<eqp name="Rangers SFLCS Extended" />
+		<eqp name="Rangers SFLCS Level IV Sides" />
+		<eqp name="Rangers NoPlates" />
+		<eqp name="Rangers Jumpable" />
+		<eqp name="Rangers Jumpable Swimmer" />
+
+		<!-- Utility -->
+		<eqp name="Flashbang" />
+		<eqp name="Flashbang Kit" />
+		<eqp name="Smoke Grenade" />
+		<eqp name="Smoke Grenade Kit" />
+		<eqp name="Frag Grenade" />
+		<eqp name="Frag Grenade Kit" />
+		<eqp name="Slap Charge" />
+		<eqp name="Slap Charge Kit" />
+		<eqp name="Stinger" />
+		<eqp name="CS Gas Grenade" />
+		<eqp name="CS Gas Grenade Kit" />
+		<eqp name="Decoy Grenade LO" />
+		<eqp name="Decoy Grenade HI" />
+		<eqp name="Breaching Charge" />
+		<eqp name="Breacher Shotgun" />
+		<eqp name="Lockpick Machine" />
+		<eqp name="Dynamic Hammer" />
+		<eqp name="Spy Camera" />
+		<eqp name="TEC Torch" />
+		<eqp name="AT4 Rocket Launcher" />
+		<eqp name="MGL CS_TierOne" />
+		<eqp name="MGL SMK_TierOne" />
+		<eqp name="MGL FB_TierOne" />
+		<eqp name="MGL HE_TierOne" />
+		<eqp name="M320 HE" />
+		<eqp name="M320 CS" />
+		<eqp name="M320 SMK" />
+
+		<!-- Pistols -->
+		<eqp name="M17 Pistol_TierOne" />
+		<eqp name="M18 Pistol_TierOne" />
+		<eqp name="G19 Pistol_TierOne" />
+		<eqp name="G19Sup Pistol_TierOne" />
+		<eqp name="G19Custom Pistol_TierOne" />
+		<eqp name="G19X Pistol_TierOne" />
+		<eqp name="G19XSD Pistol_TierOne" />
+		<eqp name="HK45CT_TierOne" />
+		<eqp name="HK45CTSup_TierOne" />
+
+		<!-- Primaries -->
+		<eqp name="M1014" />
+		<eqp name="MP5A_TierOne" />
+		<eqp name="MP5SD_TierOne" />
+		<eqp name="MP7A1_TierOne" />
+		<eqp name="MP7A1 SD_TierOne" />
+		<eqp name="MCX RATTLER" />
+		<eqp name="MCX RATTLER SD" />
+		<eqp name="URGI_TierOne" />
+		<eqp name="URGI SD_TierOne" />
+		<eqp name="MK 18_TierOne" />
+		<eqp name="MK 18 SD_TierOne" />
+		<eqp name="MCX_TierOne" />
+		<eqp name="M4/M203" />
+		<eqp name="M4/M203Sup" />
+		<eqp name="MK18/M203" />
+		<eqp name="MK18/M203Sup" />
+		<eqp name="M16A4/M203" />
+		<eqp name="MK17CQC_TierOneEGLM" />
+		<eqp name="MK17CQC_TierOneEGLM Sup" />
+		<eqp name="MK17STD_TierOne EGLM" />
+		<eqp name="MK17STD_TierOne EGLM Sup" />
+		<eqp name="MCX SPEAR_TierOne" />
+		<eqp name="MCX SPEAR SD_TierOne" />
+		<eqp name="NSR" />
+		<eqp name="NSR SD" />
+		<eqp name="HK 416_TierOne" />
+		<eqp name="HK 416 SD_TierOne" />
+		<eqp name="HK 416" />
+		<eqp name="HK 416 SD" />
+		<eqp name="MK17STD_TierOne" />
+		<eqp name="MK17STD SD_TierOne" />
+		<eqp name="MK17CQC_TierOne" />
+		<eqp name="MK17CQC SD_TierOne" />
+	</Bind>
+
+	<!-- Operator -->
+	<Bind to="Ranger_Operator_TierOne">
+		<!-- Helmets -->
+		<eqp name="HelmetACH" />
+		<eqp name="HelmetFAST" />
+		<eqp name="HelmetFASTMandible" />
+		<eqp name="HelmetFASTRF" />
+		<eqp name="HelmetIHPS" />
+
+		<!-- NVGs -->
+		<eqp name="NVG" />
+		<eqp name="NVG_02" />
+		<eqp name="GPNVG_02" />
+
+		<!-- Armour -->
+		<eqp name="Rangers SFLCS Level III" />
+		<eqp name="Rangers SFLCS Level IV" />
+		<eqp name="Rangers SFLCS Extended" />
+		<eqp name="Rangers SFLCS Level IV Sides" />
+		<eqp name="Rangers NoPlates" />
+		<eqp name="Rangers Jumpable" />
+		<eqp name="Rangers Jumpable Swimmer" />
+
+		<!-- Utility -->
+		<eqp name="Flashbang" />
+		<eqp name="Flashbang Kit" />
+		<eqp name="Smoke Grenade" />
+		<eqp name="Smoke Grenade Kit" />
+		<eqp name="Frag Grenade" />
+		<eqp name="Frag Grenade Kit" />
+		<eqp name="Slap Charge" />
+		<eqp name="Slap Charge Kit" />
+		<eqp name="Stinger" />
+		<eqp name="CS Gas Grenade" />
+		<eqp name="CS Gas Grenade Kit" />
+		<eqp name="Decoy Grenade LO" />
+		<eqp name="Decoy Grenade HI" />
+		<eqp name="Breaching Charge" />
+		<eqp name="Breacher Shotgun" />
+		<eqp name="Lockpick Machine" />
+		<eqp name="Dynamic Hammer" />
+		<eqp name="Spy Camera" />
+		<eqp name="TEC Torch" />
+		<eqp name="AT4 Rocket Launcher" />
+		<eqp name="Strike Marker" />
+		<eqp name="MGL CS_TierOne" />
+		<eqp name="MGL SMK_TierOne" />
+		<eqp name="MGL FB_TierOne" />
+		<eqp name="MGL HE_TierOne" />
+		<eqp name="M320 HE" />
+		<eqp name="M320 CS" />
+		<eqp name="M320 SMK" />
+
+		<!-- Pistols -->
+		<eqp name="M17 Pistol_TierOne" />
+		<eqp name="M18 Pistol_TierOne" />
+		<eqp name="G19 Pistol_TierOne" />
+		<eqp name="G19Sup Pistol_TierOne" />
+		<eqp name="G19Custom Pistol_TierOne" />
+		<eqp name="G19X Pistol_TierOne" />
+		<eqp name="G19XSD Pistol_TierOne" />
+		<eqp name="HK45CT_TierOne" />
+		<eqp name="HK45CTSup_TierOne" />
+
+		<!-- Primaries -->
+		<eqp name="M1014" />
+		<eqp name="MP5A_TierOne" />
+		<eqp name="MP5SD_TierOne" />
+		<eqp name="MP7A1_TierOne" />
+		<eqp name="MP7A1 SD_TierOne" />
+		<eqp name="MCX RATTLER" />
+		<eqp name="MCX RATTLER SD" />
+		<eqp name="Vector9_TierOne" />
+		<eqp name="Vector9SD_TierOne" />
+		<eqp name="P90_TierOne" />
+		<eqp name="P90 SD_TierOne" />
+		<eqp name="URGI_TierOne" />
+		<eqp name="URGI SD_TierOne" />
+		<eqp name="AS VAL_TierOne" />
+		<eqp name="MK 18_TierOne" />
+		<eqp name="MK 18 SD_TierOne" />
+		<eqp name="XM7" />
+		<eqp name="XM7Sup" />
+		<eqp name="NSR" />
+		<eqp name="NSR SD" />
+		<eqp name="HK 416_TierOne" />
+		<eqp name="HK 416 SD_TierOne" />
+		<eqp name="MCX_TierOne" />
+		<eqp name="MCX SPEAR_TierOne" />
+		<eqp name="MCX SPEAR SD_TierOne" />
+		<eqp name="MK17STD_TierOne" />
+		<eqp name="MK17STD SD_TierOne" />
+		<eqp name="MK17CQC_TierOne" />
+		<eqp name="MK17CQC SD_TierOne" />
+	</Bind>
+
+</Equipment>
