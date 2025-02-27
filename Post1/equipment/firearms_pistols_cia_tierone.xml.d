@@ -90,6 +90,12 @@
 	<Bind eqp="G19 Pistol CIA BOps_TierOne">
 		<to name="DEVUndercover"/>
 		<to name="DEVBlackOps"/>
+		<to name="919FMJM882_G19X Pistol"/>
+		<to name="919FMJM1152_Handgun"/>
+		<to name="919JHPM1153_Handgun"/>
+		<to name="919FMJ108GRHP_Handgun"/>
+
+		<to name="IronSights_Pistol"/>
 	</Bind>
 
 	<Firearm name="G19 Pistol CIA BOps_TierOne" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
@@ -127,7 +133,7 @@
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
-			suppressedSwitch="G19Sup Pistol CIA BOps"
+			suppressedSwitch="G19Sup Pistol CIA BOps_TierOne"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="3.0"
 			ai_rangeMax="15.0"
@@ -164,6 +170,12 @@
 	<Bind eqp="G19Sup Pistol CIA BOps_TierOne">
 		<to name="DEVUndercover"/>
 		<to name="DEVBlackOps"/>
+		<to name="919FMJM882_G19XSupSmall"/>
+		<to name="919FMJM1152_SupSmallHandgun"/>
+		<to name="919JHPM1153_SupSmallHandgun"/>
+		<to name="919FMJ108GRHP_SupSmallHandgun"/>
+
+		<to name="IronSights_Pistol"/>
 	</Bind>
 
 	<Firearm name="G19Sup Pistol CIA BOps_TierOne" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost=""
@@ -202,7 +214,7 @@
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
-			suppressedSwitch="G19 Pistol CIA BOps"
+			suppressedSwitch="G19 Pistol CIA BOps_TierOne"
 			suppressedImg="data/models/weapons/attachments/basic_silencer_02_ui.dds"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="3.0"
@@ -316,6 +328,12 @@
 	<Bind eqp="G19X Pistol CIA BOps_TierOne">
 		<to name="DEVUndercover"/>
 		<to name="DEVBlackOps"/>
+		<to name="919FMJM882_G19X Pistol"/>
+		<to name="919FMJM1152_Handgun"/>
+		<to name="919JHPM1153_Handgun"/>
+		<to name="919FMJ108GRHP_Handgun"/>
+
+		<to name="IronSights_Pistol"/>
 	</Bind>
 
 	<Firearm name="G19X Pistol CIA BOps_TierOne" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="3"
@@ -353,7 +371,7 @@
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
-			suppressedSwitch="G19XSD Pistol CIA BOps"
+			suppressedSwitch="G19XSD Pistol CIA BOps_TierOne"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="3.0"
 			ai_rangeMax="15.0"
@@ -437,7 +455,7 @@
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
-			suppressedSwitch="G19X Pistol CIA BOps"
+			suppressedSwitch="G19X Pistol CIA BOps_TierOne"
 			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="3.0"
@@ -551,6 +569,11 @@
 	<Bind eqp="G2240 Pistol CIA BOps_TierOne">
 		<to name="DEVUndercover"/>
 		<to name="DEVBlackOps"/>
+		<to name="40JHP180GR_G2240 Pistol"/>
+		<to name="40FMJ180GR_G2240 Pistol"/>
+		<to name="40JHP165GR_G2240 Pistol"/>
+
+		<to name="IronSights_Pistol"/>
 	</Bind>
 
 	<Firearm name="G2240 Pistol CIA BOps_TierOne" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
@@ -588,7 +611,7 @@
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
-			suppressedSwitch="G2240SD Pistol CIA BOps"
+			suppressedSwitch="G2240SD Pistol CIA BOps_TierOne"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="3.0"
 			ai_rangeMax="15.0"
@@ -670,7 +693,7 @@
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
-			suppressedSwitch="G2240 Pistol CIA BOps"
+			suppressedSwitch="G2240 Pistol CIA BOps_TierOne"
 			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="3.0"
@@ -785,6 +808,13 @@
 	<Bind eqp="M17 Pistol CIA BOps_TierOne">
 		<to name="DEVUndercover"/>
 		<to name="DEVBlackOps"/>
+		<to name="919FMJM882_M17 Pistol"/>
+		<to name="919FMJM1152_Handgun"/>
+		<to name="919JHPM1153_Handgun"/>
+		<to name="919FMJ108GRHP_Handgun"/>
+
+		<to name="IronSights_PistolCustomizable"/>
+		<to name="RedDot_Pistol"/>
 	</Bind>
 
 	<Firearm name="M17 Pistol CIA BOps_TierOne" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
@@ -862,6 +892,11 @@
 	<Bind eqp="HK45CT CIA BOps_TierOne">
 		<to name="DEVUndercover"/>
 		<to name="DEVBlackOps"/>
+		<to name="45FMJM1911_1911 Pistol"/>
+		<to name="45JHP185GR_Pistol"/>
+		<to name="45JHP160GR_Pistol"/>
+
+		<to name="IronSights_Pistol"/>
 	</Bind>
 
 	<Firearm name="HK45CT CIA BOps_TierOne" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="5"
@@ -899,7 +934,7 @@
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
-			suppressedSwitch="HK45CTSup CIA BOps"
+			suppressedSwitch="HK45CTSup CIA BOps_TierOne"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="3.0"
 			ai_rangeMax="15.0"
@@ -972,7 +1007,7 @@
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
-			suppressedSwitch="HK45CT CIA BOps"
+			suppressedSwitch="HK45CT CIA BOps_TierOne"
 			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="3.0"

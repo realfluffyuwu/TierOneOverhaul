@@ -28,9 +28,9 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="MK 18" />
+				<Item name="MK 18_TierOne" />
 				<Item name="IronSights" />
-				<Item name="M9 Pistol" />
+				<Item name="M9 Pistol_TierOne" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Flashbang" />
 				<Item name="Slap Charge" />
@@ -38,6 +38,7 @@
 
 				<Item name="Crowbar" />
 				<Item name="Lockpick" />
+				<Item name="HelmetACH" />
 				<Item name="Rangers SFLCS Level III" />
 			</Equipment>
 		</Human>
@@ -72,9 +73,9 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="M16A4" />
+				<Item name="M16A4_TierOne" />
 				<Item name="IronSights" />
-				<Item name="M9 Pistol" />
+				<Item name="M9 Pistol_TierOne" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Flashbang" />
 				<Item name="Frag Grenade" />
@@ -120,9 +121,9 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="M249SPW" />
+				<Item name="M249SPW_TierOne" />
 				<Item name="IronSights" />
-				<Item name="M9 Pistol" />
+				<Item name="M9 Pistol_TierOne" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Smoke Grenade" />
 				<Item name="Frag Grenade" />
@@ -170,9 +171,9 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="M16A4Marksman" />
+				<Item name="M16A4Marksman_TierOne" />
 				<Item name="M150RCO" />
-				<Item name="M9 Pistol" />
+				<Item name="M9 Pistol_TierOne" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Smoke Grenade" />
 				<Item name="Frag Grenade" />
@@ -212,7 +213,7 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="M16A4/M203" />
+				<Item name="M16A4/M203_TierOne" />
 				<Item name="IronSights" />
 				<Item name="Smoke Grenade" />
 				<Item name="Frag Grenade" />

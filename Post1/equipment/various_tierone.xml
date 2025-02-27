@@ -1930,14 +1930,14 @@ ARMOR
 		<ConcealmentModifier add="-3" />
 	</Crowbar>  -->
 
-	<Bind eqp="Strike Marker">
+	<Bind eqp="Strike Marker_TierOne">
 		<to name="Operator" />
 		<to name="BlackOps" />
 		<to name="DEVBlackOps" />
 	</Bind>
 
 
-	<Grenade name="Strike Marker" inventoryBinding="SupportGear1" unlockCost="30"
+	<Grenade name="Strike Marker_TierOne" inventoryBinding="SupportGear1" unlockCost="30"
 		quantity="1"
 		tooltip="@grenade_sm_name"
 		description="@grenade_sm_desc"

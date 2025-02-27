@@ -1,4 +1,12 @@
 <Equipment>
+	<Bind eqp="M9 Pistol_TierOne">
+
+		<to name="919FMJM882_Handgun"/>
+		<to name="919FMJM1152_Handgun"/>
+		<to name="919JHPM1153_Handgun"/>
+
+		<to name="IronSights_Pistol"/>
+	</Bind>
 
 	<!-- M9 Pistol -->
 	<Firearm name="M9 Pistol_TierOne" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
@@ -72,8 +80,11 @@
 	<!-- M9sup Pistol -->
 	<Bind eqp="M9Sup Pistol_TierOne">
 
-		<to name="Operator"/>
+		<to name="919FMJM882_SupHandgun"/>
+		<to name="919FMJM1152_SupHandgun"/>
+		<to name="919JHPM1153_SupHandgun"/>
 
+		<to name="IronSights_Pistol"/>
 	</Bind>
 
 	<Firearm name="M9Sup Pistol_TierOne" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="6"

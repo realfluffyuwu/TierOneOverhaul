@@ -21,14 +21,14 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="MK 18 DEV" />
+				<Item name="MK 18_TierOne" />
 				<Item name="IronSights" />
-				<Item name="G19 Pistol DEV" />
+				<Item name="G19 Pistol_TierOne" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Smoke Grenade" />
 				<Item name="Frag Grenade" />
 				<Item name="Lockpick" />
-				<Item name="CapDEV" />
+				<Item name="NSWDG_Cap_TierOne" />
 				<Item name="Rangers SFLCS Level III" />
 			</Equipment>
 		</Human>
@@ -64,14 +64,14 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="MK 18 DEV" />
+				<Item name="MK 18_TierOne" />
 				<Item name="IronSights" />
-				<Item name="G19 Pistol DEV" />
+				<Item name="G19 Pistol_TierOne" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Smoke Grenade" />
 				<Item name="Frag Grenade" />
 				<Item name="Lockpick" />
-				<Item name="CapDEV" />
+				<Item name="NSWDG_Cap_TierOne" />
 				<Item name="Rangers SFLCS Level III" />
 			</Equipment>
 		</Human>
@@ -105,14 +105,14 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="MK 18 DEV" />
+				<Item name="MK 18_TierOne" />
 				<Item name="IronSights" />
-				<Item name="G19 Pistol DEV" />
+				<Item name="G19 Pistol_TierOne" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Smoke Grenade" />
 				<Item name="Frag Grenade" />
 				<Item name="Lockpick" />
-				<Item name="CapDEV" />
+				<Item name="NSWDG_Cap_TierOne" />
 				<Item name="Rangers SFLCS Level III" />
 			</Equipment>
 		</Human>
@@ -147,11 +147,11 @@
 
 			<Equipment>
 				<Item name="IronSights" />
-				<Item name="G17 Pistol CIA BOps" />
+				<Item name="G17 Pistol_TierOne" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Flashbang" />
 				<Item name="Slap Charge" />
-				<Item name="CapUndercover" />
+				<Item name="NSWDG_Cap_TierOne" />
 				<Item name="Lockpick" />
 			</Equipment>
 		</Human>
@@ -185,15 +185,15 @@
 			<Concealment default="7" />
 
 			<Equipment>
-				<Item name="M4 CIA BOps" />
+				<Item name="M4 Carbine_TierOne" />
 				<Item name="IronSights" />
-				<Item name="G17 Pistol CIA BOps" />
+				<Item name="G17 Pistol_TierOne" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Flashbang" />
 				<Item name="Slap Charge" />
 				<Item name="Lockpick" />
 				<Item name="Poncho" />
-				<Item name="CapBlackOps" />
+				<Item name="NSWDG_Cap_TierOne" />
 				<Item name="CIA TacVest Level III" />
 			</Equipment>
 		</Human>

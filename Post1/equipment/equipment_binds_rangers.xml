@@ -48,6 +48,7 @@
 		<eqp name="M320 SMK" />
 
 		<!-- Pistols -->
+		<eqp name="M9 Pistol_TierOne" />
 		<eqp name="M17 Pistol_TierOne" />
 		<eqp name="M18 Pistol_TierOne" />
 		<eqp name="G19 Pistol_TierOne" />
@@ -64,6 +65,7 @@
 		<eqp name="MP5SD_TierOne" />
 		<eqp name="MP7A1_TierOne" />
 		<eqp name="MP7A1 SD_TierOne" />
+		<eqp name="M16A4_TierOne" />
 		<eqp name="MCX RATTLER" />
 		<eqp name="MCX RATTLER SD" />
 		<eqp name="Vector9_TierOne" />
@@ -139,6 +141,7 @@
 		<eqp name="M320 SMK" />
 
 		<!-- Pistols -->
+		<eqp name="M9 Pistol_TierOne" />
 		<eqp name="M17 Pistol_TierOne" />
 		<eqp name="M18 Pistol_TierOne" />
 		<eqp name="G19 Pistol_TierOne" />
@@ -219,6 +222,7 @@
 		<eqp name="M320 SMK" />
 
 		<!-- Pistols -->
+		<eqp name="M9 Pistol_TierOne" />
 		<eqp name="M17 Pistol_TierOne" />
 		<eqp name="M18 Pistol_TierOne" />
 		<eqp name="G19 Pistol_TierOne" />
@@ -233,6 +237,7 @@
 		<!-- Primaries -->
 	<to name="Marksman"/>
 		<eqp name="M1014" />
+		<eqp name="M16A4Marksman_TierOne" />
 		<eqp name="NSR" />
 		<eqp name="NSR SD" />
 		<eqp name="MCX SPEAR_TierOne" />
@@ -303,6 +308,7 @@
 		<eqp name="M320 SMK" />
 
 		<!-- Pistols -->
+		<eqp name="M9 Pistol_TierOne" />
 		<eqp name="M17 Pistol_TierOne" />
 		<eqp name="M18 Pistol_TierOne" />
 		<eqp name="G19 Pistol_TierOne" />
@@ -393,7 +399,7 @@
 		<eqp name="Spy Camera" />
 		<eqp name="TEC Torch" />
 		<eqp name="AT4 Rocket Launcher" />
-		<eqp name="Strike Marker" />
+		<eqp name="Strike Marker_TierOne" />
 		<eqp name="MGL CS_TierOne" />
 		<eqp name="MGL SMK_TierOne" />
 		<eqp name="MGL FB_TierOne" />
@@ -403,6 +409,7 @@
 		<eqp name="M320 SMK" />
 
 		<!-- Pistols -->
+		<eqp name="M9 Pistol_TierOne" />
 		<eqp name="M17 Pistol_TierOne" />
 		<eqp name="M18 Pistol_TierOne" />
 		<eqp name="G19 Pistol_TierOne" />

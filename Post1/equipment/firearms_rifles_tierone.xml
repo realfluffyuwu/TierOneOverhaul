@@ -644,7 +644,20 @@
 	</Firearm>
 
 <!-- Rifles -->
+	<Bind eqp="M16A4_TierOne">
 
+		<to name="556FMJM855_M16A4"/>
+		<to name="556FMJM855A1_M16A4"/>
+		<to name="556FMJMk318_M16A4"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+		<to name="LPVO_6X"/>
+		<to name="LPVO_8X"/>
+	</Bind>
 
 	<Firearm name="M16A4_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
 			tooltip="@firearm_m16a4_name"
@@ -802,6 +815,20 @@
 		</Sounds>
 	</Firearm>
 	<!-- M4 Carabine -->
+
+	<Bind eqp="M4 Carbine_TierOne">
+		<to name="556FMJM855_M4"/>
+		<to name="556FMJM855A1_M4"/>
+		<to name="556FMJMk318_M4"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+		<to name="LPVO_6X"/>
+		<to name="LPVO_8X"/>
+	</Bind>
 
 
 	<Firearm name="M4 Carbine_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
@@ -2903,7 +2930,7 @@
 
   <Bind eqp="M249SPWSD_TierOne">
 
-    <to name="556FMJM855_M249SPWSD_TierOne"/>
+    <to name="556FMJM855_M249SPWSD"/>
 
     <to name="IronSights"/>
     <to name="M68CCO"/>
@@ -3405,6 +3432,17 @@
 	</Firearm>
 
 <!--MARKSMAN RIFLES-->
+	<Bind eqp="M16A4Marksman_TierOne">
+		<to name="556FMJMk262_M16A4Marksman"/>
+
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+		<to name="LPVO_6X"/>
+		<to name="LPVO_8X"/>
+		<to name="LROMK4_3_10X"/>
+		<to name="LROMK6_3_18X"/>
+		<to name="LROPM_5_25X"/>
+	</Bind>
 
 	<Firearm name="M16A4Marksman_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
 			tooltip="@firearm_m16a4dmr_name"
