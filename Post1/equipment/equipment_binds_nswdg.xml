@@ -43,9 +43,9 @@
 		<eqp name="Spy Camera" />
 		<eqp name="TEC Torch" />
 		<eqp name="AT4 Rocket Launcher" />
-		<eqp name="M320 HE" />
-		<eqp name="M320 CS" />
-		<eqp name="M320 SMK" />
+		<eqp name="M320 HE_TierOne" />
+		<eqp name="M320 CS_TierOne" />
+		<eqp name="M320 SMK_TierOne" />
 
 		<!-- Pistols -->
 		<eqp name="M17 Pistol_TierOne" />
@@ -134,9 +134,9 @@
 		<eqp name="Spy Camera" />
 		<eqp name="TEC Torch" />
 		<eqp name="AT4 Rocket Launcher" />
-		<eqp name="M320 HE" />
-		<eqp name="M320 CS" />
-		<eqp name="M320 SMK" />
+		<eqp name="M320 HE_TierOne" />
+		<eqp name="M320 CS_TierOne" />
+		<eqp name="M320 SMK_TierOne" />
 
 		<!-- Pistols -->
 		<eqp name="M17 Pistol_TierOne" />
@@ -214,9 +214,9 @@
 		<eqp name="Spy Camera" />
 		<eqp name="TEC Torch" />
 		<eqp name="AT4 Rocket Launcher" />
-		<eqp name="M320 HE" />
-		<eqp name="M320 CS" />
-		<eqp name="M320 SMK" />
+		<eqp name="M320 HE_TierOne" />
+		<eqp name="M320 CS_TierOne" />
+		<eqp name="M320 SMK_TierOne" />
 
 		<!-- Pistols -->
 		<eqp name="M17 Pistol_TierOne" />
@@ -291,6 +291,7 @@
 		<eqp name="" />
 
 		<!-- Pistols -->
+		<eqp name="1911 Pistol_TierOne" />
 		<eqp name="M17 Pistol_TierOne" />
 		<eqp name="M18 Pistol_TierOne" />
 		<eqp name="G19 Pistol_TierOne" />
@@ -300,6 +301,8 @@
 		<eqp name="G19XSD Pistol_TierOne" />
 		<eqp name="HK45CT_TierOne" />
 		<eqp name="HK45CTSup_TierOne" />
+		<eqp name="G2240 Pistol_TierOne" />
+		
 
 		<!-- Primaries -->
 		<eqp name="PM63 CIA" />
@@ -362,12 +365,13 @@
 		<eqp name="MGL SMK_TierOne" />
 		<eqp name="MGL FB_TierOne" />
 		<eqp name="MGL HE_TierOne" />
-		<eqp name="M320 HE" />
-		<eqp name="M320 CS" />
-		<eqp name="M320 SMK" />
+		<eqp name="M320 HE_TierOne" />
+		<eqp name="M320 CS_TierOne" />
+		<eqp name="M320 SMK_TierOne" />
 
 		<!-- Pistols -->
 		<eqp name="M17 Pistol_TierOne" />
+		<eqp name="1911 Pistol_TierOne" />
 		<eqp name="M18 Pistol_TierOne" />
 		<eqp name="G19 Pistol_TierOne" />
 		<eqp name="G19Sup Pistol_TierOne" />
@@ -376,6 +380,7 @@
 		<eqp name="G19XSD Pistol_TierOne" />
 		<eqp name="HK45CT_TierOne" />
 		<eqp name="HK45CTSup_TierOne" />
+		<eqp name="G2240 Pistol_TierOne" />
 
 		<!-- Primaries -->
 		<eqp name="MP5KPDW CIA BOps" />

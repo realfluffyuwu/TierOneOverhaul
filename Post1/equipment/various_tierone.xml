@@ -865,7 +865,7 @@ ARMOR
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="GL40 HE">
+	<Bind eqp="GL40 HE_TierOne">
 		<to name="SwatLeader" />
 		<to name="SwatSapper" />
 
@@ -874,7 +874,7 @@ ARMOR
 		<to name="IronSights" />
 	</Bind>
 
-	<Firearm name="GL40 HE" inventoryBinding="SupportGear1" category="rpg" unlockCost="10"
+	<Firearm name="GL40 HE_TierOne" inventoryBinding="SupportGear1" category="rpg" unlockCost="10"
 		tooltip="@firearm_gl40_name"
 		description="@firearm_gl40he_desc"
 		img="data/models/weapons/gl40_ui.dds"
@@ -980,7 +980,7 @@ ARMOR
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="GL40 HEDP">
+	<Bind eqp="GL40 HE_TierOneDP">
 		<to name="SwatSapper" />
 
 		<to name="338_SniperRifle" />
@@ -988,7 +988,7 @@ ARMOR
 		<to name="IronSights" />
 	</Bind>
 
-	<Firearm name="GL40 HEDP" inventoryBinding="SupportGear1" category="rpg" unlockCost="20"
+	<Firearm name="GL40 HE_TierOneDP" inventoryBinding="SupportGear1" category="rpg" unlockCost="20"
 		tooltip="@firearm_gl40_name"
 		description="@firearm_gl40hedp_desc"
 		img="data/models/weapons/gl40_ui.dds"
@@ -1099,7 +1099,7 @@ ARMOR
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="GL40 CS">
+	<Bind eqp="GL40 CS_TierOne">
 		<to name="SwatLeader" />
 		<to name="SwatSapper" />
 
@@ -1108,7 +1108,7 @@ ARMOR
 		<to name="IronSights" />
 	</Bind>
 
-	<Firearm name="GL40 CS" inventoryBinding="SupportGear1" category="rpg" unlockCost="10"
+	<Firearm name="GL40 CS_TierOne" inventoryBinding="SupportGear1" category="rpg" unlockCost="10"
 		tooltip="@firearm_gl40_name"
 		description="@firearm_gl40cs_desc"
 		img="data/models/weapons/gl40_ui.dds"
@@ -1215,7 +1215,7 @@ ARMOR
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="GL40 SMK">
+	<Bind eqp="GL40 SMK_TierOne">
 		<to name="SwatLeader" />
 		<to name="SwatSapper" />
 
@@ -1224,7 +1224,7 @@ ARMOR
 		<to name="IronSights" />
 	</Bind>
 
-	<Firearm name="GL40 SMK" inventoryBinding="SupportGear1" category="rpg" unlockCost="10"
+	<Firearm name="GL40 SMK_TierOne" inventoryBinding="SupportGear1" category="rpg" unlockCost="10"
 		tooltip="@firearm_gl40_name"
 		description="@firearm_gl40cs_desc"
 		img="data/models/weapons/gl40_ui.dds"
@@ -1325,7 +1325,7 @@ ARMOR
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="M320 HE">
+	<Bind eqp="M320 HE_TierOne">
 		<to name="Assault" />
 		<to name="Support" />
 		<to name="Marksman" />
@@ -1344,7 +1344,7 @@ ARMOR
 	</Bind>
 
 
-	<Firearm name="M320 HE" inventoryBinding="SupportGear1" category="rpg" unlockCost="10"
+	<Firearm name="M320 HE_TierOne" inventoryBinding="SupportGear1" category="rpg" unlockCost="10"
 		tooltip="@firearm_m320_name"
 		description="@firearm_m320he_desc"
 		img="data/models/weapons/m320_ui.dds"
@@ -1442,7 +1442,7 @@ ARMOR
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="M320 HEDP">
+	<Bind eqp="M320 SMK_TierOne_TierOneDP">
 		<to name="Grenadier" />
 		<to name="Operator" />
 		<to name="BlackOps" />
@@ -1455,7 +1455,7 @@ ARMOR
 		<to name="IronSights" />
 	</Bind>
 
-	<Firearm name="M320 HEDP" inventoryBinding="SupportGear1" category="rpg" unlockCost="20"
+	<Firearm name="M320 SMK_TierOne_TierOneDP" inventoryBinding="SupportGear1" category="rpg" unlockCost="20"
 		tooltip="@firearm_m320_name"
 		description="@firearm_m320hedp_desc"
 		img="data/models/weapons/m320_ui.dds"
@@ -1557,20 +1557,17 @@ ARMOR
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="M320 PIKE">
+	<Bind eqp="M320 PIKE_TierOne">
 		<to name="Grenadier" />
 		<to name="Operator" />
 		<to name="BlackOps" />
-		<to name="DEVSupport" />
-		<to name="DEVBlackOps" />
-
 
 		<to name="338_SniperRifle" />
 
 		<to name="IronSights" />
 	</Bind>
 
-	<Firearm name="M320 PIKE" inventoryBinding="SupportGear1" category="rpg" unlockCost="20"
+	<Firearm name="M320 PIKE_TierOne" inventoryBinding="SupportGear1" category="rpg" unlockCost="20"
 		tooltip="@firearm_m320_name"
 		description="@firearm_m320hedp_desc"
 		img="data/models/weapons/m320_ui.dds"
@@ -1672,25 +1669,13 @@ ARMOR
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="M320 CS">
-		<to name="Assault" />
-		<to name="Support" />
-		<to name="Marksman" />
-		<to name="Medic" />
-		<to name="Grenadier" />
-		<to name="Operator" />
-		<to name="BlackOps" />
-		<to name="DEVAssault" />
-		<to name="DEVSupport" />
-		<to name="DEVMarksman" />
-		<to name="DEVBlackOps" />
-
+	<Bind eqp="M320 CS_TierOne">
 		<to name="338_SniperRifle" />
 
 		<to name="IronSights" />
 	</Bind>
 
-	<Firearm name="M320 CS" inventoryBinding="SupportGear1" category="rpg" unlockCost="10"
+	<Firearm name="M320 CS_TierOne" inventoryBinding="SupportGear1" category="rpg" unlockCost="10"
 		tooltip="@firearm_m320_name"
 		description="@firearm_m320cs_desc"
 		img="data/models/weapons/m320_ui.dds"
@@ -1788,25 +1773,13 @@ ARMOR
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="M320 SMK">
-		<to name="Assault" />
-		<to name="Support" />
-		<to name="Marksman" />
-		<to name="Medic" />
-		<to name="Grenadier" />
-		<to name="Operator" />
-		<to name="BlackOps" />
-		<to name="DEVAssault" />
-		<to name="DEVSupport" />
-		<to name="DEVMarksman" />
-		<to name="DEVBlackOps" />
-
+	<Bind eqp="M320 SMK_TierOne">
 		<to name="338_SniperRifle" />
 
 		<to name="IronSights" />
 	</Bind>
 
-	<Firearm name="M320 SMK" inventoryBinding="SupportGear1" category="rpg" unlockCost="10"
+	<Firearm name="M320 SMK_TierOne" inventoryBinding="SupportGear1" category="rpg" unlockCost="10"
 		tooltip="@firearm_m320_name"
 		description="@firearm_m320smk_desc"
 		img="data/models/weapons/m320_ui.dds"

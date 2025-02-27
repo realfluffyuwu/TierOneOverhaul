@@ -1,43 +1,62 @@
-<Mod title="Tier One Overhaul" gameVersion="105" author="Fluffy" description="Back by Popular demand, The Fabled Tier One Overhaul.
-
-I need to Level with you guys here, It was an undertaking and a half to Port this to 1.0
-Please be Patient and Report any Issues you Run into, I tried my Best to make it not overwrite things as much as I can.
-
-If you feel there was a Change like Weapons or Equipment missing from the Units please let me know.
-
-
-Nexus Description:
-Nearly full overhaul of the game.
-Adds new weapons, attack types, equipment, units, and more.
-
-NEW UNIT: NSW Development Group
-    -x4 Assaulter
-    -x2 Support
-    -x2 Marksman
-    -x1 Undercover
-    -x1 Black Ops
-
-NEW WEAPONS: 
-    -HK MP7A2
-    -MCX Rattler
-    -Noveske Gen III 10.5&quot;
-    -HK416D 10.4&quot;
-    -Mk17 Custom
-    -Mk46 Mod 1
-    -Mk11 Mod 1
-    -Mk12 Mod 1
-    -Mk13 Mod 5
-    -M320 GLM(HE/HEDP/CS/Smoke)
-    -Milkor M32 MGL(Smoke)
-    -FN40GL Mk2(Smoke)
--Weapon descriptions provided by dps524
--3D model for M320 provided by nachomacho
--Smoke GLs suggested by Ryuk
-
-NEW EQUIPMENT:
-    -GPNVG-18(White Phosphor) by jacob-
-    -Suicide Bomb(NWS Militia)
-
-COSMETICS:
-    -Custom Helmets(AOR1/MC) by jacob-
-    -Custom Uniforms(AOR1/MC)" changeNotes="" languageMod="" tags="Playable Units,Equipment,Sound Effects,Total Conversion,Other" ugcId="3434735226"/>
+<Mod title="Tier One Overhaul" gameVersion="105" author="Fluffy" description="[h1]Back by Popular demand, The Fabled Tier One Overhaul.[/h1]
+
+[i]I need to Level with you guys here[/i]
+It was an [u]undertaking[/u] and a half to Port this to [b]1.0[/b], This mod has changed hands [b]twice[/b] and I got dealt a pretty bad hand with 1.0&apos;s changes.
+
+I thought to myself
+[quote=Fluffy]How Hard could it really be?[/quote]
+[u][i]It was in fact Hard[/i][/u]
+
+[b]Several Thousand[/b] Lines of XML later here we are.
+
+Please be Patient and Report any Issues you Run into.
+I tried my Best to make it not overwrite things as much as I can and to make sure all the Classes have most of the Equipment they had before if they are missing anything big let me know and I will look into it.
+
+To get to the [i]Nitty Gritty[/i], I have [b]fundamentally[/b] changed the way [b][u]Tier One Overhaul[/u][/b] works.
+It doesn&apos;t overwrite the Vanilla Rangers at all, It may add equipment to them and the other Squads,
+But it doesn&apos;t remove any or Overwrite any.
+
+When you go to make a Squad you will find a separate Tier One Rangers that you can create instead.
+
+NSWDG is still here too, I&apos;m not super confident in their Equipment Binds but It seems to be in order from what I can tell.
+
+[u]Doctrines, Doctrines, Doctrines.[/u]
+I&apos;m sorry to disappoint but Neither of the Squads have Doctrines, It is just too much of a hassle for me to reliably copy from the rangers to the Tier one group given how deep the Changes Tier One Makes are.
+
+Will they come later, Maybe but don&apos;t get your Hopes up.
+
+Original Nexus Description:
+Nearly full overhaul of the game.
+Adds new weapons, attack types, equipment, units, and more.
+
+NEW UNIT: NSW Development Group
+    -x4 Assaulter
+    -x2 Support
+    -x2 Marksman
+    -x1 Undercover
+    -x1 Black Ops
+
+NEW WEAPONS: 
+    -HK MP7A2
+    -MCX Rattler
+    -Noveske Gen III 10.5&quot;
+    -HK416D 10.4&quot;
+    -Mk17 Custom
+    -Mk46 Mod 1
+    -Mk11 Mod 1
+    -Mk12 Mod 1
+    -Mk13 Mod 5
+    -M320 GLM(HE/HEDP/CS/Smoke)
+    -Milkor M32 MGL(Smoke)
+    -FN40GL Mk2(Smoke)
+-Weapon descriptions provided by dps524
+-3D model for M320 provided by nachomacho
+-Smoke GLs suggested by Ryuk
+
+NEW EQUIPMENT:
+    -GPNVG-18(White Phosphor) by jacob-
+    -Suicide Bomb(NWS Militia)
+
+COSMETICS:
+    -Custom Helmets(AOR1/MC) by jacob-
+    -Custom Uniforms(AOR1/MC)" changeNotes="I hate this" languageMod="" tags="Playable Units,Equipment,Sound Effects,Total Conversion,Other" ugcId="3434735226"/>
