@@ -77,8 +77,8 @@
 		<eqp name="MK 18 SD_TierOne" />
 		<eqp name="XM7" />
 		<eqp name="XM7Sup" />
-		<eqp name="NSR" />
-		<eqp name="NSR SD" />
+		<eqp name="NSR_TierOne" />
+		<eqp name="NSR SD_TierOne" />
 		<eqp name="HK 416_TierOne" />
 		<eqp name="HK 416 SD_TierOne" />
 		<eqp name="MCX_TierOne" />
@@ -152,8 +152,8 @@
 
 		<!-- Primaries -->
 		<eqp name="M1014" />
-		<eqp name="NSR" />
-		<eqp name="NSR SD" />
+		<eqp name="NSR_TierOne" />
+		<eqp name="NSR SD_TierOne" />
 		<eqp name="MK17STD_TierOne" />
 		<eqp name="MK17STD SD_TierOne" />
 		<eqp name="MK17CQC_TierOne" />
@@ -232,8 +232,8 @@
 
 		<!-- Primaries -->
 		<eqp name="M1014" />
-		<eqp name="NSR" />
-		<eqp name="NSR SD" />
+		<eqp name="NSR_TierOne" />
+		<eqp name="NSR SD_TierOne" />
 		<eqp name="MCX SPEAR_TierOne" />
 		<eqp name="MCX SPEAR SD_TierOne" />
 		<eqp name="MK17STD_TierOne" />
@@ -409,7 +409,6 @@
 		<eqp name="VSS CIA BOps" />
 		<eqp name="M110A1_TierOne" />
 		<eqp name="M110A1Sup_TierOne" />
-		<eqp name="" />
 		<eqp name="MP5A_TierOne" />
 		<eqp name="MP5SD_TierOne" />
 		<eqp name="Vector9_TierOne" />

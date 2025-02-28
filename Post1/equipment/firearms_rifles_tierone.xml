@@ -2182,6 +2182,18 @@
 		</Sounds>
 	</Firearm>
 <!-- Grenade Launcher Combos  -->
+	<Bind eqp="M4/M203_TierOne">
+
+		<to name="556FMJM855_M4"/>
+		<to name="556FMJM855A1_M4"/>
+		<to name="556FMJMk318_M4"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+	</Bind>
 
 	<Firearm name="M4/M203_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
 			tooltip="@firearm_m4_m203_name"
@@ -2313,6 +2325,19 @@
 
 		</Projectile>
 	</Firearm>
+
+	<Bind eqp="M4/M203Sup_TierOne">
+
+		<to name="556FMJM855_M4Sup"/>
+		<to name="556FMJM855A1_M4Sup"/>
+		<to name="556FMJMk318_M4Sup"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+	</Bind>
 
   <Firearm name="M4/M203Sup_TierOne" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
 			tooltip="@firearm_m4_m203Sup_name"
@@ -2446,6 +2471,19 @@
 		</Projectile>
 	</Firearm>
 
+	<Bind eqp="MK18/M203_TierOne">
+
+		<to name="556FMJM855_MK18"/>
+		<to name="556FMJM855A1_MK18"/>
+		<to name="556FMJMk318_MK18"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+	</Bind>
+
 	<Firearm name="MK18/M203_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
 			tooltip="@firearm_mk18_m203_name"
 			description="@firearm_mk18_m203_desc"
@@ -2577,6 +2615,19 @@
 
 		</Projectile>
 	</Firearm>
+
+	<Bind eqp="MK18/M203Sup_TierOne">
+
+		<to name="556FMJM855_MK18Sup"/>
+		<to name="556FMJM855A1_MK18Sup"/>
+		<to name="556FMJMk318_MK18Sup"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+	</Bind>
 
   <Firearm name="MK18/M203Sup_TierOne" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
 			tooltip="@firearm_mk18_m203Sup_name"
@@ -2711,6 +2762,18 @@
 
 		</Projectile>
 	</Firearm>
+
+	<Bind eqp="M16A4/M203_TierOne">
+		<to name="556FMJM855_M16A4"/>
+		<to name="556FMJM855A1_M16A4"/>
+		<to name="556FMJMk318_M16A4"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+	</Bind>
 
 	<Firearm name="M16A4/M203_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="3"
 			tooltip="@firearm_m16a4_m203_name"
@@ -3610,6 +3673,7 @@
 		<to name="LROMK6_3_18X"/>
 		<to name="LROPM_5_25X"/>
 	</Bind>
+
 	<Firearm name="MK17LB_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
 			tooltip="@firearm_mk17_lb_name"
 			description="@firearm_mk17_lb_desc"
@@ -3776,6 +3840,7 @@
 		<to name="LROMK6_3_18X"/>
 		<to name="LROPM_5_25X"/>
 	</Bind>
+	
 	<Firearm name="M14EBR_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
 			tooltip="@firearm_m14ebr_name"
 			description="@firearm_m14ebr_desc"
@@ -4589,6 +4654,186 @@
 			<Reload name="rifle_reld"/>
 			<ReloadEmpty name="rifle_reldempt"/>
 			<Fire name="mk17cqcsd_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="NSR_TierOne">
+
+		<to name="556FMJM855_MK18"/> <!-- first one is default, the others can be customized -->
+		<to name="556FMJM855A1_MK18"/>
+		<to name="556FMJMk318_MK18"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+		<to name="LPVO_6X"/>
+		<to name="LPVO_8X"/>
+	</Bind>
+
+	<Firearm name="NSR_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="18"
+			tooltip="@firearm_nsr_name"
+			description="@firearm_nsr_desc"
+			img="data/models/weapons/nsr_ui.dds"
+
+			animationSet="rifle"
+		>
+
+		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<RenderObject3D model="data/models/weapons/nsr.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/nsr.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1400"
+			reloadEmptyTime="2100"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="125"
+			guardTime="125"
+
+			accuracyStart="170"
+			accuracyEnd="150"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_556x45_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m4_mag"
+			suppressedSwitch="NSR SD_TierOne"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="10.0"
+			ai_rangeMax="25.0"
+			ai_stopWhenShooting="false"
+			hasLaser="true"
+		/>
+
+		<!-- defines base ROF, accuracy and sound of weapon -->
+
+		<AttackTypes>
+			<AttackType name="DEV_PointShoot"  rangeMeters="1.8"/>
+			<AttackType name="DEV_DoubleTapClose" rangeMeters="5.5"/>
+			<AttackType name="DEV_DoubleTap" rangeMeters="8"/>
+			<AttackType name="DEV_DoubleTapMed1" rangeMeters="11"/>
+			<AttackType name="DEV_DoubleTapMed2" rangeMeters="14"/>
+			<AttackType name="DEV_DoubleTapLong" rangeMeters="16"/>
+			<AttackType name="DEV_CarbineAimedFire" rangeMeters="30"/>
+			<AttackType name="DEV_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="nsr_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="NSR SD_TierOne">
+
+
+		<to name="556FMJM855_MK18SD"/> <!-- first one is default, the others can be customized -->
+		<to name="556FMJM855A1_MK18SD"/>
+		<to name="556FMJMk318_MK18SD"/>
+		<to name="556SUB_MK18SD"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+		<to name="LPVO_6X"/>
+		<to name="LPVO_8X"/>
+	</Bind>
+
+	<Firearm name="NSR SD_TierOne" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="6"
+			tooltip="@firearm_nsrsd_name"
+			description="@firearm_nsrsd_desc"
+			img="data/models/weapons/nsrsd_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
+		<RenderObject3D model="data/models/weapons/nsr.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/nsr.dds"/>
+		<RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1400"
+			reloadEmptyTime="2100"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="175"
+			guardTime="125"
+
+			accuracyStart="170"
+			accuracyEnd="150"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_556x45_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m4_mag"
+			suppressedSwitch="NSR_TierOne"
+			suppressedImg="data/models/weapons/attachments/silencer_sandman_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="10.0"
+			ai_rangeMax="25.0"
+			ai_stopWhenShooting="false"
+			hasLaser="true"
+		/>
+
+		<!-- defines base ROF, accuracy and sound of weapon -->
+
+			<!--<to name="556APM995_MK18SD"/>-->
+
+		<AttackTypes>
+			<AttackType name="DEV_PointShoot"  rangeMeters="1.8"/>
+			<AttackType name="DEV_DoubleTapClose" rangeMeters="5"/>
+			<AttackType name="DEV_DoubleTap" rangeMeters="7.5"/>
+			<AttackType name="DEV_DoubleTapMed1" rangeMeters="10"/>
+			<AttackType name="DEV_DoubleTapMed2" rangeMeters="14"/>
+			<AttackType name="DEV_DoubleTapLong" rangeMeters="16"/>
+			<AttackType name="DEV_CarbineAimedFire" rangeMeters="30"/>
+			<AttackType name="DEV_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_SD1" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="nsrsd_fire"/>
 			<ShellDrop name="rifle_shell_drop"/>
 			<Empty name="gen_empty"/>
 		</Sounds>

@@ -33,11 +33,11 @@ DoorKickers2/mods/ subfolder
 			them in the order given here, but it doesn't otherwise matter.
 				You can have up to 6 upgrades, with maxUpgradeable limiting how many you can choose.
 			-->
-			<Class name="Ranger_Assault_TierOne" nameUI="@unit_rangers_assault"	description="@class_rangers_assault" numSlots="8" supply="100" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds" />
-			<Class name="Ranger_Support_TierOne" nameUI="@unit_rangers_support" description="@class_rangers_support" numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_support.dds" />
-			<Class name="Ranger_Marksman_TierOne" nameUI="@unit_rangers_marksman" description="@class_rangers_marksman" numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_marksman.dds" />
-			<Class name="Ranger_Grenadier_TierOne" nameUI="@unit_rangers_grenadier" description="@class_rangers_grenadier" numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_grenadier.dds" />
-			<Class name="Ranger_Operator_TierOne" nameUI="@unit_rangers_operator" description="@class_rangers_assault" numSlots="2" supply="200" iconTex="data/textures/gui/deploy/class_icon_operator.dds" />
+			<Class name="Ranger_Assault_TierOne" nameUI="@unit_rangers_assault"	description="@class_rangers_assault" numSlots="8" supply="100" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
+			<Class name="Ranger_Support_TierOne" nameUI="@unit_rangers_support" description="@class_rangers_support" numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_support.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
+			<Class name="Ranger_Marksman_TierOne" nameUI="@unit_rangers_marksman" description="@class_rangers_marksman" numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_marksman.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
+			<Class name="Ranger_Grenadier_TierOne" nameUI="@unit_rangers_grenadier" description="@class_rangers_grenadier" numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_grenadier.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
+			<Class name="Ranger_Operator_TierOne" nameUI="@unit_rangers_operator" description="@class_rangers_assault" numSlots="2" supply="200" iconTex="data/textures/gui/deploy/class_icon_operator.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2" />
 		</Classes>
 
 		<TrooperRanks>
@@ -72,23 +72,50 @@ DoorKickers2/mods/ subfolder
 			<Rank xpNeeded="800000" badgeTex="" />
 		</Ranks>
 
-		<!-- DOCTRINE HELP
-			'doctrinePointsPerSquadLevel' = number of usable doctrine points we get for each squad rank.
+		<Doctrine doctrinePointsPerSquadLevel="2">
+			<!-- handguns -->
+			<Node name="Handguns_ShortRangeDrills">
+				<Node name="Handguns_ControlledPairs" numLevels="2" />
+				<Node name="Handguns_PrecisionShooting" />
+			</Node>
+			<Node name="Handguns_MediumRangeDrills" numLevels="2" />
+			<Node name="Handguns_ReloadDrills" />
+			<Node name="Handguns_TransitionDrills" />
+			<Node name="Handguns_SuppressorUse" />
 
-			Nodes reference those defined in doctrine_nodes.xml. We declare the relations between them and
-		things like min squad level required and number of points allowed.
+			<!-- rifles -->
+			<Node name="Rifles_ShortRangeDrills">
+				<Node name="Rifles_RoomClearingDrills" numLevels="2" />
+				<Node name="Rifles_CloseRangeBurst" numLevels="2" />
+			</Node>
+			<Node name="Rifles_ReloadDrills" />
+			<Node name="Rifles_MediumRangeDrills">
+				<Node name="Rifles_MediumRangeBurst" numLevels="4" />
+				<Node name="Rifles_SurgicalShooting" numLevels="2">
+					<Node name="Rifles_ObscuredTargets" numLevels="2" />
+				</Node>
+			</Node>
+			<Node name="Rifles_BarricadeShooting" />
+			<Node name="Rifles_LongRangeDrills" numLevels="2" />
 
-			'numLevels' = the number of points we are allowed to put into this node. Defaults to 1.
-				any existing child will only be unlocked when all levels have been added, but the benefits will be
-		received for each level additively.
-			'minSquadLevel' = you can only unlock this node once your squad reaches the specified level.
-		Defaults to 1.
+			<!-- support -->
+			<Node name="Support_AssaultSAWs" numLevels="2" />
+			<Node name="Support_AssaultMarksmen" numLevels="2" />
+			<Node name="Support_ImprovedSuppression" />
+			<Node name="Support_Melee" />
+			<Node name="Support_LanguageBasics" />
+			<Node name="Support_ThrowablesTraining" />
+			<Node name="Support_SelfFirstAid" />
 
-			Child nodes will only unlock once we unlock their parent. One node can have multiple parents (up to
-		4) and they all need to be unlocked for the child to activate.
-				Nodes with multiple parents must be copy/pasted as a child to all its parents.
+			<!-- elite -->
+			<Node name="Elite_ExtraConditioning" minSquadLevel="14" />
+			<Node name="Elite_AdvancedLanguage" minSquadLevel="14" />
+			<Node name="Elite_AdvancedShooting" minSquadLevel="14" />
+			<Node name="Elite_AdvancedCombatives" minSquadLevel="14" />
+			<Node name="Elite_ExplosiveBreaching" minSquadLevel="14" />
+			<!-- Node name="Elite_AssaultPlanning" minSquadLevel="14"/ -->
+			<Node name="Elite_ViolenceOfAction" minSquadLevel="14" />
+		</Doctrine>
 
-			The UI for these is defined in data/gui/doctrine.xml
-		-->
 	</Unit>
 </Units>

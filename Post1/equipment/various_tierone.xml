@@ -455,6 +455,16 @@
 	<!--
 ARMOR
 -->
+	<Bind eqp="MGL HE_TierOne">
+		<to name="Grenadier" />
+		<to name="Operator" />
+		<to name="BlackOps" />
+		<to name="DEVSupport" />
+		<to name="DEVBlackOps" />
+		<to name="338_SniperRifle" />
+		<to name="IronSights" />
+	</Bind>
+
 
 	<Firearm name="MGL HE_TierOne" inventoryBinding="SupportGear1" category="rpg" unlockCost="12"
 		tooltip="@firearm_mgl_name"
