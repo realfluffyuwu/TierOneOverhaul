@@ -1515,6 +1515,178 @@
 		</Sounds>
 	</Firearm>
 
+	<Bind eqp="MCX RATTLER_TierOne">
+
+		<to name="300BLKSUBLOUD_MCXRATTLER"/> <!-- first one is default, the others can be customized -->
+		<to name="300BLKSUPLOUD_MCXRATTLER"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+	</Bind>
+
+	<Firearm name="MCX RATTLER_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="20"
+			tooltip="@firearm_mcxrattler_name"
+			description="@firearm_mcxrattler_desc"
+			img="data/models/weapons/mcxrattler_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<RenderObject3D model="data/models/weapons/rattler.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/rattler.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1800"
+			reloadEmptyTime="2500"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="125"
+			guardTime="125"
+
+			accuracyStart="200"
+			accuracyEnd="200"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_300BLK_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m4_mag"
+			suppressedSwitch="MCX RATTLER SD_TierOne"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="10.0"
+			ai_rangeMax="25.0"
+			ai_stopWhenShooting="false"
+			hasLaser="true"
+		/>
+
+		<!-- defines base ROF, accuracy and sound of weapon -->
+
+		<AttackTypes>
+			<!--<AttackType name="DEV_PointShoot" rangeMeters="4"/>-->
+			<AttackType name="DEV_PointShoot"  rangeMeters="2.2"/>
+			<AttackType name="DEV_DoubleTapClose" rangeMeters="5"/>
+			<AttackType name="DEV_DoubleTap" rangeMeters="7"/>
+			<AttackType name="DEV_DoubleTapMed1" rangeMeters="9"/>
+			<AttackType name="DEV_DoubleTapMed2" rangeMeters="11"/>
+			<AttackType name="DEV_DoubleTapLong" rangeMeters="13"/>
+			<AttackType name="DEV_CarbineAimedFire" rangeMeters="28"/>
+			<AttackType name="DEV_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="mcxrattler_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="MCX RATTLER SD_TierOne">
+
+		<to name="300BLKSUB_MCXRATTLER"/> <!-- first one is default, the others can be customized -->
+		<to name="300BLKSUP_MCXRATTLER"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+	</Bind>
+
+	<Firearm name="MCX RATTLER SD_TierOne" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="8"
+			tooltip="@firearm_mcxrattlersd_name"
+			description="@firearm_mcxrattlersd_desc"
+			img="data/models/weapons/mcxrattlersd_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
+		<RenderObject3D model="data/models/weapons/rattler.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/rattler.dds"/>
+		<RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1800"
+			reloadEmptyTime="2500"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="135"
+			guardTime="125"
+
+			accuracyStart="200"
+			accuracyEnd="200"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_300BLK_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m4_mag"
+			suppressedSwitch="MCX RATTLER_TierOne"
+			suppressedImg="data/models/weapons/attachments/silencer_mcx_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="10.0"
+			ai_rangeMax="25.0"
+			ai_stopWhenShooting="false"
+			hasLaser="true"
+		/>
+
+		<!-- defines base ROF, accuracy and sound of weapon -->
+
+		<AttackTypes>
+			<!--<AttackType name="DEV_PointShoot" rangeMeters="4"/>-->
+			<AttackType name="DEV_PointShoot"  rangeMeters="1.8"/>
+			<AttackType name="DEV_DoubleTapClose" rangeMeters="5"/>
+			<AttackType name="DEV_DoubleTap" rangeMeters="7"/>
+			<AttackType name="DEV_DoubleTapMed1" rangeMeters="9"/>
+			<AttackType name="DEV_DoubleTapMed2" rangeMeters="11"/>
+			<AttackType name="DEV_DoubleTapLong" rangeMeters="13"/>
+			<AttackType name="DEV_CarbineAimedFire" rangeMeters="28"/>
+			<AttackType name="DEV_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_SD1" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="mcxrattlersd_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
   <Bind eqp="MCX_TierOne">
     <to name="300BLKSUB_MCX"/> <!-- first one is default, the others can be customized -->
     <to name="300BLKSUP_MCX"/>
