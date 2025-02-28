@@ -42,6 +42,7 @@
 		<eqp name="Dynamic Hammer" />
 		<eqp name="Spy Camera" />
 		<eqp name="TEC Torch" />
+		<eqp name="Bolt Cutter" />
 		<eqp name="AT4 Rocket Launcher" />
 		<eqp name="M320 HE_TierOne" />
 		<eqp name="M320 CS_TierOne" />
@@ -136,6 +137,7 @@
 		<eqp name="Dynamic Hammer" />
 		<eqp name="Spy Camera" />
 		<eqp name="TEC Torch" />
+		<eqp name="Bolt Cutter" />
 		<eqp name="AT4 Rocket Launcher" />
 		<eqp name="M320 HE_TierOne" />
 		<eqp name="M320 CS_TierOne" />
@@ -218,6 +220,7 @@
 		<eqp name="Dynamic Hammer" />
 		<eqp name="Spy Camera" />
 		<eqp name="TEC Torch" />
+		<eqp name="Bolt Cutter" />
 		<eqp name="AT4 Rocket Launcher" />
 		<eqp name="M320 HE_TierOne" />
 		<eqp name="M320 CS_TierOne" />
@@ -301,6 +304,7 @@
 		<eqp name="Dynamic Hammer" />
 		<eqp name="Spy Camera" />
 		<eqp name="TEC Torch" />
+		<eqp name="Bolt Cutter" />
 		<eqp name="AT4 Rocket Launcher" />
 		<eqp name="MGL CS_TierOne" />
 		<eqp name="MGL SMK_TierOne" />
@@ -401,6 +405,7 @@
 		<eqp name="Dynamic Hammer" />
 		<eqp name="Spy Camera" />
 		<eqp name="TEC Torch" />
+		<eqp name="Bolt Cutter" />
 		<eqp name="AT4 Rocket Launcher" />
 		<eqp name="Strike Marker_TierOne" />
 		<eqp name="MGL CS_TierOne" />

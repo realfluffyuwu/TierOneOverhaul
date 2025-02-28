@@ -42,6 +42,7 @@
 		<eqp name="Dynamic Hammer" />
 		<eqp name="Spy Camera" />
 		<eqp name="TEC Torch" />
+		<eqp name="Bolt Cutter" />
 		<eqp name="AT4 Rocket Launcher" />
 		<eqp name="M320 HE_TierOne" />
 		<eqp name="M320 CS_TierOne" />
@@ -133,6 +134,7 @@
 		<eqp name="Dynamic Hammer" />
 		<eqp name="Spy Camera" />
 		<eqp name="TEC Torch" />
+		<eqp name="Bolt Cutter" />
 		<eqp name="AT4 Rocket Launcher" />
 		<eqp name="M320 HE_TierOne" />
 		<eqp name="M320 CS_TierOne" />
@@ -213,6 +215,7 @@
 		<eqp name="Dynamic Hammer" />
 		<eqp name="Spy Camera" />
 		<eqp name="TEC Torch" />
+		<eqp name="Bolt Cutter" />
 		<eqp name="AT4 Rocket Launcher" />
 		<eqp name="M320 HE_TierOne" />
 		<eqp name="M320 CS_TierOne" />
@@ -283,6 +286,7 @@
 		<eqp name="Lockpick Machine" />
 		<eqp name="Spy Camera" />
 		<eqp name="TEC Torch" />
+		<eqp name="Bolt Cutter" />
 		<eqp name="RPG 26 CIA BOps" />
 
 		<!-- Pistols -->
@@ -356,6 +360,7 @@
 		<eqp name="Spy Camera" />
 		<eqp name="Poncho" />
 		<eqp name="TEC Torch" />
+		<eqp name="Bolt Cutter" />
 		<eqp name="AT4 Rocket Launcher" />
 		<eqp name="Strike Marker" />
 		<eqp name="MGL CS_TierOne" />
