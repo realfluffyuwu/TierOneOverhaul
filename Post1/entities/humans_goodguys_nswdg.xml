@@ -11,7 +11,42 @@
 			class="NSWDG_Assault_TierOne">
 
 			<Id name="Assaulter NSWDG" portrait="data/textures/portraits/ranger2.dds" gender="0"
-				voicePack="male_very_american" />
+				voicePack="ranger_male" />
+			<FOV degrees="150" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="40.0" />
+			<!-- mobility can be changed by the current equipment, in the specified range -->
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.52" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+
+			<Equipment>
+				<Item name="MK 18_TierOne" />
+				<Item name="IronSights" />
+				<Item name="G19 Pistol_TierOne" />
+				<Item name="IronSights_Pistol" />
+				<Item name="Smoke Grenade" />
+				<Item name="Frag Grenade" />
+				<Item name="Lockpick" />
+				<Item name="NSWDG_Cap_TierOne" />
+				<Item name="Rangers SFLCS Level III" />
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="NSWDG_Assault_TierOne Fem" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm"
+			diffuseTex="data/models/humans/nsw_assaulter.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm"
+			diffuseTex="data/models/humans/attachments/nsw_assaulter_vest.dds" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy"
+			unit="NSWDG_TierOne"
+			class="NSWDG_Assault_TierOne">
+
+			<Id name="Assaulter NSWDG" portrait="data/textures/portraits/ranger2.dds" gender="1"
+				voicePack="ranger_female" />
 			<FOV degrees="150" distanceMeters="999" eyeRadiusMeters="1" />
 			<Brain suppressionRecovery="40.0" />
 			<!-- mobility can be changed by the current equipment, in the specified range -->
@@ -54,7 +89,50 @@
 			class="NSWDG_Support_TierOne">
 
 			<Id name="Support NSWDG" portrait="data/textures/portraits/ranger3.dds" gender="0"
-				voicePack="male_very_american" />
+				voicePack="ranger_male" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="30.0" />
+			<!-- mobility can be changed by the current equipment, in the specified range -->
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.52" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+
+			<Equipment>
+				<Item name="MK 18_TierOne" />
+				<Item name="IronSights" />
+				<Item name="G19 Pistol_TierOne" />
+				<Item name="IronSights_Pistol" />
+				<Item name="Smoke Grenade" />
+				<Item name="Frag Grenade" />
+				<Item name="Lockpick" />
+				<Item name="NSWDG_Cap_TierOne" />
+				<Item name="Rangers SFLCS Level III" />
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="NSWDG_Support_TierOne Fem" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/ranger_support.khm"
+			diffuseTex="data/models/humans/nsw_support.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm"
+			diffuseTex="data/models/humans/attachments/nsw_assaulter_vest.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_right.khm"
+			attachSlot="vest_right" skipGOSSAO="true"
+			diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_left.khm"
+			attachSlot="vest_left" skipGOSSAO="true"
+			diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds" />
+		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm"
+			diffuseTex="data/models/humans/attachments/enemy_head.dds" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy"
+			unit="NSWDG_TierOne"
+			class="NSWDG_Support_TierOne">
+
+			<Id name="Support NSWDG" portrait="data/textures/portraits/ranger3.dds" gender="1"
+				voicePack="ranger_female" />
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
 			<Brain suppressionRecovery="30.0" />
 			<!-- mobility can be changed by the current equipment, in the specified range -->
@@ -95,7 +173,48 @@
 			class="NSWDG_Marksman_TierOne">
 
 			<Id name="Marksman NSWDG" portrait="data/textures/portraits/ranger5.dds" gender="0"
-				voicePack="male_very_american" />
+				voicePack="ranger_male" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="30.0" />
+			<!-- mobility can be changed by the current equipment, in the specified range -->
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.52" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+
+			<Equipment>
+				<Item name="MK 18_TierOne" />
+				<Item name="IronSights" />
+				<Item name="G19 Pistol_TierOne" />
+				<Item name="IronSights_Pistol" />
+				<Item name="Smoke Grenade" />
+				<Item name="Frag Grenade" />
+				<Item name="Lockpick" />
+				<Item name="NSWDG_Cap_TierOne" />
+				<Item name="Rangers SFLCS Level III" />
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="NSWDG_Marksman_TierOne Fem" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm"
+			diffuseTex="data/models/humans/nsw_marksman.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm"
+			diffuseTex="data/models/humans/attachments/nsw_assaulter_vest.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_marksman_wristmap.khm"
+			diffuseTex="data/models/humans/attachments/ranger_marksman_wristmap.dds" />
+		<RenderObject3D model="data/models/humans/attachments/cia_scarf.khm"
+			diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds" />
+		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm"
+			diffuseTex="data/models/humans/attachments/enemy_head.dds" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy"
+			unit="NSWDG_TierOne"
+			class="NSWDG_Marksman_TierOne">
+
+			<Id name="Marksman NSWDG" portrait="data/textures/portraits/ranger5.dds" gender="1"
+				voicePack="ranger_female" />
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
 			<Brain suppressionRecovery="30.0" />
 			<!-- mobility can be changed by the current equipment, in the specified range -->
@@ -134,7 +253,46 @@
 			class="NSWDG_Undercover_TierOne">
 
 			<Id name="Undercover NSWDG" portrait="data/textures/portraits/ranger55.dds" gender="0"
-				voicePack="male_very_american" />
+				voicePack="cia_male" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="30.0" />
+			<!-- mobility can be changed by the current equipment, in the specified range -->
+			<Mobility>
+				<MoveSpeed min="1" defaultMetersPerSec="2" max="9" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+
+			<Concealment default="10" canHide="true" />
+
+			<Equipment>
+				<Item name="IronSights" />
+				<Item name="G17 Pistol_TierOne" />
+				<Item name="IronSights_Pistol" />
+				<Item name="Flashbang" />
+				<Item name="Slap Charge" />
+				<Item name="NSWDG_Cap_TierOne" />
+				<Item name="Lockpick" />
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="NSWDG_Undercover_TierOne Fem" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/enemy_1.khm"
+			diffuseTex="data/models/humans/enemy_base_diffuse1.dds" />
+		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm"
+			diffuseTex="data/models/humans/attachments/enemy_head.dds" />
+		<RenderObject3D model="data/models/humans/attachments/cia_scarf.khm"
+			diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds" />
+		<RenderObject3D model="data/models/humans/attachments/cia_jacket.khm"
+			diffuseTex="data/models/humans/attachments/nsw_jacket.dds" windAnimated="1" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy"
+			unit="NSWDG_TierOne"
+			class="NSWDG_Undercover_TierOne">
+
+			<Id name="Undercover NSWDG" portrait="data/textures/portraits/ranger55.dds" gender="1"
+				voicePack="cia_female" />
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
 			<Brain suppressionRecovery="30.0" />
 			<!-- mobility can be changed by the current equipment, in the specified range -->
@@ -173,7 +331,49 @@
 			class="NSWDG_BlackOps_TierOne">
 
 			<Id name="BlackOps NSWDG" portrait="data/textures/portraits/ranger56.dds" gender="0"
-				voicePack="male_very_american" />
+				voicePack="cia_male" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="30.0" />
+			<!-- mobility can be changed by the current equipment, in the specified range -->
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+
+			<Concealment default="7" />
+
+			<Equipment>
+				<Item name="M4 Carbine_TierOne" />
+				<Item name="IronSights" />
+				<Item name="G17 Pistol_TierOne" />
+				<Item name="IronSights_Pistol" />
+				<Item name="Flashbang" />
+				<Item name="Slap Charge" />
+				<Item name="Lockpick" />
+				<Item name="Poncho" />
+				<Item name="NSWDG_Cap_TierOne" />
+				<Item name="CIA TacVest Level III" />
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="NSWDG_BlackOps_TierOne Fem" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/ranger_support.khm"
+			diffuseTex="data/models/humans/nsw_blackops.dds" />
+		<RenderObject3D model="data/models/humans/attachments/cia_scarf.khm"
+			diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds" />
+		<RenderObject3D model="data/models/humans/attachments/cia_vest_01.khm"
+			diffuseTex="data/models/humans/attachments/ranger_assaulter_vest.dds" />
+		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm"
+			diffuseTex="data/models/humans/attachments/enemy_head.dds" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy"
+			unit="NSWDG_TierOne"
+			class="NSWDG_BlackOps_TierOne">
+
+			<Id name="BlackOps NSWDG" portrait="data/textures/portraits/ranger56.dds" gender="1"
+				voicePack="cia_female" />
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
 			<Brain suppressionRecovery="30.0" />
 			<!-- mobility can be changed by the current equipment, in the specified range -->
