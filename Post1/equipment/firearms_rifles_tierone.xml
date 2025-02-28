@@ -4334,7 +4334,10 @@
 
   <Bind eqp="M110A1 SD_TierOne">
 
-    <to name="762FMJM80A1_M110A1SD"/>
+    <to name="762FMJM80A1_M110A1Sup"/>
+	<to name="762FMJM118LR_M110A1Sup"/>
+	<to name="762APM993_M110A1Sup"/>
+	<to name="762XM1158ADVAP_M110A1Sup"/>
 
     <to name="M150RCO"/>
     <to name="SpecterDR"/>

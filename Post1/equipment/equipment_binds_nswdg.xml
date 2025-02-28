@@ -160,8 +160,8 @@
 		<eqp name="MK17CQC SD_TierOne" />
 		<eqp name="M249SPW_TierOne" />
 		<eqp name="M249Sup_TierOne" />
-		<eqp name="LAMG_TierOne" />
-		<eqp name="LAMG Sup_TierOne" />
+		<eqp name="LAMG" />
+		<eqp name="LAMG Sup" />
 		<eqp name="M240L_TierOne" />
 		<eqp name="MK48_TierOne" />
 		<eqp name="MK48Sup_TierOne" />
@@ -284,13 +284,9 @@
 		<eqp name="Spy Camera" />
 		<eqp name="TEC Torch" />
 		<eqp name="RPG 26 CIA BOps" />
-		<eqp name="" />
-		<eqp name="" />
-		<eqp name="" />
-		<eqp name="" />
-		<eqp name="" />
 
 		<!-- Pistols -->
+		<eqp name="TSS4 Pistol" />
 		<eqp name="1911 Pistol_TierOne" />
 		<eqp name="M17 Pistol_TierOne" />
 		<eqp name="M18 Pistol_TierOne" />
@@ -371,6 +367,7 @@
 		<eqp name="M320 SMK_TierOne" />
 
 		<!-- Pistols -->
+		<eqp name="TSS4 Pistol" />
 		<eqp name="M17 Pistol_TierOne" />
 		<eqp name="1911 Pistol_TierOne" />
 		<eqp name="M18 Pistol_TierOne" />

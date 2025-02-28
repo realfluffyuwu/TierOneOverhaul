@@ -1,0 +1,41 @@
+<Equipment>
+    <Bind to="Assault">
+		<eqp name="MP7A1_TierOne" />
+		<eqp name="MP7A1 SD_TierOne" />
+
+		<eqp name="HK 416_TierOne" />
+		<eqp name="HK 416 SD_TierOne" />
+		<eqp name="MCX_TierOne" />
+		<eqp name="MCX SPEAR_TierOne" />
+		<eqp name="MCX SPEAR SD_TierOne" />
+	</Bind>
+
+    <Bind to="Marksman">
+		<eqp name="MCX SPEAR_TierOne" />
+		<eqp name="MCX SPEAR SD_TierOne" />
+	</Bind>
+    <Bind to="Grenadier">
+		<eqp name="MP7A1_TierOne" />
+		<eqp name="MP7A1 SD_TierOne" />
+		<eqp name="HK 416_TierOne" />
+		<eqp name="HK 416 SD_TierOne" />
+		<eqp name="MCX_TierOne" />
+		<eqp name="MCX SPEAR_TierOne" />
+		<eqp name="MCX SPEAR SD_TierOne" />
+	</Bind>
+
+	<Bind to="BlackOps">
+		<eqp name="Vector9_TierOne" />
+		<eqp name="Vector9SD_TierOne" />
+		<eqp name="P90_TierOne" />
+		<eqp name="P90 SD_TierOne" />
+		<eqp name="HK 416_TierOne" />
+		<eqp name="HK 416 SD_TierOne" />
+		<eqp name="AS VAL_TierOne" />
+		<eqp name="G3KA4_TierOne" />
+		<eqp name="G3KA4 SD_TierOne" />
+		<eqp name="MCX_TierOne" />
+		<eqp name="MCX SPEAR_TierOne" />
+		<eqp name="MCX SPEAR SD_TierOne" />
+	</Bind>
+</Equipment>
