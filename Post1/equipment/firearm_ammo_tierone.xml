@@ -6,23 +6,23 @@ TIER ONE AMMO
 <!-- MOD -->
 
 <!-- -->
-<Ammo name="556FMJMk262_MK12"
-		tooltip="@ammo_556FMJMk262_name"
-		description="@ammo_556FMJMk262_desc"
-		img="data/models/weapons/attachments/mk262_ammo_ui.dds"
-		>
-		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+	<Ammo name="556FMJMk262_MK12"
+			tooltip="@ammo_556FMJMk262_name"
+			description="@ammo_556FMJMk262_desc"
+			img="data/models/weapons/attachments/mk262_ammo_ui.dds"
+			>
+			<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
 
-		<Params	roundsPerSecond="6"
-			audibleSoundRadius="100"
-			physicsImpactForce="2.0"
-			damageType="0"
-			silenced="0">
-			<Damage start="34" end="34" startDist="0" endDist="100"/>
-			<CriticalChancePercent start="20" end="20" startDist="0" endDist="100"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
-		</Params>
-</Ammo>
+			<Params	roundsPerSecond="6"
+				audibleSoundRadius="100"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+				<Damage start="34" end="34" startDist="0" endDist="100"/>
+				<CriticalChancePercent start="20" end="20" startDist="0" endDist="100"/>
+				<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
+			</Params>
+	</Ammo>
 
 	<Ammo name="556FMJMk262_MK12SD"
 			tooltip="@ammo_556FMJMk262_name"
@@ -38,7 +38,7 @@ TIER ONE AMMO
 				silenced="1">
 				<Damage start="34" end="34" startDist="0" endDist="100"/>
 				<CriticalChancePercent start="20" end="20" startDist="0" endDist="100"/>
-				<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+				<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 			</Params>
 	</Ammo>
 
@@ -56,7 +56,7 @@ TIER ONE AMMO
 				silenced="0">
 			<Damage start="110" end="90" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="50" end="50" startDist="0" endDist="10"/>
-			<ArmorPenetration start="10" end="7" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="40" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -76,7 +76,7 @@ TIER ONE AMMO
 				silenced="0">
 			<Damage start="55" end="17" startDist="0" endDist="20"/>
 			<CriticalChancePercent start="25" end="0" startDist="0" endDist="12.5"/>
-			<ArmorPenetration start="1" end="1" startDist="0" endDist="60"/>
+			<ArmorPenetration start="20" end="20" startDist="0" endDist="60"/>
 		</Params>
 	</Ammo>
 
@@ -95,7 +95,7 @@ TIER ONE AMMO
 				silenced="0">
 			<Damage start="35" end="25" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="25" end="20" startDist="0" endDist="35"/>
-			<ArmorPenetration start="2" end="2" startDist="0" endDist="60"/>
+			<ArmorPenetration start="20" end="20" startDist="0" endDist="60"/>
 		</Params>
 	</Ammo>
 
@@ -113,7 +113,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="55" end="17" startDist="0" endDist="20"/>
 			<CriticalChancePercent start="25" end="0" startDist="0" endDist="12.5"/>
-			<ArmorPenetration start="1" end="1" startDist="0" endDist="60"/>
+			<ArmorPenetration start="21" end="21" startDist="0" endDist="60"/>
 		</Params>
 	</Ammo>
 
@@ -132,7 +132,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="35" end="25" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="25" end="20" startDist="0" endDist="35"/>
-			<ArmorPenetration start="2" end="2" startDist="0" endDist="60"/>
+			<ArmorPenetration start="22" end="22" startDist="0" endDist="60"/>
 		</Params>
 	</Ammo>
 
@@ -151,7 +151,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="29" end="26" startDist="0" endDist="30"/>
 			<CriticalChancePercent start="120" end="0" startDist="0" endDist="20"/>
-			<ArmorPenetration start="0" end="0" startDist="0" endDist="100"/>
+			<ArmorPenetration start="15" end="15" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -170,7 +170,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="17" end="15" startDist="0" endDist="50"/>
 			<CriticalChancePercent start="16" end="10" startDist="0" endDist="65"/>
-			<ArmorPenetration start="5" end="4" startDist="0" endDist="60"/>
+			<ArmorPenetration start="50" end="40" startDist="0" endDist="60"/>
 		</Params>
 	</Ammo>
 
@@ -189,7 +189,7 @@ TIER ONE AMMO
 				silenced="0">
 			<Damage start="17" end="15" startDist="0" endDist="50"/>
 			<CriticalChancePercent start="16" end="10" startDist="0" endDist="65"/>
-			<ArmorPenetration start="5" end="4" startDist="0" endDist="60"/>
+			<ArmorPenetration start="50" end="40" startDist="0" endDist="60"/>
 		</Params>
 	</Ammo>
 
@@ -208,7 +208,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="35" end="33" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="35" end="35" startDist="0" endDist="30"/>
-			<ArmorPenetration start="12" end="12" startDist="0" endDist="100"/>
+			<ArmorPenetration start="70" end="70" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -228,7 +228,7 @@ TIER ONE AMMO
 				silenced="0">
 			<Damage start="35" end="33" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="35" end="35" startDist="0" endDist="30"/>
-			<ArmorPenetration start="12" end="12" startDist="0" endDist="100"/>
+			<ArmorPenetration start="70" end="70" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -247,7 +247,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="40" end="35" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="30" end="30" startDist="0" endDist="30"/>
-			<ArmorPenetration start="7" end="7" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -267,7 +267,7 @@ TIER ONE AMMO
 				silenced="0">
 			<Damage start="40" end="35" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="30" end="30" startDist="0" endDist="30"/>
-			<ArmorPenetration start="7" end="7" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -286,7 +286,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="40" end="30" startDist="0" endDist="30"/>
 			<CriticalChancePercent start="35" end="35" startDist="0" endDist="30"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="55" end="55" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -305,7 +305,7 @@ TIER ONE AMMO
 				silenced="0">
 			<Damage start="40" end="30" startDist="0" endDist="30"/>
 			<CriticalChancePercent start="35" end="35" startDist="0" endDist="30"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -324,7 +324,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="30" end="30" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="20" end="20" startDist="0" endDist="100"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -343,7 +343,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="34" end="34" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="17" end="15" startDist="0" endDist="100"/>
-			<ArmorPenetration start="6" end="6" startDist="0" endDist="100"/>
+			<ArmorPenetration start="60" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -362,7 +362,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="35" end="25" startDist="0" endDist="30"/>
 			<CriticalChancePercent start="30" end="10" startDist="0" endDist="10"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -381,7 +381,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="40" end="30" startDist="0" endDist="30"/>
 			<CriticalChancePercent start="35" end="35" startDist="0" endDist="30"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -400,7 +400,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="28" end="20" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="35" end="15" startDist="0" endDist="45"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -419,7 +419,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="30" end="20" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="35" end="15" startDist="0" endDist="60"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -438,7 +438,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="29" end="20" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="35" end="15" startDist="0" endDist="55"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -457,7 +457,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="30" end="20" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="35" end="17" startDist="0" endDist="60"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -476,7 +476,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="35" end="25" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="25" end="20" startDist="0" endDist="42"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -495,7 +495,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="36" end="25" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="25" end="20" startDist="0" endDist="60"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -515,7 +515,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="28" end="20" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="15" end="15" startDist="0" endDist="100"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -533,9 +533,9 @@ TIER ONE AMMO
 				physicsImpactForce="2.0"
 				damageType="0"
 				silenced="0">
-			<Damage start="15" end="10" startDist="0" endDist="100"/>
-			<CriticalChancePercent start="30" end="10" startDist="0" endDist="30"/>
-			<ArmorPenetration start="4" end="2" startDist="0" endDist="100"/>
+			<Damage start="21" end="19" startDist="0" endDist="50"/>
+			<CriticalChancePercent start="23" end="21" startDist="0" endDist="34"/>
+			<ArmorPenetration start="40" end="40" startDist="0" endDist="50"/>
 		</Params>
 	</Ammo>
 
@@ -552,9 +552,9 @@ TIER ONE AMMO
 				physicsImpactForce="2.0"
 				damageType="0"
 				silenced="0">
-			<Damage start="29" end="5" startDist="0" endDist="30"/>
-			<CriticalChancePercent start="20" end="10" startDist="0" endDist="15"/>
-			<ArmorPenetration start="3" end="2" startDist="0" endDist="100"/>
+			<Damage start="25" end="20" startDist="0" endDist="50"/>
+			<CriticalChancePercent start="23" end="21" startDist="0" endDist="34"/>
+			<ArmorPenetration start="40" end="40" startDist="0" endDist="50"/>
 		</Params>
 	</Ammo>
 
@@ -571,9 +571,9 @@ TIER ONE AMMO
 				physicsImpactForce="2.0"
 				damageType="0"
 				silenced="0">
-			<Damage start="20" end="5" startDist="0" endDist="60"/>
-			<CriticalChancePercent start="25" end="8" startDist="0" endDist="30"/>
-			<ArmorPenetration start="4" end="2" startDist="0" endDist="100"/>
+			<Damage start="30" end="25" startDist="0" endDist="50"/>
+			<CriticalChancePercent start="23" end="21" startDist="0" endDist="34"/>
+			<ArmorPenetration start="40" end="40" startDist="0" endDist="50"/>
 		</Params>
 	</Ammo>
 
@@ -594,7 +594,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="58" end="5" startDist="0" endDist="30"/>
 			<CriticalChancePercent start="30" end="5" startDist="0" endDist="25"/>
-			<ArmorPenetration start="5" end="4" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -615,7 +615,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="50" end="10" startDist="0" endDist="25"/>
 			<CriticalChancePercent start="35" end="5" startDist="0" endDist="20"/>
-			<ArmorPenetration start="8" end="6" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -636,7 +636,7 @@ TIER ONE AMMO
 				silenced="0">
 			<Damage start="28" end="17" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="15" end="10" startDist="0" endDist="35"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -655,7 +655,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="28" end="17" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="15" end="10" startDist="0" endDist="35"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -673,7 +673,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="30" end="13" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="15" end="5" startDist="0" endDist="25"/>
-			<ArmorPenetration start="1" end="0" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -691,7 +691,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="30" end="13" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="15" end="5" startDist="0" endDist="25"/>
-			<ArmorPenetration start="1" end="0" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -709,7 +709,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="30" end="13" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="15" end="5" startDist="0" endDist="25"/>
-			<ArmorPenetration start="1" end="0" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -727,7 +727,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="30" end="13" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="15" end="5" startDist="0" endDist="25"/>
-			<ArmorPenetration start="1" end="0" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 <!-- -->
@@ -745,7 +745,7 @@ TIER ONE AMMO
 				silenced="0">
 			<Damage start="25" end="2" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="25" end="25" startDist="0" endDist="35"/>
-			<ArmorPenetration start="10" end="10" startDist="0" endDist="100"/>
+			<ArmorPenetration start="60" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -765,7 +765,7 @@ TIER ONE AMMO
 			silenced="1">
 		<Damage start="35" end="25" startDist="0" endDist="100"/>
 		<CriticalChancePercent start="25" end="20" startDist="0" endDist="35"/>
-		<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 	</Params>
 	</Ammo>
 
@@ -790,7 +790,7 @@ TIER ONE AMMO
 		<CriticalChancePercent start="30" end="15" startDist="0" endDist="25"/>
 
 		<!-- i.e. divides distance range in (end - start) discrete intervals for AP -->
-		<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 	</Params>
 	</Ammo>
 
@@ -809,7 +809,7 @@ TIER ONE AMMO
 			silenced="1">
 		<Damage start="26" end="20" startDist="0" endDist="100"/>
 		<CriticalChancePercent start="35" end="15" startDist="0" endDist="35"/>
-		<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 	</Params>
 	</Ammo>
 
@@ -828,7 +828,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="22" end="2" startDist="0" endDist="60"/>
 			<CriticalChancePercent start="25" end="20" startDist="0" endDist="25"/>
-			<ArmorPenetration start="10" end="8" startDist="0" endDist="60"/>
+			<ArmorPenetration start="60" end="50" startDist="0" endDist="60"/>
 		</Params>
 	</Ammo>
 
@@ -847,7 +847,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="35" end="25" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="25" end="20" startDist="0" endDist="35"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -872,7 +872,7 @@ TIER ONE AMMO
 			<CriticalChancePercent start="30" end="15" startDist="0" endDist="25"/>
 
 			<!-- i.e. divides distance range in (end - start) discrete intervals for AP -->
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -891,7 +891,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="26" end="20" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="35" end="15" startDist="0" endDist="35"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -910,7 +910,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="20" end="1" startDist="0" endDist="60"/>
 			<CriticalChancePercent start="25" end="20" startDist="0" endDist="25"/>
-			<ArmorPenetration start="10" end="8" startDist="0" endDist="60"/>
+			<ArmorPenetration start="60" end="50" startDist="0" endDist="60"/>
 		</Params>
 	</Ammo>
 
@@ -929,7 +929,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="55" end="17" startDist="0" endDist="20"/>
 			<CriticalChancePercent start="25" end="0" startDist="0" endDist="12.5"/>
-			<ArmorPenetration start="1" end="1" startDist="0" endDist="60"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="60"/>
 		</Params>
 	</Ammo>
 
@@ -948,85 +948,10 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="35" end="25" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="25" end="20" startDist="0" endDist="35"/>
-			<ArmorPenetration start="2" end="2" startDist="0" endDist="60"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="60"/>
 		</Params>
 	</Ammo>
 
-<!-- -->
-	<Ammo name="ACTION_MP7"
-			tooltip="@ammo_actionsx_name"
-			description="@ammo_actionsx_desc"
-			img="data/models/weapons/attachments/actionsx_ammo_ui.dds"
-		>
-		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
-
-		<Params roundsPerSecond="15.8"
-				audibleSoundRadius="50"
-				physicsImpactForce="2.0"
-				damageType="0"
-				silenced="0">
-			<Damage start="31" end="10" startDist="0" endDist="25"/>
-			<CriticalChancePercent start="15" end="5" startDist="0" endDist="20"/>
-			<ArmorPenetration start="2" end="1" startDist="0" endDist="60"/>
-		</Params>
-	</Ammo>
-
-<!-- -->
-	<Ammo name="FMJ_MP7"
-			tooltip="@ammo_fmjsx_name"
-			description="@ammo_fmjsx_desc"
-			img="data/models/weapons/attachments/fmjsx_ammo_ui.dds"
-		>
-		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
-
-		<Params roundsPerSecond="15.8"
-				audibleSoundRadius="50"
-				physicsImpactForce="2.0"
-				damageType="0"
-				silenced="0">
-			<Damage start="20" end="15" startDist="0" endDist="50"/>
-			<CriticalChancePercent start="23" end="8" startDist="0" endDist="65"/>
-			<ArmorPenetration start="4" end="3" startDist="0" endDist="60"/>
-		</Params>
-	</Ammo>
-
-<!-- -->
-	<Ammo name="ACTION_MP7SD"
-			tooltip="@ammo_actionsx_name"
-			description="@ammo_actionsx_desc"
-			img="data/models/weapons/attachments/actionsx_ammo_ui.dds"
-		>
-		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
-
-		<Params roundsPerSecond="15.8"
-				audibleSoundRadius="12"
-				physicsImpactForce="2.0"
-				damageType="0"
-				silenced="1">
-			<Damage start="31" end="10" startDist="0" endDist="40"/>
-			<CriticalChancePercent start="15" end="5" startDist="0" endDist="20"/>
-			<ArmorPenetration start="2" end="1" startDist="0" endDist="60"/>
-		</Params>
-	</Ammo>
-
-<!-- -->
-	<Ammo name="FMJ_MP7SD"
-			tooltip="@ammo_fmjsx_name"
-			description="@ammo_fmjsx_desc"
-			img="data/models/weapons/attachments/fmjsx_ammo_ui.dds"
-		>
-		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
-
-		<Params roundsPerSecond="15.8"
-				audibleSoundRadius="12"
-				physicsImpactForce="2.0"
-				damageType="0"
-				silenced="1">
-			<Damage start="20" end="15" startDist="0" endDist="50"/>
-			<CriticalChancePercent start="23" end="8" startDist="0" endDist="65"/>
-			<ArmorPenetration start="4" end="3" startDist="0" endDist="60"/>
-		</Params>
-	</Ammo>
 
 <!-- -->
 	<Ammo name="338SCENAR_MJOLNIR"
@@ -1043,7 +968,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="110" end="80" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="50" end="50" startDist="0" endDist="10"/>
-			<ArmorPenetration start="12" end="9" startDist="0" endDist="100"/>
+			<ArmorPenetration start="70" end="65" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -1062,7 +987,7 @@ TIER ONE AMMO
 				silenced="0">
 			<Damage start="0" end="0" startDist="0" endDist="50"/>
 			<CriticalChancePercent start="15" end="10" startDist="0" endDist="65"/>
-			<ArmorPenetration start="4" end="3" startDist="0" endDist="60"/>
+			<ArmorPenetration start="24" end="23" startDist="0" endDist="60"/>
 		</Params>
 	</Ammo>
 
@@ -1081,7 +1006,7 @@ TIER ONE AMMO
 				silenced="0">
 			<Damage start="0" end="0" startDist="0" endDist="50"/>
 			<CriticalChancePercent start="15" end="10" startDist="0" endDist="65"/>
-			<ArmorPenetration start="4" end="3" startDist="0" endDist="60"/>
+			<ArmorPenetration start="24" end="23" startDist="0" endDist="60"/>
 		</Params>
 	</Ammo>
 
@@ -1100,7 +1025,7 @@ TIER ONE AMMO
 				silenced="0">
 			<Damage start="0" end="0" startDist="0" endDist="50"/>
 			<CriticalChancePercent start="15" end="10" startDist="0" endDist="65"/>
-			<ArmorPenetration start="4" end="3" startDist="0" endDist="60"/>
+			<ArmorPenetration start="24" end="23" startDist="0" endDist="60"/>
 		</Params>
 	</Ammo>
 
@@ -1119,7 +1044,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="0" end="0" startDist="0" endDist="50"/>
 			<CriticalChancePercent start="15" end="10" startDist="0" endDist="65"/>
-			<ArmorPenetration start="4" end="3" startDist="0" endDist="60"/>
+			<ArmorPenetration start="24" end="23" startDist="0" endDist="60"/>
 		</Params>
 	</Ammo>
 
@@ -1138,7 +1063,7 @@ TIER ONE AMMO
 				silenced="0">
 			<Damage start="15" end="10" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="33" end="25" startDist="0" endDist="30"/>
-			<ArmorPenetration start="4" end="2" startDist="0" endDist="100"/>
+			<ArmorPenetration start="40" end="40" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -1157,7 +1082,7 @@ TIER ONE AMMO
 				silenced="0">
 			<Damage start="25" end="5" startDist="0" endDist="30"/>
 			<CriticalChancePercent start="28" end="1" startDist="0" endDist="15"/>
-			<ArmorPenetration start="3" end="2" startDist="0" endDist="100"/>
+			<ArmorPenetration start="40" end="40" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -1176,7 +1101,7 @@ TIER ONE AMMO
 				silenced="0">
 			<Damage start="20" end="5" startDist="0" endDist="60"/>
 			<CriticalChancePercent start="15" end="10" startDist="0" endDist="30"/>
-			<ArmorPenetration start="4" end="2" startDist="0" endDist="100"/>
+			<ArmorPenetration start="40" end="40" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 <!-- -->
@@ -1195,7 +1120,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="15" end="10" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="33" end="25" startDist="0" endDist="30"/>
-			<ArmorPenetration start="4" end="2" startDist="0" endDist="100"/>
+			<ArmorPenetration start="40" end="40" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -1214,7 +1139,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="25" end="5" startDist="0" endDist="30"/>
 			<CriticalChancePercent start="28" end="1" startDist="0" endDist="15"/>
-			<ArmorPenetration start="3" end="2" startDist="0" endDist="100"/>
+			<ArmorPenetration start="40" end="40" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -1233,7 +1158,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="20" end="5" startDist="0" endDist="60"/>
 			<CriticalChancePercent start="15" end="10" startDist="0" endDist="30"/>
-			<ArmorPenetration start="4" end="2" startDist="0" endDist="100"/>
+			<ArmorPenetration start="40" end="40" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 <!-- -->
@@ -1254,7 +1179,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="50" end="50" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="30" end="50" startDist="0" endDist="10"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -1272,24 +1197,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="50" end="50" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="30" end="50" startDist="0" endDist="10"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
-		</Params>
-	</Ammo>
-
-	<Ammo name="762FMJM118LR_MK17LBSup"
-			tooltip="@ammo_762FMJM118LR_name"
-			description="@ammo_762FMJM118LR_desc"
-			img="data/models/weapons/attachments/m118lr_ammo_ui.dds"
-		>
-
-		<Params	roundsPerSecond="10"
-				audibleSoundRadius="33"
-				physicsImpactForce="4.0"
-				damageType="0"
-				silenced="1">
-			<Damage start="40" end="40" startDist="0" endDist="100"/>
-			<CriticalChancePercent start="30" end="45" startDist="0" endDist="10"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 
@@ -1306,7 +1214,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="50" end="50" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="30" end="50" startDist="0" endDist="10"/>
-			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+			<ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 <!-- -->
@@ -1324,7 +1232,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="20" end="20" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="25" end="0" startDist="0" endDist="100"/>
-			<ArmorPenetration start="3" end="2" startDist="0" endDist="100"/>
+			<ArmorPenetration start="40" end="40" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 <!-- -->
@@ -1342,7 +1250,7 @@ TIER ONE AMMO
 				silenced="1">
 			<Damage start="25" end="25" startDist="0" endDist="100"/>
 			<CriticalChancePercent start="45" end="45" startDist="0" endDist="100"/>
-			<ArmorPenetration start="3" end="3" startDist="0" endDist="100"/>
+			<ArmorPenetration start="40" end="40" startDist="0" endDist="100"/>
 		</Params>
 	</Ammo>
 

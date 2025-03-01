@@ -162,15 +162,17 @@
 		</Sounds>
 	</Firearm>
 
-  <Bind eqp="MP7A1_TierOne">
-    <to name="ACTION_MP7"/>
-    <to name="FMJ_MP7"/>
+	<Bind eqp="MP7A1_TierOne">
+		<to name="46x30DM11_MP7"/>
+		<to name="46x30HP31_MP7"/>
+		<to name="46x30FMJ40_MP7"/>
+		<to name="46x30FMJ77Subsonic_MP7"/>
 
-    <to name="IronSights"/>
-    <to name="M68CCO"/>
-    <to name="Holosight"/>
-    <to name="M150RCO"/>
-  </Bind>
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+	</Bind>
 
 	<Firearm name="MP7A1_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
 			tooltip="@firearm_mp7a1_name"
@@ -242,15 +244,17 @@
 		</Sounds>
 	</Firearm>
 
-  <Bind eqp="MP7A1 SD_TierOne">
-    <to name="ACTION_MP7SD"/>
-    <to name="FMJ_MP7SD"/>
+	<Bind eqp="MP7A1 SD_TierOne">
+		<to name="46x30DM11_MP7Sup"/>
+		<to name="46x30HP31_MP7Sup"/>
+		<to name="46x30FMJ40_MP7Sup"/>
+		<to name="46x30FMJ77Subsonic_MP7Sup"/>
 
-    <to name="IronSights"/>
-    <to name="M68CCO"/>
-    <to name="Holosight"/>
-    <to name="M150RCO"/>
-  </Bind>
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+	</Bind>
 
 	<Firearm name="MP7A1 SD_TierOne" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
 			tooltip="@firearm_mp7a1sd_name"
@@ -320,17 +324,17 @@
 		</Sounds>
 	</Firearm>
 
-  <Bind eqp="Vector9_TierOne">
+	<Bind eqp="Vector9_TierOne">
 
-    <to name="919FMJM882_Vector"/>
-    <to name="919FMJM1152_Vector"/>
-    <to name="919JHPM1153_Vector"/>
+		<to name="919FMJM882_Vector"/>
+		<to name="919FMJM1152_Vector"/>
+		<to name="919JHPM1153_Vector"/>
 
-    <to name="IronSights"/>
-    <to name="M68CCO"/>
-    <to name="Holosight"/>
-    <to name="M150RCO"/>
-  </Bind>
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+	</Bind>
 
 	<Firearm name="Vector9_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
 			tooltip="@firearm_vector_name"
@@ -403,17 +407,17 @@
 		</Sounds>
 	</Firearm>
 
-  <Bind eqp="Vector9SD_TierOne">
+	<Bind eqp="Vector9SD_TierOne">
 
-    <to name="919FMJM882_VectorSD"/>
-    <to name="919FMJM1152_VectorSD"/>
-    <to name="919JHPM1153_VectorSD"/>
+		<to name="919FMJM882_VectorSD"/>
+		<to name="919FMJM1152_VectorSD"/>
+		<to name="919JHPM1153_VectorSD"/>
 
-    <to name="IronSights"/>
-    <to name="M68CCO"/>
-    <to name="Holosight"/>
-    <to name="M150RCO"/>
-  </Bind>
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+	</Bind>
 
 	<Firearm name="Vector9SD_TierOne" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
 			tooltip="@firearm_vectorsd_name"
@@ -485,15 +489,15 @@
 		</Sounds>
 	</Firearm>
 
-  <Bind eqp="P90_TierOne">
+	<Bind eqp="P90_TierOne">
 
-    <to name="SS190_P90"/>
+		<to name="SS190_P90"/>
 
-    <to name="IronSights"/>
-    <to name="M68CCO"/>
-    <to name="Holosight"/>
-    <to name="M150RCO"/>
-  </Bind>
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+	</Bind>
 
 	<Firearm name="P90_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
 			tooltip="@firearm_p90_name"
@@ -2015,7 +2019,8 @@
 
   <Bind eqp="AK 105_TierOne">
 
-    <to name="5457N6_AK105"/>
+	<to name="545x39FMJ7N10_AKS74UCIA"/>
+	<to name="545x39HP55_AK105ALPHACIA"/>
 
     <to name="IronSights"/>
     <to name="M68CCO"/>
@@ -2102,7 +2107,9 @@
 
   <Bind eqp="AK 105 SD_TierOne">
 
-    <to name="5457N6_AK105SD"/>
+	<to name="545x39FMJ7N10_AK105ALPHACIASup"/>
+	<to name="545x39HP55_AK105ALPHACIASup"/>
+	<to name="545x39FMJ7U1SUBS_AKALPHACIASup"/>
 
     <to name="IronSights"/>
     <to name="M68CCO"/>
