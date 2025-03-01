@@ -5023,4 +5023,403 @@
 		</Sounds>
 	</Firearm>
 
+	<Bind eqp="MK12_TierOne">
+		<to name="556FMJMk262_MK12"/>
+
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+		<to name="LPVO_6X"/>
+		<to name="LPVO_8X"/>
+		<to name="LROMK4_3_10X"/>
+		<to name="LROMK6_3_18X"/>
+		<to name="LROPM_5_25X"/>
+	</Bind>
+
+	<Firearm name="MK12_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="14"
+			tooltip="@firearm_mk12_name"
+			description="@firearm_mk12_desc"
+			img="data/models/weapons/mk12_ui.dds"
+
+			animationSet="rifle"
+		>
+
+		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-2"/>
+		<RenderObject3D model="data/models/weapons/mk12.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mk12.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="20"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="3500"
+			reloadEmptyTime="4500"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="650"
+			guardTime="250"
+
+			accuracyStart="400"
+			accuracyEnd="400"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_556x45_name"
+			operationInfoText="@firearm_operation_semiauto_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m4_mag"
+			suppressedSwitch="MK12 SD_TierOne"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="14.0"
+			ai_rangeMax="25.0"
+			ai_stopWhenShooting="true"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="DEV_DMR556RapidFire" rangeMeters="4"/>
+			<AttackType name="DEV_DMR556RapidFireMed" rangeMeters="10"/>
+			<AttackType name="DEV_DMR556RapidFireLong" inCoverOverride="DEV_DMR556RapidFireLongMounted" rangeMeters="30"/>
+			<AttackType name="DEV_DMRAimedFire" inCoverOverride="DEV_DMRAimedFireMounted" rangeMeters="50"/>
+			<AttackType name="DEV_DMRAimedFireXX" inCoverOverride="DEV_DMRAimedFireXXMounted" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="m16_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<!-- M16A4 MARKSMAN SD-->
+
+	<Bind eqp="MK12 SD_TierOne">
+
+		<to name="556FMJMk262_MK12SD"/>
+
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+		<to name="LPVO_6X"/>
+		<to name="LPVO_8X"/>
+		<to name="LROMK4_3_10X"/>
+		<to name="LROMK6_3_18X"/>
+		<to name="LROPM_5_25X"/>
+	</Bind>
+
+	<Firearm name="MK12 SD_TierOne" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="3"
+			tooltip="@firearm_mk12sd_name"
+			description="@firearm_mk12sd_desc"
+			img="data/models/weapons/mk12sd_ui.dds"
+
+			animationSet="rifle"
+		>
+
+		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-4"/>
+		<RenderObject3D model="data/models/weapons/mk12sd.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mk12.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="20"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="3500"
+			reloadEmptyTime="4500"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="650"
+			guardTime="250"
+
+			accuracyStart="400"
+			accuracyEnd="400"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_556x45_name"
+			operationInfoText="@firearm_operation_semiauto_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m4_mag"
+			suppressedSwitch="MK12_TierOne"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="14.0"
+			ai_rangeMax="25.0"
+			ai_stopWhenShooting="true"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="DEV_DMR556RapidFire" rangeMeters="4"/>
+			<AttackType name="DEV_DMR556RapidFireMed" rangeMeters="10"/>
+			<AttackType name="DEV_DMR556RapidFireLong" inCoverOverride="DEV_DMR556RapidFireLongMounted" rangeMeters="30"/>
+			<AttackType name="DEV_DMRAimedFire" inCoverOverride="DEV_DMRAimedFireMounted" rangeMeters="50"/>
+			<AttackType name="DEV_DMRAimedFireXX" inCoverOverride="DEV_DMRAimedFireXXMounted" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_SD1" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="m16sd_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="MK11_TierOne">
+
+		<to name="762FMJM80A1_M110A1"/>
+
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+		<to name="LPVO_6X"/>
+		<to name="LPVO_8X"/>
+		<to name="LROMK4_3_10X"/>
+		<to name="LROMK6_3_18X"/>
+		<to name="LROPM_5_25X"/>
+	</Bind>
+
+	<Firearm name="MK11_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="14"
+			tooltip="@firearm_mk11_name"
+			description="@firearm_mk11_desc"
+			img="data/models/weapons/mk11_ui.dds"
+
+			animationSet="rifle"
+		>
+
+		<MobilityModifiers moveSpeedModifierPercent="-9" turnSpeedModifierPercent="-4"/>
+		<RenderObject3D model="data/models/weapons/mk11.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mk11.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="20"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="3200"
+			reloadEmptyTime="3700"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="560"
+			guardTime="200"
+
+			accuracyStart="400"
+			accuracyEnd="400"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_762x51_name"
+			operationInfoText="@firearm_operation_semiauto_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="mk17_mag"
+			suppressedSwitch="MK11 SD_TierOne"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="14.0"
+			ai_rangeMax="25.0"
+			ai_stopWhenShooting="true"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="DEV_DMRRapidFire" rangeMeters="4"/>
+			<AttackType name="DEV_DMRRapidFireMed" rangeMeters="10"/>
+			<AttackType name="DEV_DMRRapidFireLong" inCoverOverride="DEV_DMRRapidFireLongMounted" rangeMeters="20"/>
+			<AttackType name="DEV_DMRAimedFire" inCoverOverride="DEV_DMRAimedFireMounted" rangeMeters="50"/>
+			<AttackType name="DEV_DMRAimedFireXX" inCoverOverride="DEV_DMRAimedFireXXMounted" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="mk11_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<!-- M110A1SD -->
+
+	<Bind eqp="MK11 SD_TierOne">
+
+		<to name="762FMJM80A1_MK11SD"/>
+
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+		<to name="LPVO_6X"/>
+		<to name="LPVO_8X"/>
+		<to name="LROMK4_3_10X"/>
+		<to name="LROMK6_3_18X"/>
+		<to name="LROPM_5_25X"/>
+	</Bind>
+
+	<Firearm name="MK11 SD_TierOne" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="4"
+			tooltip="@firearm_mk11sd_name"
+			description="@firearm_mk11sd_desc"
+			img="data/models/weapons/mk11sd_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-9" turnSpeedModifierPercent="-8"/>
+		<RenderObject3D model="data/models/weapons/mk11sd.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mk11.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="20"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="3200"
+			reloadEmptyTime="3700"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="650"
+			guardTime="200"
+
+			accuracyStart="400"
+			accuracyEnd="400"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_762x51_name"
+			operationInfoText="@firearm_operation_semiauto_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="mk17_mag"
+			suppressedSwitch="MK11_TierOne"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="14.0"
+			ai_rangeMax="25.0"
+			ai_stopWhenShooting="true"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="DEV_DMRRapidFire" rangeMeters="4"/>
+			<AttackType name="DEV_DMRRapidFireMed" rangeMeters="10"/>
+			<AttackType name="DEV_DMRRapidFireLong" inCoverOverride="DEV_DMRRapidFireLongMounted" rangeMeters="20"/>
+			<AttackType name="DEV_DMRAimedFire" inCoverOverride="DEV_DMRAimedFireMounted" rangeMeters="50"/>
+			<AttackType name="DEV_DMRAimedFireXX" inCoverOverride="DEV_DMRAimedFireXXMounted" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_SDLARGE" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="mk11sd_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="MK13_TierOne">
+
+		<to name="300FMJMk248_MK13"/>
+
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+		<to name="LPVO_6X"/>
+		<to name="LPVO_8X"/>
+		<to name="LROMK4_3_10X"/>
+		<to name="LROMK6_3_18X"/>
+		<to name="LROPM_5_25X"/>
+	</Bind>
+
+	<Firearm name="MK13_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="15"
+			tooltip="@firearm_mk13_name"
+			description="@firearm_mk13_desc"
+			img="data/models/weapons/mk13_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-7" turnSpeedModifierPercent="-6"/>
+		<RenderObject3D model="data/models/weapons/mk13.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mk13.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="5"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="4000"
+			reloadEmptyTime="4000"
+			changeInTime="1500"
+			changeOutTime="1000"
+			readyTime="750"
+			guardTime="300"
+
+			accuracyStart="250"
+			accuracyEnd="400"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_300wm_name"
+			operationInfoText="@firearm_operation_boltaction_name"
+			ejectingShellEntity="BulletCasingLarge"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="30.0"
+			ai_rangeMax="100.0"
+			ai_stopWhenShooting="true"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="DEV_BoltActionAimedFire" inCoverOverride="DEV_BoltActionAimedFireMounted" rangeMeters="60"/>
+			<AttackType name="DEV_BoltActionAimedFireXX" inCoverOverride="DEV_BoltActionAimedFireXXMounted" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Mjolnir">
+			<Flare particles="FX_MUZZLE_FLASH_HEAVYDMR_01" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="mjolnir_reld"/>
+			<ReloadEmpty name="mjolnir_reldempt"/>
+			<Fire name="mk13_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
 </Equipment>

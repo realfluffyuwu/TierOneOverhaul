@@ -239,6 +239,11 @@
 		<eqp name="NSR SD_TierOne" />
 		<eqp name="MCX SPEAR_TierOne" />
 		<eqp name="MCX SPEAR SD_TierOne" />
+		<eqp name="MK11_TierOne" />
+		<eqp name="MK11 SD_TierOne" />
+		<eqp name="MK12_TierOne" />
+		<eqp name="MK12 SD_TierOne" />
+		<eqp name="MK13_TierOne" />
 		<eqp name="MK17STD_TierOne" />
 		<eqp name="MK17STD SD_TierOne" />
 		<eqp name="MK17CQC_TierOne" />
@@ -250,6 +255,7 @@
 		<eqp name="MK20SSRSup_TierOne" />
 		<eqp name="M110A1_TierOne" />
 		<eqp name="M110A1Sup_TierOne" />
+		<eqp name="MJOLNIR_TierOne" />
 	</Bind>
 
 	<!-- Undercover -->

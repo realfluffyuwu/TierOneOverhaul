@@ -259,6 +259,8 @@
 		<eqp name="MK20SSRSup_TierOne" />
 		<eqp name="M110A1_TierOne" />
 		<eqp name="M110A1Sup_TierOne" />
+		<eqp name="MJOLNIR_TierOne" />
+		
 	</Bind>
 
 	<!-- Grenadier -->
