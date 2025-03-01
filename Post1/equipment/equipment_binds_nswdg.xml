@@ -354,6 +354,11 @@
 		<eqp name="GPNVG_02" />
 
 		<!-- Armour -->
+		<eqp name="CIA Concealable LVL2" />
+		<eqp name="CIA Concealable LVL3A Limited" />
+		<eqp name="CIA Concealable LVL3A" />
+		<eqp name="CIA TacVest Level III" />
+		<eqp name="CIA TacVest Level IV" />
 		<eqp name="Rangers SFLCS Level III" />
 		<eqp name="Rangers SFLCS Level IV" />
 		<eqp name="Rangers SFLCS Extended" />
