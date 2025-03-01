@@ -4849,6 +4849,7 @@
 
 		<to name="IronSights"/>
 		<to name="M68CCO"/>
+		<to name="RedDotT2"/>
 		<to name="Holosight"/>
 		<to name="M150RCO"/>
 		<to name="SpecterDR"/>
@@ -4940,6 +4941,7 @@
 
 		<to name="IronSights"/>
 		<to name="M68CCO"/>
+		<to name="RedDotT2"/>
 		<to name="Holosight"/>
 		<to name="M150RCO"/>
 		<to name="SpecterDR"/>
