@@ -89,4 +89,23 @@
 			<ProtectionArc degrees="360" coveragePercent="10" piercingProtectionLevel="5" />
 		</Params>
 	</Helmet>
+
+	<Helmet name="NSWDG_HelmetIHPS_TierOne" inventoryBinding="Helmet" unlockCost="0" unlockCostBH="2"
+			tooltip="@helmet_rangers_ihps_name"
+			description="@helmet_rangers_ihps_desc"
+			img="data/models/humans/attachments/ihps_helmet_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="-2"/>
+		<ConcealmentModifier add="0" />
+
+		<RenderObject3D model="data/models/humans/attachments/nsw_assaulter_helmet.khm"
+			diffuseTex="data/models/humans/attachments/nsw_assaulter_helmet.dds"
+			attachSlot="Bip001 Head">
+			<Specular shininess="8" intensity="1.3" />
+		</RenderObject3D>
+
+		<Params>
+			<ProtectionArc degrees="360" coveragePercent="20" piercingProtectionLevel="50"/>
+		</Params>
+	</Helmet>
 </Equipment>
