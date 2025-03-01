@@ -48,6 +48,7 @@
 		<eqp name="M320 HE_TierOne" />
 		<eqp name="M320 CS_TierOne" />
 		<eqp name="M320 SMK_TierOne" />
+		
 
 		<!-- Pistols -->
 		<eqp name="M17 Pistol_TierOne" />

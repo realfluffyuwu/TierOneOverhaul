@@ -1452,20 +1452,14 @@ ARMOR
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="M320 SMK_TierOne_TierOneDP">
-		<to name="Grenadier" />
-		<to name="Operator" />
-		<to name="BlackOps" />
-		<to name="DEVSupport" />
-		<to name="DEVBlackOps" />
-
+	<Bind eqp="M320 SMK DP_TierOne">
 
 		<to name="338_SniperRifle" />
 
 		<to name="IronSights" />
 	</Bind>
 
-	<Firearm name="M320 SMK_TierOne_TierOneDP" inventoryBinding="SupportGear1" category="rpg" unlockCost="20"
+	<Firearm name="M320 SMK DP_TierOne" inventoryBinding="SupportGear1" category="rpg" unlockCost="20"
 		tooltip="@firearm_m320_name"
 		description="@firearm_m320hedp_desc"
 		img="data/models/weapons/m320_ui.dds"
