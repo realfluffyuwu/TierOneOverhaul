@@ -7,6 +7,7 @@
 		<eqp name="NSWDG_HelmetFAST_TierOne" />
 		<eqp name="NSWDG_HelmetFASTMandible_TierOne" />
 		<eqp name="NSWDG_HelmetFASTRF_TierOne" />
+		<eqp name="HelmetIHPS" />
 
 		<!-- NVGs -->
 		<eqp name="NVG" />
@@ -56,6 +57,7 @@
 		<eqp name="G19Custom Pistol_TierOne" />
 		<eqp name="G19X Pistol_TierOne" />
 		<eqp name="G19XSD Pistol_TierOne" />
+		<eqp name="Mk27M2 Pistol" />
 		<eqp name="HK45CT_TierOne" />
 		<eqp name="HK45CTSup_TierOne" />
 
@@ -102,6 +104,7 @@
 		<eqp name="NSWDG_HelmetFAST_TierOne" />
 		<eqp name="NSWDG_HelmetFASTMandible_TierOne" />
 		<eqp name="NSWDG_HelmetFASTRF_TierOne" />
+		<eqp name="HelmetIHPS" />
 
 		<!-- NVGs -->
 		<eqp name="NVG" />
@@ -150,6 +153,7 @@
 		<eqp name="G19Custom Pistol_TierOne" />
 		<eqp name="G19X Pistol_TierOne" />
 		<eqp name="G19XSD Pistol_TierOne" />
+		<eqp name="Mk27M2 Pistol" />
 		<eqp name="APC9K T1_TierOne" />
 		<eqp name="HK45CT_TierOne" />
 		<eqp name="HK45CTSup_TierOne" />
@@ -187,6 +191,7 @@
 		<eqp name="NSWDG_HelmetFAST_TierOne" />
 		<eqp name="NSWDG_HelmetFASTMandible_TierOne" />
 		<eqp name="NSWDG_HelmetFASTRF_TierOne" />
+		<eqp name="HelmetIHPS" />
 
 		<!-- NVGs -->
 		<eqp name="NVG" />
@@ -235,6 +240,7 @@
 		<eqp name="G19Custom Pistol_TierOne" />
 		<eqp name="G19X Pistol_TierOne" />
 		<eqp name="G19XSD Pistol_TierOne" />
+		<eqp name="Mk27M2 Pistol" />
 		<eqp name="APC9K T1_TierOne" />
 		<eqp name="HK45CT_TierOne" />
 		<eqp name="HK45CTSup_TierOne" />
@@ -274,6 +280,7 @@
 		<eqp name="NSWDG_HelmetFAST_TierOne" />
 		<eqp name="NSWDG_HelmetFASTMandible_TierOne" />
 		<eqp name="NSWDG_HelmetFASTRF_TierOne" />
+		<eqp name="HelmetIHPS" />
 
 		<!-- NVGs -->
 		<eqp name="NVG" />
@@ -313,6 +320,7 @@
 		<eqp name="G19Custom Pistol_TierOne" />
 		<eqp name="G19X Pistol_TierOne" />
 		<eqp name="G19XSD Pistol_TierOne" />
+		<eqp name="Mk27M2 Pistol" />
 		<eqp name="HK45CT_TierOne" />
 		<eqp name="HK45CTSup_TierOne" />
 		<eqp name="G2240 Pistol_TierOne" />
@@ -338,6 +346,7 @@
 		<eqp name="NSWDG_HelmetFAST_TierOne" />
 		<eqp name="NSWDG_HelmetFASTMandible_TierOne" />
 		<eqp name="NSWDG_HelmetFASTRF_TierOne" />
+		<eqp name="HelmetIHPS" />
 
 		<!-- NVGs -->
 		<eqp name="NVG" />
@@ -395,6 +404,7 @@
 		<eqp name="G19Custom Pistol_TierOne" />
 		<eqp name="G19X Pistol_TierOne" />
 		<eqp name="G19XSD Pistol_TierOne" />
+		<eqp name="Mk27M2 Pistol" />
 		<eqp name="HK45CT_TierOne" />
 		<eqp name="HK45CTSup_TierOne" />
 		<eqp name="G2240 Pistol_TierOne" />
