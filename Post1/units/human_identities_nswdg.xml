@@ -1,148 +1,148 @@
 <HumanIdentities>
 
-	<!-- Rangers female -->
-	<Portrait tex="data/textures/portraits/ranger13.dds" unit="NSWDG_TierOne" gender="1"/>
-	<Portrait tex="data/textures/portraits/ranger14.dds" unit="NSWDG_TierOne" gender="1"/>
-	<Portrait tex="data/textures/portraits/ranger15.dds" unit="NSWDG_TierOne" gender="1"/>
-	<Portrait tex="data/textures/portraits/ranger26.dds" unit="NSWDG_TierOne" gender="1"/>
-	<Portrait tex="data/textures/portraits/ranger39.dds" unit="NSWDG_TierOne" gender="1"/>
-	<Portrait tex="data/textures/portraits/ranger61.dds" unit="NSWDG_TierOne" gender="1"/>
-	<Portrait tex="data/textures/portraits/ranger64.dds" unit="NSWDG_TierOne" gender="1"/>
-	<Portrait tex="data/textures/portraits/ranger67.dds" unit="NSWDG_TierOne" gender="1"/>
-	<Portrait tex="data/textures/portraits/ranger72.dds" unit="NSWDG_TierOne" gender="1"/>
-	<Portrait tex="data/textures/portraits/ranger88.dds" unit="NSWDG_TierOne" gender="1"/>
+	
+	<Portrait tex="data/textures/portraits/ranger13.dds" unit="NSWDG_TierOne" gender="1" />
+	<Portrait tex="data/textures/portraits/ranger14.dds" unit="NSWDG_TierOne" gender="1" />
+	<Portrait tex="data/textures/portraits/ranger15.dds" unit="NSWDG_TierOne" gender="1" />
+	<Portrait tex="data/textures/portraits/ranger26.dds" unit="NSWDG_TierOne" gender="1" />
+	<Portrait tex="data/textures/portraits/ranger39.dds" unit="NSWDG_TierOne" gender="1" />
+	<Portrait tex="data/textures/portraits/ranger61.dds" unit="NSWDG_TierOne" gender="1" />
+	<Portrait tex="data/textures/portraits/ranger64.dds" unit="NSWDG_TierOne" gender="1" />
+	<Portrait tex="data/textures/portraits/ranger67.dds" unit="NSWDG_TierOne" gender="1" />
+	<Portrait tex="data/textures/portraits/ranger72.dds" unit="NSWDG_TierOne" gender="1" />
+	<Portrait tex="data/textures/portraits/ranger88.dds" unit="NSWDG_TierOne" gender="1" />
 
-	<!-- Rangers male -->
-	<Portrait tex="data/textures/portraits/ranger1.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger2.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger3.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger4.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger5.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger6.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger7.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger8.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger9.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger10.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger11.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger12.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger16.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger17.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger18.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger19.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger20.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger21.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger22.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger23.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger24.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger25.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger27.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger28.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger29.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger30.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger31.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger32.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger33.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger34.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger35.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger36.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger37.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger38.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger40.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger41.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger42.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger43.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger44.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger45.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger46.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger47.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger48.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger49.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger50.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger51.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger52.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger53.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger54.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger55.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger56.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger57.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger58.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger59.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger60.dds" unit="NSWDG_TierOne" gender="0"/>	
-	<Portrait tex="data/textures/portraits/ranger62.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger63.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger65.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger66.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger68.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger69.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger70.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger71.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger73.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger74.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger75.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger76.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger77.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger78.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger79.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger80.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger81.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger82.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger83.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger84.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger85.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger86.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger87.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/ranger89.dds" unit="NSWDG_TierOne" gender="0"/>
+	
+	<Portrait tex="data/textures/portraits/ranger1.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger2.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger3.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger4.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger5.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger6.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger7.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger8.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger9.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger10.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger11.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger12.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger16.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger17.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger18.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger19.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger20.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger21.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger22.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger23.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger24.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger25.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger27.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger28.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger29.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger30.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger31.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger32.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger33.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger34.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger35.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger36.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger37.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger38.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger40.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger41.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger42.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger43.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger44.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger45.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger46.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger47.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger48.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger49.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger50.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger51.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger52.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger53.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger54.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger55.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger56.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger57.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger58.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger59.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger60.dds" unit="NSWDG_TierOne" gender="0" />	
+	<Portrait tex="data/textures/portraits/ranger62.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger63.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger65.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger66.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger68.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger69.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger70.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger71.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger73.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger74.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger75.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger76.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger77.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger78.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger79.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger80.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger81.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger82.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger83.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger84.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger85.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger86.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger87.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/ranger89.dds" unit="NSWDG_TierOne" gender="0" />
 
-	<!-- CIA male -->
-	<Portrait tex="data/textures/portraits/cia1.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia2.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia3.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia4.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia5.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia6.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia7.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia8.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia9.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia10.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia11.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia12.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia13.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia14.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia15.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia16.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia17.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia18.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia19.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia20.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia21.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia22.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia23.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia24.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia25.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia26.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia27.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia28.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia29.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia30.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia31.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia32.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia33.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia34.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia35.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia36.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia37.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia38.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia39.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia40.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia41.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia42.dds" unit="NSWDG_TierOne" gender="0"/>
-	<Portrait tex="data/textures/portraits/cia43.dds" unit="NSWDG_TierOne" gender="0"/>
+	
+	<Portrait tex="data/textures/portraits/cia1.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia2.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia3.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia4.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia5.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia6.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia7.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia8.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia9.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia10.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia11.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia12.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia13.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia14.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia15.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia16.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia17.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia18.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia19.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia20.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia21.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia22.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia23.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia24.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia25.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia26.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia27.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia28.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia29.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia30.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia31.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia32.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia33.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia34.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia35.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia36.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia37.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia38.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia39.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia40.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia41.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia42.dds" unit="NSWDG_TierOne" gender="0" />
+	<Portrait tex="data/textures/portraits/cia43.dds" unit="NSWDG_TierOne" gender="0" />
 
-	<!-- CIA female -->
-	<Portrait tex="data/textures/portraits/cia44.dds" unit="NSWDG_TierOne" gender="1"/>
-	<Portrait tex="data/textures/portraits/cia45.dds" unit="NSWDG_TierOne" gender="1"/>
-	<Portrait tex="data/textures/portraits/cia46.dds" unit="NSWDG_TierOne" gender="1"/>
-	<Portrait tex="data/textures/portraits/cia47.dds" unit="NSWDG_TierOne" gender="1"/>
+	
+	<Portrait tex="data/textures/portraits/cia44.dds" unit="NSWDG_TierOne" gender="1" />
+	<Portrait tex="data/textures/portraits/cia45.dds" unit="NSWDG_TierOne" gender="1" />
+	<Portrait tex="data/textures/portraits/cia46.dds" unit="NSWDG_TierOne" gender="1" />
+	<Portrait tex="data/textures/portraits/cia47.dds" unit="NSWDG_TierOne" gender="1" />
 
 
 	<UnitNames unit0="NSWDG_TierOne">
@@ -481,7 +481,7 @@
 			<Name n="PULLINGS" />
 			<Name n="BLAKENEY" />
 			<Name n="MOWETT" />
-			<Name n="HOOKER" /> <!-- note: make sure gender stays set to '0' -->
+			<Name n="HOOKER" /> 
 			<Name n="LOKI" />
 			<Name n="SPIDER" />
 			<Name n="FIRELINE" />
@@ -498,89 +498,89 @@
 			<Name n="DOGMAN" />
 		</Gender>
 		<Gender value="1">
-			<Name n="FAITH"/>
-			<Name n="ROSE"/>
-			<Name n="LIZZIE"/>
-			<Name n="HOPE"/>
-			<Name n="TINA"/>
-			<Name n="SANDY"/>
-			<Name n="SHANNON"/>
-			<Name n="FLORES"/>
-			<Name n="DIZZY"/>
-			<Name n="IBANEZ"/>
-			<Name n="CAT"/>
-			<Name n="DIETRICH"/>
-			<Name n="FERRO"/>
-			<Name n="VASQUEZ"/>
-			<Name n="NEWT"/>
-			<Name n="RIPLEY"/>
-			<Name n="CONNOR"/>
-			<Name n="JULIETTE"/>
-			<Name n="GARDEN"/>
-			<Name n="MOORE"/>
-			<Name n="KATE"/>
-			<Name n="RUNNER"/>
-			<Name n="BISHOP"/>
-			<Name n="HIT GIRL"/>
-			<Name n="DOLORES"/>
-			<Name n="BLUE"/>
-			<Name n="RED"/>
-			<Name n="PEANUT"/>
-			<Name n="LEIA"/>
-			<Name n="COLT"/>
-			<Name n="SARAH"/>
-			<Name n="UHURA"/>
-			<Name n="PADME"/>
-			<Name n="PRINCESS"/>
-			<Name n="JYN"/>
-			<Name n="ERSO"/>
-			<Name n="REY"/>
-			<Name n="CARA"/>
-			<Name n="FENNEC"/>
-			<Name n="LILY"/>
-			<Name n="ZITA"/>
-			<Name n="ROGUE"/>
-			<Name n="ARWEN"/>
-			<Name n="LUNA"/>
-			<Name n="STAR"/>
-			<Name n="GALANOS"/>
-			<Name n="TRACY"/>
-			<Name n="AYANA"/>
-			<Name n="ALINA"/>
-			<Name n="GLORIA"/>
-			<Name n="ALEXA"/>
-			<Name n="SUSAN"/>
-			<Name n="KIM"/>
-			<Name n="ANNIKA"/>
-			<Name n="DIANA"/>
-			<Name n="FURIOSA"/>
-			<Name n="NATASHA"/>
-			<Name n="TRINITY"/>
-			<Name n="RAMONA"/>
-			<Name n="BEEZUS"/>
-			<Name n="HANNA"/>
-			<Name n="VRATASKI"/>
-			<Name n="KATNISS"/>
-			<Name n="MAYA"/>
-			<Name n="JESS"/>
-			<Name n="GREY"/>
-			<Name n="SNIPES"/>
-			<Name n="STICKS"/>
-			<Name n="WRAITH"/>
-			<Name n="WICHITA"/>
-			<Name n="CANDACE"/>
-			<Name n="SARA"/>
-			<Name n="FERN"/>
-			<Name n="VAL"/>
-			<Name n="TASHA"/>
-			<Name n="VICKY"/>
-			<Name n="PEACHES"/>
-			<Name n="MOLLY"/>
-			<Name n="ARCHER"/>
-			<Name n="WOOP"/>
-			<Name n="ASH"/>
-			<Name n="CHARLIE"/>
-			<Name n="STORM"/>
+			<Name n="FAITH" />
+			<Name n="ROSE" />
+			<Name n="LIZZIE" />
+			<Name n="HOPE" />
+			<Name n="TINA" />
+			<Name n="SANDY" />
+			<Name n="SHANNON" />
+			<Name n="FLORES" />
+			<Name n="DIZZY" />
+			<Name n="IBANEZ" />
+			<Name n="CAT" />
+			<Name n="DIETRICH" />
+			<Name n="FERRO" />
+			<Name n="VASQUEZ" />
+			<Name n="NEWT" />
+			<Name n="RIPLEY" />
+			<Name n="CONNOR" />
+			<Name n="JULIETTE" />
+			<Name n="GARDEN" />
+			<Name n="MOORE" />
+			<Name n="KATE" />
+			<Name n="RUNNER" />
+			<Name n="BISHOP" />
+			<Name n="HIT GIRL" />
+			<Name n="DOLORES" />
+			<Name n="BLUE" />
+			<Name n="RED" />
+			<Name n="PEANUT" />
+			<Name n="LEIA" />
+			<Name n="COLT" />
+			<Name n="SARAH" />
+			<Name n="UHURA" />
+			<Name n="PADME" />
+			<Name n="PRINCESS" />
+			<Name n="JYN" />
+			<Name n="ERSO" />
+			<Name n="REY" />
+			<Name n="CARA" />
+			<Name n="FENNEC" />
+			<Name n="LILY" />
+			<Name n="ZITA" />
+			<Name n="ROGUE" />
+			<Name n="ARWEN" />
+			<Name n="LUNA" />
+			<Name n="STAR" />
+			<Name n="GALANOS" />
+			<Name n="TRACY" />
+			<Name n="AYANA" />
+			<Name n="ALINA" />
+			<Name n="GLORIA" />
+			<Name n="ALEXA" />
+			<Name n="SUSAN" />
+			<Name n="KIM" />
+			<Name n="ANNIKA" />
+			<Name n="DIANA" />
+			<Name n="FURIOSA" />
+			<Name n="NATASHA" />
+			<Name n="TRINITY" />
+			<Name n="RAMONA" />
+			<Name n="BEEZUS" />
+			<Name n="HANNA" />
+			<Name n="VRATASKI" />
+			<Name n="KATNISS" />
+			<Name n="MAYA" />
+			<Name n="JESS" />
+			<Name n="GREY" />
+			<Name n="SNIPES" />
+			<Name n="STICKS" />
+			<Name n="WRAITH" />
+			<Name n="WICHITA" />
+			<Name n="CANDACE" />
+			<Name n="SARA" />
+			<Name n="FERN" />
+			<Name n="VAL" />
+			<Name n="TASHA" />
+			<Name n="VICKY" />
+			<Name n="PEACHES" />
+			<Name n="MOLLY" />
+			<Name n="ARCHER" />
+			<Name n="WOOP" />
+			<Name n="ASH" />
+			<Name n="CHARLIE" />
+			<Name n="STORM" />
 		</Gender>
 	</UnitNames>
 </HumanIdentities>
