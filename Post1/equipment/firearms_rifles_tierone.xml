@@ -4004,6 +4004,181 @@
 		</Sounds>
 	</Firearm>
 
+	<Bind eqp="MK17STD Custom_TierOne">
+
+		<to name="762FMJM80A1_MK17LB"/>
+		<to name="762FMJM118LR_MK17LB"/>
+		<to name="762APM993_MK17LB"/>
+		<to name="762XM1158ADVAP_MK17LB"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+		<to name="LPVO_6X"/>
+		<to name="LPVO_8X"/>
+	</Bind>
+
+	<Firearm name="MK17STD Custom_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="18"
+			tooltip="@firearm_mk17_std_name"
+			description="@firearm_mk17_std_desc"
+			img="data/models/weapons/mk17_mrex_ui.dds"
+
+			animationSet="rifle"
+		>
+
+		<MobilityModifiers moveSpeedModifierPercent="-8" turnSpeedModifierPercent="-2"/>
+		<RenderObject3D model="data/models/weapons/mk17_mrex.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mk17_mrex.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="20"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="2500"
+			reloadEmptyTime="3200"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="300"
+			guardTime="220"
+
+			accuracyStart="250"
+			accuracyEnd="250"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_762x51_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="mk17_mag"
+			suppressedSwitch="MK17STD Custom SD_TierOne"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="14.0"
+			ai_rangeMax="25.0"
+			ai_stopWhenShooting="true"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="DEV_HeavyDoubleTapClose" rangeMeters="2.5"/>
+			<AttackType name="DEV_HeavyDoubleTap" rangeMeters="5"/>
+			<AttackType name="DEV_HeavyDoubleTapMed1" rangeMeters="9"/>
+			<AttackType name="DEV_HeavyDoubleTapMed2" rangeMeters="14"/>
+			<AttackType name="DEV_HeavyDoubleTapLong" rangeMeters="19"/>
+			<AttackType name="DEV_HeavyCarbineAimedFire" rangeMeters="50"/>
+			<AttackType name="DEV_HeavyCarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="mk17_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+<!-- MK17STD SD -->
+
+	<Bind eqp="MK17STD Custom SD_TierOne">
+
+		<to name="762FMJM80A1_MK17LBSup"/>
+		<to name="762FMJM118LR_MK17LBSup"/>
+		<to name="762APM993_MK17LBSup"/>
+		<to name="762XM1158ADVAP_MK17LBSup"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+		<to name="LPVO_6X"/>
+		<to name="LPVO_8X"/>
+	</Bind>
+
+	<Firearm name="MK17STD Custom SD_TierOne" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="6"
+			tooltip="@firearm_mk17sd_std_name"
+			description="@firearm_mk17sd_std_desc"
+			img="data/models/weapons/mk17sd_mrex_ui.dds"
+
+			animationSet="rifle"
+		>
+
+		<MobilityModifiers moveSpeedModifierPercent="-9" turnSpeedModifierPercent="-5"/>
+		<RenderObject3D model="data/models/weapons/mk17_mrex.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mk17_mrex.dds"/>
+		<RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="20"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="2500"
+			reloadEmptyTime="3200"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="350"
+			guardTime="220"
+
+			accuracyStart="250"
+			accuracyEnd="250"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_762x51_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="mk17_mag"
+			suppressedSwitch="MK17STD Custom_TierOne"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="14.0"
+			ai_rangeMax="25.0"
+			ai_stopWhenShooting="true"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="DEV_HeavyDoubleTapClose" rangeMeters="2.5"/>
+			<AttackType name="DEV_HeavyDoubleTap" rangeMeters="5"/>
+			<AttackType name="DEV_HeavyDoubleTapMed1" rangeMeters="9"/>
+			<AttackType name="DEV_HeavyDoubleTapMed2" rangeMeters="14"/>
+			<AttackType name="DEV_HeavyDoubleTapLong" rangeMeters="19"/>
+			<AttackType name="DEV_HeavyCarbineAimedFire" rangeMeters="50"/>
+			<AttackType name="DEV_HeavyCarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_SDLARGE" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="mk17sd_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
 	<!-- MK17LB -->
 	<Bind eqp="MK17LB_TierOne">
 

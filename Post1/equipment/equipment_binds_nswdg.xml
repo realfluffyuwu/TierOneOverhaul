@@ -89,6 +89,8 @@
 		<eqp name="MK17STD SD_TierOne" />
 		<eqp name="MK17CQC_TierOne" />
 		<eqp name="MK17CQC SD_TierOne" />
+		<eqp name="MK17STD Custom_TierOne" />
+		<eqp name="MK17STD Custom SD_TierOne" />
 
 	</Bind>
 
@@ -160,6 +162,8 @@
 		<eqp name="MK17STD SD_TierOne" />
 		<eqp name="MK17CQC_TierOne" />
 		<eqp name="MK17CQC SD_TierOne" />
+		<eqp name="MK17STD Custom_TierOne" />
+		<eqp name="MK17STD Custom SD_TierOne" />
 		<eqp name="M249SPW_TierOne" />
 		<eqp name="M249Sup_TierOne" />
 		<eqp name="MK46_TierOne" />
@@ -252,6 +256,8 @@
 		<eqp name="MK17CQC SD_TierOne" />
 		<eqp name="MK17LB_TierOne" />
 		<eqp name="MK17LB Sup_TierOne" />
+		<eqp name="MK17STD Custom_TierOne" />
+		<eqp name="MK17STD Custom SD_TierOne" />
 		<eqp name="M14EBR_TierOne" />
 		<eqp name="MK20SSR_TierOne" />
 		<eqp name="MK20SSRSup_TierOne" />
