@@ -1778,6 +1778,14 @@ ARMOR
 	</Firearm>
 
 	<Bind eqp="M320 SMK_TierOne">
+		<to name="Assault" />
+		<to name="Support" />
+		<to name="Marksman" />
+		<to name="Medic" />
+		<to name="Grenadier" />
+		<to name="Operator" />
+		<to name="BlackOps" />
+
 		<to name="338_SniperRifle" />
 
 		<to name="IronSights" />
