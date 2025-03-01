@@ -23,7 +23,7 @@
 			<Equipment>
 				<Item name="MK 18_TierOne" />
 				<Item name="IronSights" />
-				<Item name="G19 Pistol_TierOne" />
+				<Item name="G17 Pistol CIA BOps" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Smoke Grenade" />
 				<Item name="Frag Grenade" />
@@ -58,7 +58,7 @@
 			<Equipment>
 				<Item name="MK 18_TierOne" />
 				<Item name="IronSights" />
-				<Item name="G19 Pistol_TierOne" />
+				<Item name="G17 Pistol CIA BOps" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Smoke Grenade" />
 				<Item name="Frag Grenade" />
@@ -101,7 +101,7 @@
 			<Equipment>
 				<Item name="MK 18_TierOne" />
 				<Item name="IronSights" />
-				<Item name="G19 Pistol_TierOne" />
+				<Item name="G17 Pistol CIA BOps" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Smoke Grenade" />
 				<Item name="Frag Grenade" />
@@ -144,7 +144,7 @@
 			<Equipment>
 				<Item name="MK 18_TierOne" />
 				<Item name="IronSights" />
-				<Item name="G19 Pistol_TierOne" />
+				<Item name="G17 Pistol CIA BOps" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Smoke Grenade" />
 				<Item name="Frag Grenade" />
@@ -185,7 +185,7 @@
 			<Equipment>
 				<Item name="MK 18_TierOne" />
 				<Item name="IronSights" />
-				<Item name="G19 Pistol_TierOne" />
+				<Item name="G17 Pistol CIA BOps" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Smoke Grenade" />
 				<Item name="Frag Grenade" />
@@ -226,7 +226,7 @@
 			<Equipment>
 				<Item name="MK 18_TierOne" />
 				<Item name="IronSights" />
-				<Item name="G19 Pistol_TierOne" />
+				<Item name="G17 Pistol CIA BOps" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Smoke Grenade" />
 				<Item name="Frag Grenade" />
@@ -343,9 +343,9 @@
 			<Concealment default="7" />
 
 			<Equipment>
-				<Item name="M4 Carbine_TierOne" />
+				<Item name="M4 CIA BOps" />
 				<Item name="IronSights" />
-				<Item name="G17 Pistol_TierOne" />
+				<Item name="G17 Pistol CIA BOps" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Flashbang" />
 				<Item name="Slap Charge" />
@@ -385,9 +385,9 @@
 			<Concealment default="7" />
 
 			<Equipment>
-				<Item name="M4 Carbine_TierOne" />
+				<Item name="M4 CIA BOps" />
 				<Item name="IronSights" />
-				<Item name="G17 Pistol_TierOne" />
+				<Item name="G17 Pistol CIA BOps" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Flashbang" />
 				<Item name="Slap Charge" />
