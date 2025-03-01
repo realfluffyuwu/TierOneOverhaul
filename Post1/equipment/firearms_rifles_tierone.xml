@@ -3508,6 +3508,174 @@
 		</Sounds>
 	</Firearm>
 
+	<Bind eqp="MK46_TierOne">
+
+		<to name="556FMJM855_M249SPW"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="SpecterDR"/>
+		<to name="MGOM145"/>
+		<to name="MGO240"/>
+	</Bind>
+
+	<Firearm name="MK46_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="18"
+			tooltip="@firearm_mk46_name"
+			description="@firearm_mk46_desc"
+			img="data/models/weapons/mk46_ui.dds"
+
+			animationSet="rifle"
+		>
+
+		<MobilityModifiers moveSpeedModifierPercent="-14" turnSpeedModifierPercent="-40"/>
+		<RenderObject3D model="data/models/weapons/m249.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mk46.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="200"
+			closedBolt="0"
+			suppressArea="1"
+
+			cyclicReload="0"
+			reloadTime="5000"
+			reloadEmptyTime="5000"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="1000"
+			guardTime="250"
+
+			accuracyStart="110"
+			accuracyEnd="70"
+			accuracyStartDist="0"
+			accuracyEndDist="50"
+
+			suppressionScale="1.15"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_556x45_name"
+			operationInfoText="@firearm_operation_fullauto_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m249_mag"
+			suppressedSwitch="MK46 SD_TierOne"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="10.0"
+			ai_rangeMax="40.0"
+			ai_stopWhenShooting="false"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="DEV_LMGStrafeShort" inCoverOverride="DEV_LMGStrafeShortMounted" rangeMeters="3"/>
+			<AttackType name="DEV_LMGStrafe" inCoverOverride="DEV_LMGStrafeMounted" rangeMeters="7"/>
+			<AttackType name="DEV_LMGStrafeMed" inCoverOverride="DEV_LMGStrafeMedMounted" rangeMeters="15"/>
+			<AttackType name="DEV_LMGStrafeLong" inCoverOverride="DEV_LMGStrafeLongMounted" rangeMeters="40"/>
+			<AttackType name="DEV_LMGStrafeLongXX" inCoverOverride="DEV_LMGStrafeLongXXMounted" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_LMG">
+			<Flare particles="FX_MUZZLE_FLASH_LMG_01" />
+			<Flare particles="FX_MUZZLE_FLASH_LMG_02" />
+			<Flare particles="FX_MUZZLE_FLASH_LMG_03" />
+			<Flare particles="FX_MUZZLE_FLASH_LMG_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="m249spw_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="MK46 SD_TierOne">
+
+		<to name="556FMJM855_M249SPWSD"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="SpecterDR"/>
+		<to name="MGOM145"/>
+		<to name="MGO240"/>
+	</Bind>
+
+	<Firearm name="MK46 SD_TierOne" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="6"
+			tooltip="@firearm_mk46sd_name"
+			description="@firearm_mk46sd_desc"
+			img="data/models/weapons/mk46sd_ui.dds"
+
+			animationSet="rifle"
+		>
+
+		<MobilityModifiers moveSpeedModifierPercent="-15" turnSpeedModifierPercent="-43"/>
+		<RenderObject3D model="data/models/weapons/m249.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mk46.dds"/>
+		<RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="200"
+			closedBolt="0"
+			suppressArea="1"
+
+			cyclicReload="0"
+			reloadTime="5000"
+			reloadEmptyTime="5000"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="1050"
+			guardTime="250"
+
+			accuracyStart="110"
+			accuracyEnd="70"
+			accuracyStartDist="0"
+			accuracyEndDist="50"
+
+			suppressionScale="1.15"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_556x45_name"
+			operationInfoText="@firearm_operation_fullauto_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m249_mag"
+			suppressedSwitch="MK46_TierOne"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="10.0"
+			ai_rangeMax="40.0"
+			ai_stopWhenShooting="false"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="DEV_LMGStrafeShort" inCoverOverride="DEV_LMGStrafeShortMounted" rangeMeters="3"/>
+			<AttackType name="DEV_LMGStrafe" inCoverOverride="DEV_LMGStrafeMounted" rangeMeters="7"/>
+			<AttackType name="DEV_LMGStrafeMed" inCoverOverride="DEV_LMGStrafeMedMounted" rangeMeters="15"/>
+			<AttackType name="DEV_LMGStrafeLong" inCoverOverride="DEV_LMGStrafeLongMounted" rangeMeters="40"/>
+			<AttackType name="DEV_LMGStrafeLongXX" inCoverOverride="DEV_LMGStrafeLongXXMounted" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_SDLMG" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_SDLMG2" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="m249spwsd_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
 	<!-- MG338 -->
 	<Bind eqp="MG338_TierOne">
 		<to name="338FMJ_MG338"/>
