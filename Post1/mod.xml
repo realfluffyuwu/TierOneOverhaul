@@ -59,4 +59,8 @@ NEW EQUIPMENT:
 
 COSMETICS:
     -Custom Helmets(AOR1/MC) by jacob-
-    -Custom Uniforms(AOR1/MC)" changeNotes="Should have fixed the missing Icons, It had an absolute path that would only work for my PC lmao" languageMod="" tags="Playable Units,Equipment,Sound Effects,Total Conversion,Other" ugcId="3434735226"/>
+    -Custom Uniforms(AOR1/MC)" changeNotes="Removed GPNVG from Ranger Assault as they are only for NSWDG except for the Operator.
+The Supports will now have access to the XM250.
+Removed the Mk17&apos;s from the Ranger Support they should not have had them.
+
+I changed the Price on the Mk18 to 0 to accomodate it being the Starting equipment for the NSWDG." languageMod="" tags="Playable Units,Equipment,Sound Effects,Total Conversion,Other" ugcId="3434735226"/>

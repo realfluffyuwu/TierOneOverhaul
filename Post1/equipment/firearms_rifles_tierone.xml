@@ -854,7 +854,7 @@
 		<to name="LPVO_8X" />
 	</Bind>
 
-	<Firearm name="MK 18_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
+	<Firearm name="MK 18_TierOne" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
 		tooltip="@firearm_mk18_name" description="@firearm_mkl8_desc"
 		img="data/models/weapons/mk18_ui.dds" animationSet="rifle">
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0" />

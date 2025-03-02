@@ -11,7 +11,6 @@
 		<!-- NVGs -->
 		<eqp name="NVG" />
 		<eqp name="NVG_02" />
-		<eqp name="GPNVG_01" />
 
 		<!-- Armour -->
 		<eqp name="Rangers SFLCS Level III" />
@@ -165,12 +164,6 @@
 
 		<!-- Primaries -->
 		<eqp name="M1014" />
-		<eqp name="NSR" />
-		<eqp name="NSR SD" />
-		<eqp name="MK17STD_TierOne" />
-		<eqp name="MK17STD SD_TierOne" />
-		<eqp name="MK17CQC_TierOne" />
-		<eqp name="MK17CQC SD_TierOne" />
 		<eqp name="M249SPW_TierOne" />
 		<eqp name="M249Sup_TierOne" />
 		<eqp name="LAMG" />
@@ -180,8 +173,8 @@
 		<eqp name="MK48Sup_TierOne" />
 		<eqp name="MG338_TierOne" />
 		<eqp name="MG338Sup_TierOne" />
-		<eqp name="XM250_TierOne" />
-		<eqp name="XM250Sup_TierOne" />
+		<eqp name="XM250" />
+		<eqp name="XM250Sup" />
 	</Bind>
 
 	<!-- Marksman -->
@@ -284,7 +277,6 @@
 		<!-- NVGs -->
 		<eqp name="NVG" />
 		<eqp name="NVG_02" />
-		<eqp name="GPNVG_01" />
 
 		<!-- Armour -->
 		<eqp name="Rangers SFLCS Level III" />
