@@ -25,7 +25,7 @@
 		ui_prefix="data/textures/gui_ingame/waypoints/cs_TierOne" ttip="@menu_game_csg_ttip"
 		ttip_disabled="@menu_generic_cannot_use" ttip_empty="@menu_game_csg_none_ttip" />
 
-	<wp type="THROW_GRENADE" equipment="SVest"
+	<wp type="THROW_GRENADE" equipment="SVest_TierOne"
 		ui_prefix="data/textures/gui_ingame/waypoints/blow_up" ttip="@menu_game_svest_ttip"
 		ttip_disabled="@menu_generic_cannot_use" ttip_empty="@menu_game_svest_none_ttip" />
 
