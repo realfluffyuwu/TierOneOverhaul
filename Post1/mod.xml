@@ -1,4 +1,4 @@
-<Mod title="Tier One Overhaul" gameVersion="105" author="Fluffy" description="[h1]Back by Popular demand, The Fabled Tier One Overhaul.[/h1]
+<Mod title="Tier One Overhaul" gameVersion="106" author="Fluffy" description="[h1]Back by Popular demand, The Fabled Tier One Overhaul.[/h1]
 
 [i]I need to Level with you guys here[/i]
 It was an [u]undertaking[/u] and a half to Port this to [b]1.0[/b], This mod has changed hands [b]twice[/b] and I got dealt a pretty bad hand with 1.0&apos;s changes.
@@ -59,4 +59,5 @@ NEW EQUIPMENT:
 
 COSMETICS:
     -Custom Helmets(AOR1/MC) by jacob-
-    -Custom Uniforms(AOR1/MC)" changeNotes="Added the MK18 and HK416 to the NSWDG Support and Marksman." languageMod="" tags="Playable Units,Equipment,Sound Effects,Total Conversion,Other" ugcId="3434735226"/>
+    -Custom Uniforms(AOR1/MC)" changeNotes="SVest Action waypoint should now be working.
+It was just missing the _TierOne Tag, oops." languageMod="" tags="Playable Units,Equipment,Sound Effects,Total Conversion,Other" ugcId="3434735226"/>
