@@ -4008,7 +4008,7 @@
 		animationSet="rifle">
 
 		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-4" />
-		<RenderObject3D model="data/models/weapons/mk12_TierOnesd.khm" attachSlot="prop_front_rifle"
+		<RenderObject3D model="data/models/weapons/mk12sd_TierOne.khm" attachSlot="prop_front_rifle"
 			skipGOSSAO="true" diffuseTex="data/models/weapons/mk12_TierOne.dds" />
 
 		<ModifiableParams numPellets="1" roundsPerMagazine="20" closedBolt="1" cyclicReload="0"
