@@ -1,4 +1,4 @@
-<Mod title="Tier One Overhaul" gameVersion="106" author="Fluffy" description="[h1]Back by Popular demand, The Fabled Tier One Overhaul.[/h1]
+<Mod title="Tier One Overhaul" gameVersion="107" author="Fluffy" description="[h1]Back by Popular demand, The Fabled Tier One Overhaul.[/h1]
 
 [i]I need to Level with you guys here[/i]
 It was an [u]undertaking[/u] and a half to Port this to [b]1.0[/b], This mod has changed hands [b]twice[/b] and I got dealt a pretty bad hand with 1.0&apos;s changes.
@@ -20,10 +20,16 @@ When you go to make a Squad you will find a separate Tier One Rangers that you c
 
 NSWDG is still here too, I&apos;m not super confident in their Equipment Binds but It seems to be in order from what I can tell.
 
-[u]Doctrines, Doctrines, Doctrines.[/u]
-I&apos;m sorry to disappoint but Neither of the Squads have Unique Doctrines, It is just too much of a hassle for me to make hand tailored Doctrines for a mod I only plan to maintain.
+[u]Will I be adding more Content.[/u]
+The Short answer is no, and the Long answer is Hell No.
 
-Will they come later, Maybe but don&apos;t get your Hopes up.
+My intention never was and never will be to add more Content to Tier One Overhaul but to get it ported to 1.0 and in a mod compatible state to this end you can consider the mod Complete as I believe I have achieved that.
+
+Tier One Overhaul is not my mod, I am merely the Maintainer, Tier One at this point is almost exactly how Miller Intended it to be, albeit with a few changes specifically with regards to Tier One Overhaul no longer Overwriting the Vanilla game, it still adds a couple weapons here and there but It now is compatible with most if not All mods.
+
+As long as I am apart of the DK2 Community I will try to keep it up to date and working with the latest version of Door Kickers 2.
+
+I have my own Original mods I want to work on, as well as a Tutorial Series for creating Mods for DK2, I already have a very basic Unit Tutorial pinned in the mod_discussion channel in the discord, I do a lot of yapping in it but It should be good enough to get you started.
 
 Original Nexus Description:
 Nearly full overhaul of the game.
@@ -59,4 +65,8 @@ NEW EQUIPMENT:
 
 COSMETICS:
     -Custom Helmets(AOR1/MC) by jacob-
-    -Custom Uniforms(AOR1/MC)" changeNotes="Fixed Mk12 model having the wrong filename" languageMod="" tags="Playable Units,Equipment,Sound Effects,Total Conversion,Other" ugcId="3434735226"/>
+    -Custom Uniforms(AOR1/MC)" changeNotes="Restored VP9 and G19X to both NSWDG and Vanilla Undercover and BlackOps
+Also fixed Strike marker for NSWDG BlackOps.
+
+Also removed the old CIA Pistols file people mistakenly think I forgot about or didn&apos;t know about.
+I did know it was there, it was on purpose have some faith." languageMod="" tags="Playable Units,Equipment,Sound Effects,Total Conversion,Other" ugcId="3434735226"/>
