@@ -10,7 +10,7 @@
 	<Firearm name="VP9 Pistol_TierOne" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="6"
 			tooltip="@firearm_vp9_name"
 			description="@firearm_vp9_desc"
-			img="data/models/weapons/vp9_ui.dds"
+			img="data/models/weapons/vp9_ui_TierOne.dds"
 
 			animationSet="pistol"
 		>
