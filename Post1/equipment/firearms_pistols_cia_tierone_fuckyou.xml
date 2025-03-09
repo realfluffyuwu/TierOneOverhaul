@@ -1,0 +1,235 @@
+<Equipment>
+	<!-- B&T VP9 Pistol -->
+
+	<Bind eqp="VP9 Pistol_TierOne">
+		<to name="919JHPM1153_VP9"/>
+
+		<to name="IronSights_Pistol"/>
+	</Bind>
+
+	<Firearm name="VP9 Pistol_TierOne" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="6"
+			tooltip="@firearm_vp9_name"
+			description="@firearm_vp9_desc"
+			img="data/models/weapons/vp9_ui.dds"
+
+			animationSet="pistol"
+		>
+		<ConcealmentModifier add="-1"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
+		<RenderObject3D model="data/models/weapons/tss4.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/tss4.dds" skipGOSSAO="true"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="5"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1300"
+			reloadEmptyTime="1600"
+			changeInTime="700"
+			changeOutTime="850"
+			readyTime="85"
+			guardTime="50"
+
+			accuracyStart="70"
+			accuracyEnd="60"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_9x19_name"
+			operationInfoText="@firearm_operation_boltaction_name"
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="pm63_mag"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="3.0"
+			ai_rangeMax="15.0"
+			ai_stopWhenShooting="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="TierOne_WelrodClose" rangeMeters="6"/>
+			<AttackType name="TierOne_WelrodMedium" rangeMeters="12"/>
+			<AttackType name="TierOne_WelrodFarXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="pistol_eqp"/>
+			<Unequip name="pistol_neqp"/>
+			<Reload name="pistol_reld"/>
+			<ReloadEmpty name="pistol_reldempt"/>
+			<Fire name="vp9_fire"/>
+			<ShellDrop name="pistol_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+    	<!-- G19X Pistol -->
+
+	<Bind eqp="G19X Pistol_TierOne">
+		<to name="919FMJM882_G19X Pistol"/>
+		<to name="919FMJM1152_Handgun"/>
+		<to name="919JHPM1153_Handgun"/>
+		<to name="919FMJ108GRHP_Handgun"/>
+
+		<to name="IronSights_Pistol"/>
+	</Bind>
+
+	<Firearm name="G19X Pistol_TierOne" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="3"
+			tooltip="@firearm_g19x_name"
+			description="@firearm_g19x_desc"
+			img="data/models/weapons/g19x_ui.dds"
+
+			animationSet="pistol"
+		>
+		<ConcealmentModifier add="-1"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
+		<RenderObject3D model="data/models/weapons/g19x.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/g19x.dds" skipGOSSAO="true"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="17"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1300"
+			reloadEmptyTime="1600"
+			changeInTime="700"
+			changeOutTime="850"
+			readyTime="80"
+			guardTime="50"
+
+			accuracyStart="70"
+			accuracyEnd="60"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_9x19_name"
+			operationInfoText="@firearm_operation_semiauto_name"
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="pm63_mag"
+			suppressedSwitch="G19XSD Pistol_TierOne"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="3.0"
+			ai_rangeMax="15.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AttackTypes>
+			<AttackType name="TierOne_EmergencyFire9mil" rangeMeters="4"/>
+			<AttackType name="TierOne_DoubleTap9mil" rangeMeters="7" priority="0"/>
+			<AttackType name="TierOne_ControlledPair9mil" rangeMeters="10" priority="0"/>
+			<AttackType name="TierOne_PistolAimedFire9mil" rangeMeters="15"/>
+			<AttackType name="TierOne_PistolAimedFireLong9mil" rangeMeters="30"/>
+			<AttackType name="TierOne_PistolAimedFireLong9milXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="pistol_eqp"/>
+			<Unequip name="pistol_neqp"/>
+			<Reload name="pistol_reld"/>
+			<ReloadEmpty name="pistol_reldempt"/>
+			<Fire name="g19_fire"/>
+			<ShellDrop name="pistol_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<!-- G19XSD Pistol -->
+
+	<Bind eqp="G19XSD Pistol_TierOne">
+		<to name="919FMJM882_G19XSD Pistol"/>
+		<to name="919FMJM1152_SupHandgun"/>
+		<to name="919JHPM1153_SupHandgun"/>
+
+		<to name="IronSights_Pistol"/>
+	</Bind>
+
+	<Firearm name="G19XSD Pistol_TierOne" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="6"
+			tooltip="@firearm_g19xsd_name"
+			description="@firearm_g19xsd_desc"
+			img="data/models/weapons/g19xsd_ui_TierOne.dds"
+
+			animationSet="pistol"
+		>
+		<ConcealmentModifier add="-1"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
+		<RenderObject3D model="data/models/weapons/g19xsd_TierOne.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/g19xsd_TierOne.dds" skipGOSSAO="true"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="17"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1300"
+			reloadEmptyTime="1600"
+			changeInTime="700"
+			changeOutTime="850"
+			readyTime="85"
+			guardTime="50"
+
+			accuracyStart="70"
+			accuracyEnd="60"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_9x19_name"
+			operationInfoText="@firearm_operation_semiauto_name"
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="pm63_mag"
+			suppressedSwitch="G19X Pistol_TierOne"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="3.0"
+			ai_rangeMax="15.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AttackTypes>
+			<AttackType name="TierOne_EmergencyFire9mil" rangeMeters="4"/>
+			<AttackType name="TierOne_DoubleTap9mil" rangeMeters="5" priority="0"/>
+			<AttackType name="TierOne_ControlledPair9mil" rangeMeters="8" priority="0"/>
+			<AttackType name="TierOne_PistolAimedFire9mil" rangeMeters="15"/>
+			<AttackType name="TierOne_PistolAimedFireLong9mil" rangeMeters="30"/>
+			<AttackType name="TierOne_PistolAimedFireLong9milXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="pistol_eqp"/>
+			<Unequip name="pistol_neqp"/>
+			<Reload name="pistol_reld"/>
+			<ReloadEmpty name="pistol_reldempt"/>
+			<Fire name="g19xsd_fire"/>
+			<ShellDrop name="pistol_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+</Equipment>

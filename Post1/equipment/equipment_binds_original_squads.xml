@@ -24,7 +24,16 @@
 		<eqp name="MCX SPEAR SD_TierOne" />
 	</Bind>
 
+	<Bind to="Undercover">
+		<eqp name="G19X Pistol_TierOne" />
+		<eqp name="G19XSD Pistol_TierOne" />
+		<eqp name="VP9 Pistol_TierOne" />
+	</Bind>
+
 	<Bind to="BlackOps">
+		<eqp name="G19X Pistol_TierOne" />
+		<eqp name="G19XSD Pistol_TierOne" />
+		<eqp name="VP9 Pistol_TierOne" />
 		<eqp name="Vector9_TierOne" />
 		<eqp name="Vector9SD_TierOne" />
 		<eqp name="P90_TierOne" />
